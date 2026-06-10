@@ -5,7 +5,6 @@
 <!-- Build alternate URL for language switcher -->
 {% if lang == "en" %}
   {% assign switch_lang = "fr" %}
-  {% assign switch_label = "Français" %}
   {% if page.ref %}
     {% assign alt_post = site.posts | where: "ref", page.ref | where: "lang", "fr" | first %}
     {% assign alt_page = site.pages | where: "ref", page.ref | where: "lang", "fr" | first %}
@@ -21,7 +20,6 @@
   {% endif %}
 {% else %}
   {% assign switch_lang = "en" %}
-  {% assign switch_label = "English" %}
   {% if page.ref %}
     {% assign alt_post = site.posts | where: "ref", page.ref | where: "lang", "en" | first %}
     {% assign alt_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
@@ -56,9 +54,31 @@
       </li>
     </ul>
 
-    <!-- Language switcher -->
-    <a class="lang-switch" href="{{ switch_url }}" lang="{{ switch_lang }}" hreflang="{{ switch_lang }}">
-      {{ switch_label }}
-    </a>
+    <!-- Flag dropdown language switcher -->
+    <div class="lang-dropdown">
+      <button class="lang-btn" aria-haspopup="true" aria-expanded="false">
+        {% if lang == "fr" %}
+          <span class="flag">🇫🇷</span> FR
+        {% else %}
+          <span class="flag">🇬🇧</span> EN
+        {% endif %}
+        <span class="caret">▾</span>
+      </button>
+      <ul class="lang-menu" role="menu">
+        <li role="menuitem">
+          <a href="{{ base }}/" hreflang="en" lang="en"
+            {% if lang == "en" %}class="active"{% endif %}>
+            <span class="flag">🇬🇧</span> English
+          </a>
+        </li>
+        <li role="menuitem">
+          <a href="{{ switch_url }}" hreflang="fr" lang="fr"
+            {% if lang == "fr" %}class="active"{% endif %}>
+            <span class="flag">🇫🇷</span> Français
+          </a>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </nav>

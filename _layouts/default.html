@@ -11,5 +11,19 @@
   </main>
 
   {% include footer.html %}
+
+  <script>
+    const dropdown = document.querySelector('.lang-dropdown');
+    const btn = document.querySelector('.lang-btn');
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const open = dropdown.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function() {
+      dropdown.classList.remove('open');
+      btn.setAttribute('aria-expanded', false);
+    });
+  </script>
 </body>
 </html>
