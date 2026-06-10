@@ -1,0 +1,137 @@
+<section class="mergepdf">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    <p class="tool-desc">{{ page.description }}</p>
+
+    <div class="drop-zone" id="dropZone">
+      <span>📄</span>
+      <p>Drag & drop PDF files here or click to browse</p>
+      <input type="file" id="fileInput" accept=".pdf" multiple hidden />
+      <button class="btn" onclick="document.getElementById('fileInput').click()">
+        Select PDF files
+      </button>
+    </div>
+
+    <ul class="file-list" id="fileList"></ul>
+
+    <button class="btn btn-merge" id="mergeBtn" style="display:none">
+      Merge PDFs
+    </button>
+  </div>
+</section>
+
+<style>
+.mergepdf { padding: 2rem 0; }
+.mergepdf h1 { font-size: 1.9rem; font-weight: 800; margin-bottom: 0.5rem; }
+.tool-desc { color: var(--muted); margin-bottom: 2rem; }
+
+.drop-zone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 3rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.drop-zone:hover, .drop-zone.dragover {
+  border-color: var(--accent);
+  background: var(--surface);
+}
+.drop-zone span { font-size: 2.5rem; display: block; margin-bottom: 0.75rem; }
+.drop-zone p { color: var(--muted); margin-bottom: 1rem; font-size: 0.9rem; }
+
+.file-list {
+  list-style: none;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.file-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+}
+.file-item span { flex: 1; }
+.file-item .remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 1rem;
+  padding: 0;
+  line-height: 1;
+}
+.file-item .remove:hover { color: #e53e3e; }
+
+.btn-merge {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script>
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
+const fileList = document.getElementById('fileList');
+const mergeBtn = document.getElementById('mergeBtn');
+let files = [];
+
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('dragover'); addFiles(e.dataTransfer.files); });
+dropZone.addEventListener('click', () => fileInput.click());
+fileInput.addEventListener('change', () => addFiles(fileInput.files));
+
+function addFiles(newFiles) {
+  [...newFiles].forEach(f => { if (f.type === 'application/pdf') files.push(f); });
+  renderList();
+}
+
+function renderList() {
+  fileList.innerHTML = '';
+  files.forEach((f, i) => {
+    const li = document.createElement('li');
+    li.className = 'file-item';
+    li.innerHTML = `<span>📄 ${f.name}</span><button class="remove" onclick="removeFile(${i})">✕</button>`;
+    fileList.appendChild(li);
+  });
+  mergeBtn.style.display = files.length >= 2 ? 'block' : 'none';
+}
+
+function removeFile(i) {
+  files.splice(i, 1);
+  renderList();
+}
+
+mergeBtn.addEventListener('click', async () => {
+  mergeBtn.textContent = 'Merging...';
+  mergeBtn.disabled = true;
+  try {
+    const merged = await PDFLib.PDFDocument.create();
+    for (const file of files) {
+      const bytes = await file.arrayBuffer();
+      const pdf = await PDFLib.PDFDocument.load(bytes);
+      const pages = await merged.copyPages(pdf, pdf.getPageIndices());
+      pages.forEach(p => merged.addPage(p));
+    }
+    const bytes = await merged.save();
+    const blob = new Blob([bytes], { type: 'application/pdf' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'merged.pdf'; a.click();
+    URL.revokeObjectURL(url);
+  } catch(e) {
+    alert('Error merging PDFs. Make sure files are not password protected.');
+  }
+  mergeBtn.textContent = 'Merge PDFs';
+  mergeBtn.disabled = false;
+});
+</script>

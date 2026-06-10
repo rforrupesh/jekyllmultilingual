@@ -2,37 +2,24 @@
 {% assign base = site.baseurl %}
 {% assign lang = page.lang %}
 
-<!-- Build alternate URL for language switcher -->
-{% if lang == "en" %}
-  {% assign switch_lang = "fr" %}
-  {% if page.ref %}
-    {% assign alt_post = site.posts | where: "ref", page.ref | where: "lang", "fr" | first %}
-    {% assign alt_page = site.pages | where: "ref", page.ref | where: "lang", "fr" | first %}
-    {% if alt_post %}
-      {% assign switch_url = base | append: alt_post.url %}
-    {% elsif alt_page %}
-      {% assign switch_url = base | append: alt_page.url %}
-    {% else %}
-      {% assign switch_url = base | append: "/fr" | append: page.url %}
-    {% endif %}
-  {% else %}
-    {% assign switch_url = base | append: "/fr" | append: page.url %}
-  {% endif %}
-{% else %}
-  {% assign switch_lang = "en" %}
-  {% if page.ref %}
-    {% assign alt_post = site.posts | where: "ref", page.ref | where: "lang", "en" | first %}
-    {% assign alt_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
-    {% if alt_post %}
-      {% assign switch_url = base | append: alt_post.url %}
-    {% elsif alt_page %}
-      {% assign switch_url = base | append: alt_page.url %}
-    {% else %}
-      {% assign switch_url = base | append: page.url | remove_first: "/fr" %}
-    {% endif %}
-  {% else %}
-    {% assign switch_url = base | append: page.url | remove_first: "/fr" %}
-  {% endif %}
+<!-- Build clean base URL without lang prefix -->
+{% assign clean_url = page.url | remove_first: "/fr" %}
+
+<!-- Build alternate URLs -->
+{% assign en_switch = base | append: clean_url %}
+{% assign fr_switch = base | append: "/fr" | append: clean_url %}
+
+<!-- Override with ref-based lookup if ref exists -->
+{% if page.ref %}
+  {% assign en_post = site.posts | where: "ref", page.ref | where: "lang", "en" | first %}
+  {% assign en_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
+  {% if en_post %}{% assign en_switch = base | append: en_post.url %}
+  {% elsif en_page %}{% assign en_switch = base | append: en_page.url %}{% endif %}
+
+  {% assign fr_post = site.posts | where: "ref", page.ref | where: "lang", "fr" | first %}
+  {% assign fr_page = site.pages | where: "ref", page.ref | where: "lang", "fr" | first %}
+  {% if fr_post %}{% assign fr_switch = base | append: fr_post.url %}
+  {% elsif fr_page %}{% assign fr_switch = base | append: fr_page.url %}{% endif %}
 {% endif %}
 
 <nav class="navbar">
@@ -57,22 +44,19 @@
     <!-- Flag dropdown language switcher -->
     <div class="lang-dropdown">
       <button class="lang-btn" aria-haspopup="true" aria-expanded="false">
-        {% if lang == "fr" %}
-          <span class="flag">🇫🇷</span> FR
-        {% else %}
-          <span class="flag">🇬🇧</span> EN
-        {% endif %}
+        {% if lang == "fr" %}<span class="flag">🇫🇷</span> FR
+        {% else %}<span class="flag">🇬🇧</span> EN{% endif %}
         <span class="caret">▾</span>
       </button>
       <ul class="lang-menu" role="menu">
         <li role="menuitem">
-          <a href="{{ base }}/" hreflang="en" lang="en"
+          <a href="{{ en_switch }}" hreflang="en" lang="en"
             {% if lang == "en" %}class="active"{% endif %}>
             <span class="flag">🇬🇧</span> English
           </a>
         </li>
         <li role="menuitem">
-          <a href="{{ switch_url }}" hreflang="fr" lang="fr"
+          <a href="{{ fr_switch }}" hreflang="fr" lang="fr"
             {% if lang == "fr" %}class="active"{% endif %}>
             <span class="flag">🇫🇷</span> Français
           </a>
