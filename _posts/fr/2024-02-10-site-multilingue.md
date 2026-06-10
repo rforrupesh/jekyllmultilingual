@@ -3,8 +3,9 @@ layout: post
 title: "Créer un site multilingue avec Jekyll"
 date: 2024-02-10
 lang: fr
+ref: multilingual-site
 categories: [jekyll, i18n]
-permalink: /fr/blog/site-multilingue/
+permalink: /fr/blog/multilingual-site/
 ---
 
 Rendre votre site Jekyll disponible en plusieurs langues est plus simple qu'il n'y paraît.

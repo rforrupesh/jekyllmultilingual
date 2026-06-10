@@ -3,8 +3,9 @@ layout: post
 title: "Débuter avec Jekyll"
 date: 2024-01-15
 lang: fr
+ref: getting-started
 categories: [jekyll, web]
-permalink: /fr/blog/debuter-avec-jekyll/
+permalink: /fr/blog/getting-started-with-jekyll/
 ---
 
 Jekyll est un générateur de site statique simple. Il prend votre contenu écrit en Markdown et construit un site complet — sans base de données.

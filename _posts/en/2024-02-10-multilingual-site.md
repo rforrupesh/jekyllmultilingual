@@ -3,6 +3,7 @@ layout: post
 title: "How to Build a Multilingual Site"
 date: 2024-02-10
 lang: en
+ref: multilingual-site
 categories: [jekyll, i18n]
 permalink: /blog/multilingual-site/
 ---

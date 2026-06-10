@@ -6,11 +6,35 @@
 {% if lang == "en" %}
   {% assign switch_lang = "fr" %}
   {% assign switch_label = "Français" %}
-  {% assign switch_url = base | append: "/fr" | append: page.url %}
+  {% if page.ref %}
+    {% assign alt_post = site.posts | where: "ref", page.ref | where: "lang", "fr" | first %}
+    {% assign alt_page = site.pages | where: "ref", page.ref | where: "lang", "fr" | first %}
+    {% if alt_post %}
+      {% assign switch_url = base | append: alt_post.url %}
+    {% elsif alt_page %}
+      {% assign switch_url = base | append: alt_page.url %}
+    {% else %}
+      {% assign switch_url = base | append: "/fr" | append: page.url %}
+    {% endif %}
+  {% else %}
+    {% assign switch_url = base | append: "/fr" | append: page.url %}
+  {% endif %}
 {% else %}
   {% assign switch_lang = "en" %}
   {% assign switch_label = "English" %}
-  {% assign switch_url = base | append: page.url | remove_first: "/fr" %}
+  {% if page.ref %}
+    {% assign alt_post = site.posts | where: "ref", page.ref | where: "lang", "en" | first %}
+    {% assign alt_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
+    {% if alt_post %}
+      {% assign switch_url = base | append: alt_post.url %}
+    {% elsif alt_page %}
+      {% assign switch_url = base | append: alt_page.url %}
+    {% else %}
+      {% assign switch_url = base | append: page.url | remove_first: "/fr" %}
+    {% endif %}
+  {% else %}
+    {% assign switch_url = base | append: page.url | remove_first: "/fr" %}
+  {% endif %}
 {% endif %}
 
 <nav class="navbar">

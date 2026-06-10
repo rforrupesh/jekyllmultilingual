@@ -3,6 +3,7 @@ layout: post
 title: "Getting Started with Jekyll"
 date: 2024-01-15
 lang: en
+ref: getting-started
 categories: [jekyll, web]
 permalink: /blog/getting-started-with-jekyll/
 ---
