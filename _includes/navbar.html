@@ -1,0 +1,81 @@
+{% comment %}
+  _includes/navbar.html
+  Multilingual navbar — links adjust based on page.lang automatically.
+{% endcomment %}
+
+{% assign page_lang = page.lang | default: "en" %}
+{% if page_lang == "es" %}
+  {% assign prefix = "/es" %}
+{% elsif page_lang == "fr" %}
+  {% assign prefix = "/fr" %}
+{% else %}
+  {% assign prefix = "" %}
+{% endif %}
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Main navigation">
+
+    <!-- Logo -->
+    <a href="{{ prefix }}/" class="nav-logo">
+      📄 PDF<span>Tools</span>
+    </a>
+
+    <!-- Main nav links -->
+    <ul class="nav-links" role="list">
+      <li>
+        <a href="{{ prefix }}/merge/"
+           {% if page.url contains '/merge' %}class="nav-active"{% endif %}>
+          {% if page_lang == "fr" %}Fusionner
+          {% elsif page_lang == "es" %}Unir
+          {% else %}Merge
+          {% endif %}
+        </a>
+      </li>
+      <li>
+        <a href="{{ prefix }}/dividir-pdf/"
+           {% if page.url contains '/dividir' or page.url contains '/split' %}class="nav-active"{% endif %}>
+          {% if page_lang == "fr" %}Diviser
+          {% elsif page_lang == "es" %}Dividir
+          {% else %}Split
+          {% endif %}
+        </a>
+      </li>
+      <li>
+        <a href="{{ prefix }}/jpg-a-pdf/"
+           {% if page.url contains '/jpg' %}class="nav-active"{% endif %}>
+          {% if page_lang == "fr" %}JPG en PDF
+          {% elsif page_lang == "es" %}JPG a PDF
+          {% else %}JPG to PDF
+          {% endif %}
+        </a>
+      </li>
+      <li>
+        <a href="{{ prefix }}/blog/"
+           {% if page.url contains '/blog' %}class="nav-active"{% endif %}>
+          Blog
+        </a>
+      </li>
+    </ul>
+
+    <!-- Language switcher -->
+    {% include lang-switcher.html %}
+
+    <!-- Mobile hamburger -->
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </nav>
+</header>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links  = document.querySelector('.nav-links');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      links.classList.toggle('open');
+    });
+  }
+</script>

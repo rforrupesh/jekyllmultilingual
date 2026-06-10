@@ -1,0 +1,82 @@
+{% comment %}
+  _includes/seo-head.html
+  Drop this inside <head> in your default layout.
+  Auto-generates:
+    - hreflang alternate links (en / es / fr + x-default)
+    - og:locale and og:locale:alternate
+    - canonical URL
+    - meta description
+    - og:title, og:description, og:url
+{% endcomment %}
+
+{% assign page_lang   = page.lang        | default: "en" %}
+{% assign page_title  = page.title       | default: site.title %}
+{% assign page_desc   = page.description | default: site.description %}
+{% assign site_url    = site.url %}
+
+{% comment %} Build base path (strip lang prefix) {% endcomment %}
+{% assign base_path = page.url %}
+{% if page_lang == "es" %}
+  {% assign base_path = page.url | remove_first: "/es" %}
+{% elsif page_lang == "fr" %}
+  {% assign base_path = page.url | remove_first: "/fr" %}
+{% endif %}
+
+{% comment %} Build all 3 URLs {% endcomment %}
+{% assign url_en = site_url | append: base_path %}
+{% assign url_es = site_url | append: "/es" | append: base_path %}
+{% assign url_fr = site_url | append: "/fr" | append: base_path %}
+
+{% comment %} For posts with manual translation URLs {% endcomment %}
+{% if page.translations %}
+  {% if page.translations.en %}{% assign url_en = site_url | append: page.translations.en %}{% endif %}
+  {% if page.translations.es %}{% assign url_es = site_url | append: page.translations.es %}{% endif %}
+  {% if page.translations.fr %}{% assign url_fr = site_url | append: page.translations.fr %}{% endif %}
+{% endif %}
+
+{% comment %} Current page canonical URL {% endcomment %}
+{% if page_lang == "en" %}
+  {% assign canonical = url_en %}
+{% elsif page_lang == "es" %}
+  {% assign canonical = url_es %}
+{% else %}
+  {% assign canonical = url_fr %}
+{% endif %}
+
+<!-- ─── Canonical ─────────────────────────── -->
+<link rel="canonical" href="{{ canonical }}" />
+
+<!-- ─── Hreflang ──────────────────────────── -->
+<link rel="alternate" hreflang="x-default" href="{{ url_en }}" />
+<link rel="alternate" hreflang="en"        href="{{ url_en }}" />
+<link rel="alternate" hreflang="es"        href="{{ url_es }}" />
+<link rel="alternate" hreflang="fr"        href="{{ url_fr }}" />
+
+<!-- ─── Meta description ──────────────────── -->
+<meta name="description" content="{{ page_desc | strip_html | truncate: 160 }}" />
+
+<!-- ─── Open Graph ────────────────────────── -->
+<meta property="og:type"        content="website" />
+<meta property="og:title"       content="{{ page_title }}" />
+<meta property="og:description" content="{{ page_desc | strip_html | truncate: 160 }}" />
+<meta property="og:url"         content="{{ canonical }}" />
+<meta property="og:site_name"   content="{{ site.title }}" />
+
+{% if page_lang == "en" %}
+  <meta property="og:locale"           content="en_US" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+{% elsif page_lang == "es" %}
+  <meta property="og:locale"           content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+{% elsif page_lang == "fr" %}
+  <meta property="og:locale"           content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="es_ES" />
+{% endif %}
+
+<!-- ─── Twitter Card ──────────────────────── -->
+<meta name="twitter:card"        content="summary" />
+<meta name="twitter:title"       content="{{ page_title }}" />
+<meta name="twitter:description" content="{{ page_desc | strip_html | truncate: 160 }}" />

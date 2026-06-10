@@ -1,0 +1,86 @@
+# ─────────────────────────────────────────
+#  Site settings
+# ─────────────────────────────────────────
+title: "PDF Tools"
+description: "Free online PDF tools — merge, split, convert and more."
+url: "https://yourusername.github.io"   # ← change to your real URL
+baseurl: ""                              # ← leave empty for root domain
+
+# ─────────────────────────────────────────
+#  Language settings
+# ─────────────────────────────────────────
+default_lang: "en"
+languages:
+  en:
+    label: "English"
+    flag: "🇬🇧"
+    locale: "en_US"
+  es:
+    label: "Español"
+    flag: "🇪🇸"
+    locale: "es_ES"
+  fr:
+    label: "Français"
+    flag: "🇫🇷"
+    locale: "fr_FR"
+
+# ─────────────────────────────────────────
+#  Build settings
+# ─────────────────────────────────────────
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# ─────────────────────────────────────────
+#  Collections — so Jekyll picks up fr/_posts, es/_posts
+# ─────────────────────────────────────────
+collections_dir: .
+
+# ─────────────────────────────────────────
+#  Defaults — auto-set lang per folder
+# ─────────────────────────────────────────
+defaults:
+  # English (root) pages
+  - scope:
+      path: ""
+    values:
+      lang: "en"
+      layout: "default"
+
+  # Spanish pages
+  - scope:
+      path: "es"
+    values:
+      lang: "es"
+      layout: "default"
+
+  # French pages
+  - scope:
+      path: "fr"
+    values:
+      lang: "fr"
+      layout: "default"
+
+  # English blog posts
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      lang: "en"
+      layout: "post"
+
+  # Spanish blog posts
+  - scope:
+      path: "es/_posts"
+    values:
+      lang: "es"
+      layout: "post"
+
+  # French blog posts
+  - scope:
+      path: "fr/_posts"
+    values:
+      lang: "fr"
+      layout: "post"
