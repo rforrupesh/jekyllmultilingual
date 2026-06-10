@@ -1,8 +1,9 @@
 {% assign t = site.data.translations[page.lang] %}
 {% assign base = site.url | append: site.baseurl %}
+{% assign lang = page.lang | default: "en" %}
 
-<!-- hreflang alternate links -->
-{% if page.lang == "en" %}
+<!-- Build hreflang alternate URLs -->
+{% if lang == "en" %}
   {% assign en_url = page.url %}
   {% assign fr_url = "/fr" | append: page.url %}
 {% else %}
@@ -10,15 +11,72 @@
   {% assign fr_url = page.url %}
 {% endif %}
 
+{% assign canonical_url = base | append: page.url %}
+{% assign page_title = page.title | append: " | " | append: site.title %}
+{% assign page_desc = page.description | default: site.description %}
+
+<!-- =====================
+     Essential
+     ===================== -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ page_desc }}" />
+<meta name="author" content="{{ site.author | default: site.title }}" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="language" content="{{ lang }}" />
+
+<!-- =====================
+     Canonical
+     ===================== -->
+<link rel="canonical" href="{{ canonical_url }}" />
+
+<!-- =====================
+     hreflang (bilingual)
+     ===================== -->
 <link rel="alternate" href="{{ base }}{{ en_url }}" hreflang="en" />
 <link rel="alternate" href="{{ base }}{{ fr_url }}" hreflang="fr" />
 <link rel="alternate" href="{{ base }}{{ en_url }}" hreflang="x-default" />
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="{{ page.description | default: site.description }}" />
-<meta property="og:title" content="{{ page.title | append: ' | ' | append: site.title }}" />
-<meta property="og:locale" content="{{ page.lang }}" />
+<!-- =====================
+     Open Graph
+     ===================== -->
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
+<meta property="og:title" content="{{ page_title }}" />
+<meta property="og:description" content="{{ page_desc }}" />
+<meta property="og:url" content="{{ canonical_url }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:locale" content="{% if lang == 'fr' %}fr_FR{% else %}en_US{% endif %}" />
+<meta property="og:locale:alternate" content="{% if lang == 'fr' %}en_US{% else %}fr_FR{% endif %}" />
+{% if page.image %}
+<meta property="og:image" content="{{ base }}/assets/img/{{ page.image }}" />
+<meta property="og:image:alt" content="{{ page_title }}" />
+{% endif %}
+{% if page.layout == "post" %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+<meta property="article:modified_time" content="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}" />
+<meta property="article:author" content="{{ site.author | default: site.title }}" />
+{% if page.categories %}
+<meta property="article:section" content="{{ page.categories | first }}" />
+{% endif %}
+{% endif %}
 
-<title>{{ page.title | append: " | " | append: site.title }}</title>
+<!-- =====================
+     Twitter Card
+     ===================== -->
+<meta name="twitter:card" content="summary{% if page.image %}_large_image{% endif %}" />
+<meta name="twitter:title" content="{{ page_title }}" />
+<meta name="twitter:description" content="{{ page_desc }}" />
+{% if page.image %}
+<meta name="twitter:image" content="{{ base }}/assets/img/{{ page.image }}" />
+<meta name="twitter:image:alt" content="{{ page_title }}" />
+{% endif %}
+{% if site.twitter_username %}
+<meta name="twitter:site" content="@{{ site.twitter_username }}" />
+{% endif %}
+
+<!-- =====================
+     Stylesheet
+     ===================== -->
 <link rel="stylesheet" href="{{ base }}/assets/css/main.css" />
