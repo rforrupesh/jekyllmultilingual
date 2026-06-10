@@ -1,0 +1,39 @@
+en:
+  lang_name: "English"
+  lang_code: "en"
+  dir: "ltr"
+  nav:
+    home: "Home"
+    blog: "Blog"
+    about: "About"
+  blog:
+    title: "Blog"
+    read_more: "Read more"
+    back: "← Back to Blog"
+    posted_on: "Posted on"
+  home:
+    heading: "Welcome"
+    subheading: "A simple bilingual site built with Jekyll."
+    cta: "Read the blog"
+  footer:
+    rights: "All rights reserved."
+
+fr:
+  lang_name: "Français"
+  lang_code: "fr"
+  dir: "ltr"
+  nav:
+    home: "Accueil"
+    blog: "Blog"
+    about: "À propos"
+  blog:
+    title: "Blog"
+    read_more: "Lire la suite"
+    back: "← Retour au blog"
+    posted_on: "Publié le"
+  home:
+    heading: "Bienvenue"
+    subheading: "Un site bilingue simple construit avec Jekyll."
+    cta: "Lire le blog"
+  footer:
+    rights: "Tous droits réservés."

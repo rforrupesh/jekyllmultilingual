@@ -1,0 +1,40 @@
+{% assign t = site.data.translations[page.lang] %}
+{% assign base = site.baseurl %}
+{% assign lang = page.lang %}
+
+<!-- Build alternate URL for language switcher -->
+{% if lang == "en" %}
+  {% assign switch_lang = "fr" %}
+  {% assign switch_label = "Français" %}
+  {% assign switch_url = base | append: "/fr" | append: page.url %}
+{% else %}
+  {% assign switch_lang = "en" %}
+  {% assign switch_label = "English" %}
+  {% assign switch_url = base | append: page.url | remove_first: "/fr" %}
+{% endif %}
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a class="nav-logo" href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}">
+      {{ site.title }}
+    </a>
+
+    <ul class="nav-links">
+      <li>
+        <a href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}">
+          {{ t.nav.home }}
+        </a>
+      </li>
+      <li>
+        <a href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}blog/">
+          {{ t.nav.blog }}
+        </a>
+      </li>
+    </ul>
+
+    <!-- Language switcher -->
+    <a class="lang-switch" href="{{ switch_url }}" lang="{{ switch_lang }}" hreflang="{{ switch_lang }}">
+      {{ switch_label }}
+    </a>
+  </div>
+</nav>

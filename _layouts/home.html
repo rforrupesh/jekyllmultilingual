@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% assign t = site.data.translations[page.lang] %}
+{% assign base = site.baseurl %}
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>{{ t.home.heading }}</h1>
+    <p class="hero-sub">{{ t.home.subheading }}</p>
+    <a class="btn" href="{{ base }}/{% if page.lang == 'fr' %}fr/{% endif %}blog/">
+      {{ t.home.cta }}
+    </a>
+  </div>
+</section>
+
+<section class="recent-posts">
+  <div class="container">
+    <h2>{{ t.nav.blog }}</h2>
+    <ul class="post-list">
+      {% assign posts = site.posts | where: "lang", page.lang | limit: 3 %}
+      {% for post in posts %}
+      <li class="post-card">
+        <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <h3><a href="{{ base }}{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+        <a class="read-more" href="{{ base }}{{ post.url }}">{{ t.blog.read_more }} →</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{{ content }}
