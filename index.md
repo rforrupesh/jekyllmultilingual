@@ -672,14 +672,13 @@ Reordene manualmente los archivos antes de fusionarlos o cámbieles el nombre ut
 
 
 
-    
-<!-- ── RELATED BLOGS / TOOLS ── -->
-{% assign seo_posts = site.posts | where:"category","mergepdf" %}
+
+{% assign seo_posts = site.posts | where: "category", "mergepdf" | where: "lang", page.lang %}
 <div class="relatedbloganywhere-grid">
   {% if seo_posts.size > 0 %}
     {% assign posts_to_show = seo_posts %}
   {% else %}
-    {% assign posts_to_show = site.posts %}
+    {% assign posts_to_show = site.posts | where: "lang", page.lang %}
   {% endif %}
   {% for post in posts_to_show limit:6 %}
     <div class="relatedbloganywhere-card">
@@ -691,17 +690,13 @@ Reordene manualmente los archivos antes de fusionarlos o cámbieles el nombre ut
             loading="lazy">
         </div>
       </a>
-
       {% if post.category %}
-  {% assign cat_slug = post.category %}
-  {% assign cat_page = site.pages | where:"category_key", cat_slug | first %}
-  <a 
-    class="relatedbloganywhere-category"
-    href="{{ site.baseurl }}/category/{{ cat_slug }}/">
-    {{ cat_page.title | default: cat_slug | replace: "-", " " }}
-  </a>
-{% endif %}
-      
+        {% assign cat_slug = post.category %}
+        {% assign cat_page = site.pages | where: "category_key", cat_slug | first %}
+        <a class="relatedbloganywhere-category" href="{{ site.baseurl }}/category/{{ cat_slug }}/">
+          {{ cat_page.title | default: cat_slug | replace: "-", " " }}
+        </a>
+      {% endif %}
       <div class="relatedbloganywhere-content">
         <a href="{{ post.url | relative_url }}">
           <h3>{{ post.title }}</h3>
@@ -710,8 +705,6 @@ Reordene manualmente los archivos antes de fusionarlos o cámbieles el nombre ut
     </div>
   {% endfor %}
 </div>
-
-
 
 
     
