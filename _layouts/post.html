@@ -138,9 +138,9 @@ layout: default
       <a href="{{ base }}{{ post.url }}" class="related-card">
         <div class="related-img">
           <img
-            src="{% if post.image contains 'http' %}{{ post.image }}{% elsif post.image %}{{ base }}/assets/img/{{ post.image }}{% else %}{{ base }}/assets/img/default.png{% endif %}"
+            src="{{ post.thumbnail | default:'/assets/default-tool.webp' | relative_url }}"
             alt="{{ post.title }}"
-            loading="lazy" />
+            loading="lazy">
         </div>
         <h3 class="related-title">{{ post.title }}</h3>
       </a>
