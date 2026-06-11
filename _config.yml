@@ -6,7 +6,7 @@ author: lokesh
 # twitter_username: yourhandle   # uncomment if you have one
 
 # Multilingual settings
-languages: ["en", "fr"]
+languages: ["en", "fr", "hi"]
 default_lang: "en"
 
 # Build settings
