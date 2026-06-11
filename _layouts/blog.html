@@ -3,20 +3,237 @@ layout: default
 ---
 {% assign t = site.data.translations[page.lang] %}
 {% assign base = site.baseurl %}
+{% assign lang = page.lang %}
+{% assign posts = site.posts | where: "lang", lang %}
+{% assign canonical_url = site.url | append: base | append: page.url %}
 
+<!-- =====================
+     Schema JSON-LD
+     ===================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}{{ base }}/#website",
+      "url": "{{ site.url }}{{ base }}/",
+      "name": "{{ site.title }}",
+      "description": "{{ site.description }}",
+      "inLanguage": "{{ lang }}"
+    },
+    {
+      "@type": "Organization",
+      "@id": "{{ site.url }}{{ base }}/#organization",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}{{ base }}/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}{{ base }}/assets/img/logo.png"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "{{ canonical_url }}#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "{{ t.nav.home }}",
+          "item": "{{ site.url }}{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "{{ t.blog.title }}",
+          "item": "{{ canonical_url }}"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "{{ canonical_url }}#collectionpage",
+      "url": "{{ canonical_url }}",
+      "name": "{{ page.title }} | {{ site.title }}",
+      "description": "{{ site.description }}",
+      "inLanguage": "{{ lang }}",
+      "isPartOf": { "@id": "{{ site.url }}{{ base }}/#website" },
+      "breadcrumb": { "@id": "{{ canonical_url }}#breadcrumb" },
+      "hasPart": [
+        {% for post in posts %}
+        {
+          "@type": "BlogPosting",
+          "headline": "{{ post.title }}",
+          "url": "{{ site.url }}{{ base }}{{ post.url }}",
+          "datePublished": "{{ post.date | date_to_xmlschema }}",
+          "image": {% if post.image %}"{{ site.url }}{{ base }}/assets/img/{{ post.image }}"{% else %}"{{ site.url }}{{ base }}/assets/img/default.png"{% endif %}
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- =====================
+     Breadcrumb
+     ===================== -->
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}">{{ t.nav.home }}</a></li>
+      <li aria-current="page">{{ t.blog.title }}</li>
+    </ol>
+  </div>
+</nav>
+
+<!-- =====================
+     Blog Index
+     ===================== -->
 <section class="blog-index">
   <div class="container">
     <h1>{{ t.blog.title }}</h1>
-    <ul class="post-list">
-      {% assign posts = site.posts | where: "lang", page.lang %}
+
+    <div class="post-grid">
       {% for post in posts %}
-      <li class="post-card">
-        <span class="post-date">{{ t.blog.posted_on }} {{ post.date | date: "%B %d, %Y" }}</span>
-        <h2><a href="{{ base }}{{ post.url }}">{{ post.title }}</a></h2>
-        <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-        <a class="read-more" href="{{ base }}{{ post.url }}">{{ t.blog.read_more }} →</a>
-      </li>
+      <article class="post-grid-card">
+        <a href="{{ base }}{{ post.url }}" class="post-grid-thumb">
+          <img
+            src="{{ post.image | default: '/assets/img/default.png' | prepend: base }}"
+            alt="{{ post.title }}"
+            loading="lazy"
+            width="400"
+            height="220" />
+        </a>
+        <div class="post-grid-body">
+          {% if post.categories %}
+          <span class="post-grid-cat">{{ post.categories | first }}</span>
+          {% endif %}
+          <h2><a href="{{ base }}{{ post.url }}">{{ post.title }}</a></h2>
+          <p>{{ post.excerpt | strip_html | truncatewords: 18 }}</p>
+          <div class="post-grid-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+            <a href="{{ base }}{{ post.url }}" class="read-more">{{ t.blog.read_more }} →</a>
+          </div>
+        </div>
+      </article>
       {% endfor %}
-    </ul>
+    </div>
+
   </div>
 </section>
+
+<style>
+/* Breadcrumb */
+.breadcrumb { border-bottom: 1px solid var(--border); background: var(--surface); }
+.breadcrumb .container { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.breadcrumb ol { list-style: none; display: flex; gap: 0.5rem; font-size: 0.82rem; color: var(--muted); }
+.breadcrumb ol li + li::before { content: "›"; margin-right: 0.5rem; }
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--accent); }
+
+/* Blog heading */
+.blog-index h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 2rem; }
+
+/* Grid */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.post-grid-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.15s;
+}
+
+.post-grid-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.post-grid-thumb {
+  display: block;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.post-grid-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.post-grid-card:hover .post-grid-thumb img {
+  transform: scale(1.04);
+}
+
+.post-grid-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.post-grid-cat {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.post-grid-body h2 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.post-grid-body h2 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.post-grid-body h2 a:hover { color: var(--accent); }
+
+.post-grid-body p {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.5;
+  flex: 1;
+  margin-bottom: 0.75rem;
+}
+
+.post-grid-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: auto;
+}
+
+.read-more {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .post-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 500px) {
+  .post-grid { grid-template-columns: 1fr; }
+}
+</style>
