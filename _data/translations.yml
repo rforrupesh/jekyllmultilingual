@@ -6,7 +6,7 @@ en:
     home: "Home"
     blog: "Blog"
     about: "About"
-   splitpdf: "Split PDF"
+    splitpdf: "Split PDF"
 
   blog:
     title: "Blog"
