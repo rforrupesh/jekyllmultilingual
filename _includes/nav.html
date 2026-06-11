@@ -22,47 +22,111 @@
   {% elsif fr_page %}{% assign fr_switch = base | append: fr_page.url %}{% endif %}
 {% endif %}
 
-<nav class="navbar">
-  <div class="nav-container">
-    <a class="nav-logo" href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}">
-      {{ site.title }}
-    </a>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;}
+:root{--bg:#ffffff;--white:#ffffff;--border:#e2e5ed;--text:#1a1d27;--hover-bg:#fafafa;--accent:#0070f3;--shadow-md:0 10px 30px rgba(0,0,0,.08);}
+nav{display:flex;justify-content:center;align-items:center;gap:40px;height:70px;padding:0 24px;background:var(--bg);border-bottom:1px solid var(--border);}
+.logo{flex-shrink:0;}
+.logo img{height:50px;display:block;}
+.menu{display:flex;align-items:center;gap:12px;}
+.menu a{text-decoration:none;color:var(--text);font-size:15px;font-weight:500;padding:8px 16px;border-radius:8px;transition:.2s;}
+.menu a:hover{background:var(--hover-bg);color:var(--accent);}
+.lang-switcher{position:relative;border:1px solid #333;flex-shrink:0;}
+.lang-btn{display:flex;align-items:center;gap:6px;border:none;background:transparent;color:var(--text);font-size:15px;font-weight:500;padding:8px 16px;border-radius:8px;cursor:pointer;transition:.2s;}
+.lang-btn:hover{background:var(--hover-bg);color:var(--accent);}
+.lang-dropdown{position:absolute;top:calc(100% + 8px);right:0;min-width:190px;background:var(--white);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow-md);padding:8px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.2s ease;z-index:2000;}
+.lang-dropdown.active{opacity:1;visibility:visible;transform:translateY(0);}
+.lang-dropdown a{display:block;text-decoration:none;color:var(--text);font-size:14px;font-weight:500;padding:10px 12px;border-radius:8px;transition:.2s;}
+.lang-dropdown a:hover{background:var(--hover-bg);color:var(--accent);}
+.lang-dropdown a.active-lang{color:var(--accent);font-weight:700;}
+.icon-btn{display:none;width:40px;height:40px;border:none;background:transparent;cursor:pointer;position:relative;z-index:1002;}
+.line{position:absolute;left:10px;width:20px;height:2px;background:var(--text);transition:.3s;}
+.line:nth-child(1){top:14px;}
+.line:nth-child(2){top:20px;}
+.line:nth-child(3){top:26px;}
+.overlay{display:none;}
+.overlay.active{display:block;position:fixed;inset:0;background:rgba(0,0,0,.2);backdrop-filter:blur(4px);z-index:999;}
+@media(max-width:900px){
+  nav{justify-content:space-between;gap:10px;padding:0 12px;}
+  .logo{flex:1;}
+  .logo img{height:44px;}
+  .lang-switcher{order:2;}
+  .icon-btn{order:3;display:block;}
+  .menu{position:fixed;top:0;right:-100%;width:80%;height:100vh;background:#fff;flex-direction:column;align-items:flex-start;padding:80px 20px;overflow-y:auto;transition:.4s ease;z-index:1001;box-shadow:-10px 0 30px rgba(0,0,0,.08);}
+  .menu.active{right:0;}
+  .menu a{width:100%;font-size:18px;padding:15px;}
+  .lang-dropdown{min-width:170px;right:0;}
+  .icon-btn.active .line:nth-child(1){transform:rotate(45deg);top:20px;}
+  .icon-btn.active .line:nth-child(2){opacity:0;}
+  .icon-btn.active .line:nth-child(3){transform:rotate(-45deg);top:20px;}
+}
+</style>
 
-    <ul class="nav-links">
-      <li>
-        <a href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}">
-          {{ t.nav.home }}
-        </a>
-      </li>
-      <li>
-        <a href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}blog/">
-          {{ t.nav.blog }}
-        </a>
-      </li>
-    </ul>
+<nav aria-label="Main navigation">
 
-    <!-- Flag dropdown language switcher -->
-    <div class="lang-dropdown">
-      <button class="lang-btn" aria-haspopup="true" aria-expanded="false">
-        {% if lang == "fr" %}<span class="flag">🇫🇷</span> FR
-        {% else %}<span class="flag">🇬🇧</span> EN{% endif %}
-        <span class="caret">▾</span>
-      </button>
-      <ul class="lang-menu" role="menu">
-        <li role="menuitem">
-          <a href="{{ en_switch }}" hreflang="en" lang="en"
-            {% if lang == "en" %}class="active"{% endif %}>
-            <span class="flag">🇬🇧</span> English
-          </a>
-        </li>
-        <li role="menuitem">
-          <a href="{{ fr_switch }}" hreflang="fr" lang="fr"
-            {% if lang == "fr" %}class="active"{% endif %}>
-            <span class="flag">🇫🇷</span> Français
-          </a>
-        </li>
-      </ul>
-    </div>
+  <!-- LOGO -->
+  <a href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}" class="logo">
+    {{ site.title }}
+  </a>
 
+  <!-- MENU -->
+  <div class="menu" id="menu">
+    <a href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}">{{ t.nav.home }}</a>
+    <a href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}blog/">{{ t.nav.blog }}</a>
   </div>
+
+  <!-- LANGUAGE -->
+  <div class="lang-switcher">
+    <button class="lang-btn" id="langBtn">
+      {% if lang == "fr" %}🇫🇷 FR{% else %}🇬🇧 EN{% endif %}
+      <span>▾</span>
+    </button>
+    <div class="lang-dropdown" id="langDropdown">
+      <a href="{{ en_switch }}" hreflang="en" {% if lang == "en" %}class="active-lang"{% endif %}>🇬🇧 English</a>
+      <a href="{{ fr_switch }}" hreflang="fr" {% if lang == "fr" %}class="active-lang"{% endif %}>🇫🇷 Français</a>
+    </div>
+  </div>
+
+  <!-- HAMBURGER -->
+  <button class="icon-btn" id="navbtn" aria-label="Open menu">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+
 </nav>
+
+<div class="overlay" id="overlay"></div>
+
+<script>
+const navbtn = document.getElementById("navbtn");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("overlay");
+
+navbtn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  navbtn.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.style.overflow = menu.classList.contains("active") ? "hidden" : "";
+});
+
+function closeMenu(){
+  menu.classList.remove("active");
+  navbtn.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+overlay.addEventListener("click", closeMenu);
+document.querySelectorAll(".menu a").forEach(link => link.addEventListener("click", closeMenu));
+
+const langBtn = document.getElementById("langBtn");
+const langDropdown = document.getElementById("langDropdown");
+
+langBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  langDropdown.classList.toggle("active");
+});
+
+document.addEventListener("click", () => langDropdown.classList.remove("active"));
+</script>
