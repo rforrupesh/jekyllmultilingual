@@ -6,6 +6,8 @@ lang: en
 ref: getting-started
 categories: [jekyll, web]
 permalink: /blog/getting-started-with-jekyll/
+thumbnail: "https://rforrupesh.github.io/pdf/assets/img/como-usar-unificarpdf-com.jpg"
+
 ---
 
 Jekyll is a simple, static site generator. It takes your content written in Markdown and builds a complete website — no database needed.
