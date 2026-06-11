@@ -6,6 +6,8 @@ en:
     home: "Home"
     blog: "Blog"
     about: "About"
+   splitpdf: "Split PDF"
+
   blog:
     title: "Blog"
     read_more: "Read more"
@@ -26,6 +28,7 @@ fr:
     home: "Accueil"
     blog: "Blog"
     about: "À propos"
+    splitpdf: "Diviser PDF"
   blog:
     title: "Blog"
     read_more: "Lire la suite"
@@ -47,6 +50,8 @@ hi:
     home: "होम"
     blog: "ब्लॉग"
     about: "के बारे में"
+    splitpdf: "PDF विभाजित करें"
+
   blog:
     title: "ब्लॉग"
     read_more: "और पढ़ें"
@@ -60,20 +65,4 @@ hi:
     rights: "सर्वाधिकार सुरक्षित।"
 
 
-    en:
-  nav:
-    home: "Home"
-    blog: "Blog"
-    splitpdf: "Split PDF"
-
-fr:
-  nav:
-    home: "Accueil"
-    blog: "Blog"
-    splitpdf: "Diviser PDF"
-
-hi:
-  nav:
-    home: "होम"
-    blog: "ब्लॉग"
-    splitpdf: "PDF विभाजित करें"
+   
