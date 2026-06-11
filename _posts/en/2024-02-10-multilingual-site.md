@@ -6,6 +6,8 @@ lang: en
 ref: multilingual-site
 categories: [jekyll, i18n]
 permalink: /blog/multilingual-site/
+thumbnail: "https://rforrupesh.github.io/pdf/assets/img/como-usar-unificarpdf-com.jpg"
+
 ---
 
 Making your Jekyll site available in multiple languages is simpler than it sounds.
