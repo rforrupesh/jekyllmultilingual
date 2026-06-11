@@ -3,11 +3,12 @@
 {% assign lang = page.lang %}
 
 <!-- Build clean base URL without lang prefix -->
-{% assign clean_url = page.url | remove_first: "/fr" %}
+{% assign clean_url = page.url | remove_first: "/fr" | remove_first: "/hi" %}
 
 <!-- Build alternate URLs -->
 {% assign en_switch = base | append: clean_url %}
 {% assign fr_switch = base | append: "/fr" | append: clean_url %}
+{% assign hi_switch = base | append: "/hi" | append: clean_url %}
 
 <!-- Override with ref-based lookup if ref exists -->
 {% if page.ref %}
@@ -20,6 +21,11 @@
   {% assign fr_page = site.pages | where: "ref", page.ref | where: "lang", "fr" | first %}
   {% if fr_post %}{% assign fr_switch = base | append: fr_post.url %}
   {% elsif fr_page %}{% assign fr_switch = base | append: fr_page.url %}{% endif %}
+
+  {% assign hi_post = site.posts | where: "ref", page.ref | where: "lang", "hi" | first %}
+  {% assign hi_page = site.pages | where: "ref", page.ref | where: "lang", "hi" | first %}
+  {% if hi_post %}{% assign hi_switch = base | append: hi_post.url %}
+  {% elsif hi_page %}{% assign hi_switch = base | append: hi_page.url %}{% endif %}
 {% endif %}
 
 <style>
@@ -63,25 +69,28 @@ nav{display:flex;justify-content:center;align-items:center;gap:40px;height:70px;
 <nav aria-label="Main navigation">
 
   <!-- LOGO -->
-  <a href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}" class="logo">
+  <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}" class="logo">
     {{ site.title }}
   </a>
 
   <!-- MENU -->
   <div class="menu" id="menu">
-    <a href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}">{{ t.nav.home }}</a>
-    <a href="{{ base }}/{% if lang == 'fr' %}fr/{% endif %}blog/">{{ t.nav.blog }}</a>
+    <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}">{{ t.nav.home }}</a>
+    <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}blog/">{{ t.nav.blog }}</a>
   </div>
 
   <!-- LANGUAGE -->
   <div class="lang-switcher">
     <button class="lang-btn" id="langBtn">
-      {% if lang == "fr" %}🇫🇷 FR{% else %}🇬🇧 EN{% endif %}
+      {% if lang == "fr" %}🇫🇷 FR
+      {% elsif lang == "hi" %}🇮🇳 HI
+      {% else %}🇬🇧 EN{% endif %}
       <span>▾</span>
     </button>
     <div class="lang-dropdown" id="langDropdown">
       <a href="{{ en_switch }}" hreflang="en" {% if lang == "en" %}class="active-lang"{% endif %}>🇬🇧 English</a>
       <a href="{{ fr_switch }}" hreflang="fr" {% if lang == "fr" %}class="active-lang"{% endif %}>🇫🇷 Français</a>
+      <a href="{{ hi_switch }}" hreflang="hi" {% if lang == "hi" %}class="active-lang"{% endif %}>🇮🇳 हिन्दी</a>
     </div>
   </div>
 
