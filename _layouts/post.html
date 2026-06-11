@@ -3,22 +3,482 @@ layout: default
 ---
 {% assign t = site.data.translations[page.lang] %}
 {% assign base = site.baseurl %}
+{% assign lang = page.lang %}
+{% assign canonical_url = site.url | append: base | append: page.url %}
 
-<article class="post-single">
+<!-- =====================
+     Schema JSON-LD
+     ===================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title }}",
+  "url": "{{ canonical_url }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "image": {% if page.image contains 'http' %}"{{ page.image }}"{% elsif page.image %}"{{ site.url }}{{ base }}/assets/img/{{ page.image }}"{% else %}"{{ site.url }}{{ base }}/assets/img/default.png"{% endif %},
+  "inLanguage": "{{ lang }}",
+  "isPartOf": { "@id": "{{ site.url }}{{ base }}/#website" }
+}
+</script>
+
+<!-- =====================
+     Breadcrumb
+     ===================== -->
+<nav class="breadcrumb" aria-label="breadcrumb">
   <div class="container">
-    <header class="post-header">
-      <p class="post-date">{{ t.blog.posted_on }} {{ page.date | date: "%B %d, %Y" }}</p>
-      <h1>{{ page.title }}</h1>
-    </header>
-
-    <div class="post-body">
-      {{ content }}
-    </div>
-
-    <footer class="post-footer">
-      <a href="{{ base }}/{% if page.lang == 'fr' %}fr/{% endif %}blog/">
-        {{ t.blog.back }}
-      </a>
-    </footer>
+    <ol>
+      <li><a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}">{{ t.nav.home }}</a></li>
+      <li><a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}blog/">{{ t.blog.title }}</a></li>
+      <li aria-current="page">{{ page.title | truncatewords: 6 }}</li>
+    </ol>
   </div>
-</article>
+</nav>
+
+<!-- =====================
+     Post Layout
+     ===================== -->
+<div class="post-layout">
+  <div class="container post-container">
+
+    <!-- Main content -->
+    <main class="post-main">
+      <article class="post-single">
+
+        <!-- Header -->
+        <header class="post-header">
+          {% if page.categories %}
+          <span class="post-cat">{{ page.categories | first }}</span>
+          {% endif %}
+          <h1>{{ page.title }}</h1>
+          <div class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+            {% if page.author %}<span class="post-author">· {{ page.author }}</span>{% endif %}
+          </div>
+          {% if page.image %}
+          <div class="post-hero">
+            <img
+              src="{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ base }}/assets/img/{{ page.image }}{% endif %}"
+              alt="{{ page.title }}"
+              width="800" height="450" />
+          </div>
+          {% endif %}
+        </header>
+
+        <!-- TOC — mobile collapsible -->
+        <details class="toc-mobile" id="toc-mobile">
+          <summary>📋 Table of Contents</summary>
+          <nav class="toc-nav" id="toc-content-mobile"></nav>
+        </details>
+
+        <!-- Body -->
+        <div class="post-body" id="post-body">
+          {{ content }}
+        </div>
+
+        <!-- Footer -->
+        <footer class="post-footer">
+          <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}blog/" class="back-link">
+            ← {{ t.blog.back }}
+          </a>
+        </footer>
+
+      </article>
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="post-sidebar">
+      <div class="sidebar-sticky">
+        <div class="toc-box">
+          <p class="toc-title">📋 Contents</p>
+          <nav class="toc-nav" id="toc-content-desktop"></nav>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- =====================
+     Related Posts
+     ===================== -->
+{% assign all_posts = site.posts | where: "lang", lang %}
+{% assign related = "" | split: "" %}
+{% for post in all_posts %}
+  {% if post.url != page.url %}
+    {% for cat in page.categories %}
+      {% if post.categories contains cat %}
+        {% assign related = related | push: post %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{% assign related = related | uniq | limit: 3 %}
+
+{% if related.size > 0 %}
+<section class="related-posts">
+  <div class="container">
+    <h2 class="related-title">Related Posts</h2>
+    <div class="related-grid">
+      {% for post in related %}
+      <article class="related-card">
+        <a href="{{ base }}{{ post.url }}" class="related-thumb">
+          <img
+            src="{% if post.image contains 'http' %}{{ post.image }}{% elsif post.image %}{{ base }}/assets/img/{{ post.image }}{% else %}{{ base }}/assets/img/default.png{% endif %}"
+            alt="{{ post.title }}"
+            loading="lazy" width="400" height="220" />
+        </a>
+        <div class="related-body">
+          {% if post.categories %}<span class="post-cat">{{ post.categories | first }}</span>{% endif %}
+          <h3><a href="{{ base }}{{ post.url }}">{{ post.title }}</a></h3>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- =====================
+     TOC Script
+     ===================== -->
+<script>
+(function () {
+  const body = document.getElementById("post-body");
+  if (!body) return;
+  const headings = body.querySelectorAll("h2, h3");
+  if (headings.length < 2) return;
+
+  function buildToc(container) {
+    const ul = document.createElement("ul");
+    headings.forEach((h, i) => {
+      if (!h.id) h.id = "heading-" + i;
+      const li = document.createElement("li");
+      li.className = h.tagName === "H3" ? "toc-h3" : "toc-h2";
+      const a = document.createElement("a");
+      a.href = "#" + h.id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    container.appendChild(ul);
+  }
+
+  const desktop = document.getElementById("toc-content-desktop");
+  const mobile  = document.getElementById("toc-content-mobile");
+  if (desktop) buildToc(desktop);
+  if (mobile)  buildToc(mobile);
+
+  // Active highlight on scroll
+  if (desktop) {
+    const links = desktop.querySelectorAll("a");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          links.forEach(l => l.classList.remove("active"));
+          const active = desktop.querySelector('a[href="#' + e.target.id + '"]');
+          if (active) active.classList.add("active");
+        }
+      });
+    }, { rootMargin: "0px 0px -60% 0px" });
+    headings.forEach(h => observer.observe(h));
+  }
+})();
+</script>
+
+<style>
+/* ── Layout ─────────────────────────────── */
+.post-container {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 2.5rem;
+  align-items: start;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+/* ── Sidebar ─────────────────────────────── */
+.post-sidebar { display: block; }
+
+.sidebar-sticky {
+  position: sticky;
+  top: 5rem;
+}
+
+.toc-box {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+}
+
+.toc-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.toc-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.toc-nav a {
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-decoration: none;
+  display: block;
+  padding: 0.2rem 0;
+  border-left: 2px solid transparent;
+  padding-left: 0.6rem;
+  transition: color 0.15s, border-color 0.15s;
+  line-height: 1.4;
+}
+
+.toc-nav a:hover,
+.toc-nav a.active {
+  color: var(--accent);
+  border-left-color: var(--accent);
+}
+
+.toc-nav .toc-h3 a { padding-left: 1.4rem; font-size: 0.78rem; }
+
+/* ── Mobile TOC ──────────────────────────── */
+.toc-mobile {
+  display: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  background: var(--surface);
+}
+
+.toc-mobile summary {
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text);
+  list-style: none;
+}
+
+.toc-mobile summary::-webkit-details-marker { display: none; }
+
+.toc-mobile .toc-nav {
+  margin-top: 0.75rem;
+}
+
+/* ── Post Header ─────────────────────────── */
+.post-header { margin-bottom: 2rem; }
+
+.post-cat {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.post-header h1 {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.post-meta {
+  font-size: 0.82rem;
+  color: var(--muted);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.post-hero {
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+
+.post-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Post Body ───────────────────────────── */
+.post-body {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text);
+}
+
+.post-body h2 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 2rem 0 0.75rem;
+  scroll-margin-top: 5rem;
+}
+
+.post-body h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.5rem;
+  scroll-margin-top: 5rem;
+}
+
+.post-body p { margin-bottom: 1.1rem; }
+
+.post-body a { color: var(--accent); }
+
+.post-body img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  margin: 1rem 0;
+}
+
+.post-body ul, .post-body ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.post-body li { margin-bottom: 0.35rem; }
+
+.post-body blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.post-body pre, .post-body code {
+  font-family: monospace;
+  font-size: 0.88rem;
+  background: var(--surface);
+  border-radius: 4px;
+}
+
+.post-body pre {
+  padding: 1rem;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.post-body code { padding: 0.1em 0.35em; }
+.post-body pre code { padding: 0; background: none; }
+
+.post-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  display: block;
+}
+
+.post-body th, .post-body td {
+  border: 1px solid var(--border);
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+}
+
+.post-body th { background: var(--surface); font-weight: 700; }
+
+/* ── Post Footer ─────────────────────────── */
+.post-footer { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+
+.back-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.back-link:hover { text-decoration: underline; }
+
+/* ── Related Posts ───────────────────────── */
+.related-posts {
+  padding: 2.5rem 0 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.related-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.related-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.related-thumb {
+  display: block;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.related-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.related-card:hover .related-thumb img { transform: scale(1.04); }
+
+.related-body {
+  padding: 0.75rem 1rem;
+}
+
+.related-body h3 {
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin: 0.3rem 0 0.4rem;
+  line-height: 1.4;
+}
+
+.related-body h3 a { color: var(--text); text-decoration: none; }
+.related-body h3 a:hover { color: var(--accent); }
+
+.related-body time {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* ── Responsive ──────────────────────────── */
+@media (max-width: 900px) {
+  .post-container {
+    grid-template-columns: 1fr;
+  }
+  .post-sidebar { display: none; }
+  .toc-mobile { display: block; }
+  .related-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 500px) {
+  .related-grid { grid-template-columns: 1fr; }
+  .post-header h1 { font-size: 1.4rem; }
+}
+</style>
