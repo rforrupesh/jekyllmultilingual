@@ -151,3 +151,143 @@ a:hover { text-decoration: underline; }
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.75rem; }
 }
+
+
+
+
+/* ── RELATED BLOG ANYWHERE ───────────────── */
+
+.relatedbloganywhere-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:22px;
+  margin-top:26px;
+}
+
+/* CARD */
+
+.relatedbloganywhere-card{
+  position:relative;
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+/* IMAGE */
+
+.relatedbloganywhere-thumb{
+  position:relative;
+  aspect-ratio:16/10;
+  overflow:hidden;
+  background:#f3f4f6;
+}
+
+.relatedbloganywhere-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+    margin:0px 0px;
+}
+
+/* CATEGORY */
+
+.relatedbloganywhere-category{
+  position:absolute;
+  top:14px;
+  left:14px;
+  z-index:5;
+
+  display:inline-block;
+  padding:7px 12px;
+
+  background:#fff;
+  border:1px solid #dbe1ea;
+  border-radius:999px;
+
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.3px;
+  text-transform:uppercase;
+
+  color:#2563eb;
+  text-decoration:none;
+}
+
+/* CATEGORY HOVER */
+
+.relatedbloganywhere-category:hover{
+  background:#2563eb;
+  border-color:#2563eb;
+  color:#fff !important;
+  text-decoration:underline;
+}
+
+/* CONTENT */
+
+.relatedbloganywhere-content{
+  padding:18px;
+}
+
+/* TITLE LINK */
+
+.relatedbloganywhere-content a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* TITLE */
+
+.relatedbloganywhere-content h3{
+  margin:0;
+
+  color:#111827;
+  font-size:16px;
+  font-weight:600;
+  line-height:1.5;
+
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+
+  overflow:hidden;
+}
+
+/* TITLE HOVER */
+
+.relatedbloganywhere-content a:hover h3{
+  color:#2563eb;
+  text-decoration:underline;
+}
+
+/* BOTTOM BORDER */
+
+.relatedbloganywhere-card::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:100%;
+  height:3px;
+  background:#3b82f6;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+  .relatedbloganywhere-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+
+  .relatedbloganywhere-content{
+    padding:16px;
+  }
+
+  .relatedbloganywhere-content h3{
+    font-size:15px;
+  }
+
+}
