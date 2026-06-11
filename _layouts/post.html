@@ -14,9 +14,9 @@ layout: default
 
         <!-- Breadcrumb -->
         <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="{{ base }}/">Home</a>
+          <a href="{{ base }}/">{{ t.nav.home }}</a>
           <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <a href="{{ base }}/blog/">Blog</a>
+          <a href="{{ base }}/{{ lang }}/blog/">{{ t.nav.blog }}</a>
           <span class="breadcrumb-sep" aria-hidden="true">›</span>
           <span class="breadcrumb-current" aria-current="page">{{ page.title }}</span>
         </nav>
@@ -35,7 +35,7 @@ layout: default
 
         <!-- Mobile TOC -->
         <details class="toc-mobile">
-          <summary><span class="toc-icon">☰</span> Table of Contents</summary>
+          <summary><span class="toc-icon">☰</span> {{ t.blog.toc | default: "Contents" }}</summary>
           <nav id="toc-mobile"></nav>
         </details>
 
@@ -50,7 +50,7 @@ layout: default
     <!-- ── Sidebar TOC ── -->
     <aside class="post-sidebar">
       <div class="toc-sticky">
-        <p class="toc-label">On this page</p>
+        <p class="toc-label">{{ t.blog.toc | default: "On this page" }}</p>
         <nav id="toc-desktop"></nav>
       </div>
     </aside>
@@ -75,7 +75,7 @@ layout: default
 {% if related.size > 0 %}
 <section class="related">
   <div class="related-inner">
-    <h2 class="related-heading">Keep Reading</h2>
+    <h2 class="related-heading">{{ t.blog.keep_reading | default: "Keep Reading" }}</h2>
     <div class="related-grid">
       {% for post in related %}
       <a href="{{ base }}{{ post.url }}" class="related-card">
@@ -87,7 +87,7 @@ layout: default
         <div class="related-text">
           <h3>{{ post.title }}</h3>
           <p>{{ post.excerpt | strip_html | truncatewords: 14 }}</p>
-          <span class="related-cta">Read article →</span>
+          <span class="related-cta">{{ t.blog.read_more }} →</span>
         </div>
       </a>
       {% endfor %}
