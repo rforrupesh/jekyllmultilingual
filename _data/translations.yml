@@ -58,3 +58,22 @@ hi:
     cta: "ब्लॉग पढ़ें"
   footer:
     rights: "सर्वाधिकार सुरक्षित।"
+
+
+    en:
+  nav:
+    home: "Home"
+    blog: "Blog"
+    splitpdf: "Split PDF"
+
+fr:
+  nav:
+    home: "Accueil"
+    blog: "Blog"
+    splitpdf: "Diviser PDF"
+
+hi:
+  nav:
+    home: "होम"
+    blog: "ब्लॉग"
+    splitpdf: "PDF विभाजित करें"
