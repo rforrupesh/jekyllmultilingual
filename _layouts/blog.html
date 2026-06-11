@@ -99,11 +99,9 @@ layout: default
       <article class="post-grid-card">
         <a href="{{ base }}{{ post.url }}" class="post-grid-thumb">
           <img
-  src="{% if post.image contains 'http' %}{{ post.image }}{% elsif post.image %}{{ base }}/assets/img/{{ post.image }}{% else %}{{ base }}/assets/img/default.png{% endif %}"
+            src="{{ post.thumbnail | default:'/assets/default-tool.webp' | relative_url }}"
             alt="{{ post.title }}"
-            loading="lazy"
-            width="400"
-            height="220" />
+            loading="lazy">
         </a>
         <div class="post-grid-body">
          
