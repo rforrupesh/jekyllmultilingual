@@ -2,14 +2,13 @@
 {% assign base = site.url | append: site.baseurl %}
 {% assign lang = page.lang | default: "en" %}
 
+<!-- Build clean URL without any lang prefix -->
+{% assign clean_url = page.url | remove_first: "/fr" | remove_first: "/hi" %}
+
 <!-- Build hreflang alternate URLs -->
-{% if lang == "en" %}
-  {% assign en_url = page.url %}
-  {% assign fr_url = "/fr" | append: page.url %}
-{% else %}
-  {% assign en_url = page.url | remove_first: "/fr" %}
-  {% assign fr_url = page.url %}
-{% endif %}
+{% assign en_url = clean_url %}
+{% assign fr_url = "/fr" | append: clean_url %}
+{% assign hi_url = "/hi" | append: clean_url %}
 
 {% assign canonical_url = base | append: page.url %}
 {% assign page_title = page.title | append: " | " | append: site.title %}
@@ -33,10 +32,11 @@
 <link rel="canonical" href="{{ canonical_url }}" />
 
 <!-- =====================
-     hreflang (bilingual)
+     hreflang (trilingual)
      ===================== -->
 <link rel="alternate" href="{{ base }}{{ en_url }}" hreflang="en" />
 <link rel="alternate" href="{{ base }}{{ fr_url }}" hreflang="fr" />
+<link rel="alternate" href="{{ base }}{{ hi_url }}" hreflang="hi" />
 <link rel="alternate" href="{{ base }}{{ en_url }}" hreflang="x-default" />
 
 <!-- =====================
@@ -47,8 +47,8 @@
 <meta property="og:description" content="{{ page_desc }}" />
 <meta property="og:url" content="{{ canonical_url }}" />
 <meta property="og:site_name" content="{{ site.title }}" />
-<meta property="og:locale" content="{% if lang == 'fr' %}fr_FR{% else %}en_US{% endif %}" />
-<meta property="og:locale:alternate" content="{% if lang == 'fr' %}en_US{% else %}fr_FR{% endif %}" />
+<meta property="og:locale" content="{% if lang == 'fr' %}fr_FR{% elsif lang == 'hi' %}hi_IN{% else %}en_US{% endif %}" />
+<meta property="og:locale:alternate" content="{% if lang == 'en' %}fr_FR{% elsif lang == 'fr' %}en_US{% else %}en_US{% endif %}" />
 {% if page.image %}
 <meta property="og:image" content="{{ base }}/assets/img/{{ page.image }}" />
 <meta property="og:image:alt" content="{{ page_title }}" />
