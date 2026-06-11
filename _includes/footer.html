@@ -6,32 +6,5 @@
   </div>
 
   
-    <script>
-document.addEventListener("DOMContentLoaded", function() {
-
-  const menuBtn = document.querySelector(".menu-toggle");
-  const mobileMenu = document.querySelector(".mobile-menu");
-
-  const langBtn = document.querySelector(".lang-btn");
-  const langDropdown = document.querySelector(".lang-dropdown");
-
-  menuBtn.addEventListener("click", function(e) {
-    e.stopPropagation();
-    mobileMenu.classList.toggle("open");
-    langDropdown.classList.remove("open");
-  });
-
-  langBtn.addEventListener("click", function(e) {
-    e.stopPropagation();
-    langDropdown.classList.toggle("open");
-    mobileMenu.classList.remove("open");
-  });
-
-  document.addEventListener("click", function() {
-    mobileMenu.classList.remove("open");
-    langDropdown.classList.remove("open");
-  });
-
-});
-</script>
+ 
 </footer>
