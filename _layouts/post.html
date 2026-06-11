@@ -5,6 +5,31 @@ layout: default
 {% assign base = site.baseurl %}
 {% assign lang = page.lang %}
 
+<!-- JSON-LD structured data for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ page.title | escape }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | escape }}",
+  {% if page.image %}
+  "image": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ base }}/assets/img/{{ page.image }}{% endif %}",
+  {% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "{{ page.author | default: site.author | escape }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title | escape }}",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
+
 <div class="post-wrap">
   <div class="post-container">
 
@@ -34,12 +59,15 @@ layout: default
         <h1 class="post-title">{{ page.title }}</h1>
 
         <!-- Mobile TOC (shown below 960px) -->
+        <!-- Server-rendered by Kramdown — visible in HTML source for SEO -->
         <details class="toc-mobile">
           <summary>
             <span class="toc-icon">☰</span>
             {{ t.blog.toc | default: "Contents" }}
           </summary>
-          <nav id="toc-mobile"></nav>
+          <nav id="toc-mobile" aria-label="{{ t.blog.toc | default: 'On this page' }}">
+            {{ page.toc }}
+          </nav>
         </details>
 
         <!-- Content -->
@@ -51,10 +79,13 @@ layout: default
     </main>
 
     <!-- ── Sidebar TOC (desktop only) ── -->
+    <!-- Server-rendered by Kramdown — visible in HTML source for SEO -->
     <aside class="post-sidebar">
       <div class="toc-sticky">
         <p class="toc-label">{{ t.blog.toc | default: "On this page" }}</p>
-        <nav id="toc-desktop"></nav>
+        <nav id="toc-desktop" aria-label="{{ t.blog.toc | default: 'On this page' }}">
+          {{ page.toc }}
+        </nav>
       </div>
     </aside>
 
@@ -100,7 +131,10 @@ layout: default
 (function () {
   const body = document.getElementById("post-body");
   if (!body) return;
+
   const headings = body.querySelectorAll("h2, h3");
+
+  // Hide TOC if fewer than 2 headings
   if (headings.length < 2) {
     const tm = document.querySelector(".toc-mobile");
     const ts = document.querySelector(".toc-sticky");
@@ -109,42 +143,30 @@ layout: default
     return;
   }
 
-  function buildToc(nav) {
-    const ul = document.createElement("ul");
-    headings.forEach((h, i) => {
-      if (!h.id) h.id = "h-" + i;
-      const li = document.createElement("li");
-      li.dataset.level = h.tagName;
-      const a = document.createElement("a");
-      a.href = "#" + h.id;
-      a.textContent = h.textContent;
-      a.addEventListener("click", () => {
-        document.querySelector(".toc-mobile")?.removeAttribute("open");
-      });
-      li.appendChild(a);
-      ul.appendChild(li);
+  // Close mobile TOC on link click
+  document.querySelectorAll("#toc-mobile a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      document.querySelector(".toc-mobile")?.removeAttribute("open");
     });
-    nav.appendChild(ul);
-  }
+  });
 
-  const desktop = document.getElementById("toc-desktop");
-  const mobile  = document.getElementById("toc-mobile");
-  if (desktop) buildToc(desktop);
-  if (mobile)  buildToc(mobile);
-
-  /* Scroll spy */
+  // Scroll spy — highlight active section in desktop TOC
   const allLinks = document.querySelectorAll("#toc-desktop a");
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
+  if (!allLinks.length) return;
+
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
       if (e.isIntersecting) {
-        allLinks.forEach(l => l.classList.remove("active"));
-        const match = document.querySelector('#toc-desktop a[href="#' + e.target.id + '"]');
+        allLinks.forEach(function (l) { l.classList.remove("active"); });
+        const match = document.querySelector(
+          '#toc-desktop a[href="#' + e.target.id + '"]'
+        );
         if (match) match.classList.add("active");
       }
     });
   }, { rootMargin: "-10% 0px -70% 0px" });
 
-  headings.forEach(h => observer.observe(h));
+  headings.forEach(function (h) { observer.observe(h); });
 })();
 </script>
 
@@ -385,6 +407,7 @@ layout: default
   margin-bottom: 0.9rem;
 }
 
+/* Kramdown outputs <ul> directly inside <nav> */
 #toc-desktop ul,
 #toc-mobile ul {
   list-style: none;
@@ -411,8 +434,9 @@ layout: default
   transition: color 0.15s, background 0.15s, border-color 0.15s;
 }
 
-#toc-desktop li[data-level="H3"] a,
-#toc-mobile li[data-level="H3"] a {
+/* h3 items — Kramdown nests them in a child <ul> */
+#toc-desktop li ul a,
+#toc-mobile li ul a {
   padding-left: 1.3rem;
   font-size: 0.78rem;
 }
@@ -451,7 +475,6 @@ layout: default
   margin-bottom: 1.25rem;
 }
 
-/* 3-column grid — each card is image + title only */
 .related-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -474,7 +497,6 @@ layout: default
   transform: translateY(-2px);
 }
 
-/* Image fills top of card, 16:9 */
 .related-img {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -494,7 +516,6 @@ layout: default
   transform: scale(1.04);
 }
 
-/* Title only — clean, no excerpt, no CTA */
 .related-title {
   font-size: 0.88rem;
   font-weight: 700;
@@ -512,7 +533,6 @@ layout: default
   }
   .post-sidebar { display: none; }
   .toc-mobile   { display: block; }
-  /* 2 columns on tablet */
   .related-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -521,7 +541,6 @@ layout: default
   .post-hero  { aspect-ratio: 16 / 9; border-radius: 10px; }
   .post-body  { font-size: 1rem; }
   .breadcrumb-current { max-width: 150px; }
-  /* 1 column on mobile — cards go horizontal (thumb left, title right) */
   .related-grid { grid-template-columns: 1fr; gap: 0.75rem; }
   .related-card {
     display: grid;
