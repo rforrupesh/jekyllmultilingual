@@ -13,7 +13,11 @@
   --accent-h: #2f4ac9;
   --radius:   6px;
   --max-w:    720px;
-}
+   --white:#ffffff;
+   --text:#1a1d27;
+   --hover-bg:#fafafa;
+   --shadow-md:0 10px 30px rgba(0,0,0,.08);}
+
 
 html { font-size: 16px; }
 
