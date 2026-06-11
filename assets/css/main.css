@@ -30,10 +30,6 @@ a:hover { text-decoration: underline; }
 /* =============================
    Navbar
    ============================= */
-/* =============================
-   Navbar
-   ============================= */
-
 .navbar {
   position: sticky;
   top: 0;
@@ -73,17 +69,12 @@ a:hover { text-decoration: underline; }
   font-size: .92rem;
 }
 
-.nav-links a:hover {
-  color: var(--text);
-}
+.nav-links a:hover { color: var(--text); }
 
 /* =============================
    Language Switcher
    ============================= */
-
-.lang-dropdown {
-  position: relative;
-}
+.lang-dropdown { position: relative; }
 
 .lang-btn {
   display: flex;
@@ -98,17 +89,10 @@ a:hover { text-decoration: underline; }
   color: var(--text);
 }
 
-.lang-btn:hover {
-  background: var(--surface);
-}
+.lang-btn:hover { background: var(--surface); }
 
-.flag {
-  font-size: 1rem;
-}
-
-.caret {
-  font-size: .65rem;
-}
+.flag { font-size: 1rem; }
+.caret { font-size: .65rem; }
 
 .lang-menu {
   display: none;
@@ -132,23 +116,13 @@ a:hover { text-decoration: underline; }
   text-decoration: none;
 }
 
-.lang-menu a:hover {
-  background: var(--surface);
-}
-
-.lang-menu .active {
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.lang-dropdown.open .lang-menu {
-  display: block;
-}
+.lang-menu a:hover { background: var(--surface); }
+.lang-menu .active { font-weight: 700; color: var(--accent); }
+.lang-dropdown.open .lang-menu { display: block; }
 
 /* =============================
    Hamburger
    ============================= */
-
 .menu-toggle {
   display: none;
   background: none;
@@ -160,14 +134,11 @@ a:hover { text-decoration: underline; }
   color: var(--text);
 }
 
-.menu-toggle:hover {
-  background: var(--surface);
-}
+.menu-toggle:hover { background: var(--surface); }
 
 /* =============================
    Mobile Menu
    ============================= */
-
 .mobile-menu {
   display: none;
   position: absolute;
@@ -190,44 +161,9 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border);
 }
 
-.mobile-menu a:last-child {
-  border-bottom: none;
-}
-
-.mobile-menu a:hover {
-  background: var(--surface);
-}
-
-.mobile-menu.open {
-  display: block;
-}
-
-/* =============================
-   Responsive
-   ============================= */
-
-@media (max-width: 768px) {
-
-  .nav-links {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
-/* Language switcher */
-.lang-switch {
-  font-size: 0.82rem;
-  font-weight: 600;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 0.25rem 0.65rem;
-  color: var(--text);
-  transition: background 0.15s;
-}
-.lang-switch:hover { background: var(--surface); text-decoration: none; }
+.mobile-menu a:last-child { border-bottom: none; }
+.mobile-menu a:hover { background: var(--surface); }
+.mobile-menu.open { display: block; }
 
 /* =============================
    Hero
@@ -267,6 +203,7 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
   transition: background 0.15s;
 }
+
 .btn:hover { background: var(--accent-h); text-decoration: none; color: #fff; }
 
 /* =============================
@@ -283,11 +220,8 @@ a:hover { text-decoration: underline; }
    ============================= */
 .recent-posts { border-top: 1px solid var(--border); }
 .recent-posts h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; }
-
 .blog-index h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 2rem; }
-
 .post-list { list-style: none; display: flex; flex-direction: column; gap: 2rem; }
-
 .post-card { border-bottom: 1px solid var(--border); padding-bottom: 2rem; }
 .post-card:last-child { border-bottom: none; }
 
@@ -298,34 +232,21 @@ a:hover { text-decoration: underline; }
   margin-bottom: 0.35rem;
 }
 
-.post-card h2, .post-card h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-}
-
-.post-card p {
-  font-size: 0.95rem;
-  color: var(--muted);
-  margin-bottom: 0.65rem;
-}
-
-.read-more {
-  font-size: 0.85rem;
-  font-weight: 600;
-}
+.post-card h2, .post-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem; }
+.post-card p { font-size: 0.95rem; color: var(--muted); margin-bottom: 0.65rem; }
+.read-more { font-size: 0.85rem; font-weight: 600; }
 
 /* =============================
    Single post
    ============================= */
 .post-header { margin-bottom: 2rem; }
 .post-header h1 { font-size: 1.9rem; font-weight: 800; margin-top: 0.4rem; }
-
 .post-body { line-height: 1.8; }
 .post-body h2 { font-size: 1.2rem; font-weight: 700; margin: 2rem 0 0.75rem; }
 .post-body p { margin-bottom: 1.1rem; }
 .post-body ul, .post-body ol { padding-left: 1.4rem; margin-bottom: 1.1rem; }
 .post-body li { margin-bottom: 0.3rem; }
+
 .post-body pre {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -335,14 +256,15 @@ a:hover { text-decoration: underline; }
   font-size: 0.85rem;
   margin-bottom: 1.1rem;
 }
+
 .post-body code {
   background: var(--surface);
   padding: 0.15em 0.35em;
   border-radius: 3px;
   font-size: 0.88em;
 }
-.post-body pre code { background: none; padding: 0; }
 
+.post-body pre code { background: none; padding: 0; }
 .post-footer { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
 
 /* =============================
@@ -354,150 +276,17 @@ a:hover { text-decoration: underline; }
   padding: 1.5rem 1.25rem;
   text-align: center;
 }
+
 .site-footer p { font-size: 0.82rem; color: var(--muted); }
 
 /* =============================
    Responsive
    ============================= */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .menu-toggle { display: block; }
+}
+
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.75rem; }
-}
-
-/* =============================
-   Language dropdown
-   ============================= */
-.lang-dropdown {
-  position: relative;
-}
-
-.lang-btn {
-  display: flex;
-  align-items: center;
-  gap: .35rem;
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: .35rem .7rem;
-  cursor: pointer;
-  font-size: .85rem;
-  color: var(--text);
-}
-
-.lang-btn:hover {
-  background: var(--surface);
-}
-
-.flag {
-  font-size: 1rem;
-}
-
-.caret {
-  font-size: .65rem;
-}
-
-.lang-menu {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: calc(100% + 8px);
-  min-width: 150px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0,0,0,.08);
-  list-style: none;
-  z-index: 500;
-}
-
-.lang-menu a {
-  display: block;
-  padding: .75rem .9rem;
-  color: var(--text);
-  text-decoration: none;
-}
-
-.lang-menu a:hover {
-  background: var(--surface);
-}
-
-.lang-menu .active {
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.lang-dropdown.open .lang-menu {
-  display: block;
-}
-
-/* =============================
-   Hamburger
-   ============================= */
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: .35rem .7rem;
-  cursor: pointer;
-  font-size: 1.1rem;
-  color: var(--text);
-}
-
-.menu-toggle:hover {
-  background: var(--surface);
-}
-
-/* =============================
-   Mobile Menu
-   ============================= */
-
-.mobile-menu {
-  display: none;
-  position: absolute;
-  top: 64px;
-  right: 1.25rem;
-  width: 220px;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0,0,0,.08);
-  z-index: 400;
-}
-
-.mobile-menu a {
-  display: block;
-  padding: .9rem 1rem;
-  color: var(--text);
-  text-decoration: none;
-  border-bottom: 1px solid var(--border);
-}
-
-.mobile-menu a:last-child {
-  border-bottom: none;
-}
-
-.mobile-menu a:hover {
-  background: var(--surface);
-}
-
-.mobile-menu.open {
-  display: block;
-}
-
-/* =============================
-   Responsive
-   ============================= */
-
-@media (max-width: 768px) {
-
-  .nav-links {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
 }
