@@ -1,0 +1,8 @@
+- key: home
+  slug: ""
+- key: blog
+  slug: "blog/"
+- key: splitpdf
+  slug: "splitpdf/"
+- key: about
+  slug: "about/"
