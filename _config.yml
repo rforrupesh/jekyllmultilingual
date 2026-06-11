@@ -24,5 +24,3 @@ exclude:
   - vendor/
   - .bundle/
 
-kramdown:
-  auto_ids: true
