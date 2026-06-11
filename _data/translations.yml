@@ -37,3 +37,24 @@ fr:
     cta: "Lire le blog"
   footer:
     rights: "Tous droits réservés."
+
+
+hi:
+  lang_name: "हिन्दी"
+  lang_code: "hi"
+  dir: "ltr"
+  nav:
+    home: "होम"
+    blog: "ब्लॉग"
+    about: "के बारे में"
+  blog:
+    title: "ब्लॉग"
+    read_more: "और पढ़ें"
+    back: "← ब्लॉग पर वापस"
+    posted_on: "प्रकाशित"
+  home:
+    heading: "स्वागत है"
+    subheading: "Jekyll से बना एक बहुभाषी साइट।"
+    cta: "ब्लॉग पढ़ें"
+  footer:
+    rights: "सर्वाधिकार सुरक्षित।"
