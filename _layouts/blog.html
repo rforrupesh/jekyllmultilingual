@@ -99,7 +99,7 @@ layout: default
       <article class="post-grid-card">
         <a href="{{ base }}{{ post.url }}" class="post-grid-thumb">
           <img
-            src="{{ post.image | default: 'https://rforrupesh.github.io/pdf/assets/img/como-usar-unificarpdf-com.jpg' | prepend: base }}"
+  src="{% if post.image contains 'http' %}{{ post.image }}{% elsif post.image %}{{ base }}/assets/img/{{ post.image }}{% else %}{{ base }}/assets/img/default.png{% endif %}"
             alt="{{ post.title }}"
             loading="lazy"
             width="400"
@@ -109,10 +109,7 @@ layout: default
          
           <h2><a href="{{ base }}{{ post.url }}">{{ post.title }}</a></h2>
           <p>{{ post.excerpt | strip_html | truncatewords: 18 }}</p>
-          <div class="post-grid-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
-            <a href="{{ base }}{{ post.url }}" class="read-more">{{ t.blog.read_more }} →</a>
-          </div>
+         
         </div>
       </article>
       {% endfor %}
