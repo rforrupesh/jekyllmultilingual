@@ -775,6 +775,8 @@ function load(raw) {
   $('uploadState').style.display   = 'none';
   $('uploadedState').style.display = 'block';
   $('infoContent').style.display   = 'none';
+    $('mainFooter').style.display   = 'none';
+
   showChrome(true);
   showBottomBar(true);
   render();
