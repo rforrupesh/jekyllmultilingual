@@ -6,9 +6,9 @@
 {% assign clean_url = page.url | remove_first: "/fr" | remove_first: "/en" %}
 
 <!-- Build hreflang alternate URLs -->
-{% assign en_url = clean_url %}
+{% assign es_url = clean_url %}
+{% assign en_url = "/en" | append: clean_url %}
 {% assign fr_url = "/fr" | append: clean_url %}
-{% assign hi_url = "/en" | append: clean_url %}
 
 {% assign canonical_url = base | append: page.url %}
 {% assign page_title = page.title | append: " | " | append: site.title %}
@@ -22,13 +22,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_desc }}" />
-  {% if page.keywords %}
+{% if page.keywords %}
 <meta name="keywords" content="{{ page.keywords }}">
 {% endif %}
 <meta name="author" content="{{ site.author | default: site.title }}" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="language" content="{{ lang }}" />
-
 
 <!-- =====================
      Canonical
@@ -39,8 +38,8 @@
      hreflang (trilingual)
      ===================== -->
 <link rel="alternate" href="{{ base }}{{ es_url }}" hreflang="es" />
-<link rel="alternate" href="{{ base }}{{ fr_url }}" hreflang="fr" />
 <link rel="alternate" href="{{ base }}{{ en_url }}" hreflang="en" />
+<link rel="alternate" href="{{ base }}{{ fr_url }}" hreflang="fr" />
 <link rel="alternate" href="{{ base }}{{ es_url }}" hreflang="x-default" />
 
 <!-- =====================
@@ -51,8 +50,8 @@
 <meta property="og:description" content="{{ page_desc }}" />
 <meta property="og:url" content="{{ canonical_url }}" />
 <meta property="og:site_name" content="{{ site.title }}" />
-<meta property="og:locale" content="{% if lang == 'fr' %}fr_FR{% elsif lang == 'en' %}en-US{% else %}es_ES{% endif %}" />
-<meta property="og:locale:alternate" content="{% if lang == 'en' %}fr_FR{% elsif lang == 'fr' %}en_US{% else %}en_US{% endif %}" />
+<meta property="og:locale" content="{% if lang == 'fr' %}fr_FR{% elsif lang == 'en' %}en_US{% else %}es_ES{% endif %}" />
+<meta property="og:locale:alternate" content="{% if lang == 'es' %}en_US{% elsif lang == 'en' %}es_ES{% else %}es_ES{% endif %}" />
 {% if page.image %}
 <meta property="og:image" content="{{ base }}/assets/img/{{ page.image }}" />
 <meta property="og:image:alt" content="{{ page_title }}" />
@@ -85,11 +84,9 @@
      ===================== -->
 <link rel="stylesheet" href="{{ base }}/assets/css/main.css" />
 
-  {% if page.css %}
+{% if page.css %}
 <link rel="stylesheet" href="{{ '/assets/css/' | append: page.css | append: '.css' | relative_url }}">
 {% endif %}
-
-
 
 {% if page.head_style %}
 <style>
