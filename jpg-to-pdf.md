@@ -3,8 +3,8 @@ layout: default
 title: "Convertidor online de JPG a PDF"
 description: Arrastra tus imágenes JPG, JPEG o PNG al recuadro y conviértelas en documentos PDF de alta calidad en segundos.
 lang: en
-ref: jpgapdf
-permalink: /jpg-a-pdf/
+ref: jpgtopdf
+permalink: /jpg-to-pdf/
 head_style: |
   #infoContent {
   max-width: 920px;
@@ -942,11 +942,10 @@ head_style: |
   width: 14px;
   height: 14px;
   }
+  
 ---
 
- 
-
-      <!-- Ghost element -->
+ <!-- Ghost element -->
       <div id="dragGhost">
         <img class="ghost-thumb" id="ghostThumb" src="" alt="" />
         <div class="ghost-label" id="dragGhostName"></div>
