@@ -1252,10 +1252,9 @@ document.addEventListener('click', e => {
 });
 
 // intercept browser back/forward/close
+// NEW
 window.addEventListener('beforeunload', e => {
   if (!files.length) return;
-  e.preventDefault();
-  e.returnValue = '';
   showExitModal();
 });
 </script>
