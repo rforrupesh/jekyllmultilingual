@@ -18,8 +18,6 @@ head_style: |
   height: auto;
   display: block;
  }
-
-  /* ── MAIN ── */
   main {
   max-width: 1000px;
   margin: 0 auto;
