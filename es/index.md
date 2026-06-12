@@ -1,6 +1,7 @@
 ---
 layout: home
-title: Inicio
+title: "Inicio"
+description: "Combinez plusieurs fichiers PDF en un seul. Gratuit et rapide."
 lang: es
 ref: home
 permalink: /
