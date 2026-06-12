@@ -5,7 +5,7 @@ date: 2024-01-15
 lang: en
 ref: getting-started
 categories: [jekyll, web]
-permalink: /blog/getting-started-with-jekyll/
+permalink: /en/blog/getting-started-with-jekyll/
 thumbnail: "https://rforrupesh.github.io/pdf/assets/img/como-usar-unificarpdf-com.jpg"
 
 ---
