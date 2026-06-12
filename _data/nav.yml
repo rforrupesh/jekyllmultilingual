@@ -4,5 +4,5 @@
   slug: "blog/"
 - key: splitpdf
   slug: "splitpdf/"
-- key: jpgapdf
+- key: jpgtopdf
   slug: "jpg-to-pdf/"
