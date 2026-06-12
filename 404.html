@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Page Not Found"
-description: "The page you're looking for doesn't exist."
+title: "Página no encontrada"
+description: "Lo sentimos, la página que busca no existe o se ha movido.
+"
 lang: en
 permalink: /404.html
 ---
@@ -9,9 +10,9 @@ permalink: /404.html
 <section class="error-404">
   <div class="container">
     <div class="error-code">404</div>
-    <h1 id="err-title">Page Not Found</h1>
-    <p id="err-desc">Sorry, the page you're looking for doesn't exist or has been moved.</p>
-    <a href="{{ site.baseurl }}/" id="err-home" class="btn">Go Home</a>
+    <h1 id="err-title">Página no encontrada</h1>
+    <p id="err-desc">Lo sentimos, la página que busca no existe o se ha movido.</p>
+    <a href="{{ site.baseurl }}/" id="err-home" class="btn">Ir a casa</a>
   </div>
 </section>
 
@@ -61,11 +62,11 @@ permalink: /404.html
       home: "Accueil",
       lang: "fr"
     },
-    hi: {
-      title: "पेज नहीं मिला",
-      desc: "क्षमा करें, आपके द्वारा खोजा गया पेज मौजूद नहीं है या हटा दिया गया है।",
-      home: "होम पर जाएं",
-      lang: "hi"
+    es: {
+      title: "Página no encontrada",
+      desc: "Lo sentimos, la página que busca no existe o se ha movido.",
+      home: "Ir a casa",
+      lang: "es"
     }
   };
 
@@ -75,7 +76,7 @@ permalink: /404.html
   if (path.startsWith(base + "/fr/") || path === base + "/fr") {
     lang = "fr";
     prefix = "/fr";
-  } else if (path.startsWith(base + "/hi/") || path === base + "/hi") {
+  } else if (path.startsWith(base + "/es/") || path === base + "/es") {
     lang = "hi";
     prefix = "/hi";
   }
@@ -108,7 +109,7 @@ permalink: /404.html
     // Update language switcher button label
     const langBtn = document.getElementById("langBtn");
     if (langBtn) {
-      const flagMap = { fr: "🇫🇷 FR", hi: "🇮🇳 HI", en: "🇬🇧 EN" };
+      const flagMap = { fr: "🇫🇷 FR", hi: "co ES", en: "🇬🇧 EN" };
       langBtn.childNodes.forEach(node => {
         if (node.nodeType === 3) node.textContent = ""; // clear text nodes
       });
