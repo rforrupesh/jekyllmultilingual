@@ -7,7 +7,7 @@ en:
     blog: "Blog"
     about: "About"
     splitpdf: "Split PDF"
-
+    jpgtopdf: "jpg to pdf"
   blog:
     title: "Blog"
     read_more: "Read more"
@@ -30,6 +30,7 @@ fr:
     blog: "Blog"
     about: "À propos"
     splitpdf: "Diviser PDF"
+    jpgtopdf: "jpg afr pdf"
   blog:
     title: "Blog"
     read_more: "Lire la suite"
@@ -54,7 +55,7 @@ hi:
     blog: "ब्लॉग"
     about: "के बारे में"
     splitpdf: "PDF विभाजित करें"
-
+    jpgtopdf: "jpg se pdf"
   blog:
     title: "ब्लॉग"
     read_more: "और पढ़ें"
