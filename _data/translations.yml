@@ -36,6 +36,7 @@ fr:
     back: "← Retour au blog"
     posted_on: "Publié le"
     keep_reading: "Lire la suite"
+    toc: "Table des matières"
   home:
     heading: "Bienvenue"
     subheading: "Un site bilingue simple construit avec Jekyll."
@@ -60,6 +61,8 @@ hi:
     back: "← ब्लॉग पर वापस"
     posted_on: "प्रकाशित"
     keep_reading: "पढ़ना जारी रखें"
+    toc: "विषय सूची"
+
   home:
     heading: "स्वागत है"
     subheading: "Jekyll से बना एक बहुभाषी साइट।"
