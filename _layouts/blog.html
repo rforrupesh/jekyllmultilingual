@@ -75,9 +75,8 @@ layout: default
 }
 </script>
 
-<!-- =====================
-     Breadcrumb
-     ===================== -->
+
+<!-- Breadcrumb -->
 <nav class="breadcrumb" aria-label="breadcrumb">
   <div class="container">
     <ol>
@@ -87,9 +86,7 @@ layout: default
   </div>
 </nav>
 
-<!-- =====================
-     Blog Index
-     ===================== -->
+<!-- Blog Index -->
 <section class="blog-index">
   <div class="container">
     <h1>{{ t.blog.title }}</h1>
@@ -103,7 +100,7 @@ layout: default
             alt="{{ post.title }}"
             loading="lazy">
         </div>
-        <span class="post-grid-title">{{ post.title }}</span>
+        <h2 class="post-grid-title">{{ post.title }}</h2>
       </a>
       {% endfor %}
     </div>
@@ -112,7 +109,6 @@ layout: default
 </section>
 
 <style>
-/* Breadcrumb */
 .breadcrumb { border-bottom: 1px solid var(--border); background: var(--surface); }
 .breadcrumb .container { padding-top: 0.75rem; padding-bottom: 0.75rem; }
 .breadcrumb ol { list-style: none; display: flex; gap: 0.5rem; font-size: 0.82rem; color: var(--muted); }
@@ -120,7 +116,6 @@ layout: default
 .breadcrumb a { color: var(--muted); text-decoration: none; }
 .breadcrumb a:hover { color: var(--accent); }
 
-/* Blog heading */
 .blog-index { padding: 3rem 0 4rem; }
 .blog-index h1 {
   font-size: 2.25rem;
@@ -129,23 +124,23 @@ layout: default
   margin-bottom: 2.5rem;
 }
 
-/* Grid */
 .post-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
-.post-grid-card {
+a.post-grid-card {
   display: block;
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
+  color: var(--text) !important;
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.post-grid-card:hover {
+a.post-grid-card:hover {
+  text-decoration: none !important;
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0,0,0,0.1);
 }
@@ -167,23 +162,24 @@ layout: default
   transition: transform 0.4s ease;
 }
 
-.post-grid-card:hover .post-grid-thumb img {
+a.post-grid-card:hover .post-grid-thumb img {
   transform: scale(1.06);
 }
 
 .post-grid-title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  line-height: 1.4;
-  margin-top: 1.1rem;
-  color: var(--text);
-  text-decoration: none;
-  display: block;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.4 !important;
+  margin-top: 1.1rem !important;
+  margin-bottom: 0 !important;
+  color: var(--text) !important;
+  text-decoration: none !important;
 }
 
-.post-grid-card:hover .post-grid-title { color: var(--accent); }
+a.post-grid-card:hover .post-grid-title {
+  color: var(--accent) !important;
+}
 
-/* Responsive */
 @media (max-width: 900px) {
   .post-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
   .blog-index h1 { font-size: 1.85rem; }
