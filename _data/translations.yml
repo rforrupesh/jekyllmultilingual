@@ -13,6 +13,7 @@ en:
     read_more: "Read more"
     back: "← Back to Blog"
     posted_on: "Posted on"
+    keep_reading: "Keep Reading"
   home:
     heading: "Welcome"
     subheading: "A simple bilingual site built with Jekyll."
@@ -34,6 +35,7 @@ fr:
     read_more: "Lire la suite"
     back: "← Retour au blog"
     posted_on: "Publié le"
+    keep_reading: "Lire la suite"
   home:
     heading: "Bienvenue"
     subheading: "Un site bilingue simple construit avec Jekyll."
@@ -57,6 +59,7 @@ hi:
     read_more: "और पढ़ें"
     back: "← ब्लॉग पर वापस"
     posted_on: "प्रकाशित"
+    keep_reading: "पढ़ना जारी रखें"
   home:
     heading: "स्वागत है"
     subheading: "Jekyll से बना एक बहुभाषी साइट।"
