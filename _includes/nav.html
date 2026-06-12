@@ -1,4 +1,4 @@
-{% assign t = site.data.translations[page.lang] %}
+{% assign t = site.data.translations[page.lang] | default: site.data.translations["es"] %}
 {% assign base = site.baseurl %}
 {% assign lang = page.lang %}
 
