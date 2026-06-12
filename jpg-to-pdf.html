@@ -2199,4 +2199,10 @@ files.push(...entries);
           clearTimeout(t._timer);
           t.classList.remove("on");
         }
+
+        window.addEventListener('beforeunload', e => {
+  if (!files.length) return;
+  e.preventDefault();
+  e.returnValue = '';
+});
       </script>
