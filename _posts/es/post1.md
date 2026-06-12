@@ -1,0 +1,34 @@
+---
+layout: post
+title: "post1"
+date: 2024-01-15
+lang: es
+ref: getting-started
+categories: [jekyll, web]
+permalink: /blog/getting-started-with-jekyll/
+---
+
+Jekyll es un generador de sitios estáticos sencillo. Toma tu contenido escrito en Markdown y construye un sitio web completo, sin necesidad de una base de datos.
+
+## ¿Por qué usar Jekyll?
+
+- Rápido: los archivos estáticos se cargan al instante
+- Alojamiento gratuito en GitHub Pages
+- Fácil de configurar y mantener
+
+## Tu primer artículo
+
+Crea un archivo dentro de `_posts` con el formato `YYYY-MM-DD-titulo.md` y añade tu front matter. Eso es todo.
+
+```markdown
+---
+layout: post
+title: "Mi primer artículo"
+date: 2024-01-01
+lang: es
+---
+
+¡Hola, mundo!
+```
+
+Pruébalo. En 10 minutos, tu sitio puede estar en línea en GitHub Pages.
