@@ -17,7 +17,7 @@ head_style: |
   max-width: 100%;
   height: auto;
   display: block;
-}
+ }
 
   /* ── MAIN ── */
   main {
@@ -265,7 +265,7 @@ head_style: |
   .tag.g { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
   .tag.r { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
   .tips { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
-  .tip { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; font-size: 16px; color: #555; line-height: 1.6; }
+  .tip { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; font-size:   16px; color: #555; line-height: 1.6; }
   .tip-n { font-size: 14px; font-weight: 600; color: #bbb; flex-shrink: 0; padding-top: 1px; }
 
   /* ── TOAST ── */
