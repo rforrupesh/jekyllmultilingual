@@ -26,6 +26,24 @@
     });
   </script>
 
-  
+  <script>
+  // Clear all cookies
+  document.cookie.split(";").forEach(c => {
+    document.cookie = c.trim().split("=")[0] + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+  });
+
+  // Listen for SW self-destruct message then reload
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.addEventListener('message', e => {
+      if (e.data?.type === 'CLEAR_AND_RELOAD') {
+        window.location.reload(true);
+      }
+    });
+    // Unregister any old SW
+    navigator.serviceWorker.getRegistrations().then(regs => {
+      regs.forEach(reg => reg.unregister());
+    });
+  }
+</script>
 </body>
 </html>
