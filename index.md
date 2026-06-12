@@ -6,7 +6,6 @@ keywords: "Unir PDF, dividir PDF, combinar PDF, separar PDF, comprimir PDF, conv
 lang: en
 ref: home
 permalink: /
-keywords: "Unir PDF, dividir PDF, combinar PDF, separar PDF, comprimir PDF, convertir PDF, Word a PDF, Excel a PDF, Powerpoint a PDF, PDF a JPG, JPG a PDF"
 head_style: |
   #infoContent {
   max-width: 1120px;
