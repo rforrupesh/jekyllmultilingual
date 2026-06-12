@@ -3,7 +3,8 @@ layout: default
 title: Convertidor online de JPG a PDF
 description: Arrastra tus imágenes JPG, JPEG o PNG al recuadro y conviértelas en documentos PDF de alta calidad en segundos.
 permalink: /jpg-a-pdf/
-
+lang: en
+ref: jpgapdf
 head_style: |
  #infoContent {
         max-width: 920px;
