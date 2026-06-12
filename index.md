@@ -305,7 +305,7 @@ scripts:
   <span id="dragGhostName"></span>
 </div>
 
-<main class="container">
+<main class="container1">
 
   <!-- H1 + P — visible before upload, hidden after -->
   <h1 class="page-title" id="pageTitle">Unir archivos PDF</h1>
