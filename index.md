@@ -1108,4 +1108,15 @@ if (menuBtn) {
     overlayEl.classList.remove('active');
   });
 }
+
+ /* ── PREVENT ACCIDENTAL CLOSE ── */
+window.addEventListener('beforeunload', (e) => {
+
+    // only warn if files are uploaded
+    if (files.length === 0) return;
+
+    e.preventDefault();
+    e.returnValue = '';
+
+});
 </script>
