@@ -63,8 +63,7 @@ layout: default
     <!-- ── Sidebar TOC ── -->
     <aside class="post-sidebar">
       <div class="toc-box">
-        <h4>Table of Contents</h4>
-        <ul id="toc">
+<h4>{{ t.blog.toc | default: "Table of Contents" }}</h4>        <ul id="toc">
           {% assign toc_items = '' | split: '' %}
           {% assign parts = content | split: '<h' %}
           {% for block in parts %}
