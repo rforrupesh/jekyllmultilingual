@@ -194,12 +194,26 @@ head_style: |
   .add-row-btn svg { width: 15px; height: 15px; stroke: currentColor; flex-shrink: 0; }
 
   /* ── PROGRESS ── */
-  .progress-wrap {
-  display: none; margin-top: 12px; background: #fff;
-  border: 1px solid var(--border); border-radius: 8px;
-  padding: 13px 16px; gap: 10px; align-items: center;
-  }
-  .progress-wrap.show { display: flex; }
+ /* ── PROGRESS ── */
+.progress-wrap {
+    display: none;
+    position: sticky;
+    top: 110px; /* adjust based on your header + toolbar height */
+    z-index: 45;
+
+    margin: 0 0 12px 0;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 13px 16px;
+
+    gap: 10px;
+    align-items: center;
+}
+
+.progress-wrap.show {
+    display: flex;
+}
   .spinner {
   width: 15px; height: 15px; border: 2px solid var(--border);
   border-top-color: #2563eb; border-radius: 50%;
