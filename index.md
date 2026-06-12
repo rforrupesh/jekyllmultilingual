@@ -213,12 +213,18 @@ head_style: |
     display: flex;
   }
   .spinner {
-  width: 15px; height: 15px; border: 2px solid var(--border);
-  border-top-color: #2563eb; border-radius: 50%;
-  animation: spin .7s linear infinite; flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border: 3px solid rgba(255,255,255,0.25);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+  flex-shrink: 0;
   }
   @keyframes spin { to { transform: rotate(360deg); } }
-  .progress-text { font-size: 13px; color: #666; }
+  .progress-text { font-size: 14px;
+  font-weight: 500;
+  color: #fff; }
 
   /* ── BOTTOM BAR ── */
   .bottom-bar {
