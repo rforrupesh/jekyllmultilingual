@@ -7,7 +7,7 @@ en:
     blog: "Blog"
     about: "About"
     splitpdf: "Split PDF"
-    jpgtopdf: "JPG to PDF"
+    jpgapdf: "JPG to PDF"
   blog:
     title: "Blog"
     read_more: "Read more"
@@ -31,7 +31,7 @@ fr:
     blog: "Blog"
     about: "À propos"
     splitpdf: "Diviser PDF"
-    jpgtopdf: "JPG en PDF"
+    jpgapdf: "JPG en PDF"
   blog:
     title: "Blog"
     read_more: "Lire la suite"
@@ -55,7 +55,7 @@ es:
     blog: "Blog"
     about: "Acerca de"
     splitpdf: "Dividir PDF"
-    jpgtopdf: "JPG a PDF"
+    jpgapdf: "JPG a PDF"
   blog:
     title: "Blog"
     read_more: "Leer más"
