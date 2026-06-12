@@ -1107,14 +1107,149 @@ if (menuBtn) {
   });
 }
 
- /* ── PREVENT ACCIDENTAL CLOSE ── */
-window.addEventListener('beforeunload', (e) => {
+ 
+</script>
 
-    // only warn if files are uploaded
-    if (files.length === 0) return;
+<style>
+ /* ── EXIT CONFIRM MODAL ── */
+.exit-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+.exit-overlay.show {
+  display: flex;
+}
+.exit-modal {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 28px 22px;
+  max-width: 360px;
+  width: calc(100% - 40px);
+  box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+  text-align: center;
+}
+.exit-modal .exit-icon {
+  width: 48px;
+  height: 48px;
+  background: #fff4f0;
+  border: 1px solid #fdd5c0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+.exit-modal .exit-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: #e05a1e;
+}
+.exit-modal h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+.exit-modal p {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+.exit-modal .exit-btns {
+  display: flex;
+  gap: 10px;
+}
+.exit-modal .btn-stay {
+  flex: 1;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .15s;
+}
+.exit-modal .btn-stay:hover { background: #1d4ed8; }
+.exit-modal .btn-leave {
+  flex: 1;
+  background: #fff;
+  color: #666;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background .15s;
+}
+.exit-modal .btn-leave:hover { background: #f3f3f0; }
+</style>
 
-    e.preventDefault();
-    e.returnValue = '';
+<div class="exit-overlay" id="exitOverlay">
+  <div class="exit-modal">
+    <div class="exit-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+        <line x1="12" y1="9" x2="12" y2="13"/>
+        <line x1="12" y1="17" x2="12.01" y2="17"/>
+      </svg>
+    </div>
+    <h3>Are you sure you want to leave?</h3>
+    <p>You have <strong id="exitFileCount"></strong> file(s) loaded. If you leave now, your progress will be lost.</p>
+    <div class="exit-btns">
+      <button class="btn-stay" id="btnStay">Stay on page</button>
+      <button class="btn-leave" id="btnLeave">Leave anyway</button>
+    </div>
+  </div>
+</div>
+<script>
+ /* ── EXIT CONFIRM MODAL ── */
+let pendingNavUrl = null;
 
+function showExitModal() {
+  $('exitFileCount').textContent = files.length;
+  $('exitOverlay').classList.add('show');
+}
+function hideExitModal() {
+  $('exitOverlay').classList.remove('show');
+  pendingNavUrl = null;
+}
+
+$('btnStay').addEventListener('click', hideExitModal);
+$('exitOverlay').addEventListener('click', e => {
+  if (e.target === $('exitOverlay')) hideExitModal();
+});
+$('btnLeave').addEventListener('click', () => {
+  pendingNavUrl ? (window.location.href = pendingNavUrl) : window.close();
+});
+
+// intercept all <a> clicks that navigate away
+document.addEventListener('click', e => {
+  if (!files.length) return;
+  const a = e.target.closest('a[href]');
+  if (!a) return;
+  const url = a.getAttribute('href');
+  if (!url || url.startsWith('#') || url.startsWith('javascript')) return;
+  e.preventDefault();
+  pendingNavUrl = a.href;
+  showExitModal();
+});
+
+// intercept browser back/forward/close
+window.addEventListener('beforeunload', e => {
+  if (!files.length) return;
+  e.preventDefault();
+  e.returnValue = '';
+  showExitModal();
 });
 </script>
