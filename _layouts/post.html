@@ -38,11 +38,11 @@ layout: default
       <article>
 
         <!-- Breadcrumb -->
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="{{ base }}/">{{ t.nav.home }}</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-          <a href="{{ base }}/{{ lang }}/blog/">{{ t.nav.blog }}</a>
-        </nav>
+     <nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}">{{ t.nav.home }}</a>
+  <span class="breadcrumb-sep" aria-hidden="true">›</span>
+  <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}blog/">{{ t.nav.blog }}</a>
+</nav>
 
         <!-- Hero Image -->
       {% if page.thumbnail %}
