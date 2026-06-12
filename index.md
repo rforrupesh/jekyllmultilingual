@@ -197,16 +197,16 @@ head_style: |
  .progress-wrap {
   display: none;
   position: sticky;
-  top: 52px;           /* same anchor as toolbar so it overlaps it */
-  z-index: 50;         /* above toolbar's z-index: 40 */
-  margin: 0 0 0 0;     /* no gap — overlaps toolbar directly */
+  top: 52px;        
+  z-index: 50;      
+  margin: 0 0 0 0;     
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 13px 16px;
   gap: 10px;
   align-items: center;
-  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.10);  /* subtle lift */
+  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.10);  
    }
 
   .progress-wrap.show {
