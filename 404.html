@@ -9,9 +9,9 @@ permalink: /404.html
 <section class="error-404">
   <div class="container">
     <div class="error-code">404</div>
-    <h1>Page Not Found</h1>
-    <p>Sorry, the page you're looking for doesn't exist or has been moved.</p>
-    <a href="{{ site.baseurl }}/" class="btn">Go Home</a>
+    <h1 id="err-title">Page Not Found</h1>
+    <p id="err-desc">Sorry, the page you're looking for doesn't exist or has been moved.</p>
+    <a href="{{ site.baseurl }}/" id="err-home" class="btn">Go Home</a>
   </div>
 </section>
 
@@ -37,9 +37,82 @@ permalink: /404.html
   margin-bottom: 2rem;
   font-size: 1rem;
 }
-
 @media (max-width: 600px) {
   .error-code { font-size: 4.5rem; }
   .error-404 { padding: 3rem 1.25rem; }
 }
 </style>
+
+<script>
+(function () {
+  const base = "{{ site.baseurl }}";
+  const path = window.location.pathname;
+
+  const texts = {
+    en: {
+      title: "Page Not Found",
+      desc: "Sorry, the page you're looking for doesn't exist or has been moved.",
+      home: "Go Home",
+      lang: "en"
+    },
+    fr: {
+      title: "Page non trouvée",
+      desc: "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+      home: "Accueil",
+      lang: "fr"
+    },
+    hi: {
+      title: "पेज नहीं मिला",
+      desc: "क्षमा करें, आपके द्वारा खोजा गया पेज मौजूद नहीं है या हटा दिया गया है।",
+      home: "होम पर जाएं",
+      lang: "hi"
+    }
+  };
+
+  // Detect language from URL path
+  let lang = "en";
+  let prefix = "";
+  if (path.startsWith(base + "/fr/") || path === base + "/fr") {
+    lang = "fr";
+    prefix = "/fr";
+  } else if (path.startsWith(base + "/hi/") || path === base + "/hi") {
+    lang = "hi";
+    prefix = "/hi";
+  }
+
+  const t = texts[lang];
+
+  // Update text content
+  document.getElementById("err-title").textContent = t.title;
+  document.getElementById("err-desc").textContent = t.desc;
+  document.getElementById("err-home").textContent = t.home;
+  document.getElementById("err-home").href = base + prefix + "/";
+  document.documentElement.lang = t.lang;
+
+  // Fix nav links to match detected language (nav was rendered for "en")
+  if (prefix) {
+    document.querySelectorAll('nav a, .menu a, .lang-dropdown a').forEach(function (a) {
+      const href = a.getAttribute("href");
+      if (!href) return;
+
+      // Skip language switcher links (they already point to fr/hi correctly relative to en)
+      if (a.closest(".lang-dropdown")) return;
+
+      // Only fix internal nav links that don't already have the prefix
+      if (href.startsWith(base + "/") && !href.startsWith(base + "/fr") && !href.startsWith(base + "/hi")) {
+        const rest = href.slice(base.length);
+        a.setAttribute("href", base + prefix + rest);
+      }
+    });
+
+    // Update language switcher button label
+    const langBtn = document.getElementById("langBtn");
+    if (langBtn) {
+      const flagMap = { fr: "🇫🇷 FR", hi: "🇮🇳 HI", en: "🇬🇧 EN" };
+      langBtn.childNodes.forEach(node => {
+        if (node.nodeType === 3) node.textContent = ""; // clear text nodes
+      });
+    }
+  }
+})();
+</script>
