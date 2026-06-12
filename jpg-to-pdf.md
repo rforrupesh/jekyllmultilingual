@@ -945,14 +945,12 @@ head_style: |
   
 ---
 
- <!-- Ghost element -->
       <div id="dragGhost">
         <img class="ghost-thumb" id="ghostThumb" src="" alt="" />
         <div class="ghost-label" id="dragGhostName"></div>
       </div>
 
       <div class="app-shell">
-        <!-- ── UPLOAD STATE ── -->
         <div id="uploadState">
           <h1 class="page-title">Convertir múltiples JPG a PDF</h1>
           <p class="page-sub">
@@ -995,10 +993,8 @@ head_style: |
           </div>
         </div>
 
-        <!-- ── UPLOADED / EDITOR STATE ── -->
         <div id="uploadedState">
           <div class="editor-layout">
-            <!-- LEFT: Preview -->
             <div class="preview-panel">
               <div class="preview-toolbar">
                 <div class="preview-toolbar-left">
