@@ -4,19 +4,51 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:       #ffffff;
-  --surface:  #f6f7f9;
-  --border:   #e2e5ea;
-  --text:     #1a1a2e;
-  --muted:    #6b7280;
-  --accent:   #3b5bdb;
+:root {
+  /* Core */
+  --bg: #ffffff;
+  --white: #ffffff;
+  --surface: #f6f7f9;
+
+  /* Borders */
+  --border: #e2e5ed;
+
+  /* Brand Colors */
+  --blue: #2563eb;
+  --blue-hover: #1d4ed8;
+  --blue-light: #eff6ff;
+  --blue-mid: #dbeafe;
+
+  --accent: #0070f3;
   --accent-h: #2f4ac9;
-  --radius:   6px;
-  --max-w:    920px;
-   --white:#ffffff;
-   --text:#1a1d27;
-   --hover-bg:#fafafa;
-   --shadow-md:0 10px 30px rgba(0,0,0,.08);}
+
+  /* Text */
+  --text: #1a1d27;
+  --text-muted: #6b7280;
+  --text-light: #9ca3af;
+  --muted: #6b7280;
+
+  /* Status Colors */
+  --red: #ef4444;
+  --red-light: #fef2f2;
+
+  --green: #16a34a;
+  --green-light: #f0fdf4;
+
+  /* Layout */
+  --radius: 10px;
+  --nav-h: 58px;
+  --sidebar-w: 300px;
+  --max-w: 920px;
+
+  /* Effects */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.08),
+               0 1px 2px rgba(0,0,0,.04);
+
+  --shadow-md: 0 4px 12px rgba(0,0,0,.1);
+
+  --hover-bg: #fafafa;
+}
 
 
 html { font-size: 16px; }
