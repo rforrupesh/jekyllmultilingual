@@ -2,16 +2,18 @@
 {% assign base = site.baseurl %}
 {% assign lang = page.lang %}
 
-<!-- Build clean base URL without lang prefix -->
-{% assign clean_url = page.url | remove_first: "/fr" | remove_first: "/hi" %}
+{% assign clean_url = page.url | remove_first: "/fr" | remove_first: "/en" %}
 
-<!-- Build alternate URLs -->
-{% assign en_switch = base | append: clean_url %}
+{% assign es_switch = base | append: clean_url %}
+{% assign en_switch = base | append: "/en" | append: clean_url %}
 {% assign fr_switch = base | append: "/fr" | append: clean_url %}
-{% assign hi_switch = base | append: "/hi" | append: clean_url %}
 
-<!-- Override with ref-based lookup if ref exists -->
 {% if page.ref %}
+  {% assign es_post = site.posts | where: "ref", page.ref | where: "lang", "es" | first %}
+  {% assign es_page = site.pages | where: "ref", page.ref | where: "lang", "es" | first %}
+  {% if es_post %}{% assign es_switch = base | append: es_post.url %}
+  {% elsif es_page %}{% assign es_switch = base | append: es_page.url %}{% endif %}
+
   {% assign en_post = site.posts | where: "ref", page.ref | where: "lang", "en" | first %}
   {% assign en_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
   {% if en_post %}{% assign en_switch = base | append: en_post.url %}
@@ -21,11 +23,6 @@
   {% assign fr_page = site.pages | where: "ref", page.ref | where: "lang", "fr" | first %}
   {% if fr_post %}{% assign fr_switch = base | append: fr_post.url %}
   {% elsif fr_page %}{% assign fr_switch = base | append: fr_page.url %}{% endif %}
-
-  {% assign hi_post = site.posts | where: "ref", page.ref | where: "lang", "hi" | first %}
-  {% assign hi_page = site.pages | where: "ref", page.ref | where: "lang", "hi" | first %}
-  {% if hi_post %}{% assign hi_switch = base | append: hi_post.url %}
-  {% elsif hi_page %}{% assign hi_switch = base | append: hi_page.url %}{% endif %}
 {% endif %}
 
 <style>
@@ -70,21 +67,18 @@ nav{display:flex;justify-content:center;align-items:center;gap:40px;height:70px;
 
 <nav aria-label="Main navigation">
 
-  <!-- LOGO -->
-  <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}" class="logo">
+  <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}" class="logo">
     {{ site.title }}
   </a>
 
-  <!-- MENU — auto from _data/nav.yml -->
   <div class="menu" id="menu">
     {% for item in site.data.nav %}
-      <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}hi/{% endif %}{{ item.slug }}">
+      <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}{{ item.slug }}">
         {{ t.nav[item.key] }}
       </a>
     {% endfor %}
   </div>
 
-  <!-- LANGUAGE -->
   <div class="lang-switcher">
     <button class="lang-btn" id="langBtn">
       <img src="{{ base }}/assets/img/flags/{{ lang }}.svg" alt="{{ lang }}" />
@@ -92,19 +86,18 @@ nav{display:flex;justify-content:center;align-items:center;gap:40px;height:70px;
       <span>▾</span>
     </button>
     <div class="lang-dropdown" id="langDropdown">
+      <a href="{{ es_switch }}" hreflang="es" {% if lang == "es" %}class="active-lang"{% endif %}>
+        <img src="{{ base }}/assets/img/flags/es.svg" alt="Español" /> Español
+      </a>
       <a href="{{ en_switch }}" hreflang="en" {% if lang == "en" %}class="active-lang"{% endif %}>
         <img src="{{ base }}/assets/img/flags/en.svg" alt="English" /> English
       </a>
       <a href="{{ fr_switch }}" hreflang="fr" {% if lang == "fr" %}class="active-lang"{% endif %}>
         <img src="{{ base }}/assets/img/flags/fr.svg" alt="Français" /> Français
       </a>
-      <a href="{{ hi_switch }}" hreflang="hi" {% if lang == "hi" %}class="active-lang"{% endif %}>
-        <img src="{{ base }}/assets/img/flags/hi.svg" alt="हिन्दी" /> हिन्दी
-      </a>
     </div>
   </div>
 
-  <!-- HAMBURGER -->
   <button class="icon-btn" id="navbtn" aria-label="Open menu">
     <span class="line"></span>
     <span class="line"></span>
