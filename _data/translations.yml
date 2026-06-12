@@ -46,30 +46,25 @@ fr:
     rights: "Tous droits réservés."
 
 
-hi:
-  lang_name: "हिन्दी"
-  lang_code: "hi"
-  dir: "ltr"
-  nav:
-    home: "होम"
-    blog: "ब्लॉग"
-    about: "के बारे में"
-    splitpdf: "PDF विभाजित करें"
-    jpgtopdf: "jpg se pdf"
-  blog:
-    title: "ब्लॉग"
-    read_more: "और पढ़ें"
-    back: "← ब्लॉग पर वापस"
-    posted_on: "प्रकाशित"
-    keep_reading: "पढ़ना जारी रखें"
-    toc: "विषय सूची"
-
-  home:
-    heading: "स्वागत है"
-    subheading: "Jekyll से बना एक बहुभाषी साइट।"
-    cta: "ब्लॉग पढ़ें"
-  footer:
-    rights: "सर्वाधिकार सुरक्षित।"
-
-
-   
+lang_name: "Español"
+lang_code: "es"
+dir: "ltr"
+nav:
+  home: "Inicio"
+  blog: "Blog"
+  about: "Acerca de"
+  splitpdf: "Dividir PDF"
+  jpgtopdf: "JPG a PDF"
+blog:
+  title: "Blog"
+  read_more: "Leer más"
+  back: "← Volver al blog"
+  posted_on: "Publicado"
+  keep_reading: "Seguir leyendo"
+  toc: "Tabla de contenidos"
+home:
+  heading: "Bienvenido"
+  subheading: "Un sitio multilingüe hecho con Jekyll."
+  cta: "Leer el blog"
+footer:
+  rights: "Todos los derechos reservados."
