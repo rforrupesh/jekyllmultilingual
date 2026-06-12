@@ -1001,7 +1001,6 @@ head_style: |
                   <span class="preview-label">Images</span>
                   <span class="file-count" id="fileCount">0</span>
 
-                  <!-- Sort buttons -->
                   <div class="sort-row">
                     <button
                       class="btn-sm"
@@ -1034,10 +1033,8 @@ head_style: |
                       Z–A
                     </button>
 
-                    <!-- Separator -->
                     <div class="toolbar-sep"></div>
 
-                    <!-- Undo button -->
                     <button
                       class="btn-sm"
                       id="undoBtn"
@@ -1058,7 +1055,6 @@ head_style: |
                       Undo
                     </button>
 
-                    <!-- Redo button -->
                     <button
                       class="btn-sm"
                       id="redoBtn"
@@ -1090,10 +1086,8 @@ head_style: |
               </div>
             </div>
 
-            <!-- RIGHT: Settings -->
             <div class="settings-panel" id="settingsPanel">
               <div class="settings-inner">
-                <!-- Page Size -->
                 <div class="setting-group">
                   <span class="setting-label">Page Size</span>
                   <div class="option-pills" id="pageSizeGroup">
@@ -1167,7 +1161,6 @@ head_style: |
 
                 <hr class="settings-divider" />
 
-                <!-- Orientation -->
                 <div class="setting-group">
                   <span class="setting-label">Orientation</span>
                   <div class="option-pills-row" id="orientGroup">
@@ -1192,7 +1185,6 @@ head_style: |
 
                 <hr class="settings-divider" />
 
-                <!-- Margin -->
                 <div class="setting-group">
                   <span class="setting-label">Margin</span>
                   <div class="option-pills" id="marginGroup">
@@ -1269,7 +1261,6 @@ head_style: |
 
                 <hr class="settings-divider" />
 
-                <!-- Convert + Add Image buttons side by side -->
                 <div class="settings-action-row">
                   <button
                     class="btn-add-img"
@@ -1316,9 +1307,7 @@ head_style: |
           </div>
         </div>
 
-        <!-- MOBILE BOTTOM BAR -->
         <div class="mobile-bottom" id="mobileBottom" style="display: none">
-          <!-- Settings -->
           <button class="btn-settings" onclick="openDrawer()">
             <svg
               viewBox="0 0 24 24"
@@ -1332,7 +1321,6 @@ head_style: |
             </svg>
             Options
           </button>
-          <!-- Add Image -->
           <button
             class="btn-add-mobile"
             onclick="$('moreInput').click()"
@@ -1350,7 +1338,6 @@ head_style: |
             </svg>
             Add
           </button>
-          <!-- Convert -->
           <button
             class="btn-convert"
             id="convertBtnBottom"
@@ -1370,7 +1357,6 @@ head_style: |
           </button>
         </div>
 
-        <!-- MOBILE SETTINGS DRAWER -->
         <div
           class="mobile-settings-overlay"
           id="drawerOverlay"
@@ -1381,20 +1367,17 @@ head_style: |
           <button class="drawer-close" onclick="closeDrawer()">✕</button>
           <div class="drawer-title">PDF Options</div>
           <div class="drawer-body" id="drawerBody">
-            <!-- cloned from settings panel by JS -->
           </div>
         </div>
       </div>
 
-      <!-- Hidden file inputs -->
-      <input type="file" id="fileInput" multiple accept="image/*" hidden />
+    <input type="file" id="fileInput" multiple accept="image/*" hidden />
       <input type="file" id="moreInput" multiple accept="image/*" hidden />
 
-      <!-- Toast -->
       <div class="toast" id="toast"></div>
 
       <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
-      <!-- ── INFO SECTION ── -->
+
       <div id="infoContent">
 
 <h2  class="section-title">Convertidor de imágenes a PDF</h2>
