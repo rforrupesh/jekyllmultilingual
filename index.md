@@ -235,7 +235,7 @@ head_style: |
   .bottom-bar .add-btn svg { width: 14px; height: 14px; stroke: currentColor; }
 
   @media (max-width: 600px) {
-  main { padding: 28px 14px 140px; }
+  main { padding: 5px; }
   .btn-merge-top { display: none; }
   .bottom-bar { display: flex; }
   .file-row { grid-template-columns: 28px 22px auto 1fr auto; gap: 8px; padding: 10px 12px; }
