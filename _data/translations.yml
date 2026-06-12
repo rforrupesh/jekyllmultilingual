@@ -45,3 +45,27 @@ fr:
     cta: "Lire le blog"
   footer:
     rights: "Tous droits réservés."
+
+es:
+  lang_name: "Español"
+  lang_code: "es"
+  dir: "ltr"
+  nav:
+    home: "Inicio"
+    blog: "Blog"
+    about: "Acerca de"
+    splitpdf: "Dividir PDF"
+    jpgtopdf: "JPG a PDF"
+  blog:
+    title: "Blog"
+    read_more: "Leer más"
+    back: "← Volver al blog"
+    posted_on: "Publicado el"
+    keep_reading: "Seguir leyendo"
+    toc: "Tabla de contenidos"
+  home:
+    heading: "Bienvenido"
+    subheading: "Un sitio bilingüe simple construido con Jekyll."
+    cta: "Leer el blog"
+  footer:
+    rights: "Todos los derechos reservados."
