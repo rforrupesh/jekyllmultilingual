@@ -193,22 +193,20 @@ head_style: |
   .add-row-btn:hover { background: #f0f0ec; color: #555; }
   .add-row-btn svg { width: 15px; height: 15px; stroke: currentColor; flex-shrink: 0; }
 
-  /* ── PROGRESS ── */
- /* ── PROGRESS ── */
+ 
  .progress-wrap {
-    display: none;
-    position: sticky;
-    top: 110px; /* adjust based on your header + toolbar height */
-    z-index: 45;
-
-    margin: 0 0 12px 0;
-    background: #fff;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 13px 16px;
-
-    gap: 10px;
-    align-items: center;
+  display: none;
+  position: sticky;
+  top: 52px;           /* same anchor as toolbar so it overlaps it */
+  z-index: 50;         /* above toolbar's z-index: 40 */
+  margin: 0 0 0 0;     /* no gap — overlaps toolbar directly */
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 13px 16px;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.10);  /* subtle lift */
    }
 
   .progress-wrap.show {
