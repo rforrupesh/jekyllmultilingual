@@ -6,8 +6,8 @@ author: lokesh
 # twitter_username: yourhandle   # uncomment if you have one
 
 # Multilingual settings
-languages: ["en", "fr", "hi"]
-default_lang: "en"
+languages: ["en", "fr", "es"]
+default_lang: "es"
 
 # Build settings
 markdown: kramdown
