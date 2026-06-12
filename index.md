@@ -13,6 +13,11 @@ head_style: |
   margin: 0 auto;
   padding: 12px 20px;
   }
+ #infoContent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
   /* ── MAIN ── */
   main {
