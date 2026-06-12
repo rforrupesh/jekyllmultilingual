@@ -195,7 +195,7 @@ head_style: |
 
   /* ── PROGRESS ── */
  /* ── PROGRESS ── */
-.progress-wrap {
+ .progress-wrap {
     display: none;
     position: sticky;
     top: 110px; /* adjust based on your header + toolbar height */
@@ -209,11 +209,11 @@ head_style: |
 
     gap: 10px;
     align-items: center;
-}
+   }
 
-.progress-wrap.show {
+  .progress-wrap.show {
     display: flex;
-}
+  }
   .spinner {
   width: 15px; height: 15px; border: 2px solid var(--border);
   border-top-color: #2563eb; border-radius: 50%;
