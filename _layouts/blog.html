@@ -96,20 +96,15 @@ layout: default
 
     <div class="post-grid">
       {% for post in posts %}
-      <article class="post-grid-card">
-        <a href="{{ base }}{{ post.url }}" class="post-grid-thumb">
+      <a href="{{ base }}{{ post.url }}" class="post-grid-card">
+        <div class="post-grid-thumb">
           <img
             src="{{ post.thumbnail | default:'/assets/default-tool.webp' | relative_url }}"
             alt="{{ post.title }}"
             loading="lazy">
-        </a>
-        <div class="post-grid-body">
-         
-          <h2><a href="{{ base }}{{ post.url }}">{{ post.title }}</a></h2>
-          <p>{{ post.excerpt | strip_html | truncatewords: 18 }}</p>
-         
         </div>
-      </article>
+        <span class="post-grid-title">{{ post.title }}</span>
+      </a>
       {% endfor %}
     </div>
 
@@ -126,107 +121,76 @@ layout: default
 .breadcrumb a:hover { color: var(--accent); }
 
 /* Blog heading */
-.blog-index h1 { font-size: 1.75rem; font-weight: 800; margin-bottom: 2rem; }
+.blog-index { padding: 3rem 0 4rem; }
+.blog-index h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.5rem;
+}
 
 /* Grid */
 .post-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .post-grid-card {
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 16px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: box-shadow 0.15s;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .post-grid-card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
 }
 
 .post-grid-thumb {
   display: block;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/10;
   overflow: hidden;
   background: var(--surface);
+  border-radius: 16px;
+  border: 1px solid var(--border);
 }
 
 .post-grid-thumb img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
 .post-grid-card:hover .post-grid-thumb img {
-  transform: scale(1.04);
+  transform: scale(1.06);
 }
 
-.post-grid-body {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.post-grid-cat {
-  font-size: 0.72rem;
+.post-grid-title {
+  font-size: 1.15rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--accent);
-  margin-bottom: 0.4rem;
+  line-height: 1.4;
+  margin-top: 1.1rem;
+  color: var(--text);
+  text-decoration: none;
   display: block;
 }
 
-.post-grid-body h2 {
-  font-size: 0.95rem;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-  line-height: 1.4;
-}
-
-.post-grid-body h2 a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-.post-grid-body h2 a:hover { color: var(--accent); }
-
-.post-grid-body p {
-  font-size: 0.82rem;
-  color: var(--muted);
-  line-height: 1.5;
-  flex: 1;
-  margin-bottom: 0.75rem;
-}
-
-.post-grid-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.78rem;
-  color: var(--muted);
-  margin-top: auto;
-}
-
-.read-more {
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--accent);
-  text-decoration: none;
-}
+.post-grid-card:hover .post-grid-title { color: var(--accent); }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .post-grid { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) {
+  .post-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .blog-index h1 { font-size: 1.85rem; }
 }
 
-@media (max-width: 500px) {
-  .post-grid { grid-template-columns: 1fr; }
+@media (max-width: 560px) {
+  .post-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .blog-index { padding: 2rem 0 3rem; }
 }
 </style>
