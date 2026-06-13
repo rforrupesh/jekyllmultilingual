@@ -146,7 +146,7 @@ layout: default
   {% else %}
     {% assign posts_to_show = site.posts | where: "lang", page.lang %}
   {% endif %}
-  {% for post in posts_to_show limit:6 %}
+  {% for post in posts_to_show limit:3 %}
     <div class="relatedbloganywhere-card">
       <a href="{{ post.url | relative_url }}">
         <div class="relatedbloganywhere-thumb">
