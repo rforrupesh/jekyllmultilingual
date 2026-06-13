@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "PDF vs Word:"
+title: "PDF vs Word: Which Format Should You Use?"
 thumbnail: /assets/img/pdf-vs-word.jpg
-description: Comparo PDF y Word. Estudio las características, el formato, la compatibilidad y más. Vea lo que encontramos aquí.
+description: "We compare PDF and Word documents, examining formatting, compatibility, features, and more. See what we discovered."
 lang: en
 ref: pdf-vs-word
 ---
