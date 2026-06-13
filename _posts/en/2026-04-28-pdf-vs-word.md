@@ -3,7 +3,6 @@ layout: post
 title: "PDF vs Word:"
 thumbnail: /assets/img/pdf-vs-word.jpg
 description: Comparo PDF y Word. Estudio las características, el formato, la compatibilidad y más. Vea lo que encontramos aquí.
-category: aprende
 lang: en
 ref: pdf-vs-word
 ---
