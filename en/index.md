@@ -4,6 +4,7 @@ title: Merge PDF Files Online for Free — Combine PDFs into One Document​
 description: "Upload and organize your PDF files easily, then download a single merged document. Fast, unlimited, and free. An online PDF Merge tool with no limits."
 keywords: "Merge PDF, Split PDF, Combine PDF, Separate PDF, Compress PDF, Convert PDF, Word to PDF, Excel to PDF, PowerPoint to PDF, PDF to JPG, JPG to PDF"
 ref: home
+permalink: /en/
 head_style: |
  #infoContent {
   max-width: 1120px;
