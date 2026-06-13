@@ -27,3 +27,20 @@ exclude:
 kramdown:
   auto_ids: true
   toc_levels: [2, 3]
+
+# Custom permalinks per language folder
+defaults:
+  - scope:
+      path: "_posts/es"
+    values:
+      permalink: /:title/
+
+  - scope:
+      path: "_posts/en"
+    values:
+      permalink: /en/:title/
+
+  - scope:
+      path: "_posts/fr"
+    values:
+      permalink: /fr/:title/
