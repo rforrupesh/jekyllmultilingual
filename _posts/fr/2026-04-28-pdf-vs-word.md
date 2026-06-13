@@ -6,7 +6,6 @@ description: Je compare le PDF et Word. J'examine les fonctionnalités, la mise 
 category: aprende
 lang: fr
 ref: pdf-vs-word
-permalink: /fr/blog/pdf-vs-word/
 ---
 
 PDF et Word sont deux des types de fichiers les plus importants pour gérer du texte et du contenu multimédia. Aujourd’hui, ils sont tous deux reconnus comme des formats de documents puissants et fiables, dotés de diverses fonctionnalités utilisées chaque jour par des millions de personnes. Cependant, ils ont parcouru un long chemin depuis l’époque où Word était uniquement destiné à la création et à l’édition, tandis que PDF servait uniquement à la distribution et à la présentation finale.
