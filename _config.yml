@@ -33,14 +33,17 @@ defaults:
   - scope:
       path: "_posts/es"
     values:
+      lang: es
       permalink: /:title/
 
   - scope:
       path: "_posts/en"
     values:
+      lang: en
       permalink: /en/:title/
 
   - scope:
       path: "_posts/fr"
     values:
+      lang: fr
       permalink: /fr/:title/
