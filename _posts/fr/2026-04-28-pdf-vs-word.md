@@ -3,7 +3,6 @@ layout: post
 title: "PDF ou Word : quel format choisir ? "
 thumbnail: /assets/img/pdf-vs-word.jpg
 description: Je compare le PDF et Word. J'examine les fonctionnalités, la mise en forme, la compatibilité et bien plus encore. Découvrez nos conclusions ici.
-category: aprende
 lang: fr
 ref: pdf-vs-word
 ---
