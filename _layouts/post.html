@@ -104,34 +104,32 @@ layout: default
 </div>
 
 <!-- ── Related Posts: same lang, max 3, image + title + link only ── -->
-{% assign all_posts = site.posts | where: "lang", lang %}
-{% assign related = "" | split: "" %}
-{% for post in all_posts %}
-  {% if post.url != page.url %}
-    {% for cat in page.categories %}
-      {% if post.categories contains cat %}
-        {% assign related = related | push: post %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-{% assign related = related | uniq | limit: 3 %}
+{% assign related = site.posts | where: "lang", page.lang %}
 
-{% if related.size > 0 %}
+{% if related.size > 1 %}
 <section class="related">
   <div class="related-inner">
     <h2 class="related-heading">{{ t.blog.keep_reading | default: "Keep Reading" }}</h2>
+
     <div class="related-grid">
+      {% assign count = 0 %}
       {% for post in related %}
-      <a href="{{ base }}{{ post.url }}" class="related-card">
-        <div class="related-img">
-          <img
-            src="{{ post.thumbnail | default:'/assets/default-tool.webp' | relative_url }}"
-            alt="{{ post.title }}"
-            loading="lazy">
-        </div>
-        <h3 class="related-title">{{ post.title }}</h3>
-      </a>
+        {% unless post.url == page.url %}
+          <a href="{{ post.url | relative_url }}" class="related-card">
+            <div class="related-img">
+              <img
+                src="{{ post.thumbnail | default:'/assets/default-tool.webp' | relative_url }}"
+                alt="{{ post.title }}"
+                loading="lazy">
+            </div>
+            <h3 class="related-title">{{ post.title }}</h3>
+          </a>
+
+          {% assign count = count | plus: 1 %}
+          {% if count >= 3 %}
+            {% break %}
+          {% endif %}
+        {% endunless %}
       {% endfor %}
     </div>
   </div>
@@ -139,37 +137,10 @@ layout: default
 {% endif %}
 
 
-{% assign seo_posts = site.posts | where: "category", "mergepdf" | where: "lang", page.lang %}
-<div class="relatedbloganywhere-grid">
-  {% if seo_posts.size > 0 %}
-    {% assign posts_to_show = seo_posts %}
-  {% else %}
-    {% assign posts_to_show = site.posts | where: "lang", page.lang %}
-  {% endif %}
-  {% for post in posts_to_show limit:3 %}
-    <div class="relatedbloganywhere-card">
-      <a href="{{ post.url | relative_url }}">
-        <div class="relatedbloganywhere-thumb">
-          <img 
-            src="{{ post.thumbnail | default:'/assets/img/unir.png' | relative_url }}" 
-            alt="{{ post.title }}"
-            loading="lazy">
-        </div>
-      </a>
-      {% if post.category %}
-        {% assign cat_slug = post.category %}
-        {% assign cat_page = site.pages | where: "category_key", cat_slug | first %}
-        <a class="relatedbloganywhere-category" href="{{ site.baseurl }}/category/{{ cat_slug }}/">
-          {{ cat_page.title | default: cat_slug | replace: "-", " " }}
-        </a>
-      {% endif %}
-      <div class="relatedbloganywhere-content">
-        <a href="{{ post.url | relative_url }}">
-          <h3>{{ post.title }}</h3>
-        </a>
-      </div>
-    </div>
-  {% endfor %}
+
+
+
+
 </div>
 
 <script>
