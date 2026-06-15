@@ -5,6 +5,48 @@
     <p>© {{ "now" | date: "%Y" }} {{ site.title }} — {{ t.footer.rights }}</p>
   </div>
 
-  
+  <script>
+(() => {
+  const ease = 0.08; // Lower = smoother, Higher = more responsive
+
+  let current = window.scrollY;
+  let target = window.scrollY;
+  let isScrolling = false;
+
+  window.addEventListener(
+    "wheel",
+    (e) => {
+      e.preventDefault();
+
+      target += e.deltaY;
+      target = Math.max(
+        0,
+        Math.min(target, document.body.scrollHeight - window.innerHeight)
+      );
+
+      if (!isScrolling) {
+        isScrolling = true;
+        requestAnimationFrame(update);
+      }
+    },
+    { passive: false }
+  );
+
+  function update() {
+    current += (target - current) * ease;
+
+    if (Math.abs(target - current) < 0.1) {
+      current = target;
+      isScrolling = false;
+    }
+
+    window.scrollTo(0, current);
+
+    if (isScrolling) {
+      requestAnimationFrame(update);
+    }
+  }
+})();
+</script>
  
 </footer>
