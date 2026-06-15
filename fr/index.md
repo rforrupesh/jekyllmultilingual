@@ -326,8 +326,8 @@ scripts:
 <main class="container1">
 
   <!-- H1 + P — visible before upload, hidden after -->
-  <h1 class="page-title" id="pageTitle">Unir archivos PDF</h1>
-  <p class="page-sub" id="pageSub">Sube tus archivos, organízalos, haz clic en unir PDF y descarga tu nuevo archivo único.</p>
+  <h1 class="page-title" id="pageTitle">Fusionner des fichiers PDF</h1>
+  <p class="page-sub" id="pageSub">Téléchargez vos fichiers, organisez-les, cliquez sur Fusionner PDF et téléchargez votre nouveau fichier PDF combiné.</p>
 
   <!-- UPLOAD STATE (centered, full viewport height) -->
   <div id="uploadState">
@@ -339,15 +339,15 @@ scripts:
           <line x1="12" y1="3" x2="12" y2="15"/>
         </svg>
       </div>
-      <h2>Arrastre aquí los archivos PDF</h2>
-      <p>o haga clic en el botón de abajo para navegar.</p>
+      <h2>Faites glisser les fichiers PDF ici</h2>
+      <p>ou cliquez sur le bouton ci-dessous pour parcourir.</p>
       <button class="btn-black" id="browseBtn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
         </svg>
-        Seleccionar archivos
+  Sélectionner des fichiers
       </button>
-      <p class="upload-note">Solo archivos PDF · Procesado localmente en su navegador</p>
+      <p class="upload-note">Fichiers PDF uniquement · Traités localement dans votre navigateur</p>
     </div>
     <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
   </div>
