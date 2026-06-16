@@ -5,47 +5,39 @@
     <p>© {{ "now" | date: "%Y" }} {{ site.title }} — {{ t.footer.rights }}</p>
   </div>
 
-  <script>
+<script>
 (() => {
-  const ease = 0.08; // Lower = smoother, Higher = more responsive
-
   let current = window.scrollY;
   let target = window.scrollY;
-  let isScrolling = false;
+  let velocity = 0;
+
+  function update() {
+    velocity += (target - current) * 0.08;
+    velocity *= 0.82;
+
+    current += velocity;
+
+    window.scrollTo(0, current);
+
+    requestAnimationFrame(update);
+  }
 
   window.addEventListener(
     "wheel",
     (e) => {
       e.preventDefault();
 
-      target += e.deltaY;
-      target = Math.max(
-        0,
-        Math.min(target, document.body.scrollHeight - window.innerHeight)
-      );
+      target += e.deltaY * 1.1;
 
-      if (!isScrolling) {
-        isScrolling = true;
-        requestAnimationFrame(update);
-      }
+      const max =
+        document.documentElement.scrollHeight - window.innerHeight;
+
+      target = Math.max(0, Math.min(target, max));
     },
     { passive: false }
   );
 
-  function update() {
-    current += (target - current) * ease;
-
-    if (Math.abs(target - current) < 0.1) {
-      current = target;
-      isScrolling = false;
-    }
-
-    window.scrollTo(0, current);
-
-    if (isScrolling) {
-      requestAnimationFrame(update);
-    }
-  }
+  update();
 })();
 </script>
  
