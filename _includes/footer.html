@@ -6,8 +6,7 @@
   </div>
 
 <script>
-
-  /**
+/**
  * Buttery Smooth Scroll
  * Drop this script into your website — no dependencies needed.
  * Feels smooth but not floaty. Just silky.
@@ -16,7 +15,7 @@
 (function () {
   // How smooth it feels:
   // Lower = snappier (0.05), Higher = more floaty (0.15)
-  const LERP_AMOUNT = 0.09;
+  const LERP_AMOUNT = 0.18;
 
   let currentY = window.scrollY;
   let targetY = window.scrollY;
@@ -56,7 +55,7 @@
       if (e.deltaMode === 2) delta *= window.innerHeight; // page mode
 
       // Clamp big jumps (e.g. trackpad momentum flicks)
-      delta = Math.sign(delta) * Math.min(Math.abs(delta), 240);
+      delta = Math.sign(delta) * Math.min(Math.abs(delta), 320);
 
       // Move the target, clamped to page bounds
       const maxScroll = document.body.scrollHeight - window.innerHeight;
