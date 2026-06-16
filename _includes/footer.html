@@ -6,38 +6,103 @@
   </div>
 
 <script>
-(() => {
-  let current = window.scrollY;
-  let target = window.scrollY;
-  let velocity = 0;
 
-  function update() {
-    velocity += (target - current) * 0.08;
-    velocity *= 0.82;
+  /**
+ * Buttery Smooth Scroll
+ * Drop this script into your website — no dependencies needed.
+ * Feels smooth but not floaty. Just silky.
+ */
 
-    current += velocity;
+(function () {
+  // How smooth it feels:
+  // Lower = snappier (0.05), Higher = more floaty (0.15)
+  const LERP_AMOUNT = 0.09;
 
-    window.scrollTo(0, current);
+  let currentY = window.scrollY;
+  let targetY = window.scrollY;
+  let rafId = null;
+  let isScrolling = false;
 
-    requestAnimationFrame(update);
+  // Linear interpolation helper
+  function lerp(start, end, amt) {
+    return start + (end - start) * amt;
   }
 
+  // The animation loop
+  function tick() {
+    currentY = lerp(currentY, targetY, LERP_AMOUNT);
+
+    // Stop animating when close enough (avoids infinite micro-scroll)
+    if (Math.abs(currentY - targetY) < 0.5) {
+      currentY = targetY;
+      isScrolling = false;
+      rafId = null;
+      return;
+    }
+
+    window.scrollTo(0, currentY);
+    rafId = requestAnimationFrame(tick);
+  }
+
+  // Intercept the wheel (mousewheel / trackpad) event
   window.addEventListener(
     "wheel",
-    (e) => {
+    function (e) {
       e.preventDefault();
 
-      target += e.deltaY * 1.1;
+      // Normalize delta across browsers
+      let delta = e.deltaY;
+      if (e.deltaMode === 1) delta *= 24;   // Firefox line mode
+      if (e.deltaMode === 2) delta *= window.innerHeight; // page mode
 
-      const max =
-        document.documentElement.scrollHeight - window.innerHeight;
+      // Clamp big jumps (e.g. trackpad momentum flicks)
+      delta = Math.sign(delta) * Math.min(Math.abs(delta), 240);
 
-      target = Math.max(0, Math.min(target, max));
+      // Move the target, clamped to page bounds
+      const maxScroll = document.body.scrollHeight - window.innerHeight;
+      targetY = Math.max(0, Math.min(maxScroll, targetY + delta));
+
+      // Kick off the animation loop if not already running
+      if (!isScrolling) {
+        isScrolling = true;
+        currentY = window.scrollY;
+        rafId = requestAnimationFrame(tick);
+      }
     },
     { passive: false }
   );
 
-  update();
+  // Keep targetY in sync if user scrolls via keyboard / scrollbar
+  window.addEventListener("scroll", function () {
+    if (!isScrolling) {
+      currentY = window.scrollY;
+      targetY = window.scrollY;
+    }
+  });
+
+  // Keyboard arrow keys & Page Up/Down — also smooth
+  window.addEventListener("keydown", function (e) {
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    let delta = 0;
+
+    if (e.key === "ArrowDown")  delta = 80;
+    if (e.key === "ArrowUp")    delta = -80;
+    if (e.key === "PageDown")   delta = window.innerHeight * 0.85;
+    if (e.key === "PageUp")     delta = -window.innerHeight * 0.85;
+    if (e.key === "End")        delta = maxScroll - targetY;
+    if (e.key === "Home")       delta = -targetY;
+
+    if (delta !== 0) {
+      e.preventDefault();
+      targetY = Math.max(0, Math.min(maxScroll, targetY + delta));
+
+      if (!isScrolling) {
+        isScrolling = true;
+        currentY = window.scrollY;
+        rafId = requestAnimationFrame(tick);
+      }
+    }
+  });
 })();
 </script>
  
