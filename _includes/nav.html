@@ -327,6 +327,235 @@ nav{
     <span class="line"></span>
   </button>
 
+
+  <!-- Search -->
+  <style>
+    /* ─── Search Button ───────────────────────────────── */
+.search-open-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius, 6px);
+  padding: 6px 10px;
+  cursor: pointer;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  transition: background 0.15s;
+}
+.search-open-btn:hover { background: var(--surface); }
+
+/* ─── Overlay ─────────────────────────────────────── */
+.search-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+  z-index: 3000;
+}
+.search-overlay.active { display: block; }
+
+/* ─── Modal ───────────────────────────────────────── */
+.search-modal {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 580px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  z-index: 3001;
+  overflow: hidden;
+}
+.search-modal.active { display: block; }
+
+.search-modal-inner { padding: 1rem; }
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  background: var(--surface);
+}
+
+#searchInput {
+  flex: 1;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  color: var(--text);
+  outline: none;
+  font-family: inherit;
+}
+
+.search-close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 1rem;
+  padding: 0;
+  line-height: 1;
+}
+.search-close-btn:hover { color: var(--text); }
+
+/* ─── Results ─────────────────────────────────────── */
+.search-results {
+  margin-top: 0.75rem;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.search-result-item {
+  display: block;
+  padding: 0.75rem 0.9rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text);
+  transition: background 0.15s;
+  border-bottom: 1px solid var(--border);
+}
+.search-result-item:last-child { border-bottom: none; }
+.search-result-item:hover { background: var(--surface); text-decoration: none; }
+
+.search-result-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: var(--text);
+}
+
+.search-result-excerpt {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.search-result-lang {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+.search-no-results {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 2rem 0;
+}
+  </style>
+<script>
+(function () {
+  const base = "{{ site.baseurl }}";
+  const currentLang = "{{ page.lang | default: 'es' }}";
+
+  const openBtn    = document.getElementById('searchOpenBtn');
+  const closeBtn   = document.getElementById('searchCloseBtn');
+  const overlay    = document.getElementById('searchOverlay');
+  const modal      = document.getElementById('searchModal');
+  const input      = document.getElementById('searchInput');
+  const results    = document.getElementById('searchResults');
+
+  let index = [];
+  let loaded = false;
+
+  function openSearch() {
+    modal.classList.add('active');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    input.focus();
+    if (!loaded) loadIndex();
+  }
+
+  function closeSearch() {
+    modal.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+    input.value = '';
+    results.innerHTML = '';
+  }
+
+  openBtn.addEventListener('click', openSearch);
+  closeBtn.addEventListener('click', closeSearch);
+  overlay.addEventListener('click', closeSearch);
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeSearch();
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
+  });
+
+  function loadIndex() {
+    fetch(base + '/search.json')
+      .then(r => r.json())
+      .then(data => {
+        index = data;
+        loaded = true;
+      })
+      .catch(() => {
+        results.innerHTML = '<p class="search-no-results">Could not load search index.</p>';
+      });
+  }
+
+  input.addEventListener('input', function () {
+    const q = input.value.trim().toLowerCase();
+    if (!q) { results.innerHTML = ''; return; }
+
+    // Filter by current page language
+    const filtered = index.filter(item =>
+      item.lang === currentLang &&
+      (item.title.toLowerCase().includes(q) || item.excerpt.toLowerCase().includes(q))
+    );
+
+    if (!filtered.length) {
+      results.innerHTML = '<p class="search-no-results">No results found.</p>';
+      return;
+    }
+
+    results.innerHTML = filtered.slice(0, 8).map(item => `
+      <a href="${item.url}" class="search-result-item">
+        <span class="search-result-lang">${item.lang}</span>
+        <div class="search-result-title">${highlight(item.title, q)}</div>
+        <div class="search-result-excerpt">${highlight(item.excerpt, q)}</div>
+      </a>
+    `).join('');
+  });
+
+  function highlight(text, q) {
+    const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    return text.replace(re, '<mark style="background:#fef08a;border-radius:2px;padding:0 2px;">$1</mark>');
+  }
+})();
+</script>
+<div class="search-wrap">
+  <button class="search-open-btn" id="searchOpenBtn" aria-label="Search">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+  </button>
+</div>
+
+<!-- Search Modal -->
+<div class="search-overlay" id="searchOverlay"></div>
+<div class="search-modal" id="searchModal">
+  <div class="search-modal-inner">
+    <div class="search-input-wrap">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="Search..." autocomplete="off" />
+      <button class="search-close-btn" id="searchCloseBtn">✕</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+  
 </nav>
 
 <div class="overlay" id="overlay"></div>
