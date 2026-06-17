@@ -572,7 +572,6 @@ document.addEventListener("click", () => langDropdown.classList.remove("active")
 
     // Filter by current page language
     const filtered = index.filter(item =>
-      item.lang === currentLang &&
       (item.title.toLowerCase().includes(q) || item.excerpt.toLowerCase().includes(q))
     );
 
