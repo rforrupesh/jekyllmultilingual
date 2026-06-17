@@ -454,6 +454,66 @@ nav{
   padding: 2rem 0;
 }
   </style>
+
+<div class="search-wrap">
+  <button class="search-open-btn" id="searchOpenBtn" aria-label="Search">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+  </button>
+</div>
+
+<!-- Search Modal -->
+<div class="search-overlay" id="searchOverlay"></div>
+<div class="search-modal" id="searchModal">
+  <div class="search-modal-inner">
+    <div class="search-input-wrap">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="Search..." autocomplete="off" />
+      <button class="search-close-btn" id="searchCloseBtn">✕</button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+  
+</nav>
+
+<div class="overlay" id="overlay"></div>
+
+<script>
+const navbtn = document.getElementById("navbtn");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("overlay");
+
+navbtn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  navbtn.classList.toggle("active");
+  overlay.classList.toggle("active");
+  document.body.style.overflow = menu.classList.contains("active") ? "hidden" : "";
+});
+
+function closeMenu(){
+  menu.classList.remove("active");
+  navbtn.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+overlay.addEventListener("click", closeMenu);
+document.querySelectorAll(".menu a").forEach(link => link.addEventListener("click", closeMenu));
+
+const langBtn = document.getElementById("langBtn");
+const langDropdown = document.getElementById("langDropdown");
+
+langBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  langDropdown.classList.toggle("active");
+});
+
+document.addEventListener("click", () => langDropdown.classList.remove("active"));
+</script>
+
+
+
 <script>
 (function () {
   const base = "{{ site.baseurl }}";
@@ -535,60 +595,4 @@ nav{
     return text.replace(re, '<mark style="background:#fef08a;border-radius:2px;padding:0 2px;">$1</mark>');
   }
 })();
-</script>
-<div class="search-wrap">
-  <button class="search-open-btn" id="searchOpenBtn" aria-label="Search">
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-  </button>
-</div>
-
-<!-- Search Modal -->
-<div class="search-overlay" id="searchOverlay"></div>
-<div class="search-modal" id="searchModal">
-  <div class="search-modal-inner">
-    <div class="search-input-wrap">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-      <input type="text" id="searchInput" placeholder="Search..." autocomplete="off" />
-      <button class="search-close-btn" id="searchCloseBtn">✕</button>
-    </div>
-    <div class="search-results" id="searchResults"></div>
-  </div>
-</div>
-
-  
-</nav>
-
-<div class="overlay" id="overlay"></div>
-
-<script>
-const navbtn = document.getElementById("navbtn");
-const menu = document.getElementById("menu");
-const overlay = document.getElementById("overlay");
-
-navbtn.addEventListener("click", () => {
-  menu.classList.toggle("active");
-  navbtn.classList.toggle("active");
-  overlay.classList.toggle("active");
-  document.body.style.overflow = menu.classList.contains("active") ? "hidden" : "";
-});
-
-function closeMenu(){
-  menu.classList.remove("active");
-  navbtn.classList.remove("active");
-  overlay.classList.remove("active");
-  document.body.style.overflow = "";
-}
-
-overlay.addEventListener("click", closeMenu);
-document.querySelectorAll(".menu a").forEach(link => link.addEventListener("click", closeMenu));
-
-const langBtn = document.getElementById("langBtn");
-const langDropdown = document.getElementById("langDropdown");
-
-langBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  langDropdown.classList.toggle("active");
-});
-
-document.addEventListener("click", () => langDropdown.classList.remove("active"));
 </script>
