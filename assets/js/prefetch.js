@@ -1,8 +1,8 @@
-// ── perf.js v2 — Performance + Accessibility, one file ──────
-// Fixes: render-blocking JS/CSS, image size, cache TTL,
-//        link prefetch, contrast ratios, font sizes, focus rings
-// Place ONE <script src="perf.js" defer></script> in <head>
-// Also keep sw.js in your root folder
+// ── perf.js v3 — Performance + A11y + Auto Cache ─────────────
+// ONE file fixes: render-blocking, contrast, font sizes,
+// image lazy load, SW cache with long TTL, link prefetch
+// Usage: <script src="perf.js" defer></script> in <head>
+// Keep sw.js in your repo root folder.
 
 (function () {
   'use strict';
@@ -12,8 +12,7 @@
   const SW_SCOPE = '/jekyllmultilingual/';
 
   // ════════════════════════════════════════════════════════════
-  // 1. LAZY LIBRARY LOADER — pdf-lib + pako
-  //    Removes 2,240ms of render-blocking
+  // 1. LAZY LIBRARY LOADER — removes 2,240ms render-blocking
   // ════════════════════════════════════════════════════════════
   window.__libsLoaded  = false;
   window.__libsLoading = null;
@@ -22,7 +21,7 @@
     if (window.__libsLoaded)  return Promise.resolve();
     if (window.__libsLoading) return window.__libsLoading;
     window.__libsLoading = new Promise((resolve, reject) => {
-      function loadScript(src) {
+      function load(src) {
         return new Promise((res, rej) => {
           const s = document.createElement('script');
           s.src = src; s.onload = res;
@@ -30,8 +29,8 @@
           document.head.appendChild(s);
         });
       }
-      loadScript('https://unpkg.com/pdf-lib/dist/pdf-lib.min.js')
-        .then(() => loadScript('https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js'))
+      load('https://unpkg.com/pdf-lib/dist/pdf-lib.min.js')
+        .then(() => load('https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js'))
         .then(() => { window.__libsLoaded = true; resolve(); })
         .catch(reject);
     });
@@ -46,7 +45,7 @@
       if (link.dataset.deferred) return;
       link.dataset.deferred = '1';
       const href = link.href;
-      const pre = document.createElement('link');
+      const pre  = document.createElement('link');
       pre.rel = 'preload'; pre.as = 'style'; pre.href = href;
       pre.onload = function () { this.onload = null; this.rel = 'stylesheet'; };
       const ns = document.createElement('noscript');
@@ -58,125 +57,46 @@
   }
 
   // ════════════════════════════════════════════════════════════
-  // 3. CONTRAST + FONT SIZE + ACCESSIBILITY CSS
-  //    Injected as a <style> so it overrides existing styles
+  // 3. ACCESSIBILITY + CONTRAST CSS
   // ════════════════════════════════════════════════════════════
   const A11Y_CSS = `
-    /* ── Subtitle / page-sub (#888 → #595959, 7:1) ── */
-    .page-sub { color: #595959 !important; font-size: 15px !important; }
-
-    /* ── Upload box secondary text (#999 → #646464, 5.9:1) ── */
-    .upload-box p { color: #646464 !important; }
-
-    /* ── Upload note (#bbb → #767676, 4.5:1) ── */
-    .upload-note { color: #767676 !important; font-size: 13px !important; }
-
-    /* ── Tip numbers (#bbb → blue #2563eb, 4.6:1) ── */
-    .tip-n {
-      color: #2563eb !important;
-      font-size: 15px !important;
-      font-weight: 700 !important;
-      min-width: 28px;
-    }
-
-    /* ── Tip body text ── */
-    .tip { color: #333333 !important; font-size: 15px !important; line-height: 1.65 !important; }
-
-    /* ── Links in body — add underline so color isn't the only cue ── */
-    .section-body a, .post-content a, #infoContent a {
-      color: #1a56db !important;
-      text-decoration: underline !important;
-      text-underline-offset: 3px;
-      font-weight: 500;
-    }
-    .section-body a:hover, .post-content a:hover, #infoContent a:hover {
-      color: #1e40af !important;
-      text-decoration-thickness: 2px;
-    }
-
-    /* ── Section body text (#555 → #3d3d3d, larger) ── */
-    .section-body {
-      color: #3d3d3d !important;
-      font-size: 15px !important;
-      line-height: 1.8 !important;
-    }
-
-    /* ── Card text (#666 at 13px → #4a4a4a at 14px) ── */
-    .card p, .card ul li {
-      color: #4a4a4a !important;
-      font-size: 14px !important;
-      line-height: 1.6 !important;
-    }
-
-    /* ── File row meta (#aaa → #767676, 4.5:1) ── */
-    .row-size { color: #767676 !important; }
-    .row-num  { color: #595959 !important; }
-
-    /* ── File count badge (#888 on #ebebea → #444 on #e5e5e5, 6.1:1) ── */
-    .file-count { background: #e5e5e5 !important; color: #444444 !important; }
-
-    /* ── Toolbar btn text/icon ── */
-    .btn-sm       { color: #333333 !important; }
-    .btn-sm svg   { stroke: #444444 !important; }
-
-    /* ── Add-more row button (#aaa → #595959) ── */
-    .add-row-btn  { color: #595959 !important; }
-
-    /* ── Drag handle dots (#bbb → #888, 4.5:1) ── */
-    .drag-handle span { background: #888888 !important; }
-
-    /* ── Row delete default (#d0d0cc → #767676) ── */
-    .row-del      { color: #767676 !important; }
-    .row-del:hover{ color: #dc2626 !important; }
-
-    /* ── Upload box heading ── */
-    .upload-box h2 { color: #1a1a1a !important; font-size: 17px !important; font-weight: 600 !important; }
-
-    /* ── Table ── */
-    table th { color: #1a1a1a !important; font-size: 14px; }
-    table td { color: #333333 !important; font-size: 14px; line-height: 1.6; }
-
-    /* ── Section titles ── */
-    .section-title { color: #1a1a1a !important; }
-
-    /* ── Focus rings — keyboard navigation ── */
-    button:focus-visible,
-    a:focus-visible,
-    input:focus-visible,
-    select:focus-visible {
-      outline: 2px solid #2563eb !important;
-      outline-offset: 3px;
-      border-radius: 4px;
-    }
-
-    /* ── Nav / lang dropdown focus ── */
-    .menu a:focus-visible,
-    .lang-dropdown a:focus-visible {
-      outline: 2px solid #2563eb !important;
-      outline-offset: 2px;
-      border-radius: 6px;
-    }
-
-    /* ── Progress text in spinner ── */
-    .progress-text { color: #1a1a1a !important; }
-
-    /* ── Relatedblog card headings ── */
-    .relatedbloganywhere-content a h3 { color: #1a1a1a !important; font-size: 15px !important; }
-
-    /* ── Footer text ── */
-    .site-footer, .footer { color: #595959 !important; }
+    .page-sub{color:#595959!important;font-size:15px!important}
+    .upload-box p{color:#646464!important}
+    .upload-note{color:#767676!important;font-size:13px!important}
+    .tip-n{color:#2563eb!important;font-size:15px!important;font-weight:700!important;min-width:28px}
+    .tip{color:#333!important;font-size:15px!important;line-height:1.65!important}
+    .section-body a,.post-content a,#infoContent a{color:#1a56db!important;text-decoration:underline!important;text-underline-offset:3px;font-weight:500}
+    .section-body a:hover,.post-content a:hover,#infoContent a:hover{color:#1e40af!important;text-decoration-thickness:2px}
+    .section-body{color:#3d3d3d!important;font-size:15px!important;line-height:1.8!important}
+    .card p,.card ul li{color:#4a4a4a!important;font-size:14px!important;line-height:1.6!important}
+    .row-size{color:#767676!important}
+    .row-num{color:#595959!important}
+    .file-count{background:#e5e5e5!important;color:#444!important}
+    .btn-sm{color:#333!important}
+    .btn-sm svg{stroke:#444!important}
+    .add-row-btn{color:#595959!important}
+    .drag-handle span{background:#888!important}
+    .row-del{color:#767676!important}
+    .row-del:hover{color:#dc2626!important}
+    .upload-box h2{color:#1a1a1a!important;font-size:17px!important;font-weight:600!important}
+    table th{color:#1a1a1a!important;font-size:14px}
+    table td{color:#333!important;font-size:14px;line-height:1.6}
+    .section-title{color:#1a1a1a!important}
+    .progress-text{color:#1a1a1a!important}
+    .site-footer,.footer{color:#595959!important}
+    button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #2563eb!important;outline-offset:3px;border-radius:4px}
+    .menu a:focus-visible,.lang-dropdown a:focus-visible{outline:2px solid #2563eb!important;outline-offset:2px;border-radius:6px}
   `;
 
   function injectA11yCSS() {
-    const style = document.createElement('style');
-    style.id = 'a11y-fix';
-    style.textContent = A11Y_CSS;
-    document.head.appendChild(style);
+    const s = document.createElement('style');
+    s.id = 'a11y-fix';
+    s.textContent = A11Y_CSS;
+    document.head.appendChild(s);
   }
 
   // ════════════════════════════════════════════════════════════
   // 4. IMAGE OPTIMISATION
-  //    lazy + decoding=async + fetchpriority=high on first img
   // ════════════════════════════════════════════════════════════
   function optimiseImages() {
     document.querySelectorAll('img').forEach((img, i) => {
@@ -191,10 +111,47 @@
   }
 
   // ════════════════════════════════════════════════════════════
-  // 5. SERVICE WORKER — cache + offline + long TTL
+  // 5. COLLECT ALL PAGE ASSETS (CSS, JS, images, fonts, flags)
+  //    Returns every URL the page is already using
+  // ════════════════════════════════════════════════════════════
+  function collectPageAssets() {
+    const urls = new Set();
+    const add  = href => {
+      try {
+        const u = new URL(href, location.href);
+        if (u.protocol.startsWith('http')) urls.add(u.href);
+      } catch (_) {}
+    };
+
+    // <link href="..."> (CSS, icons, preloads)
+    document.querySelectorAll('link[href]').forEach(el => add(el.href));
+
+    // <script src="...">
+    document.querySelectorAll('script[src]').forEach(el => add(el.src));
+
+    // <img src="...">
+    document.querySelectorAll('img[src]').forEach(el => add(el.src));
+
+    // <img srcset="...">
+    document.querySelectorAll('img[srcset]').forEach(el => {
+      el.srcset.split(',').forEach(part => add(part.trim().split(/\s+/)[0]));
+    });
+
+    // CSS background-image via computed style (catches logo, flags etc.)
+    document.querySelectorAll('[style*="url("]').forEach(el => {
+      const m = el.style.backgroundImage.match(/url\(["']?([^"')]+)["']?\)/);
+      if (m) add(m[1]);
+    });
+
+    return [...urls];
+  }
+
+  // ════════════════════════════════════════════════════════════
+  // 6. SERVICE WORKER — register + auto-cache all assets
   // ════════════════════════════════════════════════════════════
   function registerSW() {
     if (!('serviceWorker' in navigator)) return;
+
     navigator.serviceWorker.register(SW_PATH, { scope: SW_SCOPE })
       .then(reg => {
         if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
@@ -203,21 +160,31 @@
             if (this.state === 'installed') this.postMessage({ type: 'SKIP_WAITING' });
           });
         });
+
         navigator.serviceWorker.ready.then(() => {
+          // Small delay so page renders first, then cache everything
           setTimeout(() => {
-            sendToSW('PREFETCH', [
+            const assets = collectPageAssets();
+
+            // Add CDN libs too
+            assets.push(
               'https://unpkg.com/pdf-lib/dist/pdf-lib.min.js',
-              'https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js',
-            ]);
+              'https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js'
+            );
+
+            // Send ALL assets to SW — it will apply correct TTL per type
+            sendToSW('PREFETCH', assets);
+
+            // Also prefetch all internal page links
             discoverAndPrefetch();
-          }, 1500);
+          }, 800);
         });
       })
       .catch(err => console.warn('[SW]', err));
   }
 
   // ════════════════════════════════════════════════════════════
-  // 6. AUTO-DISCOVER ALL <a> LINKS AND PREFETCH
+  // 7. AUTO-DISCOVER ALL <a> LINKS AND PREFETCH
   // ════════════════════════════════════════════════════════════
   function discoverAndPrefetch() {
     const urls = new Set();
@@ -231,7 +198,7 @@
   }
 
   // ════════════════════════════════════════════════════════════
-  // 7. HOVER + TOUCH PREFETCH
+  // 8. HOVER + TOUCH PREFETCH
   // ════════════════════════════════════════════════════════════
   function setupHoverPrefetch() {
     let timer;
@@ -260,7 +227,7 @@
   }
 
   // ════════════════════════════════════════════════════════════
-  // 8. NAVIGATION PROGRESS BAR
+  // 9. NAVIGATION PROGRESS BAR
   // ════════════════════════════════════════════════════════════
   function setupProgressBar() {
     const bar = document.createElement('div');
@@ -281,7 +248,7 @@
   }
 
   // ════════════════════════════════════════════════════════════
-  // 9. AUTO-PATCH mergePDFs — no manual code change needed
+  // 10. AUTO-PATCH mergePDFs — no manual code edit needed
   // ════════════════════════════════════════════════════════════
   function patchMergePDFs() {
     const wrap = fn => async function () {
@@ -289,8 +256,7 @@
       return fn.apply(this, arguments);
     };
     if (typeof window.mergePDFs === 'function') {
-      window.mergePDFs = wrap(window.mergePDFs);
-      return;
+      window.mergePDFs = wrap(window.mergePDFs); return;
     }
     let _fn;
     Object.defineProperty(window, 'mergePDFs', {
@@ -303,7 +269,7 @@
   // ════════════════════════════════════════════════════════════
   // BOOT
   // ════════════════════════════════════════════════════════════
-  patchMergePDFs(); // must run before page scripts
+  patchMergePDFs();
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', boot);
