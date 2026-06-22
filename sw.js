@@ -1,95 +1,89 @@
-// ── UnificarPDF Service Worker ──────────────────────────────
-const CACHE_NAME = 'unificarpdf-v1';
+// ── UnificarPDF Service Worker v3 — Zero Hardcoded URLs ─────
+// Pages tell the SW what to cache. SW never hardcodes any URLs.
 
-// All assets needed to run the app offline
-const ASSETS_TO_CACHE = [
-  './',
-  './index.html',
-  // pdf-lib (the core merge engine)
-  'https://unpkg.com/pdf-lib/dist/pdf-lib.min.js',
-  // pako (compression)
-  'https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js',
-];
+const CACHE_NAME = 'unificarpdf-v3';
 
-// ── INSTALL: pre-cache everything ──────────────────────────
-self.addEventListener('install', event => {
-  self.skipWaiting();
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      // Cache each asset individually so one failure doesn't block others
-      return Promise.allSettled(
-        ASSETS_TO_CACHE.map(url =>
-          cache.add(url).catch(err => {
-            console.warn('[SW] Failed to cache:', url, err);
-          })
-        )
-      );
-    })
-  );
-});
+// CDN domains we trust to cache
+const TRUSTED_CDN = ['unpkg.com', 'cdnjs.cloudflare.com', 'fonts.googleapis.com', 'fonts.gstatic.com'];
 
-// ── ACTIVATE: remove old caches ────────────────────────────
+const isCDN    = h => TRUSTED_CDN.some(d => h === d || h.endsWith('.' + d));
+const isOrigin = u => u.origin === self.location.origin;
+const isAsset  = u => /\.(css|js|woff2?|ttf|png|jpg|jpeg|svg|ico|webp|gif|json)(\?.*)?$/.test(u.pathname);
+const isHTML   = r => (r.headers?.get('accept') || '').includes('text/html');
+
+// ── INSTALL: nothing to pre-cache, page will tell us ─────────
+self.addEventListener('install', () => self.skipWaiting());
+
+// ── ACTIVATE ─────────────────────────────────────────────────
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(
-        keys
-          .filter(k => k !== CACHE_NAME)
-          .map(k => caches.delete(k))
-      )
-    ).then(() => self.clients.claim())
+    caches.keys()
+      .then(keys => Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k))))
+      .then(() => self.clients.claim())
   );
 });
 
-// ── FETCH: serve from cache, fall back to network ──────────
+// ── FETCH: smart routing ──────────────────────────────────────
 self.addEventListener('fetch', event => {
-  // Only handle GET requests
   if (event.request.method !== 'GET') return;
-
   const url = new URL(event.request.url);
-
-  // Skip non-http(s) requests
   if (!url.protocol.startsWith('http')) return;
 
-  event.respondWith(
-    caches.match(event.request).then(cached => {
-      if (cached) return cached;
+  // CDN libs → Cache First (immutable)
+  if (isCDN(url.hostname)) {
+    event.respondWith(cacheFirst(event.request));
+    return;
+  }
 
-      // Not in cache — try network, then optionally cache the response
-      return fetch(event.request).then(response => {
-        // Only cache successful responses for same-origin or our CDN assets
-        if (
-          response.ok &&
-          (url.origin === self.location.origin ||
-           url.hostname === 'unpkg.com' ||
-           url.hostname === 'cdnjs.cloudflare.com')
-        ) {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-        }
-        return response;
-      }).catch(() => {
-        // Offline and not cached
-        // For HTML navigation requests, return the cached index
-        if (event.request.headers.get('accept')?.includes('text/html')) {
-          return caches.match('./') || caches.match('./index.html');
-        }
-        return new Response('Offline — resource not cached', { status: 503 });
-      });
-    })
-  );
+  // Same-origin assets (CSS/JS/images) → Cache First
+  if (isOrigin(url) && isAsset(url)) {
+    event.respondWith(cacheFirst(event.request));
+    return;
+  }
+
+  // Same-origin HTML → Stale While Revalidate (instant + stays fresh)
+  if (isOrigin(url)) {
+    event.respondWith(staleWhileRevalidate(event.request));
+    return;
+  }
 });
 
-// ── MESSAGE: allow page to trigger cache refresh ───────────
-self.addEventListener('message', event => {
-  if (event.data?.type === 'SKIP_WAITING') {
-    self.skipWaiting();
+// ── Strategies ────────────────────────────────────────────────
+async function cacheFirst(req) {
+  const cached = await caches.match(req);
+  if (cached) return cached;
+  try {
+    const res = await fetch(req);
+    if (res.ok) (await caches.open(CACHE_NAME)).put(req, res.clone());
+    return res;
+  } catch {
+    return new Response('Offline', { status: 503 });
   }
-  if (event.data?.type === 'CACHE_STATUS') {
-    caches.open(CACHE_NAME).then(cache =>
-      cache.keys().then(keys => {
-        event.ports[0].postMessage({ cached: keys.length });
-      })
+}
+
+async function staleWhileRevalidate(req) {
+  const cache  = await caches.open(CACHE_NAME);
+  const cached = await cache.match(req);
+  // Always revalidate in background
+  const fresh  = fetch(req).then(res => { if (res.ok) cache.put(req, res.clone()); return res; }).catch(() => null);
+  return cached || fresh || new Response('Offline', { status: 503 });
+}
+
+// ── MESSAGES from page ────────────────────────────────────────
+self.addEventListener('message', async event => {
+  const { type, urls } = event.data || {};
+
+  // Page sends discovered links → we cache them silently
+  if (type === 'PREFETCH' && Array.isArray(urls)) {
+    const cache = await caches.open(CACHE_NAME);
+    Promise.allSettled(
+      urls.map(url =>
+        caches.match(url).then(hit => {
+          if (!hit) return fetch(url).then(r => { if (r.ok) cache.put(url, r.clone()); }).catch(() => {});
+        })
+      )
     );
   }
+
+  if (type === 'SKIP_WAITING') self.skipWaiting();
 });
