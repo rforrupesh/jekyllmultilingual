@@ -1,20 +1,18 @@
-// ── UnificarPDF Service Worker v3 — Zero Hardcoded URLs ─────
-// Pages tell the SW what to cache. SW never hardcodes any URLs.
+// ── UnificarPDF Service Worker v4 — Performance + Cache ──────
+const CACHE_NAME = 'unificarpdf-v4';
 
-const CACHE_NAME = 'unificarpdf-v3';
+// Long cache for immutable assets (CDN libs never change at same URL)
+const IMMUTABLE_CDN = ['unpkg.com', 'cdnjs.cloudflare.com', 'fonts.gstatic.com'];
 
-// CDN domains we trust to cache
-const TRUSTED_CDN = ['unpkg.com', 'cdnjs.cloudflare.com', 'fonts.googleapis.com', 'fonts.gstatic.com'];
-
-const isCDN    = h => TRUSTED_CDN.some(d => h === d || h.endsWith('.' + d));
+// Helpers
+const isCDN    = h => IMMUTABLE_CDN.some(d => h === d || h.endsWith('.' + d));
 const isOrigin = u => u.origin === self.location.origin;
-const isAsset  = u => /\.(css|js|woff2?|ttf|png|jpg|jpeg|svg|ico|webp|gif|json)(\?.*)?$/.test(u.pathname);
-const isHTML   = r => (r.headers?.get('accept') || '').includes('text/html');
+const isAsset  = u => /\.(css|js|woff2?|ttf|png|jpg|jpeg|svg|ico|webp|gif|avif|json)(\?.*)?$/.test(u.pathname);
 
-// ── INSTALL: nothing to pre-cache, page will tell us ─────────
+// ── INSTALL ───────────────────────────────────────────────────
 self.addEventListener('install', () => self.skipWaiting());
 
-// ── ACTIVATE ─────────────────────────────────────────────────
+// ── ACTIVATE ──────────────────────────────────────────────────
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys()
@@ -23,57 +21,89 @@ self.addEventListener('activate', event => {
   );
 });
 
-// ── FETCH: smart routing ──────────────────────────────────────
+// ── FETCH ─────────────────────────────────────────────────────
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
   if (!url.protocol.startsWith('http')) return;
 
-  // CDN libs → Cache First (immutable)
+  // CDN libs (pdf-lib, pako) → Cache forever, serve instantly
   if (isCDN(url.hostname)) {
-    event.respondWith(cacheFirst(event.request));
+    event.respondWith(cacheForever(event.request));
     return;
   }
 
-  // Same-origin assets (CSS/JS/images) → Cache First
+  // Same-origin static assets → Cache with long TTL override
   if (isOrigin(url) && isAsset(url)) {
-    event.respondWith(cacheFirst(event.request));
+    event.respondWith(cacheAssetLong(event.request));
     return;
   }
 
-  // Same-origin HTML → Stale While Revalidate (instant + stays fresh)
+  // HTML pages → Stale-while-revalidate
   if (isOrigin(url)) {
     event.respondWith(staleWhileRevalidate(event.request));
     return;
   }
 });
 
-// ── Strategies ────────────────────────────────────────────────
-async function cacheFirst(req) {
+// Cache forever (CDN libs with version in URL — safe)
+async function cacheForever(req) {
   const cached = await caches.match(req);
   if (cached) return cached;
   try {
     const res = await fetch(req);
-    if (res.ok) (await caches.open(CACHE_NAME)).put(req, res.clone());
+    if (res.ok) {
+      // Store with long cache headers stripped — SW is the cache
+      const cache = await caches.open(CACHE_NAME);
+      // Clone and rewrite cache-control to be long
+      const headers = new Headers(res.headers);
+      headers.set('Cache-Control', 'public, max-age=31536000, immutable');
+      const longRes = new Response(await res.blob(), { status: res.status, statusText: res.statusText, headers });
+      cache.put(req, longRes.clone());
+      return longRes;
+    }
     return res;
   } catch {
     return new Response('Offline', { status: 503 });
   }
 }
 
+// Cache static assets with 7-day TTL
+async function cacheAssetLong(req) {
+  const cached = await caches.match(req);
+  if (cached) return cached;
+  try {
+    const res = await fetch(req);
+    if (res.ok) {
+      const cache = await caches.open(CACHE_NAME);
+      const headers = new Headers(res.headers);
+      headers.set('Cache-Control', 'public, max-age=604800'); // 7 days
+      const longRes = new Response(await res.blob(), { status: res.status, statusText: res.statusText, headers });
+      cache.put(req, longRes.clone());
+      return longRes;
+    }
+    return res;
+  } catch {
+    const fallback = await caches.match(req);
+    return fallback || new Response('Offline', { status: 503 });
+  }
+}
+
+// Stale-while-revalidate for HTML
 async function staleWhileRevalidate(req) {
   const cache  = await caches.open(CACHE_NAME);
   const cached = await cache.match(req);
-  // Always revalidate in background
-  const fresh  = fetch(req).then(res => { if (res.ok) cache.put(req, res.clone()); return res; }).catch(() => null);
+  const fresh  = fetch(req).then(res => {
+    if (res.ok) cache.put(req, res.clone());
+    return res;
+  }).catch(() => null);
   return cached || fresh || new Response('Offline', { status: 503 });
 }
 
-// ── MESSAGES from page ────────────────────────────────────────
+// ── MESSAGES ──────────────────────────────────────────────────
 self.addEventListener('message', async event => {
   const { type, urls } = event.data || {};
 
-  // Page sends discovered links → we cache them silently
   if (type === 'PREFETCH' && Array.isArray(urls)) {
     const cache = await caches.open(CACHE_NAME);
     Promise.allSettled(
