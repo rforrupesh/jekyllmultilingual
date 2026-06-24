@@ -35,8 +35,8 @@ head_style: |
   .page-title.hidden { display: none; }
   .page-sub.hidden   { display: none; }
 
-/* ── UPLOAD BOX ── */
-.upload-box {
+  /* ── UPLOAD BOX ── */
+  .upload-box {
   background: #e61619;
   border: 1px dashed #ffffff;
   border-radius: 10px;
@@ -45,27 +45,27 @@ head_style: |
   cursor: pointer;
   transition: border-color .2s, background .2s;
   user-select: none;
-}
-.upload-box:hover, .upload-box.dragover { border-color: #3b82f6; background: #e61619; }
-.upload-box .icon {
+  }
+ .upload-box:hover, .upload-box.dragover { border-color: #3b82f6; background: #e61619; }
+ .upload-box .icon {
   width: 46px; height: 46px;
   background: white; border: 1px solid var(--border); border-radius: 10px;
   display: flex; align-items: center; justify-content: center; margin: 0 auto 14px;
-}
-.upload-box .icon svg { width: 22px; height: 22px; stroke: #555; }
-.upload-box h2 { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: #ffffff; }
-.upload-box p { color: #ffffff; font-size: 13px; margin-bottom: 20px; }
-.btn-black {
+ }
+ .upload-box .icon svg { width: 22px; height: 22px; stroke: #555; }
+ .upload-box h2 { font-size: 16px; font-weight: 600; margin-bottom: 6px; color: #ffffff; }
+ .upload-box p { color: #ffffff; font-size: 13px; margin-bottom: 20px; }
+ .btn-black {
   background: white; color: #000000;
   border: none; border-radius: 7px;
   padding: 9px 20px;
   font-family: inherit; font-size: 13px; font-weight: 500;
   cursor: pointer; transition: background .15s, color .15s;
   display: inline-flex; align-items: center; gap: 7px;
-}
-.btn-black:hover { background: #3A72ED; color: #ffffff; }
-.btn-black svg { width: 14px; height: 14px; }
-.upload-note { margin-top: 12px; color: #ffffff; font-size: 12px; }
+ }
+ .btn-black:hover { background: #3A72ED; color: #ffffff; }
+ .btn-black svg { width: 14px; height: 14px; }
+ .upload-note { margin-top: 12px; color: #ffffff; font-size: 12px; }
 
   #uploadedState { display: none; }
 
@@ -279,7 +279,7 @@ head_style: |
   .tag.g { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
   .tag.r { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
   .tips { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
-  .tip { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; font-size: 21px; color: #555; line-height: 1.6; }
+  .tip { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; font-size:  21px; color: #555; line-height: 1.6; }
   .tip-n { font-size: 19px; font-weight: 600; color: #241616; flex-shrink: 0; padding-top: 1px; }
 
   /* ── TOAST ── */
