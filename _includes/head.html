@@ -91,9 +91,7 @@
 <!-- =====================
      Stylesheet
      ===================== -->
-<link rel="preload" href="{{ base }}/assets/css/main.css" as="style" 
-onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ base }}/assets/css/main.css"></noscript>
+<link rel="preload" href="{{ base }}/assets/css/main.css" as="style">
 
 {% if page.css %}
 <link rel="stylesheet" href="{{ '/assets/css/' | append: page.css | append: '.css' | relative_url }}">
