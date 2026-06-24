@@ -316,9 +316,6 @@ head_style: |
   outline-offset: 2px;
  } 
 
-scripts:
-    - https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
-    - https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js
 
 
 ---
@@ -760,6 +757,10 @@ Reordene manualmente los archivos antes de fusionarlos o cámbieles el nombre ut
 <!-- FOOTER — hidden until files uploaded -->
 
 <div class="toast" id="toast"></div>
+
+<script defer src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+
 
 <script>
 let files = [];
