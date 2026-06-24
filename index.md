@@ -306,7 +306,7 @@ head_style: |
   color: #0000EE;          /* high-contrast blue */
   text-decoration: underline; /* underline makes it distinguishable without color */
   font-weight: 500;
-}
+ }
 
  #infoContent a:hover,
  #infoContent a:focus {
@@ -314,7 +314,7 @@ head_style: |
   text-decoration: underline;
   outline: 2px solid #0000AA; /* focus indicator for keyboard users */
   outline-offset: 2px;
-}
+ } 
 
 scripts:
     - https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
