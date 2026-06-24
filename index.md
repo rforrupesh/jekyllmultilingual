@@ -30,14 +30,14 @@ head_style: |
   }
   .page-sub {
   display: block;
-  color: #888; font-size: 14px; margin-bottom: 20px;
+  color: #111010; font-size: 14px; margin-bottom: 20px;
   }
   .page-title.hidden { display: none; }
   .page-sub.hidden   { display: none; }
 
   /* ── UPLOAD BOX ── */
   .upload-box {
-  background: #E9EFFD;
+  background: #1e2f4d;
   border: 1.5px dashed #4285F4;
   border-radius: 10px;
   padding: 60px 24px;
@@ -54,7 +54,7 @@ head_style: |
   }
   .upload-box .icon svg { width: 22px; height: 22px; stroke: #555; }
   .upload-box h2 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
-  .upload-box p { color: #999; font-size: 13px; margin-bottom: 20px; }
+  .upload-box p { color: #111010; font-size: 13px; margin-bottom: 20px; }
 
   .btn-black {
   background: #2563eb; color: #fff;
@@ -280,8 +280,8 @@ head_style: |
   .tag.g { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
   .tag.r { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
   .tips { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
-  .tip { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; font-size:   16px; color: #555; line-height: 1.6; }
-  .tip-n { font-size: 14px; font-weight: 600; color: #bbb; flex-shrink: 0; padding-top: 1px; }
+  .tip { display: flex; gap: 12px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; font-size: 21px; color: #555; line-height: 1.6; }
+  .tip-n { font-size: 19px; font-weight: 600; color: #241616; flex-shrink: 0; padding-top: 1px; }
 
   /* ── TOAST ── */
   .toast {
