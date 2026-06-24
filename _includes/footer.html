@@ -4,50 +4,5 @@
   <div class="footer-container">
     <p>© {{ "now" | date: "%Y" }} {{ site.title }} — {{ t.footer.rights }}</p>
   </div>
-
-<script>
-  function optimizeImages() {
-  const images = document.querySelectorAll('img:not([data-optimized])');
-
-  images.forEach(img => {
-    const src = img.getAttribute('src');
-    if (!src) return;
-
-    // 1. Lazy load (skip hero/above-fold images)
-    if (!img.hasAttribute('fetchpriority')) {
-      img.setAttribute('loading', 'lazy');
-      img.setAttribute('decoding', 'async');
-    }
-
-    // 2. Add width/height if missing (prevents CLS)
-    if (!img.hasAttribute('width') && img.naturalWidth) {
-      img.setAttribute('width', img.naturalWidth);
-      img.setAttribute('height', img.naturalHeight);
-    }
-
-    // 3. Swap src to WebP if browser supports it
-    if (!src.match(/\.(svg|webp|avif|gif)(\?|$)/i)) {
-      const webpSrc = src.replace(/\.(png|jpe?g)(\?|$)/i, '.webp$2');
-      const testImg = new Image();
-      testImg.onload = () => { img.src = webpSrc; };  // only swaps if file exists
-      testImg.onerror = () => {};                      // silently keeps original
-      testImg.src = webpSrc;
-    }
-
-    img.setAttribute('data-optimized', 'true');
-  });
-}
-
-// Run on DOM ready
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', optimizeImages);
-} else {
-  optimizeImages();
-}
-
-// Catch dynamically added images
-const observer = new MutationObserver(() => optimizeImages());
-observer.observe(document.body, { childList: true, subtree: true });
-</script>
  
 </footer>
