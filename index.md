@@ -37,8 +37,8 @@ head_style: |
 
   /* ── UPLOAD BOX ── */
   .upload-box {
-  background: #1e2f4d;
-  border: 1.5px dashed #4285F4;
+  background: #e61619;
+  border: 1px dashed #ffffff;
   border-radius: 10px;
   padding: 60px 24px;
   text-align: center;
@@ -46,18 +46,18 @@ head_style: |
   transition: border-color .2s, background .2s;
   user-select: none;
   }
-  .upload-box:hover, .upload-box.dragover { border-color: #3b82f6; background: #f0f7ff; }
+  .upload-box:hover, .upload-box.dragover { border-color: #3b82f6; background: #e61619; }
   .upload-box .icon {
   width: 46px; height: 46px;
-  background: #f3f3f0; border: 1px solid var(--border); border-radius: 10px;
+  background: white; border: 1px solid var(--border); border-radius: 10px;
   display: flex; align-items: center; justify-content: center; margin: 0 auto 14px;
   }
   .upload-box .icon svg { width: 22px; height: 22px; stroke: #555; }
   .upload-box h2 { font-size: 16px; font-weight: 600; margin-bottom: 6px; }
-  .upload-box p { color: #111010; font-size: 13px; margin-bottom: 20px; }
+  .upload-box p { color: white; font-size: 13px; margin-bottom: 20px; }
 
   .btn-black {
-  background: #2563eb; color: #fff;
+  background: white; color: black;
   border: none; border-radius: 7px;
   padding: 9px 20px;
   font-family: inherit; font-size: 13px; font-weight: 500;
