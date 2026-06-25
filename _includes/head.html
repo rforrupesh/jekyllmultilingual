@@ -87,27 +87,11 @@
 {% endif %}
 
 
-   <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-
   <!-- CSS fast load -->
   <link rel="preload" href="{{ base }}/assets/css/main.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ base }}/assets/css/main.css"></noscript>
 
-  <script>
-    // Service Worker (repeat visits = instant)
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
-    }
-  </script>
-
-  <!-- Speculation rules (Chrome mobile supports this!) -->
-  <script type="speculationrules">
-  {
-    "prefetch": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }]
-  }
-  </script>
 
  
 
