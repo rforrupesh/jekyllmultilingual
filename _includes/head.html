@@ -88,8 +88,10 @@
 
 
   <!-- CSS fast load -->
-  <link  href="{{ base }}/assets/css/main.css" rel='stylesheet'/>
-
+  <!--  Lightning-Fast Async CSS Optimization -->
+<link href="{{ base }}/assets/css/main.css" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="{{ base }}/assets/css/main.css" rel="stylesheet"></noscript>
+ 
 
  
 
