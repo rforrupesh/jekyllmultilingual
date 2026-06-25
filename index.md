@@ -622,7 +622,7 @@ combina Múltiples archivos PDF en uno al instante
 
         </h2>
 
-    | Problema | Solución |
+| Problema | Solución |
 |-----------|-----------|
 | Los archivos no se conectan correctamente. | Asegúrese de que todos los archivos PDF no estén dañados y vuelva a cargar los archivos que falten. |
 | El botón de fusión no funciona. | Actualiza la página, desactiva las extensiones o prueba con el navegador Chrome. |
