@@ -20,7 +20,7 @@ en:
     subheading: "A simple bilingual site built with Jekyll."
     cta: "Read the blog"
   footer:
-    rights: "All rights reserved."
+    rights: "All rights reserved. Made with Love"
 
 fr:
   lang_name: "Français"
@@ -44,7 +44,7 @@ fr:
     subheading: "Un site bilingue simple construit avec Jekyll."
     cta: "Lire le blog"
   footer:
-    rights: "Tous droits réservés."
+    rights: "Tous droits réservés. Fait avec Love"
 
 es:
   lang_name: "Español"
@@ -68,4 +68,4 @@ es:
     subheading: "Un sitio bilingüe simple construido con Jekyll."
     cta: "Leer el blog"
   footer:
-    rights: "Todos los derechos reservados."
+    rights: "Todos los derechos reservados. Hecho con Love"
