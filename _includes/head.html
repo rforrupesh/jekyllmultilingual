@@ -93,7 +93,17 @@
      ===================== -->
   <link rel="preload" href="{{ base }}/assets/css/main.css" as="style"
         onload="this.onload=null;this.rel='stylesheet'">
-<link rel="stylesheet" href="{{ base }}/assets/css/main.css">
+<script>
+    // JS safety net: if preload link didn't switch to stylesheet, force it
+    document.addEventListener('DOMContentLoaded', function () {
+      var links = document.querySelectorAll('link[rel="preload"][as="style"]');
+      links.forEach(function (link) {
+        if (link.rel !== 'stylesheet') {
+          link.rel = 'stylesheet';
+        }
+      });
+    });
+  </script>
 
 <noscript><link rel="stylesheet" href="{{ base }}/assets/css/main.css"></noscript>
 
