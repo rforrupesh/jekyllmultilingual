@@ -6,3 +6,22 @@
   </div>
  
 </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js" defer></script>
+  <script>
+    window.addEventListener('load', () => {
+      quicklink.listen({
+        limit: 4,          // max 4 prefetches at once (save mobile data)
+        timeout: 2000,     // wait 2s before prefetching (page settled)
+        threshold: 0.1,    // link only 10% visible = prefetch
+        ignores: [
+          /logout/,        // ignore logout links
+          /admin/,         // ignore admin links
+          uri => uri.includes('#'), // ignore anchor links
+        ]
+      });
+    });
+  </script>
+
+  <!-- late link safety net -->
+  <link rel="stylesheet" href="{{ base }}/assets/css/main.css">
