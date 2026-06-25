@@ -426,7 +426,7 @@ head_style: |
 
 <figure style="text-align:center;">
   <img 
-    src="/pdf/assets/img/unir.png"
+    src="/assets/img/logo.png"
     alt="combina Múltiples archivos PDF en uno al instante"
     loading="lazy"
     width="710"
