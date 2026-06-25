@@ -91,7 +91,9 @@
 <!-- =====================
      Stylesheet
      ===================== -->
-<link  rel="preload" href="{{ base }}/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ base }}/assets/css/main.css" as="style">
+<!-- Place this just before </body> so it's non-blocking -->
+<link rel="stylesheet" href="{{ base }}/assets/css/main.css">
 <noscript><link rel="stylesheet" href="{{ base }}/assets/css/main.css"></noscript>
 
 {% if page.css %}
