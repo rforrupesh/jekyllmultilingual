@@ -87,29 +87,26 @@
 {% endif %}
 
 
+<link rel="prefetch" href="{{ base }}/index.html">
+  <link rel="prefetch" href="{{ base }}/assets/css/main.css">
+  <link rel="prefetch" href="{{ base }}/assets/js/main.js">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 
 
   <!-- 2. Preload fetches full CSS early -->
-  <link rel="preload" href="{{ base }}/assets/css/main.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet';document.body.style.visibility=''">
-
+<link  rel="preload" href="{{ base }}/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <!-- 3. noscript fallback -->
   <noscript>
     <link rel="stylesheet" href="{{ base }}/assets/css/main.css">
   </noscript>
 
-  <script>
-    // 4. DOMContentLoaded safety net
-    document.addEventListener('DOMContentLoaded', function () {
-      var links = document.querySelectorAll('link[rel="preload"][as="style"]');
-      links.forEach(function (link) {
-        if (link.rel !== 'stylesheet') {
-          link.rel = 'stylesheet';
-        }
-      });
-      document.body.style.visibility = ''; // unhide if still hidden
-    });
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js" defer></script>
+<script>
+  window.addEventListener('load', () => {
+    quicklink.listen(); // prefetches all visible links automatically
+  });
+</script>
 
 {% if page.css %}
 <link rel="stylesheet" href="{{ '/assets/css/' | append: page.css | append: '.css' | relative_url }}">
