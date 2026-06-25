@@ -87,26 +87,32 @@
 {% endif %}
 
 
-<link rel="prefetch" href="{{ base }}/index.html">
-  <link rel="prefetch" href="{{ base }}/assets/css/main.css">
-  <link rel="prefetch" href="{{ base }}/assets/js/main.js">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 
+  <!-- CSS: fast load (your mixed approach) -->
+  <link rel="preload" href="{{ base }}/assets/css/main.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ base }}/assets/css/main.css"></noscript>
 
-  <!-- 2. Preload fetches full CSS early -->
-<link  rel="preload" href="{{ base }}/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <!-- 3. noscript fallback -->
-  <noscript>
-    <link rel="stylesheet" href="{{ base }}/assets/css/main.css">
-  </noscript>
+  <!-- Speculation rules (Chrome) -->
+  <script type="speculationrules">
+  {
+    "prefetch": [{ "where": { "href_matches": "/*" }, "eagerness": "moderate" }]
+  }
+  </script>
 
-<script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js" defer></script>
-<script>
-  window.addEventListener('load', () => {
-    quicklink.listen(); // prefetches all visible links automatically
-  });
-</script>
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
+    }
+  </script>
+
+  <!-- instant.page for hover prefetch -->
+  <script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.js" 
+          type="module" defer></script>
+
 
 {% if page.css %}
 <link rel="stylesheet" href="{{ '/assets/css/' | append: page.css | append: '.css' | relative_url }}">
