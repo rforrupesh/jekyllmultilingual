@@ -622,37 +622,11 @@ combina Múltiples archivos PDF en uno al instante
 
         </h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Problema</th>
-                    <th>Solución</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>Los archivos no se conectan correctamente.</td>
-                    <td>
-                        Asegúrese de que todos los archivos PDF no estén dañados y vuelva a cargar los archivos que falten.
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>El botón de fusión no funciona.</td>
-                    <td>
-                        Actualiza la página, desactiva las extensiones o prueba con el navegador Chrome.
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>Orden de archivo incorrecto</td>
-                    <td>
-Reordene manualmente los archivos antes de fusionarlos o cámbieles el nombre utilizando números.                    </td>
-                </tr>
-            </tbody>
-        </table>
-
+    | Problema | Solución |
+|-----------|-----------|
+| Los archivos no se conectan correctamente. | Asegúrese de que todos los archivos PDF no estén dañados y vuelva a cargar los archivos que falten. |
+| El botón de fusión no funciona. | Actualiza la página, desactiva las extensiones o prueba con el navegador Chrome. |
+| Orden de archivo incorrecto | Reordene manualmente los archivos antes de fusionarlos o cámbieles el nombre utilizando números. |
 
         <h2 class="section-title">Preguntas frecuentes (FAQ)
 
