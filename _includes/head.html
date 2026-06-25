@@ -87,8 +87,31 @@
 {% endif %}
 
 
-  <link rel="preload" href="{{ base }}/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ base }}/assets/css/main.css"></noscript>
+ <style>
+    body { margin: 0; visibility: hidden; }  /* hide until CSS ready */
+  </style>
+
+  <!-- 2. Preload fetches full CSS early -->
+  <link rel="preload" href="{{ base }}/assets/css/main.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet';document.body.style.visibility=''">
+
+  <!-- 3. noscript fallback -->
+  <noscript>
+    <link rel="stylesheet" href="{{ base }}/assets/css/main.css">
+  </noscript>
+
+  <script>
+    // 4. DOMContentLoaded safety net
+    document.addEventListener('DOMContentLoaded', function () {
+      var links = document.querySelectorAll('link[rel="preload"][as="style"]');
+      links.forEach(function (link) {
+        if (link.rel !== 'stylesheet') {
+          link.rel = 'stylesheet';
+        }
+      });
+      document.body.style.visibility = ''; // unhide if still hidden
+    });
+  </script>
 
 {% if page.css %}
 <link rel="stylesheet" href="{{ '/assets/css/' | append: page.css | append: '.css' | relative_url }}">
