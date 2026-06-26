@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Is UniFicarPDF Free?
-thumbnail: /assets/img/por-que-unificarpdf-es-gratuito.jpeg
+thumbnail: /assets/img/por-que-unificarpdf-es-gratuito.jpg
 description: "Discover why UniFicarPDF is completely free, how it works, and what happens to your files when using the tool."
 ref: por-que-unificarpdf-es-gratuito
 ---
