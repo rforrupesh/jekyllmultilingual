@@ -317,6 +317,9 @@ head_style: |
  } 
 
 
+scripts:
+    - https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js
 
 
 ---
@@ -729,8 +732,6 @@ combina Múltiples archivos PDF en uno al instante
 
 <div class="toast" id="toast"></div>
 
-<script defer src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
 
 
 <script>
