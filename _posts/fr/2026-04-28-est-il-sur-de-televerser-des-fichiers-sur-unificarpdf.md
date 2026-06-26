@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Est-il sûr de téléverser des fichiers sur UnificarPDF ?
-thumbnail: /assets/img/est-il-sur-de-televerser-des-fichiers-sur-unificarpdf.png
+thumbnail: /assets/img/est-il-sur-de-televerser-des-fichiers-sur-unificarpdf.webp
 description: "Découvrez tout ce qu’il faut savoir sur la sécurité de vos fichiers sur UnificarPDF : chiffrement, confidentialité et suppression automatique."
 ref: subir-archivos-unificarpdf-es-seguro
 ---
