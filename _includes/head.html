@@ -89,7 +89,8 @@
 
   <!-- CSS fast load -->
   <!--  Lightning-Fast Async CSS Optimization -->
-<link href="{{ base }}/assets/css/main.css" rel="stylesheet" />
+  <link rel="preload" href="{{ base }}/assets/css/main.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="{{ base }}/assets/css/main.css" rel="stylesheet"></noscript>
  
 
