@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PDF vs Word: ¿Qué formato debería usar?"
-thumbnail: /assets/img/pdf-vs-word.jpg
+thumbnail: /assets/img/pdf-vs-word.webp
 description: Comparo PDF y Word. Estudio las características, el formato, la compatibilidad y más. Vea lo que encontramos aquí.
 lang: es
 ref: pdf-vs-word
