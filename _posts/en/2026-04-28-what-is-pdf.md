@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What Is the Portable Document Format (PDF)?
-thumbnail: /assets/img/que-es-el-pdf.jpg
+thumbnail: /assets/img/que-es-el-pdf.webp
 description: "Learn what a PDF is, its meaning, history, how it works, and why it is important for sharing digital documents securely and professionally."
 ref: que-es-el-pdf
 ---
