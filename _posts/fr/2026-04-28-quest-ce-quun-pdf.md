@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Qu’est-ce que le Format de Document Portable (PDF) ?
-thumbnail: /assets/img/quest-ce-quun-pdf.jpg
+thumbnail: /assets/img/que-es-el-pdf.webp
 description: "Découvrez ce qu’est un PDF, sa signification, son histoire, son fonctionnement et pourquoi il est essentiel pour partager des documents numériques de manière sécurisée et professionnelle."
 ref: que-es-el-pdf
 ---
