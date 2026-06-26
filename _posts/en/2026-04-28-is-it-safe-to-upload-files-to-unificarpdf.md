@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Is It Safe to Upload Files to UniFicarPDF?
-thumbnail: /assets/img/subir-archivos-unificarpdf-es-seguro.png
+thumbnail: /assets/img/is-it-safe-to-upload-files-to-unificarpdf.webp
 description: "Learn everything about file security on UniFicarPDF, including encryption, privacy, and automatic file deletion."
 ref: subir-archivos-unificarpdf-es-seguro
 ---
