@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Comment utiliser UnificarPDF.com
-thumbnail: /assets/img/comment-utiliser-unificarpdf-com.jpg
+thumbnail: /assets/img/como-usar-unificarpdf-com.webp
 description: "UnificarPDF.com est un outil de fusion PDF accessible depuis votre navigateur qui permet de réunir plusieurs fichiers PDF en un seul document rapidement et en toute sécurité. Voici comment l’utiliser."
 ref: como-usar
 ---
