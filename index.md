@@ -821,7 +821,7 @@ scripts:
 
 <figure style="text-align:center;">
   <img 
-    src="/assets/img/logo.png"
+    src="./assets/img/unir.webp"
     alt="combina Múltiples archivos PDF en uno al instante"
     loading="lazy"
     width="710"
