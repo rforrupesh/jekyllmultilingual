@@ -110,9 +110,9 @@
 {% if page.scripts %}
   {% for script in page.scripts %}
     {% if script contains 'http' %}
-      <script src="{{ script }}"></script>
+      <script type="module" src="{{ script }}"></script>
     {% else %}
-      <script src="{{ script | relative_url }}"></script>
+      <script type="module" src="{{ script | relative_url }}"></script>
     {% endif %}
   {% endfor %}
 {% endif %}
