@@ -47,3 +47,12 @@ defaults:
     values:
       lang: fr
       permalink: /fr/:title/
+
+# Performance Settings
+sass:
+  style: compressed
+
+exclude:
+  - node_modules/
+   
+  
