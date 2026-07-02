@@ -14,9 +14,6 @@
 {% assign page_title = page.title %}
 {% assign page_desc = page.description | default: site.description %}
 
-<!-- =====================
-     Essential
-     ===================== -->
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -86,6 +83,9 @@
 <meta name="twitter:site" content="@{{ site.twitter_username }}" />
 {% endif %}
 
+
+  <link rel="preload" href="https://rforrupesh.github.io/jekyllmultilingual/assets/css/main.css" as="style">
+  <link rel="stylesheet" href="https://rforrupesh.github.io/jekyllmultilingual/assets/css/main.css">
 
   <!-- CSS fast load -->
  <link rel="stylesheet" href="https://rforrupesh.github.io/jekyllmultilingual/assets/css/main.css" media="print" onload="this.media='all'">
