@@ -1,0 +1,137 @@
+---
+layout: default
+---
+
+<style>
+.page-hero{
+  background:var(--surface);
+  border-bottom:1px solid var(--border);
+  padding:3.5rem 1.25rem;
+  text-align:center;
+}
+
+.page-hero h1{
+  font-size:2.3rem;
+  font-weight:800;
+  letter-spacing:-.02em;
+  margin-bottom:.8rem;
+}
+
+.page-description{
+  max-width:720px;
+  margin:0 auto;
+  color:var(--muted);
+  font-size:1.05rem;
+}
+
+.page-content-wrap{
+  padding:3rem 0;
+}
+
+.page-content{
+  max-width:850px;
+  margin:0 auto;
+  line-height:1.9;
+}
+
+.page-content>*:first-child{
+  margin-top:0;
+}
+
+.page-content h2{
+  margin:2.5rem 0 1rem;
+  font-size:1.45rem;
+  font-weight:700;
+}
+
+.page-content h3{
+  margin:2rem 0 .8rem;
+  font-size:1.15rem;
+  font-weight:700;
+}
+
+.page-content p{
+  margin-bottom:1.2rem;
+}
+
+.page-content ul,
+.page-content ol{
+  margin:0 0 1.3rem 1.4rem;
+}
+
+.page-content li{
+  margin-bottom:.45rem;
+}
+
+.page-content img{
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin:2rem auto;
+  border-radius:var(--radius);
+}
+
+.page-content blockquote{
+  margin:2rem 0;
+  padding:1rem 1.3rem;
+  background:var(--surface);
+  border-left:4px solid var(--accent);
+  border-radius:var(--radius);
+}
+
+.page-content table{
+  width:100%;
+  border-collapse:collapse;
+  margin:2rem 0;
+}
+
+.page-content th,
+.page-content td{
+  border:1px solid var(--border);
+  padding:.8rem 1rem;
+}
+
+.page-content th{
+  background:var(--surface);
+}
+
+.page-content hr{
+  border:none;
+  border-top:1px solid var(--border);
+  margin:2.5rem 0;
+}
+
+@media(max-width:768px){
+  .page-hero{
+    padding:2.8rem 1.25rem;
+  }
+
+  .page-hero h1{
+    font-size:1.9rem;
+  }
+
+  .page-description{
+    font-size:1rem;
+  }
+}
+</style>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+
+        {% if page.description %}
+        <p class="page-description">
+            {{ page.description }}
+        </p>
+        {% endif %}
+    </div>
+</section>
+
+<main class="page-content-wrap">
+    <div class="container">
+        <article class="page-content">
+            {{ content }}
+        </article>
+    </div>
+</main>
