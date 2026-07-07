@@ -4,7 +4,7 @@ title: "Convert JPG to PDF"
 description: Convert your JPG and other image files into universally compatible PDF documents effortlessly and at no cost.
 lang: en
 ref: jpgapdf
-permalink: /en/jpg-a-pdf/
+permalink: /en/jpg-to-pdf/
 head_style: |
   #infoContent {
   max-width: 920px;
