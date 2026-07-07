@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Terms of Use
 description: Read the Terms of Use for UnificarPDF. Learn about user responsibilities, file processing, copyright compliance, and service usage conditions
 lang: en
