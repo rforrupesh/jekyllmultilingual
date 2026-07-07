@@ -4,7 +4,7 @@ title: Terms of Use
 description: Read the Terms of Use for UnificarPDF. Learn about user responsibilities, file processing, copyright compliance, and service usage conditions
 lang: en
 ref: terms
-permalink: /terms-of-use/
+permalink: /en/terms-of-use/
 ---
 
 # Terms of Use
