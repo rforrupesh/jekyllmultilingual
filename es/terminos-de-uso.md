@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Términos de Uso
-description: "Lea los Términos de Uso de UnificarPDF. Conozca las responsabilidades del usuario, el procesamiento de archivos, el cumplimiento de derechos de autor y las condiciones de uso del servicio.
+description: "Lea los Términos de Uso de UnificarPDF. Conozca las responsabilidades del usuario, el procesamiento de archivos, el cumplimiento de derechos de autor y las condiciones de uso del servicio."
 lang: es
 ref: terms
 permalink: /terminos-de-uso
