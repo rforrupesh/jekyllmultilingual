@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Conditions d’Utilisation
 description: Consultez les Conditions d’Utilisation d’UnificarPDF. Découvrez les responsabilités des utilisateurs, le traitement des fichiers, le respect des droits d’auteur et les conditions d’utilisation du service
 ref: terms
