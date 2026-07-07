@@ -2,9 +2,22 @@
 
 <footer class="site-footer footer" id="mainFooter">
   <div class="footer-container">
-    <p>© {{ "now" | date: "%Y" }} {{ site.title }} — {{ t.footer.rights }}</p>
+
+    <p>
+      © {{ "now" | date: "%Y" }} {{ site.title }} — {{ t.footer.rights }}
+    </p>
+
+    <p class="footer-links">
+      <a href="/{{ page.lang }}/terms-of-use/">
+        {{ t.footer.terms }}
+      </a>
+      |
+      <a href="/{{ page.lang }}/privacy-policy/">
+        {{ t.footer.privacy }}
+      </a>
+    </p>
+
   </div>
- 
 </footer>
 
 
