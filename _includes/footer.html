@@ -1,5 +1,8 @@
 {% assign t = site.data.translations[page.lang] %}
 
+{% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", page.lang | first %}
+{% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", page.lang | first %}
+
 <footer class="site-footer footer" id="mainFooter">
   <div class="footer-container">
 
@@ -8,13 +11,15 @@
     </p>
 
     <p class="footer-links">
-      <a href="/{{ page.lang }}/terms-of-use/">
-        {{ t.footer.terms }}
-      </a>
-      |
-      <a href="/{{ page.lang }}/privacy-policy/">
-        {{ t.footer.privacy }}
-      </a>
+      {% if terms_page %}
+        <a href="{{ site.baseurl }}{{ terms_page.url }}">{{ t.footer.terms }}</a>
+      {% endif %}
+
+      {% if terms_page and privacy_page %} | {% endif %}
+
+      {% if privacy_page %}
+        <a href="{{ site.baseurl }}{{ privacy_page.url }}">{{ t.footer.privacy }}</a>
+      {% endif %}
     </p>
 
   </div>
