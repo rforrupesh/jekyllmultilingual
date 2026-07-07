@@ -21,6 +21,8 @@ en:
     cta: "Read the blog"
   footer:
     rights: "All rights reserved. Made with Love"
+    terms: "Terms of Use"
+    privacy: "Privacy Policy"
 
 fr:
   lang_name: "Français"
@@ -45,6 +47,8 @@ fr:
     cta: "Lire le blog"
   footer:
     rights: "Tous droits réservés. Fait avec Love"
+    terms: "Conditions d’Utilisation"
+    privacy: "Politique de Confidentialité"
 
 es:
   lang_name: "Español"
@@ -69,3 +73,5 @@ es:
     cta: "Leer el blog"
   footer:
     rights: "Todos los derechos reservados. Hecho con Love"
+    terms: "Términos de Uso"
+    privacy: "Política de Privacidad"
