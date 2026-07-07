@@ -2,7 +2,7 @@
 layout: default
 title: "JPG en PDF"
 description: Convertissez vos images en PDF. Ajustez l'orientation et les marges.
-lang: en
+lang: fr
 ref: jpgapdf
 permalink: /fr/jpg-en-pdf/
 head_style: |
