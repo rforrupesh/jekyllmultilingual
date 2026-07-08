@@ -4,7 +4,7 @@ title: Privacy Policy
 description: "Learn how UnificarPDF handles uploaded files, protects user privacy, and processes information while providing PDF and image conversion tools."
 lang: en
 ref: privacy
-permalink: /privacy-policy/
+permalink: /en/privacy-policy/
 ---
 
 # Privacy Policy
