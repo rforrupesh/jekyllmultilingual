@@ -6,8 +6,7 @@ layout: default
 {% assign base = site.baseurl %}
 {% assign lang = page.lang | default: "es" %}
 
-{% assign posts = page.posts | where: "lang", lang %}
-
+{% assign posts = page.posts %}
 {% assign canonical_url = site.url | append: base | append: page.url %}
 
 <script type="application/ld+json">
