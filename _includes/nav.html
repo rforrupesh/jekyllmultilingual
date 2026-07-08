@@ -294,9 +294,10 @@ nav{
   <span>UniFicar PDF</span>
 </a>
 
-  <div class="menu" id="menu">
+<div class="menu" id="menu">
     {% for item in site.data.nav %}
-      <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}{{ item.slug }}">
+      {% assign current_slug = item.slug[lang] | default: item.slug["es"] %}
+      <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}{{ current_slug }}">
         {{ t.nav[item.key] }}
       </a>
     {% endfor %}
