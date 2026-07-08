@@ -2,42 +2,73 @@
 layout: default
 ---
 
+{% assign t = site.data.translations[page.lang] %}
+{% assign base = site.baseurl %}
+{% assign lang = page.lang %}
 
-<div class="blogpage-wrap">
-  <div class="blogpage-hero">
-    <h1>{{ page.title }}</h1>
-    <p>Todos los artículos de la categoría {{ page.title }}.</p>
-  </div>
+{% assign posts = site.posts
+  | where: "lang", lang
+  | where_exp: "post", "post.categories contains page.category" %}
 
-  {% assign cat_key = page.category_key %}
-  {% assign matched_posts = "" | split: "" %}
-
-  {% for post in site.posts %}
-    {% if post.category == cat_key %}
-      {% assign matched_posts = matched_posts | push: post %}
-    {% elsif post.categories contains cat_key %}
-      {% assign matched_posts = matched_posts | push: post %}
-    {% endif %}
-  {% endfor %}
-
-  <div class="blogpage-grid">
-    {% for post in matched_posts %}
-      <article class="blogpage-card">
-        <a href="{{ post.url | relative_url }}" class="blogpage-thumb">
-          <img
-            src="{{ post.thumbnail | default:'https://rforrupesh.github.io/pdf/assets/img/logo.png' | relative_url }}"
-            alt="{{ post.title }}"
-            loading="lazy">
+<nav class="breadcrumb" aria-label="breadcrumb">
+  <div class="container">
+    <ol>
+      <li>
+        <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}">
+          {{ t.nav.home }}
         </a>
-        <div class="blogpage-content">
-          <h2>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </h2>
-          {% if post.description %}
-            <p>{{ post.description | strip_html | truncate: 120 }}</p>
-          {% endif %}
-        </div>
-      </article>
-    {% endfor %}
+      </li>
+      <li>
+        <a href="{{ base }}/{% if lang == 'fr' %}fr/blog/{% elsif lang == 'en' %}en/blog/{% else %}blog/{% endif %}">
+          {{ t.blog.title }}
+        </a>
+      </li>
+      <li aria-current="page">{{ page.category }}</li>
+    </ol>
   </div>
-</div>
+</nav>
+
+<section class="blog-index">
+  <div class="container">
+
+    <h1>{{ page.category }}</h1>
+
+    {% if page.description %}
+      <p>{{ page.description }}</p>
+    {% endif %}
+
+    <div class="relatedbloganywhere-grid">
+
+      {% for post in posts %}
+
+      <div class="relatedbloganywhere-card">
+
+        <a href="{{ base }}{{ post.url }}">
+          <div class="relatedbloganywhere-thumb">
+            <img
+              src="{{ post.thumbnail | default:'/assets/default-tool.webp' | relative_url }}"
+              alt="{{ post.title }}"
+              loading="lazy">
+          </div>
+        </a>
+
+        <div class="relatedbloganywhere-content">
+
+          <a href="{{ base }}{{ post.url }}">
+            <h3>{{ post.title }}</h3>
+          </a>
+
+        </div>
+
+      </div>
+
+      {% endfor %}
+
+    </div>
+
+    {% if posts.size == 0 %}
+      <p>No posts found in this category.</p>
+    {% endif %}
+
+  </div>
+</section>
