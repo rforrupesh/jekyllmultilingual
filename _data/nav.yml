@@ -1,23 +1,8 @@
 - key: home
-  slug:
-    es: ""
-    en: ""
-    fr: ""
-
+  slug: ""
 - key: blog
-  slug:
-    es: "blog/"
-    en: "blog/"
-    fr: "blog/"
-
+  slug: "blog/"
 - key: splitpdf
-  slug:
-    es: "splitpdf/"
-    en: "splitpdf/"
-    fr: "splitpdf/"
-
+  slug: "splitpdf/"
 - key: jpgapdf
-  slug:
-    es: "jpg-a-pdf/"
-    en: "jpg-to-pdf/"
-    fr: "jpg-en-pdf/"
+  
