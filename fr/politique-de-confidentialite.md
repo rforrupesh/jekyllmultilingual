@@ -4,6 +4,8 @@ title: Politique de Confidentialité
 description: "Découvrez comment UnificarPDF traite les fichiers téléchargés, protège la confidentialité des utilisateurs et gère les informations lors de l’utilisation de ses outils PDF et image."
 lang: fr
 ref: privacy
+permalink: /fr/politique-de-confidentialite/
+
 ---
 
 # Politique de Confidentialité
