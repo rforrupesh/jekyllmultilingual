@@ -17,6 +17,20 @@ theme: null
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+
+  layouts:
+    category: archive
+    tag: archive
+
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
 
 # Exclude from build
 exclude:
