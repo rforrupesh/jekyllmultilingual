@@ -4,3 +4,4 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll-feed"
 gem "jekyll-sitemap"
 gem "webrick"
+gem "jekyll-archives"
