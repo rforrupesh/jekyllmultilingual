@@ -57,6 +57,42 @@ layout: default
           {{ content }}
         </div>
 
+
+
+       <!-- Meta -->
+<div class="post-meta">
+
+  {% if page.categories %}
+  <div class="post-categories">
+    <strong>Category:</strong>
+
+    {% for category in page.categories %}
+      <a class="meta-chip"
+         href="{{ base }}/{% if lang == 'en' %}en/{% elsif lang == 'fr' %}fr/{% endif %}category/{{ category | slugify }}/">
+        {{ category }}
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if page.tags %}
+  <div class="post-tags">
+    <strong>Tags:</strong>
+
+    {% for tag in page.tags %}
+      <a class="meta-chip meta-tag"
+         href="{{ base }}/{% if lang == 'en' %}en/{% elsif lang == 'fr' %}fr/{% endif %}tag/{{ tag | slugify }}/">
+        #{{ tag }}
+      </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</div>
+
+        
+
+        
       </article>
     </main>
 
