@@ -2,11 +2,24 @@
 {% assign base = site.url | append: site.baseurl %}
 {% assign lang = page.lang | default: "es" %}
 
-{% assign clean_url = page.url | remove_first: "/fr" | remove_first: "/en" %}
+<!-- hreflang via ref lookup -->
+{% assign es_url = page.url %}
+{% assign en_url = page.url %}
+{% assign fr_url = page.url %}
 
-{% assign es_url = clean_url %}
-{% assign en_url = "/en" | append: clean_url %}
-{% assign fr_url = "/fr" | append: clean_url %}
+{% if page.ref %}
+  {% assign es_post = site.posts | where: "ref", page.ref | where: "lang", "es" | first %}
+  {% assign en_post = site.posts | where: "ref", page.ref | where: "lang", "en" | first %}
+  {% assign fr_post = site.posts | where: "ref", page.ref | where: "lang", "fr" | first %}
+
+  {% assign es_page = site.pages | where: "ref", page.ref | where: "lang", "es" | first %}
+  {% assign en_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
+  {% assign fr_page = site.pages | where: "ref", page.ref | where: "lang", "fr" | first %}
+
+  {% if es_post %}{% assign es_url = es_post.url %}{% elsif es_page %}{% assign es_url = es_page.url %}{% endif %}
+  {% if en_post %}{% assign en_url = en_post.url %}{% elsif en_page %}{% assign en_url = en_page.url %}{% endif %}
+  {% if fr_post %}{% assign fr_url = fr_post.url %}{% elsif fr_page %}{% assign fr_url = fr_page.url %}{% endif %}
+{% endif %}
 
 {% assign canonical_url = base | append: page.url %}
 {% assign page_title = page.title %}
@@ -25,7 +38,6 @@
 <meta name="language" content="{{ lang }}" />
 
 <link rel="canonical" href="{{ canonical_url }}" />
-
 
 <link rel="alternate" href="{{ base }}{{ es_url }}" hreflang="es" />
 <link rel="alternate" href="{{ base }}{{ en_url }}" hreflang="en" />
@@ -67,20 +79,15 @@
 <meta name="twitter:site" content="@{{ site.twitter_username }}" />
 {% endif %}
 
-
-  <link rel="stylesheet" href="https://rforrupesh.github.io/jekyllmultilingual/assets/css/main.css"> 
-
-
+<link rel="stylesheet" href="{{ base }}/assets/css/main.css">
 {% if page.css %}
 <link rel="stylesheet" href="{{ '/assets/css/' | append: page.css | append: '.css' | relative_url }}">
 {% endif %}
-
 {% if page.head_style %}
 <style>
 {{ page.head_style }}
 </style>
 {% endif %}
-
 {% if page.scripts %}
   {% for script in page.scripts %}
     {% if script contains 'http' %}
