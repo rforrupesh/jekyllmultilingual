@@ -4,6 +4,14 @@ title: Is It Safe to Upload Files to UniFicarPDF?
 thumbnail: /assets/img/is-it-safe-to-upload-files-to-unificarpdf.webp
 description: "Learn everything about file security on UniFicarPDF, including encryption, privacy, and automatic file deletion."
 ref: subir-archivos-unificarpdf-es-seguro
+categories:
+  - Security
+  - Guides
+
+tags:
+  - PDF
+  - Privacy
+  - Encryption
 ---
 
 What exactly happens to your files when you use our website? Is there anything you should worry about? The short answer is no, absolutely not. However, we prefer to provide more information rather than simply answering the question. Here's why.
