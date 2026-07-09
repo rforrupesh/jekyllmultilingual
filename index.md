@@ -729,7 +729,6 @@ head_style: |
   outline: 2px solid #0000aa; /* focus indicator for keyboard users */
   outline-offset: 2px;
   }
-
 scripts:
     - https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
     - https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js
