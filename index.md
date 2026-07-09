@@ -89,17 +89,14 @@ head_style: |
   text-decoration: underline;
   transition: opacity 0.2s ease, color 0.2s ease;
   }
-
   .upload-note a:hover {
   opacity: 0.8;
   }
-
   .upload-note a:focus {
   outline: 2px solid #fff;
   outline-offset: 2px;
   border-radius: 2px;
   }
-
   .upload-note a:active {
   opacity: 0.6;
   }
