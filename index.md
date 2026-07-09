@@ -43,7 +43,7 @@ head_style: |
     display: none;
     } /* ── UPLOAD BOX ── */
     .upload-box {
-    background: #e61619;
+    background: #e5322d ;
     border: 1px dashed #ffffff;
     border-radius: 10px;
     padding: 60px 24px;
@@ -55,7 +55,7 @@ head_style: |
     .upload-box:hover,
     .upload-box.dragover {
     border-color: #3b82f6;
-    background: #e61619;
+    background: #C62828;
     }
     .upload-box .icon {
     width: 46px;
@@ -84,6 +84,25 @@ head_style: |
     font-size: 13px;
     margin-bottom: 20px;
     }
+   .upload-note a {
+    color: #fff;
+    text-decoration: underline;
+    transition: opacity 0.2s ease, color 0.2s ease;
+    }
+
+    .upload-note a:hover {
+    opacity: 0.8;
+    }
+
+    .upload-note a:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+    border-radius: 2px;
+     }
+
+     .upload-note a:active {
+    opacity: 0.6;
+     }
     .btn-black {
     background: white;
     color: #000000;
@@ -100,8 +119,9 @@ head_style: |
     gap: 7px;
     }
     .btn-black:hover {
-    background: #3a72ed;
-    color: #ffffff;
+     background: #f3f4f6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
     .btn-black svg {
     width: 14px;
@@ -697,13 +717,13 @@ head_style: |
     width: 100%;
     max-width: 920px;
     }
-    #infoContent a {
+    #infoContent  > a {
     color: #0000ee; /* high-contrast blue */
     text-decoration: underline; /* underline makes it distinguishable without color */
     font-weight: 500;
     }
-    #infoContent a:hover,
-    #infoContent a:focus {
+    #infoContent  > a:hover,
+    #infoContent  > a:focus {
     color: #0000aa;
     text-decoration: underline;
     outline: 2px solid #0000aa; /* focus indicator for keyboard users */
