@@ -11,11 +11,13 @@ head_style: |
   #infoContent {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 12px 20px;}
+  padding: 12px 20px;
+  }
   #infoContent img {
   max-width: 100%;
   height: auto;
-  display: block; }
+  display: block;
+  }
   main {
   max-width: 1000px;
   margin: 0 auto;
@@ -250,7 +252,7 @@ head_style: |
   }
   @media (max-width: 600px) {
   .btn-add-top {
-    display: none;
+  display: none;
   }
   } /* ── FILE LIST ── */
   .file-list-wrap {
@@ -477,7 +479,7 @@ head_style: |
   }
   @keyframes spin {
   to {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
   }
   }
   .progress-text {
@@ -553,32 +555,32 @@ head_style: |
   }
   @media (max-width: 600px) {
   main {
-    padding: 5px;
+  padding: 5px;
   }
   .btn-merge-top {
-    display: none;
+  display: none;
   }
   .bottom-bar {
-    display: flex;
+  display: flex;
   }
   .file-row {
-    grid-template-columns: 28px 22px auto 1fr auto;
-    gap: 8px;
-    padding: 10px 12px;
+  grid-template-columns: 28px 22px auto 1fr auto;
+  gap: 8px;
+  padding: 10px 12px;
   }
   .row-size {
-    display: none;
+  display: none;
   }
   .page-title {
-    font-size: 20px;
+  font-size: 20px;
   }
   }
   @media (max-width: 400px) {
   .file-row {
-    grid-template-columns: 28px auto 1fr auto;
+  grid-template-columns: 28px auto 1fr auto;
   }
   .row-num {
-    display: none;
+  display: none;
   }
   } /* ── INFO ── */
   .divider {
@@ -702,7 +704,7 @@ head_style: |
   }
   @media (max-width: 600px) {
   .toast {
-    bottom: 90px;
+  bottom: 90px;
   }
   } /* ── UPLOAD STATE ── */
   #uploadState {
@@ -724,12 +726,12 @@ head_style: |
   outline: 2px solid #0000aa; /* focus indicator for keyboard users */
   outline-offset: 2px;
   }
+
 scripts:
     - https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
     - https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js
     
 ---
-
 
 <!-- Floating ghost -->
 <div id="dragGhost">
