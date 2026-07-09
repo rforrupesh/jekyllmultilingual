@@ -295,13 +295,15 @@ nav{
 </a>
 
 <div class="menu" id="menu">
-    {% for item in site.data.nav %}
-      {% assign current_slug = item.slug[lang] | default: item.slug["es"] %}
-      <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}{{ current_slug }}">
-        {{ t.nav[item.key] }}
-      </a>
-    {% endfor %}
-  </div>
+  {% for item in site.data.nav %}
+    {% assign nav_page = site.pages | where: "ref", item.key | where: "lang", lang | first %}
+    {% if nav_page %}
+      <a href="{{ base }}{{ nav_page.url }}">{{ t.nav[item.key] }}</a>
+    {% else %}
+      <a href="{{ base }}/{% if lang == 'en' %}en/{% elsif lang == 'fr' %}fr/{% endif %}{{ item.slug }}">{{ t.nav[item.key] }}</a>
+    {% endif %}
+  {% endfor %}
+</div>
 
   <div class="lang-switcher">
     <button class="lang-btn" id="langBtn">
