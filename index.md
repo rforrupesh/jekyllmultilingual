@@ -753,8 +753,12 @@ scripts:
         </svg>
         Seleccionar archivos
       </button>
-      <p class="upload-note">Solo archivos PDF · Procesado localmente en su navegador</p>
-    </div>
+<p class="upload-note">
+  Al subir archivos, acepta nuestros
+  <a href="https://rforrupesh.github.io/jekyllmultilingual/terminos-de-uso/" target="_blank">Términos de Uso</a>
+  y nuestra
+  <a href="https://rforrupesh.github.io/jekyllmultilingual/politica-de-privacidad/" target="_blank">Política de Privacidad</a>.
+</p>    </div>
     <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
   </div>
 
