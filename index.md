@@ -100,7 +100,7 @@ head_style: |
     border-radius: 2px;
      }
 
-     .upload-note a:active {
+    .upload-note a:active {
     opacity: 0.6;
      }
     .btn-black {
