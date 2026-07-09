@@ -733,8 +733,6 @@ head_style: |
 scripts:
     - https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
     - https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js
-
-
 ---
 
 
