@@ -8,16 +8,16 @@ lang: es
 ref: home
 permalink: /
 head_style: |
- #infoContent {
- max-width: 1120px;
- margin: 0 auto;
- padding: 12px 20px;
- }
- #infoContent img {
- max-width: 100%;
- height: auto;
- display: block;
- }
+  #infoContent {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  }
+  #infoContent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  }
 
 scripts:
     - https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
