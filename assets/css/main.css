@@ -180,6 +180,31 @@ a:hover { text-decoration: underline; }
 
 .site-footer p { font-size: 0.82rem; color: var(--muted); }
 
+.site-footer a {
+    color: #0000ee;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.site-footer a:active {
+    color: #0000aa;
+    text-decoration: underline;
+    outline: 2px solid #0000aa;
+    outline-offset: 2px;
+}
+
+.site-footer a:hover {
+    color: #0000aa;
+    text-decoration: underline;
+    outline: 2px solid #0000aa;
+    outline-offset: 2px;
+}
+.site-footer a:focus {
+    color: #0000aa;
+    text-decoration: underline;
+    outline: 2px solid #0000aa;
+    outline-offset: 2px;
+}
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.75rem; }
 }
