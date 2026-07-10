@@ -43,7 +43,7 @@ head_style: |
   display: none;
   } /* ── UPLOAD BOX ── */
   .upload-box {
-  background: #e5322d ;
+  background: #c41318 ;
   border: 1px dashed #ffffff;
   border-radius: 10px;
   padding: 60px 24px;
