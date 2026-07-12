@@ -1089,6 +1089,15 @@ combina Múltiples archivos PDF en uno al instante
 
 
 
+
+
+
+    
+  </div>
+</main>
+
+
+
 {% assign seo_posts = site.posts | where: "category", "mergepdf" | where: "lang", page.lang %}
 <div class="relatedbloganywhere-grid">
   {% if seo_posts.size > 0 %}
@@ -1123,9 +1132,6 @@ combina Múltiples archivos PDF en uno al instante
 </div>
 
 
-    
-  </div>
-</main>
 
 <!-- BOTTOM BAR (mobile) -->
 <div class="bottom-bar" id="bottomBar" style="display:none;">
@@ -1193,7 +1199,9 @@ function load(raw) {
   $('uploadState').style.display   = 'none';
   $('uploadedState').style.display = 'block';
   $('infoContent').style.display   = 'none';
-    $('mainFooter').style.display   = 'none';
+  $('mainFooter').style.display   = 'none';
+    $('relatedbloganywhere-grid').style.display   = 'none';
+
 
   showChrome(true);
   showBottomBar(true);
