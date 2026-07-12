@@ -1098,6 +1098,29 @@ combina Múltiples archivos PDF en uno al instante
 
 
 
+
+
+
+
+<!-- BOTTOM BAR (mobile) -->
+<div class="bottom-bar" id="bottomBar" style="display:none;">
+  <button class="add-btn" onclick="document.getElementById('moreInput').click()">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+      <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+    </svg>Add
+  </button>
+  <button class="btn-merge-full" id="mergeBtnBottom" onclick="mergePDFs()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h3M16 6h3a2 2 0 012 2v8a2 2 0 01-2 2h-3M12 3v18"/>
+    </svg>Merge PDF
+  </button>
+</div>
+
+<!-- FOOTER — hidden until files uploaded -->
+
+<div class="toast" id="toast"></div>
+
+
 {% assign seo_posts = site.posts | where: "category", "mergepdf" | where: "lang", page.lang %}
 <div class="relatedbloganywhere-grid">
   {% if seo_posts.size > 0 %}
@@ -1130,28 +1153,6 @@ combina Múltiples archivos PDF en uno al instante
     </div>
   {% endfor %}
 </div>
-
-
-
-<!-- BOTTOM BAR (mobile) -->
-<div class="bottom-bar" id="bottomBar" style="display:none;">
-  <button class="add-btn" onclick="document.getElementById('moreInput').click()">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
-      <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
-    </svg>Add
-  </button>
-  <button class="btn-merge-full" id="mergeBtnBottom" onclick="mergePDFs()">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-      <path d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h3M16 6h3a2 2 0 012 2v8a2 2 0 01-2 2h-3M12 3v18"/>
-    </svg>Merge PDF
-  </button>
-</div>
-
-<!-- FOOTER — hidden until files uploaded -->
-
-<div class="toast" id="toast"></div>
-
-
 
 <script>
 let files = [];
