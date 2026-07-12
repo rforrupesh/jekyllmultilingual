@@ -1088,6 +1088,38 @@ combina Múltiples archivos PDF en uno al instante
 
 
 
+{% assign seo_posts = site.posts | where: "category", "mergepdf" | where: "lang", page.lang %}
+<div class="relatedbloganywhere-grid">
+  {% if seo_posts.size > 0 %}
+    {% assign posts_to_show = seo_posts %}
+  {% else %}
+    {% assign posts_to_show = site.posts | where: "lang", page.lang %}
+  {% endif %}
+  {% for post in posts_to_show limit:6 %}
+    <div class="relatedbloganywhere-card">
+      <a href="{{ post.url | relative_url }}">
+        <div class="relatedbloganywhere-thumb">
+          <img 
+            src="{{ post.thumbnail | default:'/assets/img/unir.png' | relative_url }}" 
+            alt="{{ post.title }}"
+            loading="lazy">
+        </div>
+      </a>
+      {% if post.category %}
+        {% assign cat_slug = post.category %}
+        {% assign cat_page = site.pages | where: "category_key", cat_slug | first %}
+        <a class="relatedbloganywhere-category" href="{{ site.baseurl }}/category/{{ cat_slug }}/">
+          {{ cat_page.title | default: cat_slug | replace: "-", " " }}
+        </a>
+      {% endif %}
+      <div class="relatedbloganywhere-content">
+        <a href="{{ post.url | relative_url }}">
+          <h3>{{ post.title }}</h3>
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
 
 
@@ -1121,38 +1153,7 @@ combina Múltiples archivos PDF en uno al instante
 <div class="toast" id="toast"></div>
 
 
-{% assign seo_posts = site.posts | where: "category", "mergepdf" | where: "lang", page.lang %}
-<div class="relatedbloganywhere-grid">
-  {% if seo_posts.size > 0 %}
-    {% assign posts_to_show = seo_posts %}
-  {% else %}
-    {% assign posts_to_show = site.posts | where: "lang", page.lang %}
-  {% endif %}
-  {% for post in posts_to_show limit:6 %}
-    <div class="relatedbloganywhere-card">
-      <a href="{{ post.url | relative_url }}">
-        <div class="relatedbloganywhere-thumb">
-          <img 
-            src="{{ post.thumbnail | default:'/assets/img/unir.png' | relative_url }}" 
-            alt="{{ post.title }}"
-            loading="lazy">
-        </div>
-      </a>
-      {% if post.category %}
-        {% assign cat_slug = post.category %}
-        {% assign cat_page = site.pages | where: "category_key", cat_slug | first %}
-        <a class="relatedbloganywhere-category" href="{{ site.baseurl }}/category/{{ cat_slug }}/">
-          {{ cat_page.title | default: cat_slug | replace: "-", " " }}
-        </a>
-      {% endif %}
-      <div class="relatedbloganywhere-content">
-        <a href="{{ post.url | relative_url }}">
-          <h3>{{ post.title }}</h3>
-        </a>
-      </div>
-    </div>
-  {% endfor %}
-</div>
+
 
 <script>
 let files = [];
@@ -1201,7 +1202,6 @@ function load(raw) {
   $('uploadedState').style.display = 'block';
   $('infoContent').style.display   = 'none';
   $('mainFooter').style.display   = 'none';
-    $('relatedbloganywhere-grid').style.display   = 'none';
 
 
   showChrome(true);
