@@ -3,7 +3,7 @@ en:
   lang_code: "en"
   dir: "ltr"
   nav:
-    home: "Home"
+    home: "Merge PDF"
     blog: "Blog"
     about: "About"
     splitpdf: "Split PDF"
@@ -29,7 +29,7 @@ fr:
   lang_code: "fr"
   dir: "ltr"
   nav:
-    home: "Accueil"
+    home: "Fusionner PDF"
     blog: "Blog"
     about: "À propos"
     splitpdf: "Diviser PDF"
@@ -55,7 +55,7 @@ es:
   lang_code: "es"
   dir: "ltr"
   nav:
-    home: "Inicio"
+    home: "Unir PDF"
     blog: "Blog"
     about: "Acerca de"
     splitpdf: "Dividir PDF"
