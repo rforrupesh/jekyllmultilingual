@@ -191,7 +191,6 @@ a:hover { text-decoration: underline; }
     text-decoration: underline;
     outline: 2px solid #0000aa;
     outline-offset: 2px;
-   border-radius: 9px;
 }
 
 .site-footer a:hover {
@@ -199,14 +198,12 @@ a:hover { text-decoration: underline; }
     text-decoration: underline;
     outline: 2px solid #0000aa;
     outline-offset: 2px;
-   border-radius: 9px;
 }
 .site-footer a:focus {
     color: #0000aa;
     text-decoration: underline;
     outline: 2px solid #0000aa;
     outline-offset: 2px;
-   border-radius: 9px;
 }
 @media (max-width: 600px) {
   .hero h1 { font-size: 1.75rem; }
