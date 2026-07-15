@@ -87,9 +87,9 @@
 {% if page.scripts %}
   {% for script in page.scripts %}
     {% if script contains 'http' %}
-      <script defer src="{{ script }}"></script>
+      <script src="{{ script }}"></script>
     {% else %}
-      <script defer src="{{ script | relative_url }}"></script>
+      <script src="{{ script | relative_url }}"></script>
     {% endif %}
   {% endfor %}
 {% endif %}
