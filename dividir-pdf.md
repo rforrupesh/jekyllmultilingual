@@ -1901,12 +1901,6 @@ document.addEventListener('keydown', e => {
   if (!$('previewModal').classList.contains('open')) return;
   if (e.key === 'Escape') closePreview();
   if (e.key === 'ArrowLeft'  && previewPageIdx > 0) { previewPageIdx--; renderPreviewPage(); }
-  if (e.key === 'ArrowRight' && previewPageIdx < pages.length-1) { previewPageIdx++; renderPreviewPage(); 
-
-
- window.addEventListener('beforeunload', e => {
-  if (!files.length) return;
-  e.preventDefault();
-  e.returnValue = '';
+  if (e.key === 'ArrowRight' && previewPageIdx < pages.length-1) { previewPageIdx++; renderPreviewPage(); }
 });
 </script>
