@@ -6,13 +6,17 @@ thumbnail: /assets/img/unir.webp
 lang: es
 ref: splitpdf
 permalink: /dividir-pdf/
+
 head_style: |
+    /* ── LAYOUT ── */
     .app-shell {
       display: flex;
       flex: 1;
       min-height: 0;
       overflow: hidden;
     }
+
+    /* ── UPLOAD STATE ── */
     #uploadState {
       flex: 1;
       display: flex;
@@ -25,6 +29,7 @@ head_style: |
     .upload-inner { width: 100%; max-width: 920px; }
     .upload-inner h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
     .upload-inner p.sub { font-size: 13px; color: var(--text-muted); margin-bottom: 24px; }
+
     .drop-zone {
       background: #e9effd;
       border: 2px dashed #4285f4;
@@ -563,6 +568,8 @@ head_style: |
     .tip { display: flex; gap: 12px; align-items: flex-start; background: var(--white); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; font-size: 13px; color: #555; line-height: 1.6; }
     .tip-n { font-size: 11px; font-weight: 700; color: #bbb; flex-shrink: 0; padding-top: 1px; }
 
+  
+
     /* ── MOBILE ── */
     @media (max-width: 700px) {
       .info-section { display: none; }
@@ -721,6 +728,9 @@ head_style: |
       width: 100%; margin-top: 2px;
     }
    
+
+styles:
+  - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap
 
 scripts:
   - https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js
