@@ -1902,7 +1902,6 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closePreview();
   if (e.key === 'ArrowLeft'  && previewPageIdx > 0) { previewPageIdx--; renderPreviewPage(); }
   if (e.key === 'ArrowRight' && previewPageIdx < pages.length-1) { previewPageIdx++; renderPreviewPage(); }
-});
 
 
  window.addEventListener('beforeunload', e => {
