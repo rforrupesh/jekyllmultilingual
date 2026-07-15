@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Separa las páginas de un PDF por rangos - Dividir PDF online
 description: Free browser-based PDF tools.
 thumbnail: /assets/img/unir.webp
