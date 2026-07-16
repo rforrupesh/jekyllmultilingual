@@ -52,7 +52,7 @@ head_style: |
     }
     .drop-zone .dz-icon svg { width: 24px; height: 24px; stroke: #555; }
     .drop-zone h2 { font-size: 17px; font-weight: 600; margin-bottom: 6px;color: #ffffff; }
-    .drop-zone p { font-size: 13px; color: var(--text-muted); margin-bottom: 22px; }
+    .drop-zone p { font-size: 13px; color: #ffffff; margin-bottom: 22px; }
     .btn-blue {
        background: white;
       color: #000000;
@@ -70,7 +70,7 @@ head_style: |
     }
     .btn-blue:hover { background: var(--blue-hover); }
     .btn-blue svg { width: 14px; height: 14px; }
-    .upload-note { margin-top: 14px; font-size: 11px; color: var(--text-light); }
+    .upload-note { margin-top: 14px; font-size: 11px;   color: #ffffff; }
 
     /* ── UPLOADED STATE ── */
     #uploadedState {
