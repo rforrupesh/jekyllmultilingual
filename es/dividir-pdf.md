@@ -816,7 +816,7 @@ scripts:
 
   <section class="isec-block isec-why" aria-labelledby="isec-why-title">
     <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Why Choose UnificarPDF.com for Remove PDF Pages?</h2>
+      <h2 id="isec-why-title" class="isec-block__title">¿Por qué usar UnificarPDF.com para eliminar páginas de archivos PDF?</h2>
     </div>
     <div class="isec-card-grid">
 
@@ -825,8 +825,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
         </span>
-        <h3 class="isec-card__title">Single Page Split / Multi Document Split</h3>
-        <p class="isec-card__text">Split the individual page from a document or split the document in pages.</p>
+        <h3 class="isec-card__title">División de una sola página / Dividir en varios documentos</h3>
+        <p class="isec-card__text">Extrae una página individual de un documento PDF o divide el PDF en varias páginas de forma rápida y sencilla.</p>
       </div>
 
       <div class="isec-card">
@@ -834,8 +834,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
         </span>
-        <h3 class="isec-card__title">Split Specific/Customized Pages</h3>
-        <p class="isec-card__text">Here you have an option to select specific or customize page ranges to split.</p>
+        <h3 class="isec-card__title">Páginas específicas/personalizadas divididas</h3>
+        <p class="isec-card__text">Aquí tiene la opción de seleccionar rangos de páginas específicos o personalizarlos para dividir.</p>
       </div>
 
       <div class="isec-card">
