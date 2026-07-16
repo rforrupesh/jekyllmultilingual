@@ -31,8 +31,8 @@ head_style: |
     .upload-inner p.sub { font-size: 13px; color: var(--text-muted); margin-bottom: 24px; }
 
     .drop-zone {
-      background: #e9effd;
-      border: 2px dashed #4285f4;
+      background: #c41318;
+      border: 1px dashed #ffffff;
       border-radius: 14px;
       padding: 56px 32px;
       text-align: center;
@@ -40,7 +40,8 @@ head_style: |
       transition: border-color .2s, background .2s;
       user-select: none;
     }
-    .drop-zone:hover, .drop-zone.dragover { border-color: var(--blue); background: var(--blue-light); }
+    .drop-zone:hover, .drop-zone.dragover { border-color: #3b82f6;
+       background: #C62828; }
     .drop-zone .dz-icon {
       width: 52px; height: 52px;
       background: var(--white); border: 1px solid var(--border);
