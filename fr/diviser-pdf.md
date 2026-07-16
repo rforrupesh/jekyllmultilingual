@@ -3,6 +3,7 @@ layout: default
 title: Diviser le fichier PDF
 description: Divisez un fichier PDF par intervalle de pages ou extrayez toutes les pages en plusieurs fichiers PDF. Diviser ou extraire des fichiers PDF en ligne, facilement et gratuitement.
 thumbnail: /assets/img/unir.webp
+lang: fr
 ref: splitpdf
 permalink: /diviser-pdf/
 
