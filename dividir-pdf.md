@@ -781,8 +781,8 @@ scripts:
   <!-- ─── UPLOAD STATE ─── -->
   <div id="uploadState">
     <div class="upload-inner">
-      <h1>Split PDF</h1>
-      <p class="sub">Extract pages by range, selection, or skip pattern. Everything runs locally.</p>
+      <h1>Split PDF file</h1>
+      <p class="sub">Separate individual pages or complete document sets into standalone PDF files.</p>
       <div class="drop-zone" id="dropZone">
         <div class="dz-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
