@@ -51,15 +51,22 @@ head_style: |
       box-shadow: var(--shadow-sm);
     }
     .drop-zone .dz-icon svg { width: 24px; height: 24px; stroke: #555; }
-    .drop-zone h2 { font-size: 17px; font-weight: 600; margin-bottom: 6px; }
+    .drop-zone h2 { font-size: 17px; font-weight: 600; margin-bottom: 6px;color: #ffffff; }
     .drop-zone p { font-size: 13px; color: var(--text-muted); margin-bottom: 22px; }
     .btn-blue {
-      background: var(--blue); color: #fff;
-      border: none; border-radius: 8px;
-      padding: 10px 22px;
-      font-family: inherit; font-size: 13px; font-weight: 600;
-      cursor: pointer; transition: background .15s;
-      display: inline-flex; align-items: center; gap: 7px;
+       background: white;
+      color: #000000;
+      border: none;
+      border-radius: 7px;
+       padding: 9px 20px;
+     font-family: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+     transition: background 0.15s, color 0.15s;
+     display: inline-flex;
+      align-items: center;
+      gap: 7px;
     }
     .btn-blue:hover { background: var(--blue-hover); }
     .btn-blue svg { width: 14px; height: 14px; }
