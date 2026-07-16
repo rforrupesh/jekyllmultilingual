@@ -5,7 +5,7 @@ description: Divisez un fichier PDF par intervalle de pages ou extrayez toutes l
 thumbnail: /assets/img/unir.webp
 lang: fr
 ref: splitpdf
-permalink: /diviser-pdf/
+permalink: /fr/diviser-pdf/
 
 head_style: |
     /* ── LAYOUT ── */
