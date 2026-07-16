@@ -68,7 +68,11 @@ head_style: |
       align-items: center;
       gap: 7px;
     }
-    .btn-blue:hover { background: var(--blue-hover); }
+    .btn-blue:hover {
+      background: #f3f4f6;
+        transform: translateY(-2px);
+       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+     }   
     .btn-blue svg { width: 14px; height: 14px; }
     .upload-note { margin-top: 14px; font-size: 11px;   color: #ffffff; } 
       .upload-note a {
