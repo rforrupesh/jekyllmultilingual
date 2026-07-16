@@ -41,7 +41,7 @@ head_style: |
       user-select: none;
     }
     .drop-zone:hover, .drop-zone.dragover { border-color: #3b82f6;
-       background: #C62828; }
+       background: #81090d; }
     .drop-zone .dz-icon {
       width: 52px; height: 52px;
       background: var(--white); border: 1px solid var(--border);
