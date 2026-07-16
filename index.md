@@ -21,7 +21,7 @@ head_style: |
   main {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 32px 20px 20px;
+  padding: 16px 20px 20px;
   } /* page-title & page-sub visible by default, hidden after upload */
   .page-title {
   display: block;
