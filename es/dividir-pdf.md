@@ -23,7 +23,7 @@ head_style: |
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      padding: 20px 20px;
+      padding: 30px 20px;
       overflow-y: auto;   /* scroll within the panel */
     }
     .upload-inner { width: 100%; max-width: 920px; }
