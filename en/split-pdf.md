@@ -5,7 +5,7 @@ description: Split large PDFs into separate PDFs in seconds. Combine multiple fi
 thumbnail: /assets/img/unir.webp
 lang: en
 ref: splitpdf
-permalink: /split-pdf/
+permalink: /en/split-pdf/
 head_style: |
     /* ── LAYOUT ── */
     .app-shell {
