@@ -748,8 +748,8 @@ scripts:
 <main class="container1">
 
   <!-- H1 + P — visible before upload, hidden after -->
-  <h1 class="page-title" id="pageTitle">Unir archivos PDF</h1>
-  <p class="page-sub" id="pageSub">Sube tus archivos, organízalos, haz clic en unir PDF y descarga tu nuevo archivo único.</p>
+  <h1 class="page-title" id="pageTitle">Selecciona varios archivos PDF y combínalos en un solo documento con un solo clic. Sin marcas de agua ni límites.</h1>
+  <p class="page-sub" id="pageSub"></p>
 
   <!-- UPLOAD STATE (centered, full viewport height) -->
   <div id="uploadState">
