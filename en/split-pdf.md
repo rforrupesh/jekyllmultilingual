@@ -3,6 +3,7 @@ layout: default
 title: Split PDF pages by ranges - Split PDF online
 description: Split large PDFs into separate PDFs in seconds. Combine multiple files, rearrange sections, and delete pages with our free online tool. No signups, no downloads.
 thumbnail: /assets/img/unir.webp
+lang: en
 ref: splitpdf
 permalink: /split-pdf/
 head_style: |
