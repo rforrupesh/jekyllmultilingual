@@ -547,7 +547,9 @@ head_style: |
 
     /* info content */
     .info-section {
-      max-width: 760px; margin: 0 auto; padding: 48px 24px 80px;
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 48px 24px 80px;
       display: none;
     }
     #uploadState .info-section { display: block; }
