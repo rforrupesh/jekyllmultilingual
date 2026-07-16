@@ -1308,7 +1308,6 @@ scripts:
 
 #split-pdf-info .isec-block {
   padding: 40px 0;
-  border-top: 1px solid var(--isec-line);
 }
 
 #split-pdf-info .isec-hero + .isec-block {
