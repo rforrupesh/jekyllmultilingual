@@ -153,7 +153,6 @@ head_style: |
     .sidebar-footer {
       flex-shrink: 0;               /* never compressed */
       padding: 14px 18px 18px;
-      border-top: 1px solid var(--border);
       background: var(--white);
       display: flex;
       flex-direction: column;
@@ -184,7 +183,6 @@ head_style: |
       width: 0; height: 0;
       border-left: 4px solid transparent;
       border-right: 4px solid transparent;
-      border-top: 5px solid var(--text-muted);
       pointer-events: none;
     }
 
@@ -251,12 +249,10 @@ head_style: |
       width: 16px; height: 16px; flex-shrink: 0;
       border-radius: 50%;
       border: 2.5px solid rgba(255,255,255,.35);
-      border-top-color: #fff;
       animation: spin .6s linear infinite;
     }
     .btn-share .btn-spinner {
       border-color: rgba(37,99,235,.25);
-      border-top-color: var(--blue);
     }
     .btn-dl.loading .btn-spinner,
     .btn-share.loading .btn-spinner { display: block; }
@@ -380,7 +376,6 @@ head_style: |
       font-size: 10px; font-weight: 700;
       letter-spacing: .06em; text-transform: uppercase;
       color: var(--text-muted);
-      border-top: 1px solid var(--border);
       background: var(--white);
     }
 
@@ -413,7 +408,6 @@ head_style: |
     .spinner {
       width: 14px; height: 14px;
       border: 2px solid var(--border);
-      border-top-color: var(--blue);
       border-radius: 50%;
       animation: spin .65s linear infinite;
       flex-shrink: 0;
