@@ -1,5 +1,5 @@
-- key: home
-  slug: ""
+- key: upload
+  slug: "upload/"
 - key: blog
   slug: "blog/"
 - key: splitpdf
