@@ -1016,6 +1016,15 @@ let pages = [], currentTab = 'range', multiRanges = [], splitResult = null;
 
 function fmtSize(b) { return b >= 1048576 ? (b/1048576).toFixed(1)+' MB' : Math.round(b/1024)+' KB'; }
 
+    /* ── Warn before leaving page if a PDF is loaded (unsaved work) ── */
+window.addEventListener('beforeunload', function (e) {
+  if (pdfFile) {
+    e.preventDefault();
+    e.returnValue = ''; // Chrome ke liye zaroori hai default popup dikhane ke liye
+    return '';
+  }
+});
+    
 /* ── File loading ── */
 $('browseBtn').addEventListener('click', e => { e.stopPropagation(); $('fileInput').click(); });
 $('dropZone').addEventListener('click', () => $('fileInput').click());
