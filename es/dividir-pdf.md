@@ -843,8 +843,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
         </span>
-        <h3 class="isec-card__title">Split to Individual Documents</h3>
-        <p class="isec-card__text">Documents split from a single PDF can be saved separately.</p>
+        <h3 class="isec-card__title">Dividir en documentos individuales</h3>
+        <p class="isec-card__text">Los documentos que se extraen de un único PDF se pueden guardar por separado.</p>
       </div>
 
       <div class="isec-card">
@@ -852,8 +852,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
         </span>
-        <h3 class="isec-card__title">Interactive Elements are Preserved</h3>
-        <p class="isec-card__text">The page split preserves all the interactive elements such as bookmark, hyperlink etc.</p>
+        <h3 class="isec-card__title">Los elementos interactivos se conservan.</h3>
+        <p class="isec-card__text">La división de la página conserva todos los elementos interactivos, como marcadores, hipervínculos, etc.</p>
       </div>
 
       <div class="isec-card">
@@ -861,8 +861,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
         </span>
-        <h3 class="isec-card__title">Live Page Previews</h3>
-        <p class="isec-card__text">Thumbnails show your actual page content, not generic placeholders, so you can verify exactly what you're splitting before downloading.</p>
+        <h3 class="isec-card__title">Vistas previas de páginas en vivo</h3>
+        <p class="isec-card__text">Las miniaturas muestran el contenido real de tu página, no marcadores de posición genéricos, para que puedas verificar exactamente qué estás dividiendo antes de descargarlo.</p>
       </div>
 
       <div class="isec-card">
@@ -870,8 +870,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
         </span>
-        <h3 class="isec-card__title">Remove Any Unwanted Pages in One Click</h3>
-        <p class="isec-card__text">Each thumbnail comes with a delete button, enabling you to delete a page that is not required without even splitting it.</p>
+        <h3 class="isec-card__title">Elimina cualquier página no deseada con un solo clic.</h3>
+        <p class="isec-card__text">Cada miniatura incluye un botón de eliminar, lo que permite borrar una página que no sea necesaria sin necesidad de dividirla.</p>
       </div>
 
       <div class="isec-card">
