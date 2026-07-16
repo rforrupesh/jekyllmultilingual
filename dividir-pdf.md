@@ -82,11 +82,11 @@ head_style: |
     .upload-note a:focus {
     outline: 2px solid #fff;
     outline-offset: 2px;
-   border-radius: 2px;
-   }
-   .upload-note a:active {
+    border-radius: 2px;
+    }
+    .upload-note a:active {
     opacity: 0.6;
-   }
+    }
 
     /* ── UPLOADED STATE ── */
     #uploadedState {
