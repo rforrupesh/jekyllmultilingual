@@ -781,8 +781,8 @@ scripts:
   <!-- ─── UPLOAD STATE ─── -->
   <div id="uploadState">
     <div class="upload-inner">
-      <h1>Split PDF file</h1>
-      <p class="sub">Separate individual pages or complete document sets into standalone PDF files.</p>
+      <h1>Dividir PDF</h1>
+      <p class="sub">Cree archivos PDF independientes con páginas individuales o conjuntos completos de documentos.</p>
       <div class="drop-zone" id="dropZone">
         <div class="dz-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -791,20 +791,20 @@ scripts:
             <line x1="12" y1="3" x2="12" y2="15"/>
           </svg>
         </div>
-        <h2>Drop a PDF file here</h2>
-        <p>or click the button below to browse</p>
+        <h2>Arrastra aquí un archivo PDF</h2>
+        <p>o haga clic en el botón de abajo para navegar.</p>
         <button class="btn-blue" id="browseBtn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
           </svg>
-          Select File
+          Seleccionar archivo
         </button>
         <p class="upload-note">
 
-            By uploading files, you agree to our
-  <a href="https://rforrupesh.github.io/jekyllmultilingual/terminos-de-uso/" target="_blank">Terms of Use</a>
-  and our
-  <a href="https://rforrupesh.github.io/jekyllmultilingual/politica-de-privacidad/" target="_blank">Privacy Policy</a>.
+            Al subir archivos, aceptas nuestros
+  <a href="https://rforrupesh.github.io/jekyllmultilingual/terminos-de-uso/" target="_blank">Términos de uso</a>
+   y nuestra 
+  <a href="https://rforrupesh.github.io/jekyllmultilingual/politica-de-privacidad/" target="_blank">Política de privacidad</a>.
   
         </p>
       </div>
