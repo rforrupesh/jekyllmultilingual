@@ -55,7 +55,7 @@ head_style: |
   .upload-box:hover,
   .upload-box.dragover {
   border-color: #3b82f6;
-  background: #C62828;
+  background: #840b0f;
   }
   .upload-box .icon {
   width: 46px;
