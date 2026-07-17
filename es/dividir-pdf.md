@@ -1925,8 +1925,8 @@ function onRangeModeChange() {
 function updateInfoBox() {
   const m = $('rangeMode').value;
   const box = $('infoBox');
-  if (m === 'single') box.innerHTML = 'Result will be a <strong>single .pdf</strong> file.';
-  else box.innerHTML = 'Result will be a <strong>.zip</strong> with multiple PDF files.';
+  if (m === 'single') box.innerHTML = 'El resultado será un <strong>único archivo .pdf</strong> ';
+  else box.innerHTML = 'El resultado será un <strong>.zip</strong> con múltiples archivos PDF.';
 }
 
 function addRange() { multiRanges.push({ from: 1, to: pages.length }); renderRangeList(); }
