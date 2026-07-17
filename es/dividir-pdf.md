@@ -987,38 +987,38 @@ scripts:
     </div>
   </section>
 
-  <section class="isec-block isec-how" aria-labelledby="isec-how-title">
+ <section class="isec-block isec-how" aria-labelledby="isec-how-title">
     <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">How Our PDF Splitter Works</h2>
-      <p class="isec-block__subtitle">The UnifcarPDF program makes it very easy to split a PDF file. Here's how to do it:</p>
+      <h2 id="isec-how-title" class="isec-block__title">Cómo Funciona Nuestro Divisor de PDF</h2>
+      <p class="isec-block__subtitle">El programa UnifcarPDF hace que dividir un archivo PDF sea muy sencillo. Así es como se hace:</p>
     </div>
     <ol class="isec-steps">
       <li>
         <span class="isec-steps__num">1</span>
-        <div class="isec-steps__body">Upload your file. File details will be available right away, so you can be sure that the correct file is there — and if not, a "Change" button located right next to the file details allows you to upload another PDF without reloading the page.</div>
+        <div class="isec-steps__body">Sube tu archivo. Los detalles del archivo estarán disponibles de inmediato, para que puedas asegurarte de que el archivo correcto esté cargado — y si no es así, un botón "Cambiar" ubicado justo al lado de los detalles del archivo te permite subir otro PDF sin recargar la página.</div>
       </li>
       <li>
         <span class="isec-steps__num">2</span>
         <div class="isec-steps__body">
-          Pick a splitting mode:
+          Elige un modo de división:
           <ul class="isec-substeps">
-            <li><strong>Range</strong> — select an easy "From To" range, use several ranges simultaneously (they will all be returned in a ZIP), or divide the entire file in equal portions.</li>
-            <li><strong>Selection</strong> — click on page thumbnails to select exactly what you need, with handy Select All, Clear and Invert tools.</li>
-            <li><strong>Skip</strong> — just enter the pages needed in any format, e.g., 4 56-34 1 2-10. Reverse ranges are supported too.</li>
+            <li><strong>Rango</strong> — selecciona un rango sencillo "De A", usa varios rangos al mismo tiempo (todos serán entregados en un ZIP), o divide el archivo completo en partes iguales.</li>
+            <li><strong>Selección</strong> — haz clic en las miniaturas de las páginas para seleccionar exactamente lo que necesitas, con las prácticas herramientas de Seleccionar todo, Limpiar e Invertir.</li>
+            <li><strong>Omitir</strong> — simplemente ingresa las páginas que necesitas en cualquier formato, por ejemplo, 4 56-34 1 2-10. También se admiten rangos en orden inverso.</li>
           </ul>
         </div>
       </li>
       <li>
         <span class="isec-steps__num">3</span>
-        <div class="isec-steps__body">Check the entire grid. Each page is displayed as a live thumbnail preview of itself — not just a placeholder, but the actual page content — labeled Page 1, Page 2, and so on. You can drag and drop any thumbnail to reorder the pages before splitting or downloading. Hover over any page and you'll get a little trash icon to delete just that page, and a rotate icon to rotate that page individually - or use Rotate All at the top to rotate all pages at once. If a page (or the entire set) ends up rotated the wrong way, the Restore button will put everything back the way it was.</div>
+        <div class="isec-steps__body">Revisa la cuadrícula completa. Cada página se muestra como una vista previa en miniatura en tiempo real — no es solo un marcador de posición, sino el contenido real de la página — etiquetada como Página 1, Página 2, y así sucesivamente. Puedes arrastrar y soltar cualquier miniatura para reordenar las páginas antes de dividirlas o descargarlas. Pasa el cursor sobre cualquier página y verás un pequeño ícono de papelera para eliminar solo esa página, y un ícono de rotación para girar esa página individualmente — o usa Rotar todo en la parte superior para rotar todas las páginas a la vez. Si una página (o todo el conjunto) queda girada de forma incorrecta, el botón Restaurar volverá todo a su estado original.</div>
       </li>
       <li>
         <span class="isec-steps__num">4</span>
-        <div class="isec-steps__body">To the right of the "Pages" header is a zoom slider which lets you increase or decrease the thumbnail size (it even tells you the current value, like 140) depending on how close you need to look at the content.</div>
+        <div class="isec-steps__body">A la derecha del encabezado "Páginas" hay un control deslizante de zoom que te permite aumentar o reducir el tamaño de las miniaturas (incluso te indica el valor actual, como 140) según qué tan de cerca necesites ver el contenido.</div>
       </li>
       <li>
         <span class="isec-steps__num">5</span>
-        <div class="isec-steps__body">View your result. Download the PDF (or ZIP if you have split it into several files) or share it immediately.</div>
+        <div class="isec-steps__body">Visualiza tu resultado. Descarga el PDF (o ZIP si lo has dividido en varios archivos) o compártelo de inmediato.</div>
       </li>
     </ol>
   </section>
