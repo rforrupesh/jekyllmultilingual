@@ -3,6 +3,7 @@ en:
   lang_code: "en"
   dir: "ltr"
   nav:
+    home: "Home"
     upload: "Merge PDF"
     blog: "Blog"
     about: "About"
@@ -29,6 +30,7 @@ fr:
   lang_code: "fr"
   dir: "ltr"
   nav:
+    home: "Accueil"
     upload: "Fusionner PDF"
     blog: "Blog"
     about: "À propos"
@@ -55,6 +57,7 @@ es:
   lang_code: "es"
   dir: "ltr"
   nav:
+    home: "Inicio"
     upload: "Unir PDF"
     blog: "Blog"
     about: "Acerca de"
