@@ -1640,116 +1640,107 @@ scripts:
   </div>
 
   <!-- ─── UPLOADED STATE ─── -->
-  <div id="uploadedState">
-
+<div id="uploadedState">
     <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="sidebar-header">
         <div class="file-info">
           <div class="fname" id="fileNameLabel">document.pdf</div>
           <div class="fmeta">
-            <span class="badge" id="pageCountLabel">— pages</span>
+            <span class="badge" id="pageCountLabel">— páginas</span>
             <span class="badge" id="fileSizeLabel">—</span>
           </div>
         </div>
         <button class="btn-sm" id="changeFileBtn">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="11" height="11" stroke="#888"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
-          Change
+          Cambiar
         </button>
       </div>
-
       <!-- TABS -->
       <div class="tabs">
-        <button class="tab-btn active" id="tabRange" onclick="switchTab('range')">Range</button>
-        <button class="tab-btn" id="tabSelection" onclick="switchTab('selection')">Selection</button>
-        <button class="tab-btn" id="tabSkip" onclick="switchTab('skip')">Skip</button>
+        <button class="tab-btn active" id="tabRange" onclick="switchTab('range')">Rango</button>
+        <button class="tab-btn" id="tabSelection" onclick="switchTab('selection')">Selección</button>
+        <button class="tab-btn" id="tabSkip" onclick="switchTab('skip')">Omitir</button>
       </div>
-
       <!-- Scrollable area -->
       <div class="sidebar-scroll">
-
         <!-- TAB: Range -->
         <div id="panelRange" class="panel-body">
           <div>
-            <div class="field-label">Splitting Mode</div>
+            <div class="field-label">Modo de División</div>
             <div class="select-wrap">
               <select id="rangeMode" onchange="onRangeModeChange()">
-                <option value="single">Single Range</option>
-                <option value="multi">Multiple Ranges → ZIP</option>
-                <option value="groups">Split into Groups → ZIP</option>
+                <option value="single">Rango Único</option>
+                <option value="multi">Múltiples Rangos → ZIP</option>
+                <option value="groups">Dividir en Grupos → ZIP</option>
               </select>
             </div>
           </div>
           <div id="modeSingle">
-            <div class="field-label">Define Range</div>
+            <div class="field-label">Definir Rango</div>
             <div class="range-row">
               <input type="number" id="singleFrom" class="num-input" min="1" value="1">
-              <label>to</label>
+              <label>a</label>
               <input type="number" id="singleTo" class="num-input" min="1" value="1">
             </div>
           </div>
           <div id="modeMulti" style="display:none;">
-            <div class="field-label">Ranges</div>
+            <div class="field-label">Rangos</div>
             <div id="rangeList"></div>
             <button class="btn-sm" onclick="addRange()" style="margin-top:4px;">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" width="11" height="11" stroke="#888"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              Add Range
+              Agregar Rango
             </button>
           </div>
           <div id="modeGroups" style="display:none;">
-            <div class="field-label">Pages per group</div>
+            <div class="field-label">Páginas por grupo</div>
             <input type="number" id="groupSize" class="num-input" min="1" value="1">
           </div>
-          <div class="info-box" id="infoBox">Result will be a <strong>single .pdf</strong> file.</div>
+          <div class="info-box" id="infoBox">El resultado será un archivo <strong>.pdf único</strong>.</div>
         </div>
-
         <!-- TAB: Selection -->
         <div id="panelSelection" class="panel-body" style="display:none;">
-          <p style="font-size:12px;color:var(--text-muted);margin:0;">Click page thumbnails to select them. All selected pages will be extracted into one PDF.</p>
+          <p style="font-size:12px;color:var(--text-muted);margin:0;">Haz clic en las miniaturas de páginas para seleccionarlas. Todas las páginas seleccionadas se extraerán en un PDF.</p>
           <div class="sel-helpers">
-            <button class="btn-sm" onclick="selectAll()">Select All</button>
-            <button class="btn-sm" onclick="clearSelection()">Clear</button>
-            <button class="btn-sm" onclick="invertSelection()">Invert</button>
+            <button class="btn-sm" onclick="selectAll()">Seleccionar Todo</button>
+            <button class="btn-sm" onclick="clearSelection()">Limpiar</button>
+            <button class="btn-sm" onclick="invertSelection()">Invertir</button>
           </div>
-          <span class="badge" id="selectionCount">0 selected</span>
+          <span class="badge" id="selectionCount">0 seleccionadas</span>
         </div>
-
         <!-- TAB: Skip -->
         <div id="panelSkip" class="panel-body" style="display:none;">
-          <p style="font-size:12px;color:var(--text-muted);margin:0;">Type page numbers or ranges. Use commas or spaces. Reversed ranges like <strong>56-34</strong> are fine.</p>
+          <p style="font-size:12px;color:var(--text-muted);margin:0;">Escribe números de página o rangos. Usa comas o espacios. Los rangos invertidos como <strong>56-34</strong> también funcionan.</p>
           <div>
-            <div class="field-label">Pages to extract</div>
-            <input type="text" id="skipPages" class="skip-pages-input" placeholder="e.g. 4 56-34 1 2-10" spellcheck="false" autocomplete="off">
+            <div class="field-label">Páginas a extraer</div>
+            <input type="text" id="skipPages" class="skip-pages-input" placeholder="ej. 4 56-34 1 2-10" spellcheck="false" autocomplete="off">
           </div>
           <div id="skipPreview" class="skip-preview"></div>
         </div>
-
       </div><!-- /sidebar-scroll -->
-
-      <!-- STICKY FOOTER: download + share always visible -->
+      <!-- STICKY FOOTER -->
       <div class="sidebar-footer">
         <button class="btn-dl" id="downloadBtn" onclick="downloadResult()">
           <div class="btn-spinner"></div>
           <span class="btn-icon" style="display:flex;align-items:center;gap:8px;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-            Download Result
+            Descargar Resultado
           </span>
         </button>
         <button class="btn-share" id="shareBtn" onclick="shareResult()">
           <div class="btn-spinner"></div>
           <span class="btn-icon" style="display:flex;align-items:center;gap:8px;">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" width="14" height="14"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-            Share Result
+            Compartir Resultado
           </span>
         </button>
       </div>
     </aside>
-
     <!-- GRID PANEL -->
     <div class="grid-panel">
       <div class="grid-toolbar">
         <div class="grid-toolbar-left">
-          <span class="grid-title">Pages</span>
+          <span class="grid-title">Páginas</span>
           <div class="zoom-track">
             <svg viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" width="13" height="13"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             <input type="range" id="zoomSlider" min="80" max="240" value="140" oninput="onZoom(this.value)">
@@ -1759,56 +1750,51 @@ scripts:
         <div style="display:flex;gap:6px;">
           <button class="btn-sm" onclick="rotateAll()">
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" width="11" height="11" stroke="#888"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 11-2.12-9.36L23 10"/></svg>
-            Rotate All
+            Rotar Todo
           </button>
-          <button class="btn-sm" onclick="restoreAll()">Restore</button>
+          <button class="btn-sm" onclick="restoreAll()">Restaurar</button>
         </div>
-        <span class="swipe-hint" style="display:none;font-size:10px;color:#9ca3af;font-weight:500;letter-spacing:.04em;margin-left:auto;">← swipe pages →</span>
+        <span class="swipe-hint" style="display:none;font-size:10px;color:#9ca3af;font-weight:500;letter-spacing:.04em;margin-left:auto;">← desliza páginas →</span>
       </div>
-
       <div class="progress-bar-wrap" id="progressWrap">
         <div class="spinner"></div>
-        <span class="progress-text" id="progressText">Working…</span>
+        <span class="progress-text" id="progressText">Procesando…</span>
       </div>
-
       <div class="page-grid-wrap">
         <div id="pageGrid"></div>
       </div>
     </div>
   </div>
-
 </div><!-- /app-shell -->
-
-<!-- ── MOBILE FIXED BOTTOM BAR — shown after split ── -->
+<!-- ── MOBILE FIXED BOTTOM BAR ── -->
 <div class="mobile-action-bar" id="mobileActionBar">
   <div class="mob-result-bar">
     <button class="mob-btn-dl" id="mobDownloadBtn" onclick="downloadResult()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-      Download
+      Descargar
     </button>
     <button class="mob-btn-sh" id="mobShareBtn" onclick="shareResult()">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-      Share
+      Compartir
     </button>
   </div>
 </div>
-
 <!-- ─── PREVIEW MODAL ─── -->
 <div class="preview-modal" id="previewModal">
   <div class="preview-backdrop" id="previewBackdrop"></div>
   <div class="preview-box">
     <div class="preview-header">
-      <span class="preview-title" id="previewTitle">Page 1</span>
+      <span class="preview-title" id="previewTitle">Página 1</span>
       <div class="preview-nav">
-        <button class="preview-nav-btn" id="prevPageBtn" title="Previous page">
+        <button class="preview-nav-btn" id="prevPageBtn" title="Página anterior">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg>
         </button>
         <span class="preview-page-info" id="previewPageInfo">1 / 1</span>
-        <button class="preview-nav-btn" id="nextPageBtn" title="Next page">
+        <button class="preview-nav-btn" id="nextPageBtn" title="Página siguiente">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
         </button>
       </div>
-      <button class="preview-close" id="previewClose" title="Close">
+      <button class="preview-close" id="previewClose" title="Cerrar">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
     </div>
@@ -1816,12 +1802,11 @@ scripts:
       <canvas id="previewCanvas"></canvas>
     </div>
     <div class="preview-footer">
-      <span id="previewRangeBadge" class="preview-range-badge">In range</span>
+      <span id="previewRangeBadge" class="preview-range-badge">En rango</span>
       <span style="font-size:12px;color:var(--text-muted);" id="previewFooterNote"></span>
     </div>
   </div>
 </div>
-
 <div class="toast" id="toast"></div>
 
 <script>
