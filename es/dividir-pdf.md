@@ -879,8 +879,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
         </span>
-        <h3 class="isec-card__title">Rotate Either Individual Pages or All Pages at Once</h3>
-        <p class="isec-card__text">You can correct the orientation of an individual page or rotate all the pages at once. In case your page is in the wrong orientation, Restore makes it right again.</p>
+        <h3 class="isec-card__title">Gira páginas individuales o todas a la vez.</h3>
+        <p class="isec-card__text">Puedes corregir la orientación de una página individual o rotar todas las páginas a la vez. Si la página está mal orientada, la función Restaurar la corrige.</p>
       </div>
 
       <div class="isec-card">
@@ -888,8 +888,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg>
         </span>
-        <h3 class="isec-card__title">Smaller File Size</h3>
-        <p class="isec-card__text">The files generated after splitting the PDF files are small in size without losing the quality.</p>
+        <h3 class="isec-card__title">Tamaño de archivo más pequeño</h3>
+        <p class="isec-card__text">Los archivos generados tras dividir los archivos PDF son de tamaño reducido sin perder calidad.</p>
       </div>
 
       <div class="isec-card">
@@ -897,8 +897,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
         </span>
-        <h3 class="isec-card__title">No Interruption while Processing</h3>
-        <p class="isec-card__text">When processing the files, they will not get interrupted during the procedure.</p>
+        <h3 class="isec-card__title">Sin interrupciones durante el procesamiento.</h3>
+        <p class="isec-card__text">Al procesar los archivos, estos no se interrumpirán durante el proceso.</p>
       </div>
 
       <div class="isec-card">
@@ -906,8 +906,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
         </span>
-        <h3 class="isec-card__title">Watermark Free Files</h3>
-        <p class="isec-card__text">The generated files after splitting the PDF are free from watermarks and the files have high quality.</p>
+        <h3 class="isec-card__title">Archivos sin marca de agua</h3>
+        <p class="isec-card__text">Los archivos generados tras dividir el PDF no tienen marcas de agua y son de alta calidad.</p>
       </div>
 
       <div class="isec-card">
@@ -915,8 +915,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
         </span>
-        <h3 class="isec-card__title">Available on Multiple Operating Systems</h3>
-        <p class="isec-card__text">The online PDF splitter is available on different operating systems like Windows, Mac, Linux, Android, and iPhone.</p>
+        <h3 class="isec-card__title">Disponible en varios sistemas operativos.</h3>
+        <p class="isec-card__text">El divisor de PDF en línea está disponible para diferentes sistemas operativos como Windows, Mac, Linux, Android e iPhone.</p>
       </div>
 
       <div class="isec-card">
@@ -924,8 +924,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg>
         </span>
-        <h3 class="isec-card__title">Accessible through Browser</h3>
-        <p class="isec-card__text">It is accessible through the browser, so there is no need to install the software or application on your device.</p>
+        <h3 class="isec-card__title">Accesible a través del navegador</h3>
+        <p class="isec-card__text">Se puede acceder a través del navegador, por lo que no es necesario instalar ningún software ni aplicación en su dispositivo.</p>
       </div>
 
       <div class="isec-card">
