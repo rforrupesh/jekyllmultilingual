@@ -928,13 +928,13 @@ scripts:
         <p class="isec-card__text">Se puede acceder a través del navegador, por lo que no es necesario instalar ningún software ni aplicación en su dispositivo.</p>
       </div>
 
-      <div class="isec-card">
+    <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg>
         </span>
-        <h3 class="isec-card__title">Can Upload PDF Files Easily</h3>
-        <p class="isec-card__text">You can upload your file on the splitter easily.</p>
+        <h3 class="isec-card__title">Puedes Subir Archivos PDF Fácilmente</h3>
+        <p class="isec-card__text">Puedes subir tu archivo al divisor sin ningún problema.</p>
       </div>
 
       <div class="isec-card">
@@ -942,8 +942,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
         </span>
-        <h3 class="isec-card__title">No Sign-Up Required</h3>
-        <p class="isec-card__text">There is no need to sign up on the website to process your PDF file. It is free of cost.</p>
+        <h3 class="isec-card__title">No Se Requiere Registro</h3>
+        <p class="isec-card__text">No necesitas registrarte en el sitio web para procesar tu archivo PDF. Es completamente gratis.</p>
       </div>
 
       <div class="isec-card">
@@ -951,8 +951,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </span>
-        <h3 class="isec-card__title">Process PDFs Securely without Any Delays</h3>
-        <p class="isec-card__text">The PDF files can be processed without any interruption or delay.</p>
+        <h3 class="isec-card__title">Procesa PDFs de Forma Segura y Sin Demoras</h3>
+        <p class="isec-card__text">Los archivos PDF se pueden procesar sin ninguna interrupción ni retraso.</p>
       </div>
 
       <div class="isec-card">
@@ -960,8 +960,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
         </span>
-        <h3 class="isec-card__title">Downloadable Files are Available Immediately</h3>
-        <p class="isec-card__text">Once the splitting process of the page is done, the downloadable files are available for immediate download.</p>
+        <h3 class="isec-card__title">Archivos Descargables Disponibles de Inmediato</h3>
+        <p class="isec-card__text">Una vez que el proceso de división de página finaliza, los archivos están listos para descargar de inmediato.</p>
       </div>
 
       <div class="isec-card">
@@ -969,8 +969,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg>
         </span>
-        <h3 class="isec-card__title">Same Page Order</h3>
-        <p class="isec-card__text">The same page order can be selected in all the files.</p>
+        <h3 class="isec-card__title">Mismo Orden de Páginas</h3>
+        <p class="isec-card__text">El mismo orden de páginas puede ser seleccionado en todos los archivos.</p>
       </div>
 
       <div class="isec-card">
@@ -978,10 +978,12 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg>
         </span>
-        <h3 class="isec-card__title">Change files anytime</h3>
-        <p class="isec-card__text">Uploaded the wrong PDF? Change button to change them instantly without refreshing the page.</p>
+        <h3 class="isec-card__title">Cambia los Archivos en Cualquier Momento</h3>
+        <p class="isec-card__text">¿Subiste el PDF equivocado? Usa el botón de cambio para reemplazarlo al instante sin necesidad de recargar la página.</p>
       </div>
 
+
+    
     </div>
   </section>
 
