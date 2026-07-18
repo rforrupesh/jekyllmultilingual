@@ -18,7 +18,7 @@ head_style: |
   display: block;
  }
   main {
-  max-width: 1000px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 32px 20px 20px;
   }
