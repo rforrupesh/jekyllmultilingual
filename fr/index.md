@@ -823,224 +823,194 @@ Combine PDF
 
 <div id="split-pdf-info">
  
-  <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
+<section class="isec-block isec-articles" aria-labelledby="isec-why-title">
     <p class="isec-card__text">
-         Merging multiple PDF documents into a single PDF file is extremely easy with our tool. Don't waste time combining PDFs manually.
+         Fusionner plusieurs documents PDF en un seul fichier PDF est extrêmement facile avec notre outil. Ne perdez plus de temps à combiner des PDF manuellement.
     </p> 
     <p class="isec-card__text">
-      Our PDF Merger is a free online PDF tool that helps you join, merge, and combine two or more PDF files instantly
-      without reducing quality.
+      Notre outil pour fusionner pdf est un outil PDF en ligne gratuit qui vous aide à joindre, fusionner et combiner deux ou plusieurs fichiers PDF instantanément
+      sans réduire la qualité.
     </p>
-
     <p class="isec-card__text">
-      It uses advanced technology to merge your PDF documents quickly, easily, and securely with a single click. Easily
-      combine PDF pages, organize PDF files, and create a high-quality PDF online anytime, anywhere.
+      Il utilise une technologie avancée pour fusionner des fichiers pdf rapidement, facilement et en toute sécurité en un seul clic. Combinez facilement
+      des pages PDF, organisez vos fichiers PDF et créez un PDF de haute qualité en ligne à tout moment, partout.
     </p>
   </section>
-
 <section>
    <figure class="isec-media"> 
     <img src="https://rforrupesh.github.io/jekyllmultilingual/assets/img/unir.webp"
-         alt="Combine multiple PDF files into one instantly"
+         alt="Combinez plusieurs fichiers PDF en un seul instantanément"
          loading="lazy"
          width="710"
          height="350">
-
     <figcaption>
-        Combine multiple PDF files into one instantly
+        Combinez plusieurs fichiers PDF en un seul instantanément
     </figcaption>
 </figure>
 </section>
-
   <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
     <p class="isec-card__text">
-       Receiving hundreds of PDF files in your file manager from school projects, office work, university assignments, business documents, or professional tasks can make it difficult to manage important documents properly. These files can easily be misplaced, lost, or mixed with unnecessary documents if they are not organized in time.
-
-
+       Recevoir des centaines de fichiers PDF dans votre gestionnaire de fichiers provenant de projets scolaires, de travaux de bureau, de devoirs universitaires, de documents professionnels ou de tâches professionnelles peut rendre difficile la gestion correcte des documents importants. Ces fichiers peuvent facilement être égarés, perdus ou mélangés avec des documents inutiles s'ils ne sont pas organisés à temps.
     </p> 
     <p class="isec-card__text">
-     Instead of storing multiple PDF documents separately, it is better to combine and organize them into a single PDF file for better document management, easier sharing, faster access, and secure storage. Managing PDFs in one document helps save storage space, improves productivity, and keeps important files well organized.
-
-
+     Au lieu de stocker plusieurs documents PDF séparément, il est préférable de les fusionner et de les organiser dans un seul fichier PDF pour une meilleure gestion des documents, un partage plus facile, un accès plus rapide et un stockage sécurisé. Gérer des PDF dans un seul document permet d'économiser de l'espace de stockage, d'améliorer la productivité et de garder les fichiers importants bien organisés.
     </p>
-
   </section>
-
-
   <section class="isec-block isec-why" aria-labelledby="isec-why-title">
     <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Why use UnificarPDF.com to merge PDF files?</h2>
+      <h2 id="isec-why-title" class="isec-block__title">Pourquoi utiliser UnificarPDF.com pour fusionner des pdf ?</h2>
     </div>
     <div class="isec-card-grid">
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
         </span>
-        <h3 class="isec-card__title">Fast File Merging</h3>
-        <p class="isec-card__text">This high-speed online merger is ideal for combining reports, invoices, scanned pages, and business documents without delays. It improves workflow efficiency and helps users manage digital files more easily.</p>
+        <h3 class="isec-card__title">Fusion de fichiers rapide</h3>
+        <p class="isec-card__text">Cet outil de fusion pdf en ligne à haute vitesse est idéal pour combiner des rapports, des factures, des pages numérisées et des documents professionnels sans délai. Il améliore l'efficacité du flux de travail et aide les utilisateurs à gérer plus facilement leurs fichiers numériques.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
         </span>
-        <h3 class="isec-card__title">Easy to Use</h3>
-        <p class="isec-card__text">A simple drag-and-drop interface allows users to merge PDF files easily without technical knowledge. Upload documents, rearrange pages, and create a clean, organized PDF in just a few clicks.</p>
+        <h3 class="isec-card__title">Facile à utiliser</h3>
+        <p class="isec-card__text">Une interface simple de glisser-déposer permet aux utilisateurs de fusionner des fichiers pdf facilement sans aucune connaissance technique. Téléchargez des documents, réorganisez des pages et créez un PDF propre et organisé en quelques clics seulement.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
         </span>
-        <h3 class="isec-card__title">Secure File Processing</h3>
-        <p class="isec-card__text">All uploaded documents are processed securely. The tool is designed with privacy protection in mind, making it a reliable option for combining sensitive files such as contracts, financial reports, and personal documents. Files are automatically deleted after processing.</p>
+        <h3 class="isec-card__title">Traitement sécurisé des fichiers</h3>
+        <p class="isec-card__text">Tous les documents téléchargés sont traités en toute sécurité. L'outil est conçu avec la protection de la vie privée à l'esprit, ce qui en fait une option fiable pour combiner des fichiers sensibles tels que des contrats, des rapports financiers et des documents personnels. Les fichiers sont automatiquement supprimés après le traitement.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
         </span>
-        <h3 class="isec-card__title">High-Quality PDF Output</h3>
-        <p class="isec-card__text">Our PDF merge tool preserves original formatting, image clarity, and text quality when combining files. Whether for business reports, study notes, or scanned documents, the final merged file remains professional, clear, and ready to share or print.</p>
+        <h3 class="isec-card__title">PDF de sortie de haute qualité</h3>
+        <p class="isec-card__text">Notre outil de fusion pdf préserve la mise en forme originale, la clarté des images et la qualité du texte lors de la combinaison de fichiers. Que ce soit pour des rapports professionnels, des notes d'étude ou des documents numérisés, le fichier fusionné final reste professionnel, clair et prêt à être partagé ou imprimé.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
         </span>
-        <h3 class="isec-card__title">Available on all operating systems.</h3>
-        <p class="isec-card__text">The online PDF merging tool is available on Windows, Mac, Linux, Android, and iPhone without any installation.</p>
+        <h3 class="isec-card__title">Disponible sur tous les systèmes d'exploitation.</h3>
+        <p class="isec-card__text">L'outil de fusion pdf en ligne est disponible sur Windows, Mac, Linux, Android et iPhone sans aucune installation.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
         </span>
-        <h3 class="isec-card__title">Free and Practical Tool</h3>
-        <p class="isec-card__text"> Users can merge documents online without cost or registration. It is a practical solution for organizing assignments, invoices, ebooks, resumes, and scanned files into a single PDF document, available online anytime and anywhere.</p>
+        <h3 class="isec-card__title">Outil gratuit et pratique</h3>
+        <p class="isec-card__text"> Les utilisateurs peuvent fusionner des fichiers pdf gratuitement en ligne sans inscription. C'est une solution pratique pour organiser des devoirs, des factures, des livres numériques, des CV et des fichiers numérisés dans un seul document PDF, disponible en ligne à tout moment et partout.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
         </span>
-        <h3 class="isec-card__title">It maintains the original page order</h3>
-        <p class="isec-card__text">The order of the pages is preserved in all files when you join them, or you can rearrange them as you prefer.</p>
+        <h3 class="isec-card__title">L'ordre original des pages est conservé</h3>
+        <p class="isec-card__text">L'ordre des pages est préservé dans tous les fichiers lorsque vous les fusionnez, ou vous pouvez les réorganiser selon vos préférences.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg>
         </span>
-        <h3 class="isec-card__title">Unlimited Merges, No Daily Limit </h3>
-        <p class="isec-card__text">There's no cap on how many times you can use the tool in a day. Merge one file today and fifty tomorrow — the tool stays free and accessible every time.  </p>
+        <h3 class="isec-card__title">Fusions illimitées, sans limite quotidienne</h3>
+        <p class="isec-card__text">Il n'y a aucune limite au nombre de fois que vous pouvez utiliser l'outil dans une journée. Fusionnez un fichier aujourd'hui et cinquante demain — l'outil reste gratuit et accessible à chaque fois.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
         </span>
-        <h3 class="isec-card__title">No Watermarks on the Output Files</h3>
-        <p class="isec-card__text">The merged PDF comes out clean — no branding, stamps, or watermark text added anywhere in the file, so it's ready to send to a client or submit as-is. </p>
+        <h3 class="isec-card__title">Aucun filigrane sur les fichiers de sortie</h3>
+        <p class="isec-card__text">Le PDF fusionné est propre — aucune marque, tampon ou texte de filigrane n'est ajouté nulle part dans le fichier, il est donc prêt à être envoyé à un client ou soumis tel quel.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
         </span>
-        <h3 class="isec-card__title">No Metadata Injected Into Your Output</h3>
-        <p class="isec-card__text">The tool does not add any hidden metadata or tracking information to the merged PDF. The output file is clean and free of any additional data that could compromise privacy or security.</p>
+        <h3 class="isec-card__title">Aucune métadonnée injectée dans votre fichier de sortie</h3>
+        <p class="isec-card__text">L'outil n'ajoute aucune métadonnée cachée ni information de suivi au PDF fusionné. Le fichier de sortie est propre et exempt de toute donnée supplémentaire qui pourrait compromettre la confidentialité ou la sécurité.</p>
       </div>
     
-
-
     </div>
   </section>
-
   <section class="isec-block isec-how" aria-labelledby="isec-how-title">
     <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">How to Combine PDF Files into One PDF?</h2>
-      <p class="isec-block__subtitle">You do not need to do much to merge PDF files into a single document. If you do not know how to merge PDF files, simply follow these easy steps:</p>
+      <h2 id="isec-how-title" class="isec-block__title">Comment fusionner des fichiers PDF en un seul PDF ?</h2>
+      <p class="isec-block__subtitle">Vous n'avez pas besoin de faire grand-chose pour fusionner des fichiers PDF en un seul document. Si vous ne savez pas comment fusionner des fichiers PDF, suivez simplement ces étapes faciles :</p>
     </div>
     <ol class="isec-steps">
       <li>
         <span class="isec-steps__num">1</span>
-        <div class="isec-steps__body"> Upload your PDF documents or drag and drop the files into the PDF merge tool.</div>
+        <div class="isec-steps__body"> Téléchargez vos documents PDF ou faites glisser et déposez les fichiers dans l'outil de fusion PDF.</div>
       </li>
      <li> 
         <span class="isec-steps__num">2</span>
-        <div class="isec-steps__body"> Arrange and reorder PDF pages or files if necessary.</div>
+        <div class="isec-steps__body"> Organisez et réordonnez les pages ou les fichiers PDF si nécessaire.</div>
       </li>
       <li>
         <span class="isec-steps__num">3</span>
-        <div class="isec-steps__body">Click the Merge PDF button.</div>
+        <div class="isec-steps__body">Cliquez sur le bouton Fusionner PDF.</div>
       </li>
       <li>
         <span class="isec-steps__num">4</span>
-        <div class="isec-steps__body">Wait a few seconds while the tool securely processes your files.</div>
+        <div class="isec-steps__body">Attendez quelques secondes pendant que l'outil traite vos fichiers en toute sécurité.</div>
       </li>
       <li>
         <span class="isec-steps__num">5</span>
-        <div class="isec-steps__body">Download your new merged PDF instantly or share it online.</div>
+        <div class="isec-steps__body">Téléchargez votre nouveau PDF fusionné instantanément ou partagez-le en ligne.</div>
       </li>
     </ol>
   </section>
-
   <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
     <div class="isec-block__head">
-      <h2 id="isec-usecases-title" class="isec-block__title">Combine PDF To PDF tool for any use case</h2>
-      <p class="isec-block__subtitle">See how our PDF Merger helps you easily organize and  PDF documents.</p>
+      <h2 id="isec-usecases-title" class="isec-block__title">Outil de fusion PDF pour tous les cas d'utilisation</h2>
+      <p class="isec-block__subtitle">Découvrez comment notre outil pour fusionner des pdf vous aide à organiser facilement vos documents PDF.</p>
     </div>
     <div class="isec-card-grid isec-card-grid--use">
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
         </span>
-        <h3 class="isec-card__title">Business PDF</h3>
-        <p class="isec-card__text">Businesses use PDF mergers to combine invoices, contracts, reports, and presentations into a single organized file. This makes document sharing easier and keeps important records in one place.</p>
+        <h3 class="isec-card__title">PDF professionnel</h3>
+        <p class="isec-card__text">Les entreprises utilisent les outils de fusion PDF pour combiner des factures, des contrats, des rapports et des présentations dans un seul fichier organisé. Cela facilite le partage de documents et garde les dossiers importants en un seul endroit.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
         </span>
-        <h3 class="isec-card__title">Student PDFs</h3>
-        <p class="isec-card__text">Students can merge notes, research papers, and assignment pages into one PDF before submitting work online. This helps create a clean and professional document.</p>
+        <h3 class="isec-card__title">PDF pour étudiants</h3>
+        <p class="isec-card__text">Les étudiants peuvent fusionner des fichiers pdf — notes, articles de recherche et pages de devoir — en un seul PDF avant de soumettre leur travail en ligne. Cela permet de créer un document propre et professionnel.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg>
         </span>
-        <h3 class="isec-card__title">Scanned Files</h3>
-        <p class="isec-card__text">When documents are scanned page by page, a PDF merger can combine all scanned pages into a single file. This is useful for ID documents, forms, and office paperwork.</p>
+        <h3 class="isec-card__title">Fichiers numérisés</h3>
+        <p class="isec-card__text">Lorsque des documents sont numérisés page par page, un outil de fusion PDF peut combiner toutes les pages numérisées en un seul fichier. C'est utile pour les pièces d'identité, les formulaires et les documents de bureau.</p>
       </div>
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg>
         </span>
-        <h3 class="isec-card__title">Travel and Personal Records</h3>
-        <p class="isec-card__text">It is common to combine tickets, hotel reservations, passports, and travel documents into one PDF for easy access while traveling. This reduces the hassle of managing multiple files.</p>
+        <h3 class="isec-card__title">Voyages et documents personnels</h3>
+        <p class="isec-card__text">Il est courant de combiner billets, réservations d'hôtel, passeports et documents de voyage dans un seul PDF pour un accès facile lors des déplacements. Cela réduit la difficulté de gérer plusieurs fichiers séparés.</p>
       </div>
       
-
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -1062,11 +1032,10 @@ Combine PDF
             <path d="M8 9h2" />
           </svg>
         </span>
-        <h3 class="isec-card__title">Portfolio and Resume Creation</h3>
-        <p class="isec-card__text"> Job seekers and designers use PDF merge tools to combine resumes, cover letters,
-          certificates, and portfolio samples into a single professional document for easy sharing.</p>
+        <h3 class="isec-card__title">Création de portfolio et de CV</h3>
+        <p class="isec-card__text"> Les chercheurs d'emploi et les designers utilisent les outils de fusion PDF pour combiner CV, lettres de motivation,
+          certificats et exemples de portfolio dans un seul document professionnel pour un partage facile.</p>
       </div>
-
         <div class="isec-card">
           <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1084,224 +1053,216 @@ Combine PDF
               <path d="m8.6 10.5 6.8-3.9" />
               <path d="m8.6 13.5 6.8 3.9" /></svg>
           </span>
-          <h3 class="isec-card__title">Healthcare and Medical Records</h3>
-          <p class="isec-card__text">Patients and clinics merge prescriptions, lab reports, insurance forms, and medical history pages into a single file, making it easier to carry or share complete records with doctors or insurers.
+          <h3 class="isec-card__title">Dossiers de santé et médicaux</h3>
+          <p class="isec-card__text">Les patients et les cliniques fusionnent des prescriptions, des résultats de laboratoire, des formulaires d'assurance et des pages d'antécédents médicaux dans un seul fichier, facilitant ainsi le transport ou le partage de dossiers complets avec les médecins ou les assureurs.
           </p>
         </div>
-
     </div>
   </section>
-
   <section class="isec-block isec-faq" aria-labelledby="isec-faq-title">
     <div class="isec-block__head">
-      <h2 id="isec-faq-title" class="isec-block__title">Frequently Asked Questions</h2>
-      <p class="isec-block__subtitle">Got questions? We have answers. Find everything you need to know about our PDF Merger.</p>
+      <h2 id="isec-faq-title" class="isec-block__title">Questions fréquemment posées</h2>
+      <p class="isec-block__subtitle">Des questions ? Nous avons des réponses. Trouvez tout ce que vous devez savoir sur notre outil de fusion PDF.</p>
     </div>
-    <p class="isec-faq__eyebrow">Getting Started</p>
+    <p class="isec-faq__eyebrow">Pour commencer</p>
     <div class="isec-faq__list">
       <div class="isec-faq__item is-open">
         <button type="button" class="isec-faq__summary" aria-expanded="true">
-          <span>What is PDF merging?</span>
+          <span>Qu'est-ce que la fusion PDF ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>PDF merging is the process of combining two or more separate PDF files into a single, unified document.  delivers fast, secure, and automated merging directly in your browser.</p>
+            <p>La fusion PDF est le processus de combinaison de deux ou plusieurs fichiers PDF séparés en un seul document unifié. Notre outil offre une fusion rapide, sécurisée et automatisée directement dans votre navigateur.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How can I merge PDF files online?</span>
+          <span>Comment puis-je fusionner des fichiers PDF en ligne ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>You can merge PDF files online by uploading your documents to UnificarPDF.com. The tool automatically arranges and combines them into one file within seconds.</p>
+            <p>Vous pouvez fusionner des fichiers PDF en ligne en téléchargeant vos documents sur UnificarPDF.com. L'outil les arrange et les combine automatiquement en un seul fichier en quelques secondes.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I need to install software to merge PDFs?</span>
+          <span>Dois-je installer un logiciel pour fusionner des PDF ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No. You can merge PDF files online by uploading your documents to UnificarPDF.com. The tool automatically arranges and combines them into one file within seconds.</p>
+            <p>Non. Vous pouvez fusionner des fichiers PDF en ligne en téléchargeant vos documents sur UnificarPDF.com. L'outil les arrange et les combine automatiquement en un seul fichier en quelques secondes.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I need to create an account?</span>
+          <span>Dois-je créer un compte ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No! You can start merging immediately without any registration, email, or account creation. Just upload your files and begin — it’s that simple.</p>
+            <p>Non ! Vous pouvez commencer à fusionner immédiatement sans aucune inscription, e-mail ou création de compte. Téléchargez simplement vos fichiers et commencez — c'est aussi simple que ça.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>What file formats can be merged?</span>
+          <span>Quels formats de fichiers peuvent être fusionnés ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>UnificarPDF.com is built specifically for combining PDF files. It doesn’t convert other formats like Word, Excel, or images into PDF.</p>
+            <p>UnificarPDF.com est conçu spécifiquement pour fusionner des fichiers PDF. Il ne convertit pas d'autres formats comme Word, Excel ou les images en PDF.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Does we upload large PDF files?</span>
+          <span>Peut-on télécharger de grands fichiers PDF ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, the tool is designed to handle both small documents and larger multi-page PDFs without compromising formatting or quality.</p>
+            <p>Oui, l'outil est conçu pour traiter aussi bien les petits documents que les PDF volumineux à plusieurs pages sans compromettre la mise en forme ou la qualité.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I export the merged file in different formats?</span>
+          <span>Puis-je exporter le fichier fusionné dans différents formats ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>The merged output is delivered as a single PDF file, ready for download, sharing, or printing.</p>
+            <p>Le résultat fusionné est fourni sous forme d'un seul fichier PDF, prêt à être téléchargé, partagé ou imprimé.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I rearrange pages before merging?</span>
+          <span>Puis-je réorganiser les pages avant de fusionner ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, once your files are uploaded you can drag and reorder them to set the exact page sequence before combining.</p>
+            <p>Oui, une fois vos fichiers téléchargés, vous pouvez les faire glisser et les réorganiser pour définir l'ordre exact des pages avant de les combiner.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can UnificarPDF.com detect and organize multiple files at once?</span>
+          <span>UnificarPDF.com peut-il détecter et organiser plusieurs fichiers à la fois ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes! The tool lets you upload several PDFs together, automatically listing them so you can arrange the merge order visually.</p>
+            <p>Oui ! L'outil vous permet de télécharger plusieurs PDF ensemble, en les listant automatiquement pour que vous puissiez organiser visuellement l'ordre de fusion.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDFs in any language?</span>
+          <span>Puis-je fusionner des PDF dans n'importe quelle langue ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, the tool supports merging PDFs in any language, preserving the text and formatting.</p>
+            <p>Oui, l'outil prend en charge la fusion de PDF dans n'importe quelle langue, en préservant le texte et la mise en forme.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDF files on mobile devices?</span>
+          <span>Puis-je fusionner des fichiers PDF sur des appareils mobiles ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, UnificarPDF.com is fully responsive and works seamlessly on desktops, tablets, and mobile devices.</p>
+            <p>Oui, UnificarPDF.com est entièrement responsive et fonctionne parfaitement sur les ordinateurs de bureau, les tablettes et les appareils mobiles.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is UnificarPDF.com suitable for business and academic use?</span>
+          <span>UnificarPDF.com est-il adapté à un usage professionnel et académique ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Absolutely. It’s ideal for combining reports, invoices, contracts, research papers, and assignment pages into clear, organized documents.</p>
+            <p>Absolument. Il est idéal pour combiner des rapports, des factures, des contrats, des articles de recherche et des pages de devoirs dans des documents clairs et organisés.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is my data secure when merging PDFs?</span>
+          <span>Mes données sont-elles sécurisées lors de la fusion de PDF ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, your data is secure when using UnificarPDF.com. We implement industry-standard security measures to protect your files during the merging process.</p>
+            <p>Oui, vos données sont sécurisées lors de l'utilisation de UnificarPDF.com. Nous mettons en œuvre des mesures de sécurité conformes aux normes du secteur pour protéger vos fichiers pendant le processus de fusion.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How is UnificarPDF.com different from Adobe Acrobat for merging?</span>
+          <span>En quoi UnificarPDF.com est-il différent d'Adobe Acrobat pour la fusion ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>UnificarPDF.com offers a user-friendly, web-based solution for merging PDFs without the need for software installation or account creation. Unlike Adobe Acrobat, which requires a paid subscription and desktop software, UnificarPDF.com provides a free, accessible alternative that works directly in your browser.</p>
+            <p>UnificarPDF.com offre une solution conviviale basée sur le Web pour fusionner des PDF sans nécessiter d'installation de logiciel ni de création de compte. Contrairement à Adobe Acrobat, qui nécessite un abonnement payant et un logiciel de bureau, UnificarPDF.com propose une alternative gratuite et accessible qui fonctionne directement dans votre navigateur.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDFs locally without an internet connection? </span>
+          <span>Puis-je fusionner des PDF localement sans connexion Internet ?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No, this tool processes files on the server, so an internet connection is required. For fully offline merging, a desktop tool would be needed instead.</p>
+            <p>Non, cet outil traite les fichiers sur le serveur, une connexion Internet est donc nécessaire. Pour une fusion entièrement hors ligne, un outil de bureau serait nécessaire à la place.</p>
           </div>
         </div>
       </div>
      
     </div>
   </section>
-
   <section>
         <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Common Combining Problems: Problems and Solutions</h2>
-
+      <h2 id="isec-why-title" class="isec-block__title">Problèmes courants de fusion : Problèmes et solutions</h2>
     </div>
     <div class="isec-table-wrap">
   <table class="isec-table">
     <thead>
       <tr>
-        <th>Problem</th>
+        <th>Problème</th>
         <th>Solution</th>
       </tr>
     </thead>
-
     <tbody>
       <tr>
-        <td>The files are not connecting correctly.</td>
-        <td>Make sure all <a href="https://en.wikipedia.org/wiki/PDF" class="alink">PDF files</a> are not corrupted and re-upload any missing files.</td>
+        <td>Les fichiers ne se connectent pas correctement.</td>
+        <td>Assurez-vous que tous les <a href="https://en.wikipedia.org/wiki/PDF" class="alink">fichiers PDF</a> ne sont pas corrompus et re-téléchargez les fichiers manquants.</td>
       </tr>
-
       <tr>
-        <td>The merge button is not working.</td>
-        <td>Refresh the page, disable browser extensions, or try using the latest version of Chrome.</td>
+        <td>Le bouton de fusion ne fonctionne pas.</td>
+        <td>Actualisez la page, désactivez les extensions du navigateur ou essayez d'utiliser la dernière version de Chrome.</td>
       </tr>
-
       <tr>
-        <td>Incorrect file order.</td>
-        <td>Manually reorder the files before merging them, or rename the files using numbers to keep them in the correct sequence.</td>
+        <td>Ordre des fichiers incorrect.</td>
+        <td>Réorganisez manuellement les fichiers avant de les fusionner, ou renommez les fichiers en utilisant des numéros pour les maintenir dans la bonne séquence.</td>
       </tr>
     </tbody>
   </table>
 </div>
   </section>
-</div>
 
 <style>
 #split-pdf-info {
