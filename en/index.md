@@ -709,13 +709,13 @@ head_style: |
   width: 100%;
   max-width: 920px;
   }
-  #split-pdf-info alink {
+  #split-pdf-info .alink {
   color: #0000ee; /* high-contrast blue */
   text-decoration: underline; /* underline makes it distinguishable without color */
   font-weight: 500;
   }
-  #split-pdf-info alink:hover,
-  #split-pdf-info alink:focus {
+  #split-pdf-info .alink:hover,
+  #split-pdf-info .alink:focus {
   color: #0000aa;
   text-decoration: underline;
   outline: 2px solid #0000aa; /* focus indicator for keyboard users */
@@ -859,6 +859,7 @@ Combine PDF
 
     </p> 
     <p class="isec-card__text">
+<a href="https://www.w3schools.com/" class="alink">Visit W3Schools</a>
      Instead of storing multiple PDF documents separately, it is better to combine and organize them into a single PDF file for better document management, easier sharing, faster access, and secure storage. Managing PDFs in one document helps save storage space, improves productivity, and keeps important files well organized.
 
 
