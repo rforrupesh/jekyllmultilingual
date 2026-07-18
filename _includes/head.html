@@ -75,8 +75,7 @@
 <meta name="twitter:site" content="@{{ site.twitter_username }}" />
 {% endif %}
 
-<link rel="preload" href="{{ base }}/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="{{ base }}/assets/css/main.css"></noscript>
+<link rel="stylesheet" href="{{ base }}/assets/css/main.css"/>
 
 {% if page.css %}
 <link rel="stylesheet" href="{{ '/assets/css/' | append: page.css | append: '.css' | relative_url }}">
