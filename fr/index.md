@@ -1264,6 +1264,8 @@ Combine PDF
 </div>
   </section>
 
+
+  </div>
 <style>
 #split-pdf-info {
   --isec-ink: var(--text, #1a1d27);
