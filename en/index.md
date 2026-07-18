@@ -1047,7 +1047,7 @@ scripts:
 }
 
 #split-pdf-info .isec-card__text {
-  font-size: 17px;
+  font-size: 14px;
   line-height: 1.55;
   color: var(--isec-ink-soft);
   margin: 0;
