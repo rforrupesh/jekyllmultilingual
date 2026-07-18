@@ -859,7 +859,6 @@ Combine PDF
 
     </p> 
     <p class="isec-card__text">
-<a href="https://www.w3schools.com/" class="alink">Visit W3Schools</a>
      Instead of storing multiple PDF documents separately, it is better to combine and organize them into a single PDF file for better document management, easier sharing, faster access, and secure storage. Managing PDFs in one document helps save storage space, improves productivity, and keeps important files well organized.
 
 
@@ -1286,7 +1285,7 @@ Combine PDF
     <tbody>
       <tr>
         <td>The files are not connecting correctly.</td>
-        <td>Make sure all PDF files are not corrupted and re-upload any missing files.</td>
+        <td>Make sure all <a href="https://en.wikipedia.org/wiki/PDF" class="alink">PDF files</a> are not corrupted and re-upload any missing files.</td>
       </tr>
 
       <tr>
