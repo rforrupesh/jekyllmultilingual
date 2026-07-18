@@ -2,7 +2,7 @@
 layout: default
 title: Fusionnez des fichiers PDF en ligne​
 description: "Importez et organisez facilement vos PDF, puis téléchargez un fichier unique regroupant le tout. Rapide et sans limite. Un outil en ligne gratuit et illimité pour fusionner des PDF."
-keywords: "Fusionner des PDF, diviser des PDF, combiner des PDF, séparer des PDF, compresser des PDF, convertir des PDF, Word en PDF, Excel en PDF, PowerPoint en PDF, PDF en JPG, JPG en PDF"
+keywords: "Fusionner des PDF, regrouper pdf, diviser des PDF, combiner des PDF, séparer des PDF, compresser des PDF, convertir des PDF, Word en PDF, Excel en PDF, PowerPoint en PDF, PDF en JPG, JPG en PDF"
 lang: fr
 ref: home
 permalink: /fr/
@@ -1080,7 +1080,7 @@ Fusionner PDF
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Vous pouvez fusionner des fichiers PDF en ligne en téléchargeant vos documents sur UnificarPDF.com. L'outil les arrange et les combine automatiquement en un seul fichier en quelques secondes.</p>
+            <p>Vous pouvez fusionner des regrouper pdf en téléchargeant vos documents sur UnificarPDF.com. L'outil les arrange et les combine automatiquement en un seul fichier en quelques secondes.</p>
           </div>
         </div>
       </div>
