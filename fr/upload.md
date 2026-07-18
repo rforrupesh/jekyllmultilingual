@@ -875,7 +875,6 @@ function load(raw) {
   files.push(...pdfs);
   $('uploadState').style.display   = 'none';
   $('uploadedState').style.display = 'block';
-  $('infoContent').style.display   = 'none';
   $('mainFooter').style.display   = 'none';
 
 
