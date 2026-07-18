@@ -709,13 +709,13 @@ head_style: |
   width: 100%;
   max-width: 920px;
   }
-  #infoContent a {
+  #split-pdf-info alink {
   color: #0000ee; /* high-contrast blue */
   text-decoration: underline; /* underline makes it distinguishable without color */
   font-weight: 500;
   }
-  #infoContent a:hover,
-  #infoContent a:focus {
+  #split-pdf-info alink:hover,
+  #split-pdf-info alink:focus {
   color: #0000aa;
   text-decoration: underline;
   outline: 2px solid #0000aa; /* focus indicator for keyboard users */
