@@ -783,12 +783,12 @@ and
   <div id="uploadedState">
     <div class="toolbar">
       <div class="toolbar-left">
-        <span class="toolbar-title">Archivos para fusionar</span>
+        <span class="toolbar-title">Files to merge</span>
         <span class="file-count" id="fileCount">0</span>
         <button class="btn-sm" onclick="sortFiles('asc')">
           <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
             <path d="M1 3h10M3 6h6M5 9h2"/>
-          </svg>ARIZONA
+          </svg>A-Z
         </button>
         <button class="btn-sm" onclick="sortFiles('desc')">
           <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
@@ -800,13 +800,13 @@ and
         <button class="btn-add-top" onclick="document.getElementById('moreInput').click()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
-          </svg>Agregar PDF
+          </svg>Add PDF
         </button>
         <button class="btn-merge-top" id="mergeBtnTop" onclick="mergePDFs()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <path d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h3M16 6h3a2 2 0 012 2v8a2 2 0 01-2 2h-3M12 3v18"/>
           </svg>
-          Combinar PDF
+Combine PDF
         </button>
       </div>
     </div>
@@ -1961,7 +1961,7 @@ function render() {
 
   const addBtn = document.createElement('button');
   addBtn.className = 'add-row-btn';
-  addBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Agregar más archivos`;
+  addBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Add more files`;
   addBtn.onclick = () => $('moreInput').click();
   list.appendChild(addBtn);
 }
