@@ -734,7 +734,6 @@ scripts:
     
 ---
 
-<!-- Floating ghost -->
 <div id="dragGhost">
   <div class="ghost-icon">
     <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -744,13 +743,10 @@ scripts:
   </div>
   <span id="dragGhostName"></span>
 </div>
-
 <main class="container1">
-
   <!-- H1 + P — visible before upload, hidden after -->
   <h1 class="page-title" id="pageTitle">Selecciona varios archivos PDF y combínalos en un solo documento con un solo clic. Sin marcas de agua ni límites.</h1>
   <p class="page-sub" id="pageSub"></p>
-
   <!-- UPLOAD STATE (centered, full viewport height) -->
   <div id="uploadState">
     <div class="upload-box" id="dropZone">
@@ -777,7 +773,6 @@ scripts:
 </p>    </div>
     <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
   </div>
-
   <!-- UPLOADED STATE -->
   <div id="uploadedState">
     <div class="toolbar">
@@ -809,32 +804,16 @@ scripts:
         </button>
       </div>
     </div>
-
     <div class="file-list-wrap" id="fileList"></div>
-
     <div class="progress-wrap" id="progressWrap">
       <div class="spinner"></div>
       <span class="progress-text" id="progressText">Merging…</span>
     </div>
   </div>
-
   <input type="file" id="moreInput" multiple accept="application/pdf" hidden>
-
-
-
-
-
-
     
   
 </main>
-
-
-
-
-
-
-
 <!-- BOTTOM BAR (mobile) -->
 <div class="bottom-bar" id="bottomBar" style="display:none;">
   <button class="add-btn" onclick="document.getElementById('moreInput').click()">
@@ -848,9 +827,7 @@ scripts:
     </svg>Merge PDF
   </button>
 </div>
-
 <!-- FOOTER — hidden until files uploaded -->
-
 <div class="toast" id="toast"></div>
 
 
