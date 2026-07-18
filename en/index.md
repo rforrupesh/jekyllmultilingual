@@ -974,7 +974,7 @@ Combine PDF
 
   <section class="isec-block isec-how" aria-labelledby="isec-how-title">
     <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">How to Merge PDF Files into One PDF?</h2>
+      <h2 id="isec-how-title" class="isec-block__title">How to Combine PDF Files into One PDF?</h2>
       <p class="isec-block__subtitle">You do not need to do much to merge PDF files into a single document. If you do not know how to merge PDF files, simply follow these easy steps:</p>
     </div>
     <ol class="isec-steps">
