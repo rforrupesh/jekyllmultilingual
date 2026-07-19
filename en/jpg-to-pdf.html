@@ -9,8 +9,6 @@ head_style: |
   #infoContent {
   max-width: 920px;
   margin: 0 auto;
-  padding: 32px 20px 20px;
-
   }
   .divider {
   border: none;
@@ -135,7 +133,6 @@ head_style: |
   #uploadState {
   max-width: 1000px;
   margin: 22px auto;
-  padding: 16px 20px 20px;
   width: 100%;
   }
   .page-title {
@@ -166,6 +163,14 @@ head_style: |
   .upload-box.dragover {
   border-color: var(--blue);
   background: #840b0f;
+  }
+  .upload-note a{
+    color: white;
+    text-decoration: underline;
+  }
+  .upload-note a:hover, .upload-note a:focus, .upload-note a:active {
+    color: rgb(232, 225, 225);
+    border: 1px dotted white;
   }
   .upload-box .icon {
   width: 46px;
@@ -938,7 +943,7 @@ head_style: |
   align-items: center;
   gap: 7px;
   }
-  .btn-black:hover {
+  .btn-black:hover, .btn-black svg:hover {
     background: #f3f4f6;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -961,7 +966,7 @@ scripts:
 
       <div class="app-shell">
         <div id="uploadState">
-          <h1 class="page-title">Free JPG to PDFConverter</h1>
+          <h1 class="page-title">Free JPG to PDF Converter</h1>
           <p class="page-sub">
 Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JPG, PNG, or any IMAGE file and get a high-quality PDF in minutes. No signup required, no downloads needed.
 
@@ -997,7 +1002,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
               Select Images
             </button>
              <p class="upload-note">By uploading files,
-             you agree to our <a href="https://rforrupesh.github.io/jekyllmultilingual/terminos-de-uso/"target="_blank">Terms of Use</a>and our <a href="https://rforrupesh.github.io/jekyllmultilingual/politica-de-privacidad/"target="_blank">Privacy Policy</a>. 
+             you agree to our <a href="https://rforrupesh.github.io/jekyllmultilingual/terminos-de-uso/"target="_blank">Terms of Use</a> and our <a href="https://rforrupesh.github.io/jekyllmultilingual/politica-de-privacidad/"target="_blank">Privacy Policy</a>. 
              </p>
           </div>
         </div>
