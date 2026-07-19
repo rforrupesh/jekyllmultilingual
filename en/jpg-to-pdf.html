@@ -160,6 +160,7 @@ head_style: |
   transition:
   border-color 0.2s,
   background 0.2s;
+
   }
   .upload-box:hover,
   .upload-box.dragover {
@@ -183,18 +184,19 @@ head_style: |
   stroke: #555;
   }
   .upload-box h2 {
+  color:white;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 6px;
   }
   .upload-box p {
-  color: #999;
+  color: #fff;
   font-size: 13px;
   margin-bottom: 20px;
   }
   .upload-note {
   margin-top: 12px;
-  color: #bbb;
+  color: #fff;
   font-size: 12px;
   }
 
@@ -922,8 +924,8 @@ head_style: |
 
   /* Btn black (for upload state) */
   .btn-black {
-  background: var(--blue);
-  color: #fff;
+  background: white;
+  color: #272121;
   border: none;
   border-radius: 7px;
   padding: 9px 20px;
@@ -937,7 +939,9 @@ head_style: |
   gap: 7px;
   }
   .btn-black:hover {
-  background: var(--blue-hover);
+    background: #f3f4f6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
   .btn-black svg {
   width: 14px;
