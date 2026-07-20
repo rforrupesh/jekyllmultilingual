@@ -5,705 +5,8 @@ description: Convert your JPG and other image files into universally compatible 
 lang: en
 ref: jpgapdf
 permalink: /en/jpg-to-pdf/
-scripts:
-   -  https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
-
-  
----
-
-<div id="dragGhost">
-        <img class="ghost-thumb" id="ghostThumb" src="" alt="" />
-        <div class="ghost-label" id="dragGhostName"></div>
-      </div>
-
-      <div class="app-shell">
-        <div id="uploadState">
-          <h1 class="page-title">Free JPG to PDF Converter</h1>
-          <p class="page-sub">
-Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JPG, PNG, or any IMAGE file and get a high-quality PDF in minutes. No signup required, no downloads needed.
-
-          </p>
-          <div class="upload-box" id="dropZone">
-            <div class="icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect x="3" y="3" width="18" height="18" rx="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
-              </svg>
-            </div>
-            <h2>Drop images here</h2>
-            <p>JPG, PNG, WebP, GIF, BMP — all welcome</p>
-            <button class="btn-black" id="browseBtn">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-              >
-                <path
-                  d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"
-                />
-              </svg>
-              Select Images
-            </button>
-             <p class="upload-note">By uploading files,
-             you agree to our <a href="https://rforrupesh.github.io/jekyllmultilingual/terminos-de-uso/">Terms of Use</a> and our <a href="https://rforrupesh.github.io/jekyllmultilingual/politica-de-privacidad/">Privacy Policy</a>. 
-             </p>
-          </div>
-        </div>
-
-        <div id="uploadedState">
-          <div class="editor-layout">
-            <div class="preview-panel">
-              <div class="preview-toolbar">
-                <div class="preview-toolbar-left">
-                  <span class="preview-label">Images</span>
-                  <span class="file-count" id="fileCount">0</span>
-
-                  <div class="sort-row">
-                    <button
-                      class="btn-sm"
-                      onclick="sortFiles('asc')"
-                      title="Sort A–Z"
-                    >
-                      <svg
-                        viewBox="0 0 12 12"
-                        fill="none"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                      >
-                        <path d="M1 3h10M3 6h6M5 9h2" />
-                      </svg>
-                      A–Z
-                    </button>
-                    <button
-                      class="btn-sm"
-                      onclick="sortFiles('desc')"
-                      title="Sort Z–A"
-                    >
-                      <svg
-                        viewBox="0 0 12 12"
-                        fill="none"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                      >
-                        <path d="M1 9h10M3 6h6M5 3h2" />
-                      </svg>
-                      Z–A
-                    </button>
-
-                    <div class="toolbar-sep"></div>
-
-                    <button
-                      class="btn-sm"
-                      id="undoBtn"
-                      onclick="undo()"
-                      title="Undo (Ctrl+Z)"
-                      disabled
-                    >
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="M9 14L4 9l5-5" />
-                        <path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11" />
-                      </svg>
-                      Undo
-                    </button>
-
-                    <button
-                      class="btn-sm"
-                      id="redoBtn"
-                      onclick="redo()"
-                      title="Redo (Ctrl+Y)"
-                      disabled
-                    >
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="M15 14l5-5-5-5" />
-                        <path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13" />
-                      </svg>
-                      Redo
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="img-grid" id="imgGrid"></div>
-
-              <div class="progress-wrap" id="progressWrap">
-                <div class="spinner"></div>
-                <span class="progress-text" id="progressText">Converting…</span>
-              </div>
-            </div>
-
-            <div class="settings-panel" id="settingsPanel">
-              <div class="settings-inner">
-                <div class="setting-group">
-                  <span class="setting-label">Page Size</span>
-                  <div class="option-pills" id="pageSizeGroup">
-                    <div
-                      class="option-pill active"
-                      data-val="a4"
-                      onclick="selectOpt(this, 'pageSizeGroup')"
-                    >
-                      <span class="pill-icon"
-                        ><svg
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke-width="1.8"
-                          stroke-linecap="round"
-                        >
-                          <rect
-                            x="4"
-                            y="2"
-                            width="16"
-                            height="20"
-                            rx="2"
-                          /></svg
-                      ></span>
-                      A4
-                      <span class="pill-sub">297×210 mm</span>
-                    </div>
-                    <div
-                      class="option-pill"
-                      data-val="letter"
-                      onclick="selectOpt(this, 'pageSizeGroup')"
-                    >
-                      <span class="pill-icon"
-                        ><svg
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke-width="1.8"
-                          stroke-linecap="round"
-                        >
-                          <rect
-                            x="4"
-                            y="2"
-                            width="16"
-                            height="20"
-                            rx="2"
-                          /></svg
-                      ></span>
-                      US Letter
-                      <span class="pill-sub">215×279 mm</span>
-                    </div>
-                    <div
-                      class="option-pill"
-                      data-val="fit"
-                      onclick="selectOpt(this, 'pageSizeGroup')"
-                    >
-                      <span class="pill-icon"
-                        ><svg
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke-width="1.8"
-                          stroke-linecap="round"
-                        >
-                          <path
-                            d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"
-                          /></svg
-                      ></span>
-                      Fit to image
-                      <span class="pill-sub">auto</span>
-                    </div>
-                  </div>
-                </div>
-
-                <hr class="settings-divider" />
-
-                <div class="setting-group">
-                  <span class="setting-label">Orientation</span>
-                  <div class="option-pills-row" id="orientGroup">
-                    <div
-                      class="option-pill-sq active"
-                      data-val="portrait"
-                      onclick="selectOpt(this, 'orientGroup')"
-                    >
-                      <div class="orient-icon"></div>
-                      Portrait
-                    </div>
-                    <div
-                      class="option-pill-sq"
-                      data-val="landscape"
-                      onclick="selectOpt(this, 'orientGroup')"
-                    >
-                      <div class="orient-icon orient-land"></div>
-                      Landscape
-                    </div>
-                  </div>
-                </div>
-
-                <hr class="settings-divider" />
-
-                <div class="setting-group">
-                  <span class="setting-label">Margin</span>
-                  <div class="option-pills" id="marginGroup">
-                    <div
-                      class="option-pill active"
-                      data-val="none"
-                      onclick="selectOpt(this, 'marginGroup')"
-                    >
-                      <span class="pill-icon"
-                        ><svg
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke-width="1.8"
-                          stroke-linecap="round"
-                        >
-                          <rect
-                            x="2"
-                            y="2"
-                            width="20"
-                            height="20"
-                            rx="2"
-                          /></svg
-                      ></span>
-                      No margin
-                    </div>
-                    <div
-                      class="option-pill"
-                      data-val="small"
-                      onclick="selectOpt(this, 'marginGroup')"
-                    >
-                      <span class="pill-icon"
-                        ><svg
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke-width="1.8"
-                          stroke-linecap="round"
-                        >
-                          <rect
-                            x="4"
-                            y="4"
-                            width="16"
-                            height="16"
-                            rx="1.5"
-                          /></svg
-                      ></span>
-                      Small
-                      <span class="pill-sub">10 pt</span>
-                    </div>
-                    <div
-                      class="option-pill"
-                      data-val="big"
-                      onclick="selectOpt(this, 'marginGroup')"
-                    >
-                      <span class="pill-icon"
-                        ><svg
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke-width="1.8"
-                          stroke-linecap="round"
-                        >
-                          <rect
-                            x="6"
-                            y="6"
-                            width="12"
-                            height="12"
-                            rx="1.5"
-                          /></svg
-                      ></span>
-                      Big
-                      <span class="pill-sub">30 pt</span>
-                    </div>
-                  </div>
-                </div>
-
-                <hr class="settings-divider" />
-
-                <div class="settings-action-row">
-                  <button
-                    class="btn-add-img"
-                    id="addImgBtnDesktop"
-                    title="Add more images"
-                    onclick="$('moreInput').click()"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <line x1="12" y1="5" x2="12" y2="19" />
-                      <line x1="5" y1="12" x2="19" y2="12" />
-                    </svg>
-                    Add
-                  </button>
-                  <button
-                    class="btn-convert"
-                    id="convertBtnTop"
-                    onclick="convertToPDF()"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    >
-                      <path
-                        d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
-                      />
-                      <polyline points="14 2 14 8 20 8" />
-                      <line x1="12" y1="18" x2="12" y2="12" />
-                      <line x1="9" y1="15" x2="15" y2="15" />
-                    </svg>
-                    Convert to PDF
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mobile-bottom" id="mobileBottom" style="display: none">
-          <button class="btn-settings" onclick="openDrawer()">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke-width="2"
-              stroke-linecap="round"
-            >
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-            Options
-          </button>
-          <button
-            class="btn-add-mobile"
-            onclick="$('moreInput').click()"
-            title="Add more images"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <line x1="12" y1="5" x2="12" y2="19" />
-              <line x1="5" y1="12" x2="19" y2="12" />
-            </svg>
-            Add
-          </button>
-          <button
-            class="btn-convert"
-            id="convertBtnBottom"
-            onclick="convertToPDF()"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-            >
-              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-              <polyline points="14 2 14 8 20 8" />
-            </svg>
-            Convert
-          </button>
-        </div>
-
-        <div
-          class="mobile-settings-overlay"
-          id="drawerOverlay"
-          onclick="closeDrawer()"
-        ></div>
-        <div class="mobile-settings-drawer" id="settingsDrawer">
-          <div class="drawer-handle"></div>
-          <button class="drawer-close" onclick="closeDrawer()">✕</button>
-          <div class="drawer-title">PDF Options</div>
-          <div class="drawer-body" id="drawerBody">
-          </div>
-        </div>
-      </div>
-
-    <input type="file" id="fileInput" multiple accept="image/*" hidden />
-      <input type="file" id="moreInput" multiple accept="image/*" hidden />
-
-      <div class="toast" id="toast"></div>
-
-
-      <div id="infoContent">
-
+head_style: |
  
-        <div id="split-pdf-info">
-  <section class="isec-block isec-why" aria-labelledby="isec-why-title">
-    <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Why Choose UniFicarPDF.com for Image to PDF Conversion? </h2>
-      <div class="isec-block__desc">
-        <p> Create professional PDF files from your images with fast, secure, and reliable conversion 
-       </p>
-      </div>
-    </div>
-    <div class="isec-card-grid">
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
-        </span>
-        <h3 class="isec-card__title">Instant & Free</h3>
-        <p class="isec-card__text">No registration required. No installation needed. Convert JPG/JPEG files to PDF instantly and download it immediately</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
-        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
-        </span>
-        <h3 class="isec-card__title">100% Secure & Private</h3>
-        <p class="isec-card__text">We value your privacy. All uploaded images are secured with encryption while being processed and are automatically deleted right after conversion, ensuring that all personal and business files remain private</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg></span>
-        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
-        </span>
-        <h3 class="isec-card__title">Combine Many JPGs</h3>
-        <p class="isec-card__text">Convert 50-page scanned document or one picture without any file size limitation. Upload several JPEG files and get a multi-page PDF. You can drag-and-drop images to change order before conversion.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-        </span>
-        <h3 class="isec-card__title">Original quality intact</h3>
-        <p class="isec-card__text">Ensure that you get a high-resolution PDF document, which will retain all the colors and sharpness of the images in the original quality.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></span>
-        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
-        </span>
-        <h3 class="isec-card__title">Full Control</h3>
-        <p class="isec-card__text">Select the page size for the document as A4, Letter or Fit-to-Image; the orientation either in portrait or landscape mode; margin size and image quality.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span>
-        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
-        </span>
-        <h3 class="isec-card__title">Unlimited Conversions</h3>
-        <p class="isec-card__text">Make unlimited conversions without any limitations on the number of times per day and size of the file, limited only by your device.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
-        </span>
-        <h3 class="isec-card__title">Live Preview</h3>
-        <p class="isec-card__text">See how your PDF will look like once it's done. Rearrange the images and check each page with confidence.</p>
-      </div>
-    </div>
-  </section>
-
-
-
-<section class="isec-block isec-how" aria-labelledby="isec-how-title">
-  <div class="isec-block__head">
-    <h2 id="isec-how-title" class="isec-block__title">How to Convert JPG to PDF Files Online</h2>
-    <p class="isec-block__subtitle">
-      Converting your images to PDF with <strong>UniFicarPDF.com</strong> is quick and easy. Follow these simple steps to create a high-quality PDF in just a few clicks.
-    </p>
-  </div>
-
-  <ol class="isec-steps">
-    <li>
-      <span class="isec-steps__num">1</span>
-      <div class="isec-steps__body">
-        Upload your JPG, JPEG, PNG, WEBP, or other supported image files by dragging and dropping them into the upload area, or click <strong>Choose File</strong> to browse your device.
-      </div>
-    </li>
-
-    <li>
-      <span class="isec-steps__num">2</span>
-      <div class="isec-steps__body">
-        If any image is not in the correct direction, use the <strong>Rotate</strong> option to adjust it. Each image can be rotated individually before conversion.
-      </div>
-    </li>
-
-    <li>
-      <span class="isec-steps__num">3</span>
-      <div class="isec-steps__body">
-        Select your preferred page size:
-        <ul class="isec-substeps">
-          <li><strong>A4</strong> – Best for printing and standard documents.</li>
-          <li><strong>US Letter</strong> – Ideal for office and business use.</li>
-          <li><strong>Fit to Image</strong> – Automatically matches the PDF page size to your image.</li>
-        </ul>
-      </div>
-    </li>
-
-    <li>
-      <span class="isec-steps__num">4</span>
-      <div class="isec-steps__body">
-        Choose the page orientation and margins that suit your needs.
-        <ul class="isec-substeps">
-          <li><strong>Portrait</strong> or <strong>Landscape</strong> orientation.</li>
-          <li><strong>No Margin</strong>, <strong>Small Margin</strong>, or <strong>Large Margin</strong> for the page layout.</li>
-        </ul>
-      </div>
-    </li>
-
-    <li>
-      <span class="isec-steps__num">5</span>
-      <div class="isec-steps__body">
-        Click <strong>Add</strong> to include more images if needed. When everything is ready, click <strong>Convert to PDF</strong>. Your PDF will be created in seconds and will be ready to download instantly.
-      </div>
-    </li>
-  </ol>
-</section>
-          
-
-          
-  <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
-    <div class="isec-block__head">
-      <h2 id="isec-usecases-title" class="isec-block__title">Perfect for All Use Cases of your JPG images to PDF</h2>
-      <p class="isec-block__subtitle">Find out the various things you can do with our tool when merging your photos</p>
-    </div>
-    <div class="isec-card-grid isec-card-grid--use">
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-        </span>
-        <h3 class="isec-card__title">Scanning Documents</h3>
-        <p class="isec-card__text">Convert photos of paper documents into clean, searchable PDF files that are easy to store, print and share across devices.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg></span>
-        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
-        </span>
-        <h3 class="isec-card__title">Assignment Submission</h3>
-        <p class="isec-card__text">Create a single PDF by combining multiple images of your handwritten homework, notes or projects for fast and easy online submission.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg></span>
-        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg>
-        </span>
-        <h3 class="isec-card__title">Business & Office Documents</h3>
-        <p class="isec-card__text">Convert invoices, receipts, contracts and forms to professional PDF documents that are easy to organize, archive and send.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg>
-        </span>
-        <h3 class="isec-card__title">ID & Certificate Sharing</h3>
-        <p class="isec-card__text">Create secure PDF files from passports, ID cards, licenses, and certificates for job applications, admissions, banking and government services</p>
-      </div>
-    </div>
-  </section>
-  <section class="isec-block isec-faq" aria-labelledby="isec-faq-title">
-    <div class="isec-block__head">
-      <h2 id="isec-faq-title" class="isec-block__title">Frequently Asked Questions</h2>
-      <p class="isec-block__subtitle">Des questions sur comment diviser, séparer ou extraire page d'un PDF ? Voici les réponses.</p>
-    </div>
-    <p class="isec-faq__eyebrow">Getting Started</p>
-    <div class="isec-faq__list">
-      <div class="isec-faq__item is-open">
-        <button type="button" class="isec-faq__summary" aria-expanded="true">
-          <span>Is the conversion process secure?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>Yes. Your images are processed securely, and uploaded files are automatically removed after a short time to protect your privacy.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I Merge multiple images to one PDF?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>Yes. You can upload multiple JPG, PNG, or other supported images and combine them into a single PDF in your preferred order.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>What file formats are supported?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>The tool On UnificarPDF.com supports popular image formats including JPG, JPEG, PNG, WEBP, BMP, GIF, and TIFF.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is there a file size limit?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>You can upload large images, but very large files may take a little longer to process. If you encounter a limit, try reducing the image size or splitting the files.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I need to register or pay?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>No. The JPG to PDF tool is completely free to use, and no registration or sign-up is required.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How is the PDF quality maintained?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>Your images are converted with high quality, preserving their original resolution, clarity, and layout as much as possible.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How do I turn a picture into a PDF on a Mac or Windows PC?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>Simply open the JPG to PDF tool in your browser, upload your image(s), arrange them if needed, and click Convert to PDF. Once the conversion is complete, download your PDF instantly. No software installation is required.</p>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-</div>
-<style>
-
   #infoContent {
   max-width: 920px;
   margin: 0 auto;
@@ -1529,7 +832,6 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
   font-size: 14px;
   color: #555;
   }
-
   /* Ghost — follows cursor top-left, no transition */
   #dragGhost {
   position: fixed;
@@ -1565,7 +867,6 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
   text-overflow: ellipsis;
   border-top: 1px solid var(--border);
   }
-
   /* Toast */
   .toast {
   position: fixed;
@@ -1587,7 +888,6 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
   transform: translateX(-50%) translateY(0);
   opacity: 1;
   }
-
   /* Responsive */
   @media (max-width: 700px) {
   #uploadState {
@@ -1650,6 +950,706 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
   width: 14px;
   height: 14px;
   }
+ 
+scripts:
+   -  https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
+
+  
+---
+
+<div id="dragGhost">
+        <img class="ghost-thumb" id="ghostThumb" src="" alt="" />
+        <div class="ghost-label" id="dragGhostName"></div>
+      </div>
+
+      <div class="app-shell">
+        <div id="uploadState">
+          <h1 class="page-title">Free JPG to PDF Converter</h1>
+          <p class="page-sub">
+Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JPG, PNG, or any IMAGE file and get a high-quality PDF in minutes. No signup required, no downloads needed.
+
+          </p>
+          <div class="upload-box" id="dropZone">
+            <div class="icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+            <h2>Drop images here</h2>
+            <p>JPG, PNG, WebP, GIF, BMP — all welcome</p>
+            <button class="btn-black" id="browseBtn">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              >
+                <path
+                  d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"
+                />
+              </svg>
+              Select Images
+            </button>
+             <p class="upload-note">By uploading files,
+             you agree to our <a href="https://rforrupesh.github.io/jekyllmultilingual/terminos-de-uso/">Terms of Use</a> and our <a href="https://rforrupesh.github.io/jekyllmultilingual/politica-de-privacidad/">Privacy Policy</a>. 
+             </p>
+          </div>
+        </div>
+
+        <div id="uploadedState">
+          <div class="editor-layout">
+            <div class="preview-panel">
+              <div class="preview-toolbar">
+                <div class="preview-toolbar-left">
+                  <span class="preview-label">Images</span>
+                  <span class="file-count" id="fileCount">0</span>
+
+                  <div class="sort-row">
+                    <button
+                      class="btn-sm"
+                      onclick="sortFiles('asc')"
+                      title="Sort A–Z"
+                    >
+                      <svg
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                      >
+                        <path d="M1 3h10M3 6h6M5 9h2" />
+                      </svg>
+                      A–Z
+                    </button>
+                    <button
+                      class="btn-sm"
+                      onclick="sortFiles('desc')"
+                      title="Sort Z–A"
+                    >
+                      <svg
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                      >
+                        <path d="M1 9h10M3 6h6M5 3h2" />
+                      </svg>
+                      Z–A
+                    </button>
+
+                    <div class="toolbar-sep"></div>
+
+                    <button
+                      class="btn-sm"
+                      id="undoBtn"
+                      onclick="undo()"
+                      title="Undo (Ctrl+Z)"
+                      disabled
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M9 14L4 9l5-5" />
+                        <path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11" />
+                      </svg>
+                      Undo
+                    </button>
+
+                    <button
+                      class="btn-sm"
+                      id="redoBtn"
+                      onclick="redo()"
+                      title="Redo (Ctrl+Y)"
+                      disabled
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M15 14l5-5-5-5" />
+                        <path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13" />
+                      </svg>
+                      Redo
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="img-grid" id="imgGrid"></div>
+
+              <div class="progress-wrap" id="progressWrap">
+                <div class="spinner"></div>
+                <span class="progress-text" id="progressText">Converting…</span>
+              </div>
+            </div>
+
+            <div class="settings-panel" id="settingsPanel">
+              <div class="settings-inner">
+                <div class="setting-group">
+                  <span class="setting-label">Page Size</span>
+                  <div class="option-pills" id="pageSizeGroup">
+                    <div
+                      class="option-pill active"
+                      data-val="a4"
+                      onclick="selectOpt(this, 'pageSizeGroup')"
+                    >
+                      <span class="pill-icon"
+                        ><svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                        >
+                          <rect
+                            x="4"
+                            y="2"
+                            width="16"
+                            height="20"
+                            rx="2"
+                          /></svg
+                      ></span>
+                      A4
+                      <span class="pill-sub">297×210 mm</span>
+                    </div>
+                    <div
+                      class="option-pill"
+                      data-val="letter"
+                      onclick="selectOpt(this, 'pageSizeGroup')"
+                    >
+                      <span class="pill-icon"
+                        ><svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                        >
+                          <rect
+                            x="4"
+                            y="2"
+                            width="16"
+                            height="20"
+                            rx="2"
+                          /></svg
+                      ></span>
+                      US Letter
+                      <span class="pill-sub">215×279 mm</span>
+                    </div>
+                    <div
+                      class="option-pill"
+                      data-val="fit"
+                      onclick="selectOpt(this, 'pageSizeGroup')"
+                    >
+                      <span class="pill-icon"
+                        ><svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                        >
+                          <path
+                            d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"
+                          /></svg
+                      ></span>
+                      Fit to image
+                      <span class="pill-sub">auto</span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="settings-divider" />
+
+                <div class="setting-group">
+                  <span class="setting-label">Orientation</span>
+                  <div class="option-pills-row" id="orientGroup">
+                    <div
+                      class="option-pill-sq active"
+                      data-val="portrait"
+                      onclick="selectOpt(this, 'orientGroup')"
+                    >
+                      <div class="orient-icon"></div>
+                      Portrait
+                    </div>
+                    <div
+                      class="option-pill-sq"
+                      data-val="landscape"
+                      onclick="selectOpt(this, 'orientGroup')"
+                    >
+                      <div class="orient-icon orient-land"></div>
+                      Landscape
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="settings-divider" />
+
+                <div class="setting-group">
+                  <span class="setting-label">Margin</span>
+                  <div class="option-pills" id="marginGroup">
+                    <div
+                      class="option-pill active"
+                      data-val="none"
+                      onclick="selectOpt(this, 'marginGroup')"
+                    >
+                      <span class="pill-icon"
+                        ><svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                        >
+                          <rect
+                            x="2"
+                            y="2"
+                            width="20"
+                            height="20"
+                            rx="2"
+                          /></svg
+                      ></span>
+                      No margin
+                    </div>
+                    <div
+                      class="option-pill"
+                      data-val="small"
+                      onclick="selectOpt(this, 'marginGroup')"
+                    >
+                      <span class="pill-icon"
+                        ><svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                        >
+                          <rect
+                            x="4"
+                            y="4"
+                            width="16"
+                            height="16"
+                            rx="1.5"
+                          /></svg
+                      ></span>
+                      Small
+                      <span class="pill-sub">10 pt</span>
+                    </div>
+                    <div
+                      class="option-pill"
+                      data-val="big"
+                      onclick="selectOpt(this, 'marginGroup')"
+                    >
+                      <span class="pill-icon"
+                        ><svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke-width="1.8"
+                          stroke-linecap="round"
+                        >
+                          <rect
+                            x="6"
+                            y="6"
+                            width="12"
+                            height="12"
+                            rx="1.5"
+                          /></svg
+                      ></span>
+                      Big
+                      <span class="pill-sub">30 pt</span>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="settings-divider" />
+
+                <div class="settings-action-row">
+                  <button
+                    class="btn-add-img"
+                    id="addImgBtnDesktop"
+                    title="Add more images"
+                    onclick="$('moreInput').click()"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19" />
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                    </svg>
+                    Add
+                  </button>
+                  <button
+                    class="btn-convert"
+                    id="convertBtnTop"
+                    onclick="convertToPDF()"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    >
+                      <path
+                        d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"
+                      />
+                      <polyline points="14 2 14 8 20 8" />
+                      <line x1="12" y1="18" x2="12" y2="12" />
+                      <line x1="9" y1="15" x2="15" y2="15" />
+                    </svg>
+                    Convert to PDF
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-bottom" id="mobileBottom" style="display: none">
+          <button class="btn-settings" onclick="openDrawer()">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            Options
+          </button>
+          <button
+            class="btn-add-mobile"
+            onclick="$('moreInput').click()"
+            title="Add more images"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <line x1="5" y1="12" x2="19" y2="12" />
+            </svg>
+            Add
+          </button>
+          <button
+            class="btn-convert"
+            id="convertBtnBottom"
+            onclick="convertToPDF()"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+            Convert
+          </button>
+        </div>
+
+        <div
+          class="mobile-settings-overlay"
+          id="drawerOverlay"
+          onclick="closeDrawer()"
+        ></div>
+        <div class="mobile-settings-drawer" id="settingsDrawer">
+          <div class="drawer-handle"></div>
+          <button class="drawer-close" onclick="closeDrawer()">✕</button>
+          <div class="drawer-title">PDF Options</div>
+          <div class="drawer-body" id="drawerBody">
+          </div>
+        </div>
+      </div>
+
+    <input type="file" id="fileInput" multiple accept="image/*" hidden />
+      <input type="file" id="moreInput" multiple accept="image/*" hidden />
+
+      <div class="toast" id="toast"></div>
+
+
+      <div id="infoContent">
+
+ 
+        <div id="split-pdf-info">
+  <section class="isec-block isec-why" aria-labelledby="isec-why-title">
+    <div class="isec-block__head">
+      <h2 id="isec-why-title" class="isec-block__title">Why Choose UniFicarPDF.com for Image to PDF Conversion? </h2>
+      <div class="isec-block__desc">
+        <p> Create professional PDF files from your images with fast, secure, and reliable conversion 
+       </p>
+      </div>
+    </div>
+    <div class="isec-card-grid">
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg></span>
+        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
+        </span>
+        <h3 class="isec-card__title">Instant & Free</h3>
+        <p class="isec-card__text">No registration required. No installation needed. Convert JPG/JPEG files to PDF instantly and download it immediately</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
+        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
+        </span>
+        <h3 class="isec-card__title">100% Secure & Private</h3>
+        <p class="isec-card__text">We value your privacy. All uploaded images are secured with encryption while being processed and are automatically deleted right after conversion, ensuring that all personal and business files remain private</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg></span>
+        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+        </span>
+        <h3 class="isec-card__title">Combine Many JPGs</h3>
+        <p class="isec-card__text">Convert 50-page scanned document or one picture without any file size limitation. Upload several JPEG files and get a multi-page PDF. You can drag-and-drop images to change order before conversion.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
+        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        </span>
+        <h3 class="isec-card__title">Original quality intact</h3>
+        <p class="isec-card__text">Ensure that you get a high-resolution PDF document, which will retain all the colors and sharpness of the images in the original quality.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></span>
+        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
+        </span>
+        <h3 class="isec-card__title">Full Control</h3>
+        <p class="isec-card__text">Select the page size for the document as A4, Letter or Fit-to-Image; the orientation either in portrait or landscape mode; margin size and image quality.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span>
+        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
+        </span>
+        <h3 class="isec-card__title">Unlimited Conversions</h3>
+        <p class="isec-card__text">Make unlimited conversions without any limitations on the number of times per day and size of the file, limited only by your device.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg></span>
+        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
+        </span>
+        <h3 class="isec-card__title">Live Preview</h3>
+        <p class="isec-card__text">See how your PDF will look like once it's done. Rearrange the images and check each page with confidence.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="isec-block isec-how" aria-labelledby="isec-how-title">
+  <div class="isec-block__head">
+    <h2 id="isec-how-title" class="isec-block__title">How to Convert JPG to PDF Files Online</h2>
+    <p class="isec-block__subtitle">
+      Converting your images to PDF with <strong>UniFicarPDF.com</strong> is quick and easy. Follow these simple steps to create a high-quality PDF in just a few clicks.
+    </p>
+  </div>
+
+  <ol class="isec-steps">
+    <li>
+      <span class="isec-steps__num">1</span>
+      <div class="isec-steps__body">
+        Upload your JPG, JPEG, PNG, WEBP, or other supported image files by dragging and dropping them into the upload area, or click <strong>Choose File</strong> to browse your device.
+      </div>
+    </li>
+
+    <li>
+      <span class="isec-steps__num">2</span>
+      <div class="isec-steps__body">
+        If any image is not in the correct direction, use the <strong>Rotate</strong> option to adjust it. Each image can be rotated individually before conversion.
+      </div>
+    </li>
+
+    <li>
+      <span class="isec-steps__num">3</span>
+      <div class="isec-steps__body">
+        Select your preferred page size:
+        <ul class="isec-substeps">
+          <li><strong>A4</strong> – Best for printing and standard documents.</li>
+          <li><strong>US Letter</strong> – Ideal for office and business use.</li>
+          <li><strong>Fit to Image</strong> – Automatically matches the PDF page size to your image.</li>
+        </ul>
+      </div>
+    </li>
+
+    <li>
+      <span class="isec-steps__num">4</span>
+      <div class="isec-steps__body">
+        Choose the page orientation and margins that suit your needs.
+        <ul class="isec-substeps">
+          <li><strong>Portrait</strong> or <strong>Landscape</strong> orientation.</li>
+          <li><strong>No Margin</strong>, <strong>Small Margin</strong>, or <strong>Large Margin</strong> for the page layout.</li>
+        </ul>
+      </div>
+    </li>
+
+    <li>
+      <span class="isec-steps__num">5</span>
+      <div class="isec-steps__body">
+        Click <strong>Add</strong> to include more images if needed. When everything is ready, click <strong>Convert to PDF</strong>. Your PDF will be created in seconds and will be ready to download instantly.
+      </div>
+    </li>
+  </ol>
+</section>
+          
+
+          
+  <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
+    <div class="isec-block__head">
+      <h2 id="isec-usecases-title" class="isec-block__title">Perfect for All Use Cases of your JPG images to PDF</h2>
+      <p class="isec-block__subtitle">Find out the various things you can do with our tool when merging your photos</p>
+    </div>
+    <div class="isec-card-grid isec-card-grid--use">
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </span>
+        <h3 class="isec-card__title">Scanning Documents</h3>
+        <p class="isec-card__text">Convert photos of paper documents into clean, searchable PDF files that are easy to store, print and share across devices.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg></span>
+        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
+        </span>
+        <h3 class="isec-card__title">Assignment Submission</h3>
+        <p class="isec-card__text">Create a single PDF by combining multiple images of your handwritten homework, notes or projects for fast and easy online submission.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg></span>
+        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg>
+        </span>
+        <h3 class="isec-card__title">Business & Office Documents</h3>
+        <p class="isec-card__text">Convert invoices, receipts, contracts and forms to professional PDF documents that are easy to organize, archive and send.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg></span>
+        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg>
+        </span>
+        <h3 class="isec-card__title">ID & Certificate Sharing</h3>
+        <p class="isec-card__text">Create secure PDF files from passports, ID cards, licenses, and certificates for job applications, admissions, banking and government services</p>
+      </div>
+    </div>
+  </section>
+  <section class="isec-block isec-faq" aria-labelledby="isec-faq-title">
+    <div class="isec-block__head">
+      <h2 id="isec-faq-title" class="isec-block__title">Frequently Asked Questions</h2>
+      <p class="isec-block__subtitle">Des questions sur comment diviser, séparer ou extraire page d'un PDF ? Voici les réponses.</p>
+    </div>
+    <p class="isec-faq__eyebrow">Getting Started</p>
+    <div class="isec-faq__list">
+      <div class="isec-faq__item is-open">
+        <button type="button" class="isec-faq__summary" aria-expanded="true">
+          <span>Is the conversion process secure?</span>
+          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </button>
+        <div class="isec-faq__panel">
+          <div class="isec-faq__panel-inner">
+            <p>Yes. Your images are processed securely, and uploaded files are automatically removed after a short time to protect your privacy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="isec-faq__item">
+        <button type="button" class="isec-faq__summary" aria-expanded="false">
+          <span>Can I Merge multiple images to one PDF?</span>
+          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </button>
+        <div class="isec-faq__panel">
+          <div class="isec-faq__panel-inner">
+            <p>Yes. You can upload multiple JPG, PNG, or other supported images and combine them into a single PDF in your preferred order.</p>
+          </div>
+        </div>
+      </div>
+      <div class="isec-faq__item">
+        <button type="button" class="isec-faq__summary" aria-expanded="false">
+          <span>What file formats are supported?</span>
+          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </button>
+        <div class="isec-faq__panel">
+          <div class="isec-faq__panel-inner">
+            <p>The tool On UnificarPDF.com supports popular image formats including JPG, JPEG, PNG, WEBP, BMP, GIF, and TIFF.</p>
+          </div>
+        </div>
+      </div>
+      <div class="isec-faq__item">
+        <button type="button" class="isec-faq__summary" aria-expanded="false">
+          <span>Is there a file size limit?</span>
+          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </button>
+        <div class="isec-faq__panel">
+          <div class="isec-faq__panel-inner">
+            <p>You can upload large images, but very large files may take a little longer to process. If you encounter a limit, try reducing the image size or splitting the files.</p>
+          </div>
+        </div>
+      </div>
+      <div class="isec-faq__item">
+        <button type="button" class="isec-faq__summary" aria-expanded="false">
+          <span>Do I need to register or pay?</span>
+          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </button>
+        <div class="isec-faq__panel">
+          <div class="isec-faq__panel-inner">
+            <p>No. The JPG to PDF tool is completely free to use, and no registration or sign-up is required.</p>
+          </div>
+        </div>
+      </div>
+      <div class="isec-faq__item">
+        <button type="button" class="isec-faq__summary" aria-expanded="false">
+          <span>How is the PDF quality maintained?</span>
+          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </button>
+        <div class="isec-faq__panel">
+          <div class="isec-faq__panel-inner">
+            <p>Your images are converted with high quality, preserving their original resolution, clarity, and layout as much as possible.</p>
+          </div>
+        </div>
+      </div>
+      <div class="isec-faq__item">
+        <button type="button" class="isec-faq__summary" aria-expanded="false">
+          <span>How do I turn a picture into a PDF on a Mac or Windows PC?</span>
+          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+        </button>
+        <div class="isec-faq__panel">
+          <div class="isec-faq__panel-inner">
+            <p>Simply open the JPG to PDF tool in your browser, upload your image(s), arrange them if needed, and click Convert to PDF. Once the conversion is complete, download your PDF instantly. No software installation is required.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+</div>
+<style>
+
 
 
 
