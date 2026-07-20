@@ -38,7 +38,7 @@ layout: default
       <article>
 
         <!-- Breadcrumb -->
-        <nav class="breadcrumb" aria-label="Breadcrumb">
+        <nav class="breadcrumb-post" aria-label="Breadcrumb">
           <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}en/{% endif %}">{{ t.nav.home }}</a>
           <span class="breadcrumb-sep" aria-hidden="true">›</span>
           <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'hi' %}en/{% endif %}blog/">{{ t.nav.blog }}</a>
@@ -173,7 +173,7 @@ layout: default
 
 <style>
 /* ─── Breadcrumb ───────────────────────────────────── */
-.breadcrumb {
+.breadcrumb-post {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -183,14 +183,14 @@ layout: default
   color: var(--muted, #94a3b8);
 }
 
-.breadcrumb a {
+.breadcrumb-post a {
   color: var(--muted, #94a3b8);
   text-decoration: none;
   transition: color 0.15s;
   white-space: nowrap;
 }
 
-.breadcrumb a:hover { color: var(--accent, #2563eb); }
+.breadcrumb-post a:hover { color: var(--accent, #2563eb); }
 
 .breadcrumb-sep { opacity: 0.45; }
 
