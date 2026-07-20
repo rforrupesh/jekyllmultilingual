@@ -6,7 +6,6 @@ lang: en
 ref: jpgapdf
 permalink: /en/jpg-to-pdf/
 head_style: |
- 
   #infoContent {
   max-width: 920px;
   margin: 0 auto;
