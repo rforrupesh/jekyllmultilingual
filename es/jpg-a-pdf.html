@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Convertir JPG a PDF"
-description: Arrastra tus imágenes JPG, JPEG o PNG al recuadro y conviértelas en documentos PDF de alta calidad en segundos.
+title: Convertir JPG a PDF | Imágenes JPG a PDF online | UniFicarPDF.com
+description: Convierte tus archivos JPG y otros archivos de imagen en documentos PDF universalmente compatibles, sin esfuerzo y sin coste alguno.
 lang: es
 ref: jpgapdf
 permalink: /jpg-a-pdf/
@@ -9,8 +9,6 @@ head_style: |
   #infoContent {
   max-width: 920px;
   margin: 0 auto;
-  padding: 0px 20px 20px 20px;
-
   }
   .divider {
   border: none;
@@ -134,8 +132,7 @@ head_style: |
   /* Upload empty state */
   #uploadState {
   max-width: 920px;
-  margin: 30px auto;
-  padding: 2px;
+  margin: 22px auto;
   width: 100%;
   }
   .page-title {
@@ -154,17 +151,26 @@ head_style: |
   background: #c41318;
   border: 1.5px dashed #4285f4;
   border-radius: var(--radius);
-  padding: 72px 14px;
+  padding: 60px 24px;
   text-align: center;
   cursor: pointer;
   transition:
   border-color 0.2s,
   background 0.2s;
+
   }
   .upload-box:hover,
   .upload-box.dragover {
   border-color: var(--blue);
-  background: #81090d;
+  background: #840b0f;
+  }
+  .upload-note a{
+    color: white;
+    text-decoration: underline;
+  }
+  .upload-note a:hover, .upload-note a:focus, .upload-note a:active {
+    color: rgb(232, 225, 225);
+    border: 1px dotted white;
   }
   .upload-box .icon {
   width: 46px;
@@ -183,10 +189,10 @@ head_style: |
   stroke: #555;
   }
   .upload-box h2 {
+  color:white;
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 6px;
-  color: #fff;
   }
   .upload-box p {
   color: #fff;
@@ -825,7 +831,6 @@ head_style: |
   font-size: 14px;
   color: #555;
   }
-
   /* Ghost — follows cursor top-left, no transition */
   #dragGhost {
   position: fixed;
@@ -861,7 +866,6 @@ head_style: |
   text-overflow: ellipsis;
   border-top: 1px solid var(--border);
   }
-
   /* Toast */
   .toast {
   position: fixed;
@@ -883,7 +887,6 @@ head_style: |
   transform: translateX(-50%) translateY(0);
   opacity: 1;
   }
-
   /* Responsive */
   @media (max-width: 700px) {
   #uploadState {
@@ -923,8 +926,8 @@ head_style: |
 
   /* Btn black (for upload state) */
   .btn-black {
-  background: #fff;
-  color: black;
+  background: white;
+  color: #272121;
   border: none;
   border-radius: 7px;
   padding: 9px 20px;
@@ -937,30 +940,32 @@ head_style: |
   align-items: center;
   gap: 7px;
   }
-  .btn-black:hover {
-  background: var(--blue-hover);
+  .btn-black:hover, .upload-box .icon:hover {
+    background: #f3f4f6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
   .btn-black svg {
   width: 14px;
   height: 14px;
   }
-
+ 
 scripts:
    -  https://unpkg.com/pdf-lib/dist/pdf-lib.min.js
 
   
 ---
 
-      <div id="dragGhost">
+<div id="dragGhost">
         <img class="ghost-thumb" id="ghostThumb" src="" alt="" />
         <div class="ghost-label" id="dragGhostName"></div>
       </div>
 
       <div class="app-shell">
         <div id="uploadState">
-          <h1 class="page-title">Convertir múltiples JPG a PDF</h1>
+          <h1 class="page-title">Free JPG to PDF Converter</h1>
           <p class="page-sub">
-            Nuestro conversor de JPG a PDF es una herramienta en línea que convierte imágenes JPG en un solo documento PDF en segundos.
+Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JPG, PNG, or any IMAGE file and get a high-quality PDF in minutes. No signup required, no downloads needed.
 
           </p>
           <div class="upload-box" id="dropZone">
@@ -993,9 +998,9 @@ scripts:
               </svg>
               Select Images
             </button>
-            <p class="upload-note">
-              Images processed locally in your browser · never uploaded
-            </p>
+             <p class="upload-note">By uploading files,
+             you agree to our <a href="https://rforrupesh.github.io/jekyllmultilingual/terminos-de-uso/">Terms of Use</a> and our <a href="https://rforrupesh.github.io/jekyllmultilingual/politica-de-privacidad/">Privacy Policy</a>. 
+             </p>
           </div>
         </div>
 
@@ -1385,57 +1390,640 @@ scripts:
 
       <div id="infoContent">
 
-<h2  class="section-title">Convertidor de imágenes a PDF</h2>
-<p  class="section-body">Se trata de un software web increíblemente potente que permite a los usuarios convertir eficazmente imágenes JPG en documentos PDF. Aquellas personas que deseen transformar sus imágenes en documentos PDF —más seguros y fáciles de compartir— podrán utilizar nuestro producto de forma totalmente gratuita. Además, nuestro producto es accesible para los usuarios desde cualquier tipo de dispositivo, independientemente del sistema operativo que utilicen. Como resultado, cualquier persona que desee convertir sus imágenes JPG a PDF podrá realizar esta tarea en cualquier momento haciendo uso de nuestro servicio. Cabe mencionar que el nombre de nuestra herramienta es Picture to PDF Converter; no obstante, también es posible convertir otros tipos de imágenes, tales como PNG, GIF, BMP y TIFF.</p>
-<h2  class="section-title">Cómo pasar un JPG a PDF gratis por internet</h2> 
-<p  class="section-body">Nuestra herramienta le permite convertir fácilmente imágenes JPG, JPEG, PNG y otros tipos a documentos PDF en segundos. Solo tiene que seguir las instrucciones de abajo para convertir sus imágenes a archivos PDF sin mucho esfuerzo.</p>
-<ol>
-   <li>Abre el conversor de JPG a PDF en nuestro sitio web desde cualquier dispositivo.</li>
-   <li>Sube tu archivo JPG, JPEG, PNG u otra imagen que necesite ser convertida.</li>
-   <li>En caso de que estés trabajando en un PC, puedes arrastrar y soltar la imagen directamente sobre el área designada.</li>
-   <li>Después de que el proceso de subida se complete, el conversor de archivos de imagen a PDF hará el trabajo automáticamente.</li>
-   <li>La herramienta convertirá la imagen en un documento PDF de gran calidad en pocos momentos.</li>
-   <li>Finalmente, descarga tu archivo PDF de la web.</li>
-</ol>
-<h2  class="section-title">Características y funcionalidades</h2>
-<p  class="section-body">Cuando los usuarios eligen un conversor de archivos de imagen que convierte imágenes en archivos PDF, lo más probable es que busquen un software fiable y eficiente. Nuestro conversor de imágenes a PDF satisface las necesidades de los usuarios al proporcionar un servicio de conversión conveniente, así como útiles funciones adicionales. En caso de que una persona necesite convertir una o varias imágenes a formato PDF, ya sea para necesidades privadas o comerciales, esta aplicación le ayudará a hacerlo de forma eficaz.</p>
-<h3  class="section-title">Interfaz intuitiva</h3>
-<p  class="section-body">Nuestro convertidor tiene una interfaz limpia y un diseño lógico que le da a los usuarios simplicidad de navegación. Fue organizado de tal manera que los usuarios no tendrán ningún problema al usarlo para convertir archivos. Gracias a una interfaz cómoda, los usuarios podrán terminar de trabajar con el programa fácilmente y efectivamente.</p>
-<h3  class="section-title">Sin cargos de suscripción</h3>
-<p  class="section-body">Una de las mejores características de este convertidor es su versión gratuita, lo que significa que las personas podrán usar el convertidor todo el tiempo que deseen sin pagar ninguna suscripción o cargos adicionales. Tampoco hay limitaciones estrictas en el uso de este servicio, por lo que los usuarios pueden usarlo tantas veces al día como deseen.</p>
-<h3  class="section-title">Sin marcas de agua</h3>
-<p  class="section-body">Los conversores en línea suelen añadir marcas de agua al archivo resultante, lo cual puede afectar la calidad del mismo. El conversor de fotos a PDF resuelve este problema al transformar el archivo de entrada en una versión PDF libre de logotipos, anuncios y otros elementos de marca no deseados. Los usuarios tienen la posibilidad de crear documentos profesionales, ya sea para compartirlos o para imprimirlos.</p>
-<h3  class="section-title">Preserva la calidad de imagen original</h3>
-<p  class="section-body">La calidad de las imágenes es otro factor importante durante la conversión. Nuestro conversor en línea ofrece a los usuarios la opción de convertir imágenes sin afectar su originalidad. De esta manera, textos, gráficos, dibujos y fotografías pueden convertirse fácilmente a versiones en PDF.</p>
-<h3  class="section-title">Soporta diferentes formatos de imagen</h3>
-<p  class="section-body">Aunque esta herramienta se aplica principalmente a archivos JPG, esto no significa que no pueda manejar ningún otro formato de imagen en absoluto. Puede cargar sus archivos en forma de JPEG, PNG, GIF, BMP, TIFF o WebP, y todo estará bien; los archivos se convertirán fácilmente en documentos PDF.</p>
-<h3  class="section-title">Resultados inmediatos</h3>
-<p  class="section-body">A nadie le gusta pasar mucho tiempo esperando nada. Nuestro convertidor proporcionará a los usuarios resultados inmediatos y hará que el trabajo sea más fácil y rápido. No hace falta decir que una herramienta eficiente ahorra tiempo.</p>
-<h3  class="section-title">Funciona con distintos aparatos</h3>
-<p  class="section-body">Nuestro software se puede usar para tareas de conversión en varios tipos de aparatos, como ordenadores, portátiles e incluso móviles. No importa qué tipo de aparato uses, porque no tienes que descargar nada: el conversor está en línea.</p>
-<h3  class="section-title">Compatible con archivos de imagen grandes</h3>
-<p  class="section-body">En algunos casos, los archivos de imagen de gran tamaño pueden tener información vital que debe retenerse durante la conversión. Nuestro conversor de imagen a PDF puede manejar fácilmente imágenes de alta calidad y gran tamaño. Los usuarios no tendrán problemas que podrían experimentarse en otros conversores en línea al convertir sus imágenes de gran tamaño a PDF.</p>
-<h3  class="section-title">Protección de la privacidad</h3>
-<p  class="section-body">La privacidad de nuestros usuarios será prioritaria durante toda la conversión. Los archivos subidos son gestionados de forma segura por nuestro conversor. Como tal, los usuarios pueden estar seguros de convertir sus archivos de imagen sin ningún temor.</p>
-<h3  class="section-title">Descarga instantánea accesible</h3>
-<p  class="section-body">Una vez completado el proceso de conversión del archivo, puede tener acceso instantáneo al archivo descargado. Puede descargar fácilmente la versión PDF del archivo creado y compartirla con quien desee.</p>
-<h3  class="section-title">No requiere instalación</h3>
-<p  class="section-body">El usuario no tiene que instalar ningún otro software para realizar el proceso de conversión de archivos. Lo único que se necesitaría para completar esta tarea es un navegador de internet que funcione. Elimina cualquier preocupación sobre el almacenamiento de información adicional.</p>
-<h3  class="section-title">Alto nivel de desempeño</h3>
-<p  class="section-body">El software conversor de imágenes JPG a PDF es reconocido por su fiable nivel de desempeño. Ya sea que el usuario lo necesite para crear informes, trabajos académicos o para preparar presentaciones, nunca tendrá que enfrentarse a problemas relacionados con el desempeño del software.</p>
-<h2  class="section-title">¿Por qué necesitamos un conversor de imagen a PDF?</h2>
-<p  class="section-body">La conversión de imágenes a PDF puede extrañar a muchos, porque aunque las imágenes pueden capturar información fácilmente, los documentos PDF ofrecen una mejor organización y capacidad para compartir. Aquí hay un intento de dar las razones por las que la conversión de imagen a PDF es muy importante a través de algunos escenarios comunes.</p>
-<h3  class="section-title">Conversión de imágenes a PDF en organizaciones empresariales</h3>
-<p  class="section-body">Muchas organizaciones llevan a cabo actividades comerciales que implican facturas, recibos, contratos empresariales e informes. Por lo general, estos archivos se presentan en formato de imagen, lo cual dificulta su organización y distribución. Al gestionar cientos de archivos fotográficos, se requiere un gran esfuerzo para simplificar la tarea.</p>
-<p  class="section-body">Mediante la conversión de imágenes a PDF, las organizaciones empresariales pueden consolidar todos sus archivos en un único documento, lo que facilita su acceso, almacenamiento, impresión e incluso su distribución. Al tener todo integrado en un solo documento, la gestión documental resulta mucho más sencilla.</p>
-<h3  class="section-title">Conversión de imágenes a PDF para estudiantes</h3>
-<p  class="section-body">Con frecuencia, los estudiantes reciben sus apuntes, tareas, páginas manuscritas, diagramas y otros materiales de estudio en formato de imagen. Si bien guardar estas imágenes de forma individual puede parecer sencillo al principio, resulta problemático más adelante al tener que gestionar una gran cantidad de archivos de imagen.</p>
-<p  class="section-body">Convertir estas imágenes a formato PDF facilita a los estudiantes la organización de todo su material académico. De este modo, podrán guardar sus apuntes de clase, páginas de proyectos, referencias y otros materiales didácticos en un formato que resulta más fácil de consultar y subir siempre que sea necesario.</p>
-<h3  class="section-title">Mejor organización y almacenamiento</h3>
-<p  class="section-body">Usar imágenes para guardar información valiosa puede ser bastante incómodo, ya que genera desorden innecesario. Por eso, al usar la tecnología que convierte fotos, imágenes, capturas de pantalla y todo tipo de imágenes en PDF, la gente podrá guardar la información relevante en un solo archivo, lo que les permitirá organizarse mejor y encontrar todos los datos necesarios más rápido.</p>
-<h3  class="section-title">Compartir e imprimir fácilmente</h3>
-<p  class="section-body">Aunque el uso de archivos de imagen siempre ha sido común en muchos casos, hay ocasiones en las que usar archivos PDF es inevitable. Específicamente, esto sucede durante la comunicación comercial o profesional. Enviar documentos por correo electrónico o cualquier otro medio, incluido en el lugar de trabajo, se vuelve más fácil ya que no habrá ningún problema relacionado con problemas de formato.</p>
-<p  class="section-body">Por este motivo, la conversión de imágenes como fotografías, capturas de pantalla e incluso documentos escaneados a documentos PDF se ha vuelto inevitable.</p>
+ 
+    <div id="split-pdf-info">
+    <section class="isec-block isec-why" aria-labelledby="isec-why-title">
+      <div class="isec-block__head">
+        <h2 id="isec-why-title" class="isec-block__title">¿Por qué elegir UniFicarPDF.com para convertir Image to PDF?</h2>
+        <div class="isec-block__desc">
+          <p>Crea archivos PDF profesionales desde tus images con una conversion rápida, segura y confiable</p>
+        </div>
+      </div>
+      <div class="isec-card-grid">
+        <div class="isec-card">
+          <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg></span>
+          <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
+          </span>
+          <h3 class="isec-card__title">Instant & Free</h3>
+          <p class="isec-card__text">No necesitas registration ni installation. Convierte archivos JPG/JPEG a PDF al instante y descárgalo de una vez</p>
+        </div>
+        <div class="isec-card">
+          <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
+          <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
+          </span>
+          <h3 class="isec-card__title">100% Secure & Private</h3>
+          <p class="isec-card__text">Valoramos tu privacy. Todas las images que subes están protegidas con encryption mientras se procesan y se borran automáticamente después de la conversion, asegurando que tus archivos personales y de negocios queden privados</p>
+        </div>
+        <div class="isec-card">
+          <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg></span>
+          <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+          </span>
+          <h3 class="isec-card__title">Combine Many JPGs</h3>
+          <p class="isec-card__text">Convierte un documento escaneado de 50 páginas o una sola foto sin ningún límite de file size. Sube varios archivos JPEG y obtén un PDF de múltiples páginas. Puedes hacer drag-and-drop de las images para cambiar el orden antes de la conversion.</p>
+        </div>
+        <div class="isec-card">
+          <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
+          <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+          </span>
+          <h3 class="isec-card__title">Original quality intact</h3>
+          <p class="isec-card__text">Garantizamos que obtengas un documento PDF en high-resolution que conserva todos los colores y la nitidez de las images en su calidad original.</p>
+        </div>
+        <div class="isec-card">
+          <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></span>
+          <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
+          </span>
+          <h3 class="isec-card__title">Full Control</h3>
+          <p class="isec-card__text">Selecciona el page size para tu documento: A4, Letter o Fit-to-Image; la orientación en portrait o landscape; el tamaño del margen y la image quality.</p>
+        </div>
+        <div class="isec-card">
+          <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span>
+          <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
+          </span>
+          <h3 class="isec-card__title">Unlimited Conversions</h3>
+          <p class="isec-card__text">Haz conversions ilimitadas sin ninguna restricción en el número de veces al día ni en el file size, limitado únicamente por tu device.</p>
+        </div>
+        <div class="isec-card">
+          <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg></span>
+          <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
+          </span>
+          <h3 class="isec-card__title">Live Preview</h3>
+          <p class="isec-card__text">Mira cómo va a quedar tu PDF antes de que esté listo. Reorganiza las images y revisa cada página con toda la confianza del mundo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="isec-block isec-how" aria-labelledby="isec-how-title">
+      <div class="isec-block__head">
+        <h2 id="isec-how-title" class="isec-block__title">Cómo convertir archivos JPG to PDF Online</h2>
+        <p class="isec-block__subtitle">
+          Convertir tus images a PDF con <strong>UniFicarPDF.com</strong> es rapidísimo y fácil. Sigue estos pasos sencillos para crear un PDF de alta calidad en solo unos clicks.
+        </p>
+      </div>
+
+      <ol class="isec-steps">
+        <li>
+          <span class="isec-steps__num">1</span>
+          <div class="isec-steps__body">
+            Sube tus archivos JPG, JPEG, PNG, WEBP u otros formatos soportados haciendo drag and drop en el área de upload, o haz click en <strong>Choose File</strong> para buscar en tu device.
+          </div>
+        </li>
+        <li>
+          <span class="isec-steps__num">2</span>
+          <div class="isec-steps__body">
+            Si alguna image no está en la dirección correcta, usa la opción <strong>Rotate</strong> para ajustarla. Cada image se puede rotar individualmente antes de la conversion.
+          </div>
+        </li>
+        <li>
+          <span class="isec-steps__num">3</span>
+          <div class="isec-steps__body">
+            Selecciona tu page size preferido:
+            <ul class="isec-substeps">
+              <li><strong>A4</strong> – Ideal para imprimir y documentos estándar.</li>
+              <li><strong>US Letter</strong> – Perfecto para uso de oficina y negocios.</li>
+              <li><strong>Fit to Image</strong> – Ajusta automáticamente el page size de tu PDF a tu image.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="isec-steps__num">4</span>
+          <div class="isec-steps__body">
+            Elige la orientación y los márgenes que mejor te queden.
+            <ul class="isec-substeps">
+              <li>Orientación <strong>Portrait</strong> o <strong>Landscape</strong>.</li>
+              <li><strong>No Margin</strong>, <strong>Small Margin</strong> o <strong>Large Margin</strong> para el layout de la página.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="isec-steps__num">5</span>
+          <div class="isec-steps__body">
+            Haz click en <strong>Add</strong> para incluir más images si lo necesitas. Cuando todo esté listo, haz click en <strong>Convert to PDF</strong>. Tu PDF se crea en segundos y estará listo para download al instante.
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
+      <div class="isec-block__head">
+        <h2 id="isec-usecases-title" class="isec-block__title">Perfecto para todos los use cases de tus imágenes JPG to PDF</h2>
+        <p class="isec-block__subtitle">Descubre todo lo que puedes hacer con nuestra tool al combinar tus fotos</p>
+      </div>
+      <div class="isec-card-grid isec-card-grid--use">
+        <div class="isec-card">
+          <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+          <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </span>
+          <h3 class="isec-card__title">Scanning Documents</h3>
+          <p class="isec-card__text">Convierte fotos de documentos en papel en archivos PDF limpios y fáciles de guardar, imprimir y compartir en cualquier device.</p>
+        </div>
+        <div class="isec-card">
+          <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg></span>
+          <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
+          </span>
+          <h3 class="isec-card__title">Assignment Submission</h3>
+          <p class="isec-card__text">Crea un solo PDF combinando múltiples images de tus tareas escritas a mano, apuntes o proyectos para hacer el submit online de manera rápida y fácil.</p>
+        </div>
+        <div class="isec-card">
+          <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg></span>
+          <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg>
+          </span>
+          <h3 class="isec-card__title">Business & Office Documents</h3>
+          <p class="isec-card__text">Convierte facturas, recibos, contratos y formularios en documentos PDF profesionales que son fáciles de organizar, archivar y enviar.</p>
+        </div>
+        <div class="isec-card">
+          <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg></span>
+          <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg>
+          </span>
+          <h3 class="isec-card__title">ID & Certificate Sharing</h3>
+          <p class="isec-card__text">Crea archivos PDF seguros desde pasaportes, ID cards, licencias y certificados para job applications, admisiones, trámites bancarios y servicios del gobierno.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="isec-block isec-faq" aria-labelledby="isec-faq-title">
+      <div class="isec-block__head">
+        <h2 id="isec-faq-title" class="isec-block__title">Preguntas Frecuentes</h2>
+        <p class="isec-block__subtitle">¿Tienes preguntas sobre cómo convertir tus images a PDF? Acá te respondemos todo.</p>
+      </div>
+      <p class="isec-faq__eyebrow">Getting Started</p>
+      <div class="isec-faq__list">
+        <div class="isec-faq__item is-open">
+          <button type="button" class="isec-faq__summary" aria-expanded="true">
+            <span>¿El proceso de conversion es secure?</span>
+            <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="isec-faq__panel">
+            <div class="isec-faq__panel-inner">
+              <p>Sí, parce. Tus images se procesan de forma segura y los archivos que subes se eliminan automáticamente después de un momento para proteger tu privacy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="isec-faq__item">
+          <button type="button" class="isec-faq__summary" aria-expanded="false">
+            <span>¿Puedo hacer merge de múltiples images en un solo PDF?</span>
+            <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="isec-faq__panel">
+            <div class="isec-faq__panel-inner">
+              <p>Claro que sí. Puedes subir múltiples images en JPG, PNG u otros formatos soportados y combinarlas en un solo PDF en el orden que prefieras.</p>
+            </div>
+          </div>
+        </div>
+        <div class="isec-faq__item">
+          <button type="button" class="isec-faq__summary" aria-expanded="false">
+            <span>¿Qué file formats son soportados?</span>
+            <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="isec-faq__panel">
+            <div class="isec-faq__panel-inner">
+              <p>La tool de UnificarPDF.com soporta los formatos de image más populares: JPG, JPEG, PNG, WEBP, BMP, GIF y TIFF.</p>
+            </div>
+          </div>
+        </div>
+        <div class="isec-faq__item">
+          <button type="button" class="isec-faq__summary" aria-expanded="false">
+            <span>¿Hay un límite de file size?</span>
+            <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="isec-faq__panel">
+            <div class="isec-faq__panel-inner">
+              <p>Puedes subir images grandes, pero los archivos muy pesados pueden demorar un poquito más en procesarse. Si encuentras algún límite, intenta reducir el tamaño de la image o dividir los archivos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="isec-faq__item">
+          <button type="button" class="isec-faq__summary" aria-expanded="false">
+            <span>¿Necesito registrarme o pagar?</span>
+            <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="isec-faq__panel">
+            <div class="isec-faq__panel-inner">
+              <p>No, para nada. La tool JPG to PDF es completamente free y no necesitas ningún registration ni sign-up.</p>
+            </div>
+          </div>
+        </div>
+        <div class="isec-faq__item">
+          <button type="button" class="isec-faq__summary" aria-expanded="false">
+            <span>¿Cómo se mantiene la PDF quality?</span>
+            <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="isec-faq__panel">
+            <div class="isec-faq__panel-inner">
+              <p>Tus images se convierten con alta calidad, preservando su resolución original, claridad y layout tanto como sea posible.</p>
+            </div>
+          </div>
+        </div>
+        <div class="isec-faq__item">
+          <button type="button" class="isec-faq__summary" aria-expanded="false">
+            <span>¿Cómo convierto una foto en PDF en Mac o Windows PC?</span>
+            <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+          </button>
+          <div class="isec-faq__panel">
+            <div class="isec-faq__panel-inner">
+              <p>Simplemente abre la tool JPG to PDF en tu browser, sube tus images, ordénalas si es necesario y haz click en Convert to PDF. Una vez que la conversion esté lista, haz el download de tu PDF al instante. No necesitas instalar ningún software.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+<style>
+
+
+
+
+  
+#split-pdf-info {
+  --isec-ink: var(--text, #1a1d27);
+  --isec-ink-soft: var(--text-muted, #6b7280);
+  --isec-line: var(--border, #e2e5ed);
+  --isec-surface: var(--white, #ffffff);
+  --isec-surface-alt: var(--surface, #f6f7f9);
+  --isec-accent: var(--blue, #2563eb);
+  --isec-accent-hover: var(--blue-hover, #1d4ed8);
+  --isec-blue-bg: var(--blue-light, #eff6ff);
+  --isec-blue-fg: var(--blue, #2563eb);
+  --isec-purple-bg: var(--blue-mid, #dbeafe);
+  --isec-purple-fg: var(--accent-h, #2f4ac9);
+  --isec-teal-bg: var(--green-light, #f0fdf4);
+  --isec-teal-fg: var(--green, #16a34a);
+  --isec-radius: var(--radius, 10px);
+  --isec-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04));
+  font-family: -apple-system, "Segoe UI", "Inter", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--isec-ink);
+  max-width: var(--max-w, 1040px);
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+#split-pdf-info *, #split-pdf-info *::before, #split-pdf-info *::after {
+  box-sizing: border-box;
+}
+
+#split-pdf-info .isec-hero {
+  padding: 44px 0 8px;
+  text-align: center;
+}
+
+#split-pdf-info .isec-hero__title {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--isec-ink);
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+
+#split-pdf-info .isec-hero__subtitle {
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--isec-ink-soft);
+  margin: 0 auto;
+  max-width: 560px;
+}
+
+#split-pdf-info .isec-block {
+  padding: 40px 0;
+}
+
+#split-pdf-info .isec-hero + .isec-block {
+  border-top: none;
+}
+
+#split-pdf-info .isec-block__head {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 28px;
+}
+
+#split-pdf-info .isec-block__title {
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: var(--isec-ink);
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+
+#split-pdf-info .isec-block__subtitle {
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--isec-ink-soft);
+  margin: 0;
+}
+
+#split-pdf-info .isec-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+#split-pdf-info .isec-card-grid--use {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#split-pdf-info .isec-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--isec-surface);
+  border: 1px solid var(--isec-line);
+  border-radius: var(--isec-radius);
+  box-shadow: var(--isec-shadow);
+  padding: 20px 20px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+#split-pdf-info .isec-card__bg-icon {
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+  width: 56px;
+  height: 56px;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+  -webkit-mask-image: radial-gradient(circle at bottom right, #000 0%, #000 35%, transparent 78%);
+  mask-image: radial-gradient(circle at bottom right, #000 0%, #000 35%, transparent 78%);
+}
+
+#split-pdf-info .isec-card__bg-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+#split-pdf-info .isec-card__icon,
+#split-pdf-info .isec-card__title,
+#split-pdf-info .isec-card__text {
+  position: relative;
+  z-index: 1;
+}
+
+#split-pdf-info .isec-card__text {
+  padding-right: 34px;
+}
+
+#split-pdf-info .isec-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  margin-bottom: 12px;
+}
+
+#split-pdf-info .isec-card__icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+#split-pdf-info .isec-card__bg-icon.isec-icon-blue,
+#split-pdf-info .isec-card__bg-icon.isec-icon-purple,
+#split-pdf-info .isec-card__bg-icon.isec-icon-teal {
+  background: transparent;
+  border-radius: 0;
+}
+
+#split-pdf-info .isec-icon-blue { background: var(--isec-blue-bg); color: var(--isec-blue-fg); }
+#split-pdf-info .isec-icon-purple { background: var(--isec-purple-bg); color: var(--isec-purple-fg); }
+#split-pdf-info .isec-icon-teal { background: var(--isec-teal-bg); color: var(--isec-teal-fg); }
+
+#split-pdf-info .isec-card__title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--isec-ink);
+  margin: 0 0 6px;
+  line-height: 1.4;
+}
+
+#split-pdf-info .isec-card__text {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--isec-ink-soft);
+  margin: 0;
+}
+
+#split-pdf-info .isec-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+#split-pdf-info .isec-steps > li {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+#split-pdf-info .isec-steps__num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--isec-accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#split-pdf-info .isec-steps__body {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--isec-ink-soft);
+  padding-top: 4px;
+}
+
+#split-pdf-info .isec-substeps {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+}
+
+#split-pdf-info .isec-substeps li {
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+#split-pdf-info .isec-substeps strong {
+  color: var(--isec-ink);
+}
+
+#split-pdf-info .isec-faq__eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--isec-accent);
+  text-align: center;
+  margin: 0 0 14px;
+}
+
+#split-pdf-info .isec-faq__list {
+  display: grid;
+  gap: 8px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#split-pdf-info .isec-faq__item {
+  border: 1px solid var(--isec-line);
+  border-radius: var(--isec-radius);
+  background: var(--isec-surface);
+  overflow: hidden;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+#split-pdf-info .isec-faq__item.is-open {
+  border-color: var(--isec-accent);
+  box-shadow: var(--isec-shadow);
+}
+
+#split-pdf-info .isec-faq__summary {
+  width: 100%;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14.5px;
+  font-weight: 600;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: transparent;
+  border: none;
+  margin: 0;
+  text-align: left;
+  color: var(--isec-ink);
+  transition: background-color .25s ease, color .25s ease;
+}
+
+#split-pdf-info .isec-faq__item.is-open .isec-faq__summary {
+  background: var(--isec-blue-bg);
+  color: var(--isec-accent);
+}
+
+#split-pdf-info .isec-faq__chev {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--isec-surface-alt);
+  color: var(--isec-ink-soft);
+  transition: transform .3s ease, background-color .25s ease, color .25s ease;
+}
+
+#split-pdf-info .isec-faq__chev svg {
+  width: 15px;
+  height: 15px;
+}
+
+#split-pdf-info .isec-faq__item.is-open .isec-faq__chev {
+  background: var(--isec-accent);
+  color: #fff;
+  transform: rotate(180deg);
+}
+
+#split-pdf-info .isec-faq__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .28s ease;
+}
+
+#split-pdf-info .isec-faq__item.is-open .isec-faq__panel {
+  grid-template-rows: 1fr;
+}
+
+#split-pdf-info .isec-faq__panel-inner {
+  overflow: hidden;
+}
+
+#split-pdf-info .isec-faq__item p {
+  margin: 0;
+  padding: 4px 16px 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--isec-ink-soft);
+}
+
+@media (max-width: 860px) {
+  #split-pdf-info .isec-card-grid,
+  #split-pdf-info .isec-card-grid--use {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  #split-pdf-info .isec-hero__title {
+    font-size: 24px;
+  }
+
+  #split-pdf-info .isec-block {
+    padding: 28px 0;
+  }
+
+  #split-pdf-info .isec-block__title {
+    font-size: 19px;
+  }
+
+  #split-pdf-info .isec-card-grid,
+  #split-pdf-info .isec-card-grid--use {
+    grid-template-columns: 1fr;
+  }
+
+  #split-pdf-info .isec-steps > li {
+    grid-template-columns: 26px 1fr;
+  }
+
+  #split-pdf-info .isec-steps__num {
+    width: 26px;
+    height: 26px;
+    font-size: 12.5px;
+  }
+}
+</style>
+
+<script>
+(function () {
+  var root = document.getElementById('split-pdf-info');
+  if (!root) return;
+  var items = root.querySelectorAll('.isec-faq__item');
+  items.forEach(function (item) {
+    var btn = item.querySelector('.isec-faq__summary');
+    btn.addEventListener('click', function () {
+      var isOpen = item.classList.contains('is-open');
+      item.classList.toggle('is-open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+})();
+</script>
+
       </div>
 
       <script>
