@@ -349,6 +349,24 @@ a:hover { text-decoration: underline; }
 
 }
 
+/* Blog Section*/
+
+
+.breadcrumb { border-bottom: 1px solid var(--border); background: var(--surface); }
+.breadcrumb .container { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.breadcrumb ol { list-style: none; display: flex; gap: 0.5rem; font-size: 0.82rem; color: var(--muted); }
+.breadcrumb ol li + li::before { content: "›"; margin-right: 0.5rem; }
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--accent); }
+
+.blog-index { padding: 3rem 0 4rem; }
+.blog-index h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.5rem;
+}
+
 /* NAVBAR WITH LANGUGE SWTICHER CSS*/
 
 nav{
