@@ -52,9 +52,9 @@ scripts:
       </button>
      <p class="upload-note">
  Al subir tus files, aceptas nuestros
-  <a href="https://rforrupesh.github.io/jekyllmultilingual/terminos-de-uso/" target="_blank">Términos de Uso</a>
+  <a href="./terminos-de-uso/" target="_blank">Términos de Uso</a>
 y nuestra
-  <a href="https://rforrupesh.github.io/jekyllmultilingual/politica-de-privacidad/" target="_blank">Política de Privacidad</a>.
+  <a href="./politica-de-privacidad/" target="_blank">Política de Privacidad</a>.
 </p> 
     </div>
     <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
@@ -119,7 +119,7 @@ Unir PDF
   </section>
 <section>
    <figure class="isec-media"> 
-    <img src="https://rforrupesh.github.io/jekyllmultilingual/assets/img/unir.webp"
+    <img src="./assets/img/unir.webp"
          alt="Unir múltiples PDF files en uno al instante"
          loading="lazy"
          width="710"
