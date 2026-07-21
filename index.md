@@ -8,15 +8,10 @@ lang: es
 ref: home
 permalink: /
 
-
-scripts:
-    - 
-    - 
-
 ---
 
-    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" defer></script>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
 
 <!-- Floating ghost -->
 <div id="dragGhost">
