@@ -1,6 +1,6 @@
 title: "UniFicar PDF"
 description: A Jekyll site in English and French
-
+url: "https://unirpdf-73b.pages.dev"
 liquid:
   error_mode: strict
 author: lokesh
