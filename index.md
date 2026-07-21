@@ -606,7 +606,7 @@ Unir PDF
 
 <script>
 
-// Jab user upload button click kare tab load karo
+  // Jab user upload button click kare tab load karo
 function loadLibraries() {
   return Promise.all([
     loadScript('https://unpkg.com/pdf-lib/dist/pdf-lib.min.js'),
@@ -622,6 +622,10 @@ function loadScript(src) {
     document.head.appendChild(script);
   });
 }
+</script>
+<script>
+
+
 
     
 let files = [];
