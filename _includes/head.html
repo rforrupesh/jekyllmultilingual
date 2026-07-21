@@ -2,7 +2,6 @@
 {% assign base = site.url | append: site.baseurl %}
 {% assign lang = page.lang | default: "es" %}
 
-<!-- hreflang via ref lookup -->
 {% assign es_url = page.url %}
 {% assign en_url = page.url %}
 {% assign fr_url = page.url %}
@@ -75,7 +74,15 @@
 <meta name="twitter:site" content="@{{ site.twitter_username }}" />
 {% endif %}
 
-<link rel="stylesheet" href="{{ base }}/assets/css/main.css"/>
+<link rel="preload"
+      href="{{ '{{ base }}/assets/css/main.css' | relative_url }}"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+
+<noscript>
+<link rel="stylesheet"
+      href="{{ '{{ base }}/assets/css/main.css' | relative_url }}">
+</noscript>
 
 {% if page.css %}
 <link rel="stylesheet" href="{{ '/assets/css/' | append: page.css | append: '.css' | relative_url }}">
