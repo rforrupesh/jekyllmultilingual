@@ -30,7 +30,7 @@
 <nav aria-label="Main navigation">
 
  <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}" class="logo">
-  <img src="https://rforrupesh.github.io/jekyllmultilingual/assets/img/logo.webp" alt="{{ site.title }}">
+  <img src="./assets/img/logo.webp" alt="{{ site.title }}">
   <span>UniFicar PDF</span>
 </a>
 
@@ -53,13 +53,13 @@
     </button>
     <div class="lang-dropdown" id="langDropdown">
       <a href="{{ es_switch }}" hreflang="es" {% if lang == "es" %}class="active-lang"{% endif %}>
-        <img src="https://rforrupesh.github.io/jekyllmultilingual/assets/img/flags/es.svg" alt="Español" /> Español
+        <img src="./assets/img/flags/es.svg" alt="Español" /> Español
       </a>
       <a href="{{ en_switch }}" hreflang="en" {% if lang == "en" %}class="active-lang"{% endif %}>
-        <img src="https://rforrupesh.github.io/jekyllmultilingual/assets/img/flags/en.svg" alt="English" /> English
+        <img src="./assets/img/flags/en.svg" alt="English" /> English
       </a>
       <a href="{{ fr_switch }}" hreflang="fr" {% if lang == "fr" %}class="active-lang"{% endif %}>
-        <img src="https://rforrupesh.github.io/jekyllmultilingual/assets/img/flags/fr.svg" alt="Français" /> Français
+        <img src="./assets/img/flags/fr.svg" alt="Français" /> Français
       </a>
     </div>
   </div>
