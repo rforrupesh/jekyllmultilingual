@@ -10,9 +10,6 @@ permalink: /
 
 ---
 
-    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
-
 <!-- Floating ghost -->
 <div id="dragGhost">
   <div class="ghost-icon">
@@ -608,6 +605,25 @@ Unir PDF
 <div class="toast" id="toast"></div>
 
 <script>
+
+// Jab user upload button click kare tab load karo
+function loadLibraries() {
+  return Promise.all([
+    loadScript('https://unpkg.com/pdf-lib/dist/pdf-lib.min.js'),
+    loadScript('https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js')
+  ]);
+}
+
+function loadScript(src) {
+  return new Promise((resolve) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = resolve;
+    document.head.appendChild(script);
+  });
+}
+
+    
 let files = [];
 function $(id) { return document.getElementById(id); }
 const isMobile = () => window.innerWidth <= 600;
