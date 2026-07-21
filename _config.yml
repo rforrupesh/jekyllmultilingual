@@ -1,7 +1,6 @@
 title: "UniFicar PDF"
 description: A Jekyll site in English and French
-baseurl: "jekyllmultilingual"
-url: "https://rforrupesh.github.io"
+
 liquid:
   error_mode: strict
 author: lokesh
