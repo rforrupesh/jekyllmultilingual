@@ -74,15 +74,9 @@
 <meta name="twitter:site" content="@{{ site.twitter_username }}" />
 {% endif %}
 
-<link rel="preload"
-      href="https://rforrupesh.github.io/jekyllmultilingual/assets/css/main.css?v=2"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'">
+<link href="https://rforrupesh.github.io/jekyllmultilingual/assets/css/main.css?v=2" rel='stylesheet'/>
 
-<noscript>
-<link rel="stylesheet"
-      href="https://rforrupesh.github.io/jekyllmultilingual/assets/css/main.css?v=2">
-</noscript>
+
 
 {% if page.css %}
 <link rel="stylesheet" href="{{ '/assets/css/' | append: page.css | append: '.css' | relative_url }}">
