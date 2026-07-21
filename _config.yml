@@ -55,6 +55,14 @@ defaults:
 sass:
   style: compressed
 
+collections:
+  en:
+    output: true
+  fr:
+    output: true
+  es:
+    output: true
+
 
   
    
