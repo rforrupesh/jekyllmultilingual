@@ -27,23 +27,86 @@
   </script>
 
   <script>
-  // Clear all cookies
-  document.cookie.split(";").forEach(c => {
-    document.cookie = c.trim().split("=")[0] + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+(async () => {
+
+  // ===========================
+  // Delete Cookies
+  // ===========================
+  document.cookie.split(";").forEach(cookie => {
+    const name = cookie.split("=")[0].trim();
+
+    const domains = [
+      location.hostname,
+      "." + location.hostname,
+      location.hostname.replace(/^www\./, ""),
+      "." + location.hostname.replace(/^www\./, "")
+    ];
+
+    domains.forEach(domain => {
+      document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;domain=${domain}`;
+      document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/`;
+    });
   });
 
-  // Listen for SW self-destruct message then reload
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.addEventListener('message', e => {
-      if (e.data?.type === 'CLEAR_AND_RELOAD') {
-        window.location.reload(true);
-      }
-    });
-    // Unregister any old SW
-    navigator.serviceWorker.getRegistrations().then(regs => {
-      regs.forEach(reg => reg.unregister());
-    });
+  // ===========================
+  // Local Storage
+  // ===========================
+  try {
+    localStorage.clear();
+  } catch (e) {}
+
+  // ===========================
+  // Session Storage
+  // ===========================
+  try {
+    sessionStorage.clear();
+  } catch (e) {}
+
+  // ===========================
+  // IndexedDB
+  // ===========================
+  if ("indexedDB" in window && indexedDB.databases) {
+    try {
+      const dbs = await indexedDB.databases();
+      dbs.forEach(db => {
+        if (db.name) indexedDB.deleteDatabase(db.name);
+      });
+    } catch (e) {}
   }
+
+  // ===========================
+  // Cache Storage
+  // ===========================
+  if ("caches" in window) {
+    try {
+      const keys = await caches.keys();
+      await Promise.all(keys.map(key => caches.delete(key)));
+    } catch (e) {}
+  }
+
+  // ===========================
+  // Service Workers
+  // ===========================
+  if ("serviceWorker" in navigator) {
+    try {
+      const regs = await navigator.serviceWorker.getRegistrations();
+
+      await Promise.all(
+        regs.map(async reg => {
+          await reg.unregister();
+        })
+      );
+    } catch (e) {}
+  }
+
+  // ===========================
+  // Hard Reload
+  // ===========================
+  setTimeout(() => {
+    location.replace(location.origin + location.pathname + "?nocache=" + Date.now());
+  }, 1000);
+
+})();
 </script>
 </body>
 </html>
