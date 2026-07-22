@@ -131,7 +131,7 @@ Unir PDF
      En vez de guardar múltiples PDF documents por separado, es mejor unirlos y organizarlos en un solo PDF file para un mejor manejo, compartir más fácil, acceso más rápido y almacenamiento seguro. Manejar PDFs en un solo documento ayuda a ahorrar espacio, mejora la productividad y mantiene los files importantes bien organizados.
     </p>
   </section>
-<div> <a href="#features">features</a></div>
+<div> <a href="#features">features</a> | <a href="#how-it-works">How It Works</a></div>
   
   <section class="isec-block isec-why" aria-labelledby="isec-why-title" id="features">
     <div class="isec-block__head">
@@ -221,7 +221,7 @@ Unir PDF
     
     </div>
   </section>
-  <section class="isec-block isec-how" aria-labelledby="isec-how-title">
+  <section class="isec-block isec-how" aria-labelledby="isec-how-title" id="how-it-works">
     <div class="isec-block__head">
       <h2 id="isec-how-title" class="isec-block__title">¿Cómo unir PDF files en un solo PDF?</h2>
       <p class="isec-block__subtitle">No necesitas hacer mucho para unir PDF files en un solo documento. Si no sabes cómo hacerlo, sigue estos sencillos pasos:</p>
