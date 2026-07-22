@@ -446,32 +446,7 @@ head_style: |
   stroke: currentColor;
   flex-shrink: 0;
   }
-  .progress-wrap {
-  display: none;
-  position: sticky;
-  top: 52px;
-  z-index: 50;
-  margin: 0 0 0 0;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 13px 16px;
-  gap: 10px;
-  align-items: center;
-  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.1);
-  }
-  .progress-wrap.show {
-  display: flex;
-  }
-  .spinner {
-  width: 42px;
-  height: 42px;
-  border: 3px solid rgba(255, 255, 255, 0.25);
-  border-top-color: #fff;
-  border-radius: 50%;
-  animation: spin 0.7s linear infinite;
-  flex-shrink: 0;
-  }
+
   @keyframes spin {
   to {
   transform: rotate(360deg);
