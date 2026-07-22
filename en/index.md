@@ -765,16 +765,16 @@ scripts:
         </svg>
   Select Files
       </button>
-    
-    </div>
-    <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
-
-      <p class="page-sub">
+        <p class="upload-note">
  By uploading files, you agree to our
   <a href="/en/terms-of-use/" target="_blank">Terms of Use</a>
 and 
   <a href="/en/privacy-policy/" target="_blank">Privacy Policy</a>.
 </p> 
+    </div>
+    <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
+
+  
   </div>
 
   <!-- UPLOADED STATE -->
