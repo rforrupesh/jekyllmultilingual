@@ -38,10 +38,18 @@
 
 <link rel="canonical" href="{{ canonical_url }}" />
 
+{% if page.ref == nil or es_post or es_page %}
 <link rel="alternate" href="{{ base }}{{ es_url }}" hreflang="es" />
+{% endif %}
+{% if page.ref == nil or en_post or en_page %}
 <link rel="alternate" href="{{ base }}{{ en_url }}" hreflang="en" />
+{% endif %}
+{% if page.ref == nil or fr_post or fr_page %}
 <link rel="alternate" href="{{ base }}{{ fr_url }}" hreflang="fr" />
+{% endif %}
+{% if page.ref == nil or es_post or es_page %}
 <link rel="alternate" href="{{ base }}{{ es_url }}" hreflang="x-default" />
+{% endif %}
 
 <link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/img/favicon-32x32.png">
