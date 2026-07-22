@@ -45,24 +45,62 @@
   {% endfor %}
 </div>
 
-  <div class="lang-switcher">
-    <button class="lang-btn" id="langBtn">
-      <img src="{{ base }}/assets/img/flags/{{ lang }}.svg" alt="{{ lang }}" />
-      {{ lang | upcase }}
-      <span>▾</span>
-    </button>
-    <div class="lang-dropdown" id="langDropdown">
+
+<div class="lang-switcher">
+  <button class="lang-btn" id="langBtn">
+    <img src="{{ base }}/assets/img/flags/{{ lang }}.svg" alt="{{ lang }}" />
+    {{ lang | upcase }}
+    <span>▾</span>
+  </button>
+  <div class="lang-dropdown" id="langDropdown">
+
+    {% comment %} ES: show only if page has no ref, OR es version exists {% endcomment %}
+    {% unless page.ref %}
       <a href="{{ es_switch }}" hreflang="es" {% if lang == "es" %}class="active-lang"{% endif %}>
         <img src="/assets/img/flags/es.svg" alt="Español" /> Español
       </a>
+    {% else %}
+      {% assign es_exists = site.posts | where: "ref", page.ref | where: "lang", "es" | first %}
+      {% unless es_exists %}{% assign es_exists = site.pages | where: "ref", page.ref | where: "lang", "es" | first %}{% endunless %}
+      {% if es_exists %}
+        <a href="{{ es_switch }}" hreflang="es" {% if lang == "es" %}class="active-lang"{% endif %}>
+          <img src="/assets/img/flags/es.svg" alt="Español" /> Español
+        </a>
+      {% endif %}
+    {% endunless %}
+
+    {% comment %} EN: show only if page has no ref, OR en version exists {% endcomment %}
+    {% unless page.ref %}
       <a href="{{ en_switch }}" hreflang="en" {% if lang == "en" %}class="active-lang"{% endif %}>
         <img src="/assets/img/flags/en.svg" alt="English" /> English
       </a>
+    {% else %}
+      {% assign en_exists = site.posts | where: "ref", page.ref | where: "lang", "en" | first %}
+      {% unless en_exists %}{% assign en_exists = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}{% endunless %}
+      {% if en_exists %}
+        <a href="{{ en_switch }}" hreflang="en" {% if lang == "en" %}class="active-lang"{% endif %}>
+          <img src="/assets/img/flags/en.svg" alt="English" /> English
+        </a>
+      {% endif %}
+    {% endunless %}
+
+    {% comment %} FR: show only if page has no ref, OR fr version exists {% endcomment %}
+    {% unless page.ref %}
       <a href="{{ fr_switch }}" hreflang="fr" {% if lang == "fr" %}class="active-lang"{% endif %}>
         <img src="/assets/img/flags/fr.svg" alt="Français" /> Français
       </a>
-    </div>
+    {% else %}
+      {% assign fr_exists = site.posts | where: "ref", page.ref | where: "lang", "fr" | first %}
+      {% unless fr_exists %}{% assign fr_exists = site.pages | where: "ref", page.ref | where: "lang", "fr" | first %}{% endunless %}
+      {% if fr_exists %}
+        <a href="{{ fr_switch }}" hreflang="fr" {% if lang == "fr" %}class="active-lang"{% endif %}>
+          <img src="/assets/img/flags/fr.svg" alt="Français" /> Français
+        </a>
+      {% endif %}
+    {% endunless %}
+
   </div>
+</div>
 
   <button class="icon-btn" id="navbtn" aria-label="Open menu">
     <span class="line"></span>
