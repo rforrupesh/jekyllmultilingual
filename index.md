@@ -132,9 +132,7 @@ Unir PDF
     </p>
   </section>
 
- <section class="isec-block">
-<div class="isec-block__title"> <a href="#features">Características</a> | <a href="#how-it-works">Cómo funciona</a> | <a href="#faq">Preguntas frecuentes</a></div>
-  </section>
+<div> <a href="#features">Características</a> | <a href="#how-it-works">Cómo funciona</a> | <a href="#faq">Preguntas frecuentes</a></div>
   
   <section class="isec-block isec-why" aria-labelledby="isec-why-title" id="features">
     <div class="isec-block__head">
