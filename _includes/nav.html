@@ -30,7 +30,7 @@
 <nav aria-label="Main navigation">
 
  <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}" class="logo">
-  <img src="/assets/img/logo.webp" fetchpriority="high" alt="{{ site.title }}">
+  <img src="/assets/img/logo.webp" alt="{{ site.title }}">
   <span>UniFicar PDF</span>
 </a>
 
@@ -48,7 +48,7 @@
 
 <div class="lang-switcher">
   <button class="lang-btn" id="langBtn">
-    <img src="{{ base }}/assets/img/flags/{{ lang }}.svg" fetchpriority="high" alt="{{ lang }}" />
+    <img src="{{ base }}/assets/img/flags/{{ lang }}.svg" alt="{{ lang }}" />
     {{ lang | upcase }}
     <span>▾</span>
   </button>
