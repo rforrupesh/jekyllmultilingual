@@ -1,0 +1,29 @@
+---
+layout: blog
+title: "Category Archive"
+---
+
+<h1 id="category-title">Category: Loading...</h1>
+<ul id="post-list">
+  {% for post in site.posts %}
+    {% for cat in post.categories %}
+      <li class="post-item {{ cat | slugify }}" style="display: none;">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <span>{{ post.date | date_to_string }}</span>
+      </li>
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+<script>
+  // URL se category name nikalne ke liye javascript
+  const urlParams = new URLSearchParams(window.location.search);
+  const currentCat = urlParams.get('c');
+
+  if (currentCat) {
+    document.getElementById('category-title').innerText = "Category: " + currentCat;
+    
+    // Sirf wahi posts dikhao jo is category se match karte hain
+    const posts = document.querySelectorAll('.post-item.' + currentCat);
+    posts.forEach(post => post.style.display = 'block');
+  }
+</script>
