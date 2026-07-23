@@ -5,7 +5,9 @@ url: "https://unirpdf-73b.pages.dev"
 liquid:
   error_mode: strict
 author: RUPESH
-# twitter_username: yourhandle   # uncomment if you have one
+
+sass:
+  style: compressed
 
 # Multilingual settings
 languages: ["en", "fr", "es"]
