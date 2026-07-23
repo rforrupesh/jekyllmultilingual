@@ -115,7 +115,7 @@ Unir PDF
    <figure class="isec-media"> 
     <img src="./assets/img/unir.webp"
          alt="Unir múltiples PDF files en uno al instante"
-         loading="lazy" fetchpriority="high"
+         loading="lazy" 
          width="710"
          height="350">
     <figcaption>
