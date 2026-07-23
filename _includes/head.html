@@ -82,7 +82,12 @@
 <meta name="twitter:site" content="@{{ site.twitter_username }}" />
 {% endif %}
 
-<link href="https://unirpdf-73b.pages.dev/assets/css/main.css" rel='stylesheet'/>
+<style>
+  {% capture compiled_css %}
+    {% include_cached css/main.css %}
+  {% endcapture %}
+  {{ compiled_css | strip_newlines | replace: '  ', '' }}
+</style>
 
 
 
