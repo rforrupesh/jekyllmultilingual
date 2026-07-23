@@ -1,0 +1,1 @@
+{% capture _content %}{{ content }}{% endcapture %}{% include_cached {{ site.compress_html.layout | default: 'compress/layout.html' }} content=_content %}
