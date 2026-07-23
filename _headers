@@ -1,2 +1,8 @@
+# Normal pages ke liye simple cache jo jaldi update ho sake
 /*
   Cache-Control: public, max-age=0, must-revalidate
+
+# Is broken page ko hard-block karo taaki cache hamesha ke liye mar jaye
+/only
+  Cache-Control: no-cache, no-store, must-revalidate
+  Clear-Site-Data: "cache"
