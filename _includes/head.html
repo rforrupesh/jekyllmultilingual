@@ -83,10 +83,7 @@
 {% endif %}
 
 <style>
-  {% capture compiled_css %}
-    {% include_cached css/main.css %}
-  {% endcapture %}
-  {{ compiled_css | strip_newlines | replace: '  ', '' }}
+  {% include css/main.css %}
 </style>
 
 
