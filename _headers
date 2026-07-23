@@ -1,4 +1,11 @@
-/*
+# Force browser to check for new updates on every single HTML visit
+/*.html
   Cache-Control: no-cache, no-store, must-revalidate
   Pragma: no-cache
   Expires: 0
+
+# Cache CSS and JS but revalidate in the background (Improves LCP)
+/assets/css/*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/js/*
+  Cache-Control: public, max-age=0, must-revalidate
