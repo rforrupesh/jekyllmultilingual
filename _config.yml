@@ -66,5 +66,6 @@ collections:
 
 include:
   - _headers
+  - _redirects
 
   
