@@ -69,5 +69,6 @@ collections:
 include:
   - _headers
   - _redirects
+  - 404.html
 
   
