@@ -71,4 +71,14 @@ include:
   - _redirects
   - 404.html
 
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layout: 'blog' # Aapka universal layout
+  permalinks:
+    category: '/blog/category/:name/'
+    tag: '/blog/tag/:name/'
+
   
