@@ -1,3 +1,8 @@
+# Give all normal site pages maximum speed and caching
 /*
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Keep the broken route completely un-cached so it stays a 404
+/only
   Cache-Control: no-cache, no-store, must-revalidate
   Clear-Site-Data: "cache"
