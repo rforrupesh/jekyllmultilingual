@@ -1,0 +1,26 @@
+---
+layout: blog
+title: "Tag Archive"
+---
+
+<h1 id="tag-title">Tag: Loading...</h1>
+<ul id="post-list">
+  {% for post in site.posts %}
+    {% for tag in post.tags %}
+      <li class="tag-item {{ tag | slugify }}" style="display: none;">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a> — <span>{{ post.date | date_to_string }}</span>
+      </li>
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const currentTag = urlParams.get('t');
+
+  if (currentTag) {
+    document.getElementById('tag-title').innerText = "Tag: " + currentTag;
+    const posts = document.querySelectorAll('.tag-item.' + currentTag);
+    posts.forEach(post => post.style.display = 'block');
+  }
+</script>
