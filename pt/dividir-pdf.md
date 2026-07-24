@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Diviser le fichier PDF
-description: Divisez un fichier PDF par intervalle de pages ou extrayez toutes les pages en plusieurs fichiers PDF. Diviser ou extraire des fichiers PDF en ligne, facilement et gratuitement.
+title: Divida páginas de PDF por intervalos — Dividir PDF Online
+description: Divida um arquivo PDF por intervalos de páginas ou extraia todas as páginas em vários arquivos PDF separados. Divida ou extraia arquivos PDF online, de forma fácil e gratuita.
 thumbnail: /assets/img/unir.webp
 lang: pt
 ref: splitpdf
 permalink: /pt/dividir-pdf/
-
 head_style: |
     /* ── LAYOUT ── */
     .app-shell {
@@ -753,9 +752,6 @@ head_style: |
     }
    
 
-styles:
-  - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap
-
 scripts:
   - https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js
@@ -772,14 +768,12 @@ scripts:
   </div>
   <span id="dragGhostName"></span>
 </div>
-
 <div class="app-shell">
-
 <!-- ─── UPLOAD STATE ─── -->
   <div id="uploadState">
     <div class="upload-inner">
-      <h1>Diviser un fichier PDF</h1>
-      <p class="sub">Séparez des pages isolées ou des ensembles de documents complets en fichiers PDF autonomes.</p>
+      <h1>Dividir um arquivo PDF</h1>
+      <p class="sub">Separe páginas individuais ou conjuntos completos de documentos em arquivos PDF independentes.</p>
       <div class="drop-zone" id="dropZone">
         <div class="dz-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -788,31 +782,31 @@ scripts:
             <line x1="12" y1="3" x2="12" y2="15"/>
           </svg>
         </div>
-        <h2>Déposez un fichier PDF ici</h2>
-        <p>ou cliquez sur le bouton ci-dessous pour parcourir vos fichiers</p>
+        <h2>Solte um arquivo PDF aqui</h2>
+        <p>ou clique no botão abaixo para procurar seus arquivos</p>
         <button class="btn-blue" id="browseBtn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
           </svg>
-          Choisir un Fichier
+          Escolher Arquivo
         </button>
         <p class="upload-note">
-            En chargeant vos fichiers, vous acceptez nos
-  <a href="/fr/conditions-dutilisation/" target="_blank">Conditions d'Utilisation</a>
-  ainsi que notre
-  <a href="/fr/politique-de-confidentialite/" target="_blank">Politique de Confidentialité</a>.
+            Ao enviar seus arquivos, você concorda com nossos
+  <a href="/pt/termos-de-uso/" target="_blank">Termos de Uso</a>
+  e nossa
+  <a href="/pt/politica-de-privacidade/" target="_blank">Política de Privacidade</a>.
   
         </p>
       </div>
 <input type="file" id="fileInput" accept=".pdf,application/pdf" hidden>
 </div>
 
-    <div class="info-section">
-         
-      <div id="split-pdf-info">
+<div class="info-section">
+
+ <div id="split-pdf-info">
   <section class="isec-block isec-why" aria-labelledby="isec-why-title">
     <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Pourquoi Choisir UnificarPDF.com pour Diviser vos PDF</h2>
+      <h2 id="isec-why-title" class="isec-block__title">Por Que Escolher o UnificarPDF.com para Dividir seus PDFs</h2>
     </div>
     <div class="isec-card-grid">
       <div class="isec-card">
@@ -820,186 +814,186 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
         </span>
-        <h3 class="isec-card__title">Une Seule Page ou Tout le Document</h3>
-        <p class="isec-card__text">Récupérez une page isolée, ou séparez le document entier page par page — à vous de choisir.</p>
+        <h3 class="isec-card__title">Uma Página ou o Documento Inteiro</h3>
+        <p class="isec-card__text">Extraia uma página isolada, ou separe o documento inteiro página por página — a escolha é sua.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
         </span>
-        <h3 class="isec-card__title">Choisissez les Pages à Extraire</h3>
-        <p class="isec-card__text">Sélectionnez des pages précises ou définissez une plage personnalisée plutôt que de tout diviser en bloc.</p>
+        <h3 class="isec-card__title">Escolha as Páginas para Extrair</h3>
+        <p class="isec-card__text">Selecione páginas específicas ou defina um intervalo personalizado, em vez de dividir tudo de uma vez.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
         </span>
-        <h3 class="isec-card__title">Des Fichiers Séparés, un par un</h3>
-        <p class="isec-card__text">Chaque partie que vous séparez devient un fichier indépendant, prêt à être utilisé de son côté.</p>
+        <h3 class="isec-card__title">Arquivos Separados, um por um</h3>
+        <p class="isec-card__text">Cada parte que você separa vira um arquivo independente, pronto para ser usado por conta própria.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
         </span>
-        <h3 class="isec-card__title">Signets et Liens Restent Intacts</h3>
-        <p class="isec-card__text">Rien ne disparaît — signets, liens hypertextes et autres éléments cliquables survivent à la découpe.</p>
+        <h3 class="isec-card__title">Favoritos e Links Permanecem Intactos</h3>
+        <p class="isec-card__text">Nada se perde — marcadores, hiperlinks e outros elementos clicáveis sobrevivem à divisão.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
         </span>
-        <h3 class="isec-card__title">De Vraies Miniatures, pas des Icônes Génériques</h3>
-        <p class="isec-card__text">Chaque miniature montre le contenu réel de la page — pas un simple cadre vide — pour que vous sachiez exactement ce que vous découpez avant de télécharger quoi que ce soit.</p>
+        <h3 class="isec-card__title">Miniaturas Reais, não Ícones Genéricos</h3>
+        <p class="isec-card__text">Cada miniatura mostra o conteúdo real da página — não é apenas um quadro vazio — para que você saiba exatamente o que está dividindo antes de baixar qualquer coisa.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
         </span>
-        <h3 class="isec-card__title">Supprimez une Page sans Rien Diviser</h3>
-        <p class="isec-card__text">Une icône de suppression accompagne chaque miniature — retirez les pages inutiles avant même de lancer le découpage.</p>
+        <h3 class="isec-card__title">Remova uma Página sem Dividir Nada</h3>
+        <p class="isec-card__text">Um ícone de exclusão acompanha cada miniatura — remova as páginas desnecessárias antes mesmo de iniciar a divisão.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
         </span>
-        <h3 class="isec-card__title">Pivotez une Page ou Toutes d'un Coup</h3>
-        <p class="isec-card__text">Corrigez l'orientation d'une seule page, ou faites pivoter l'ensemble en une fois. Le bouton Restaurer remet tout à sa place en cas d'erreur.</p>
+        <h3 class="isec-card__title">Gire uma Página ou Todas de uma vez</h3>
+        <p class="isec-card__text">Corrija a orientação de uma única página, ou gire todas de uma só vez. O botão Restaurar coloca tudo de volta no lugar em caso de erro.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg>
         </span>
-        <h3 class="isec-card__title">Des Fichiers Plus Légers, Même Qualité</h3>
-        <p class="isec-card__text">Les documents obtenus après la séparation sont plus petits en taille, sans perte de netteté.</p>
+        <h3 class="isec-card__title">Arquivos Mais Leves, Mesma Qualidade</h3>
+        <p class="isec-card__text">Os documentos gerados após a divisão ficam menores em tamanho, sem perder nitidez.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
         </span>
-        <h3 class="isec-card__title">Aucune Interruption en Cours de Traitement</h3>
-        <p class="isec-card__text">Votre fichier est traité du début à la fin sans coupure ni blocage inattendu.</p>
+        <h3 class="isec-card__title">Nenhuma Interrupção Durante o Processo</h3>
+        <p class="isec-card__text">Seu arquivo é processado do início ao fim sem cortes nem travamentos inesperados.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
         </span>
-        <h3 class="isec-card__title">Fichiers Propres, sans Filigrane</h3>
-        <p class="isec-card__text">Tout ce que vous téléchargez après le split est sans filigrane et conserve une qualité complète.</p>
+        <h3 class="isec-card__title">Arquivos Limpos, sem Marca d'Água</h3>
+        <p class="isec-card__text">Tudo o que você baixa após a divisão é sem marca d'água e mantém a qualidade completa.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
         </span>
-        <h3 class="isec-card__title">Compatible avec Tous vos Appareils</h3>
-        <p class="isec-card__text">Windows, Mac, Linux, Android, iPhone — cet outil en ligne pour séparer vos PDF fonctionne partout de la même façon.</p>
+        <h3 class="isec-card__title">Compatível com Todos os Dispositivos</h3>
+        <p class="isec-card__text">Windows, Mac, Linux, Android, iPhone — essa ferramenta online para dividir PDF funciona do mesmo jeito em qualquer lugar.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg>
         </span>
-        <h3 class="isec-card__title">Directement Depuis votre Navigateur</h3>
-        <p class="isec-card__text">Rien à installer, rien à télécharger — ouvrez la page et commencez tout de suite.</p>
+        <h3 class="isec-card__title">Direto do seu Navegador</h3>
+        <p class="isec-card__text">Nada para instalar, nada para baixar — abra a página e comece agora mesmo.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg>
         </span>
-        <h3 class="isec-card__title">Déposez votre Fichier en Quelques Secondes</h3>
-        <p class="isec-card__text">Charger un PDF sur le diviseur ne prend qu'un instant — glissez-le et c'est parti.</p>
+        <h3 class="isec-card__title">Envie seu Arquivo em Segundos</h3>
+        <p class="isec-card__text">Carregar um PDF no divisor leva só um instante — arraste e pronto.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
         </span>
-        <h3 class="isec-card__title">Aucun Compte à Créer</h3>
-        <p class="isec-card__text">Pas d'inscription à faire — rien à créer, et c'est entièrement gratuit.</p>
+        <h3 class="isec-card__title">Nenhuma Conta para Criar</h3>
+        <p class="isec-card__text">Sem cadastro — nada para criar, e totalmente grátis.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </span>
-        <h3 class="isec-card__title">Traitement Sécurisé et Rapide</h3>
-        <p class="isec-card__text">Votre PDF est traité en toute sécurité et sans le moindre retard.</p>
+        <h3 class="isec-card__title">Processamento Seguro e Rápido</h3>
+        <p class="isec-card__text">Seu PDF é processado com total segurança e sem nenhuma demora.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
         </span>
-        <h3 class="isec-card__title">Vos Fichiers Prêts Immédiatement</h3>
-        <p class="isec-card__text">Dès que le découpage est terminé, le téléchargement est disponible sans aucune attente.</p>
+        <h3 class="isec-card__title">Seus Arquivos Prontos na Hora</h3>
+        <p class="isec-card__text">Assim que a divisão termina, o download fica disponível sem nenhuma espera.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg>
         </span>
-        <h3 class="isec-card__title">Ordre des Pages Conservé Partout</h3>
-        <p class="isec-card__text">L'ordre des pages que vous définissez se retrouve à l'identique dans chaque fichier généré.</p>
+        <h3 class="isec-card__title">Ordem das Páginas Mantida em Tudo</h3>
+        <p class="isec-card__text">A ordem das páginas que você define é reproduzida exatamente em cada arquivo gerado.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg>
         </span>
-        <h3 class="isec-card__title">Changez de Fichier à Tout Moment</h3>
-        <p class="isec-card__text">Mauvais PDF chargé ? Le bouton Changer permet de le remplacer instantanément, sans recharger la page.</p>
+        <h3 class="isec-card__title">Troque de Arquivo a Qualquer Momento</h3>
+        <p class="isec-card__text">Carregou o PDF errado? O botão Trocar permite substituí-lo instantaneamente, sem recarregar a página.</p>
       </div>
     </div>
   </section>
   <section class="isec-block isec-how" aria-labelledby="isec-how-title">
     <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">Comment Diviser un PDF avec Notre Outil</h2>
-      <p class="isec-block__subtitle">Séparer un PDF sur UnificarPDF ne prend que quelques clics. Voici la marche à suivre :</p>
+      <h2 id="isec-how-title" class="isec-block__title">Como Dividir um PDF com Nossa Ferramenta</h2>
+      <p class="isec-block__subtitle">Dividir um PDF no UnificarPDF leva apenas alguns cliques. Veja como fazer:</p>
     </div>
     <ol class="isec-steps">
       <li>
         <span class="isec-steps__num">1</span>
-        <div class="isec-steps__body">Commencez par charger votre fichier. Son nom et son nombre de pages s'affichent aussitôt, pour vérifier que c'est bien le bon document — sinon, le bouton "Changer" juste à côté des détails permet d'en charger un autre sans recharger la page.</div>
+        <div class="isec-steps__body">Comece enviando seu arquivo. O nome e o número de páginas aparecem na hora, para você confirmar que é o documento certo — caso contrário, o botão "Trocar" ao lado dos detalhes permite carregar outro sem recarregar a página.</div>
       </li>
       <li>
         <span class="isec-steps__num">2</span>
         <div class="isec-steps__body">
-          Choisissez votre mode de découpage :
+          Escolha o modo de divisão:
           <ul class="isec-substeps">
-            <li><strong>Plage</strong> — définissez un intervalle simple "De À", combinez plusieurs plages à la fois (regroupées dans un seul ZIP), ou divisez le fichier en parts égales.</li>
-            <li><strong>Sélection</strong> — cliquez directement sur les miniatures pour choisir précisément ce dont vous avez besoin, avec les options Tout sélectionner, Effacer et Inverser.</li>
-            <li><strong>Ignorer</strong> — saisissez les numéros de page voulus dans n'importe quel format, par exemple 4 56-34 1 2-10. Les plages inversées fonctionnent aussi.</li>
+            <li><strong>Intervalo</strong> — defina um intervalo simples "De Até", combine vários intervalos de uma vez (agrupados em um único ZIP), ou divida o arquivo em partes iguais.</li>
+            <li><strong>Seleção</strong> — clique diretamente nas miniaturas para escolher exatamente o que você precisa, com as opções Selecionar Tudo, Limpar e Inverter.</li>
+            <li><strong>Ignorar</strong> — digite os números de página desejados em qualquer formato, por exemplo 4 56-34 1 2-10. Intervalos invertidos também funcionam.</li>
           </ul>
         </div>
       </li>
       <li>
         <span class="isec-steps__num">3</span>
-        <div class="isec-steps__body">Parcourez l'ensemble de la grille. Chaque page apparaît sous forme de miniature réelle de son contenu — pas un simple espace vide — étiquetée Page 1, Page 2, et ainsi de suite. Glissez une miniature pour réorganiser les pages avant de diviser ou de télécharger. En survolant une page, une icône de suppression permet de retirer uniquement celle-ci, et une icône de rotation de la faire pivoter individuellement — ou utilisez Tout Pivoter en haut pour tourner toutes les pages en une fois. Si une rotation ne va pas dans le bon sens, le bouton Restaurer remet tout comme avant.</div>
+        <div class="isec-steps__body">Percorra toda a grade. Cada página aparece como uma miniatura real do seu conteúdo — não é apenas um espaço vazio — identificada como Página 1, Página 2, e assim por diante. Arraste uma miniatura para reorganizar as páginas antes de dividir ou baixar. Ao passar o mouse sobre uma página, um ícone de exclusão permite remover só aquela página, e um ícone de rotação a gira individualmente — ou use Girar Todas no topo para girar todas as páginas de uma vez. Se uma rotação sair errada, o botão Restaurar coloca tudo de volta como estava.</div>
       </li>
       <li>
         <span class="isec-steps__num">4</span>
-        <div class="isec-steps__body">À côté de l'en-tête "Pages" se trouve un curseur de zoom qui permet d'agrandir ou de réduire la taille des miniatures (la valeur actuelle s'affiche, par exemple 140), utile pour examiner de plus près certains détails.</div>
+        <div class="isec-steps__body">Ao lado do título "Páginas" fica um controle de zoom que permite ampliar ou reduzir o tamanho das miniaturas (o valor atual aparece, por exemplo 140), útil para examinar certos detalhes mais de perto.</div>
       </li>
       <li>
         <span class="isec-steps__num">5</span>
-        <div class="isec-steps__body">Récupérez le résultat. Téléchargez le PDF (ou le ZIP si vous avez séparé plusieurs fichiers), ou partagez-le directement.</div>
+        <div class="isec-steps__body">Pegue o resultado. Baixe o PDF (ou o ZIP, se você separou vários arquivos), ou compartilhe diretamente.</div>
       </li>
     </ol>
   </section>
   <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
     <div class="isec-block__head">
-      <h2 id="isec-usecases-title" class="isec-block__title">Adapté à Tous les Usages</h2>
-      <p class="isec-block__subtitle">Voici comment notre outil vous aide à organiser et séparer vos documents PDF au quotidien.</p>
+      <h2 id="isec-usecases-title" class="isec-block__title">Ideal para Todos os Usos</h2>
+      <p class="isec-block__subtitle">Veja como nossa ferramenta ajuda você a organizar e dividir seus documentos PDF no dia a dia.</p>
     </div>
     <div class="isec-card-grid isec-card-grid--use">
       <div class="isec-card">
@@ -1007,220 +1001,222 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
         </span>
-        <h3 class="isec-card__title">PDF Professionnels</h3>
-        <p class="isec-card__text">Séparez contrats, rapports, factures et présentations en fichiers distincts.</p>
+        <h3 class="isec-card__title">PDFs Profissionais</h3>
+        <p class="isec-card__text">Separe contratos, relatórios, notas fiscais e apresentações em arquivos distintos.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
         </span>
-        <h3 class="isec-card__title">PDF Étudiants</h3>
-        <p class="isec-card__text">Extraire page par page depuis vos gros manuels — récupérez juste le chapitre, le cours ou le devoir dont vous avez besoin.</p>
+        <h3 class="isec-card__title">PDFs para Estudantes</h3>
+        <p class="isec-card__text">Extraia página por página dos seus livros grandes — pegue só o capítulo, a aula ou o trabalho que você precisa.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg>
         </span>
-        <h3 class="isec-card__title">PDF Juridiques et Financiers</h3>
-        <p class="isec-card__text">Récupérez uniquement les pages utiles de vos contrats, relevés bancaires et autres documents officiels.</p>
+        <h3 class="isec-card__title">PDFs Jurídicos e Financeiros</h3>
+        <p class="isec-card__text">Pegue apenas as páginas úteis dos seus contratos, extratos bancários e outros documentos oficiais.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg>
         </span>
-        <h3 class="isec-card__title">Plus Facile à Partager et à Conserver</h3>
-        <p class="isec-card__text">Des fichiers séparés et plus légers se partagent plus vite et prennent moins de place sur votre appareil.</p>
+        <h3 class="isec-card__title">Mais Fácil de Compartilhar e Guardar</h3>
+        <p class="isec-card__text">Arquivos separados e mais leves são compartilhados mais rápido e ocupam menos espaço no seu dispositivo.</p>
       </div>
     </div>
   </section>
   <section class="isec-block isec-faq" aria-labelledby="isec-faq-title">
     <div class="isec-block__head">
-      <h2 id="isec-faq-title" class="isec-block__title">Questions Fréquentes</h2>
-      <p class="isec-block__subtitle">Des questions sur comment diviser, séparer ou extraire page d'un PDF ? Voici les réponses.</p>
+      <h2 id="isec-faq-title" class="isec-block__title">Perguntas Frequentes</h2>
+      <p class="isec-block__subtitle">Tem dúvidas sobre como dividir, separar ou extrair páginas de um PDF? Aqui estão as respostas.</p>
     </div>
-    <p class="isec-faq__eyebrow">Pour Commencer</p>
+    <p class="isec-faq__eyebrow">Primeiros Passos</p>
     <div class="isec-faq__list">
       <div class="isec-faq__item is-open">
         <button type="button" class="isec-faq__summary" aria-expanded="true">
-          <span>Qu'est-ce qu'un diviseur de PDF ?</span>
+          <span>O que é um divisor de PDF?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>C'est un outil en ligne qui découpe un PDF existant en plusieurs fichiers plus petits, selon les numéros de page ou les plages que vous choisissez.</p>
+            <p>É uma ferramenta online que divide um PDF já existente em vários arquivos menores, de acordo com os números de página ou intervalos que você escolher.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Comment diviser un PDF en ligne ?</span>
+          <span>Como dividir um PDF online?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Chargez votre PDF, choisissez les pages ou plages voulues, cliquez sur Diviser le PDF, puis téléchargez votre fichier.</p>
+            <p>Envie seu PDF, escolha as páginas ou intervalos desejados, clique em Dividir PDF e baixe seu arquivo.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Puis-je charger mon PDF par glisser-déposer ?</span>
+          <span>Posso enviar meu PDF arrastando e soltando?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Oui — il suffit de glisser votre fichier directement sur UnificarPDF.com pour qu'il se charge aussitôt.</p>
+            <p>Sim — basta arrastar seu arquivo diretamente para o UnificarPDF.com para que ele seja carregado na hora.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Puis-je réorganiser ou supprimer des fichiers après les avoir chargés ?</span>
+          <span>Posso reorganizar ou excluir arquivos depois de enviá-los?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Oui. Vous pouvez réordonner les fichiers déjà chargés, ou en retirer ceux dont vous n'avez plus besoin.</p>
+            <p>Sim. Você pode reordenar os arquivos já enviados, ou remover aqueles que não precisa mais.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Quelle est la différence entre Sélection, Plage et Ignorer ?</span>
+          <span>Qual a diferença entre Seleção, Intervalo e Ignorar?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Plage convient aux découpages structurés — une plage unique, plusieurs plages, ou des parts égales. Sélection consiste à cliquer visuellement sur les miniatures. Ignorer est le plus rapide quand vous connaissez déjà les numéros de page exacts.</p>
+            <p>Intervalo é ideal para divisões estruturadas — um único intervalo, vários intervalos, ou partes iguais. Seleção significa clicar visualmente nas miniaturas. Ignorar é a forma mais rápida quando você já sabe exatamente os números de página.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Puis-je diviser un PDF par numéros ou plages de pages ?</span>
+          <span>Posso dividir um PDF por números ou intervalos de página?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Oui — choisissez simplement la page ou la plage de pages que vous souhaitez extraire du PDF.</p>
+            <p>Sim — basta escolher a página ou o intervalo de páginas que você deseja extrair do PDF.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Puis-je extraire uniquement certaines pages d'un PDF ?</span>
+          <span>Posso extrair apenas algumas páginas de um PDF?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Oui. Vous pouvez extraire une page, plusieurs pages ou une plage précise et les enregistrer dans un nouveau PDF.</p>
+            <p>Sim. Você pode extrair uma página, várias páginas ou um intervalo específico e salvá-las em um novo PDF.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Que se passe-t-il une fois le PDF divisé ?</span>
+          <span>O que acontece depois que o PDF é dividido?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Si le résultat ne donne qu'un seul fichier, vous recevrez un PDF. S'il y en a plusieurs, ils sont regroupés dans une archive ZIP.</p>
+            <p>Se o resultado for apenas um arquivo, você recebe um PDF. Se forem vários, eles são agrupados em um arquivo ZIP.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Le découpage affecte-t-il la qualité de mon PDF ?</span>
+          <span>A divisão afeta a qualidade do meu PDF?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Pas du tout. La mise en page, les polices, les images et le texte restent identiques.</p>
+            <p>Nem um pouco. O layout, as fontes, as imagens e o texto permanecem idênticos.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>L'outil gère-t-il les gros fichiers PDF ?</span>
+          <span>A ferramenta consegue lidar com arquivos PDF grandes?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Oui, sans problème — grand ou petit, tous les formats de fichier fonctionnent.</p>
+            <p>Sim, sem problema — grandes ou pequenos, todos os tamanhos de arquivo funcionam.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Peut-on diviser un PDF protégé par mot de passe ?</span>
+          <span>É possível dividir um PDF protegido por senha?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Bien sûr. Déverrouillez-le avec le mot de passe, puis procédez à la séparation.</p>
+            <p>Claro. Desbloqueie-o com a senha e siga com a divisão normalmente.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Faut-il installer un logiciel ?</span>
+          <span>É preciso instalar algum programa?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Non. Tout se passe directement dans votre navigateur — rien à installer.</p>
+            <p>Não. Tudo acontece direto no seu navegador — nada para instalar.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Faut-il créer un compte ?</span>
+          <span>É preciso criar uma conta?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Non, UnificarPDF.com s'utilise sans inscription et sans connexion.</p>
+            <p>Não, o UnificarPDF.com pode ser usado sem cadastro e sem login.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>L'outil fonctionne-t-il sur mobile ?</span>
+          <span>A ferramenta funciona no celular?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Oui, tout à fait — Android, iPhone, tablette, ordinateur portable ou de bureau, tout fonctionne.</p>
+            <p>Sim, totalmente — Android, iPhone, tablet, notebook ou computador de mesa, tudo funciona.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Mon fichier PDF est-il en sécurité ?</span>
+          <span>Meu arquivo PDF fica seguro?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Oui. Le transfert du fichier est sécurisé, et une fois la séparation terminée, les fichiers chargés et générés sont automatiquement supprimés du serveur.</p>
+            <p>Sim. O envio do arquivo é seguro, e assim que a divisão termina, os arquivos enviados e gerados são automaticamente excluídos do servidor.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>UnificarPDF.com est-il vraiment gratuit ?</span>
+          <span>O UnificarPDF.com é realmente gratuito?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Oui. Divisez vos fichiers PDF en ligne gratuitement, sans téléchargement de logiciel ni inscription.</p>
+            <p>Sim. Divida seus arquivos PDF online de graça, sem precisar baixar nenhum programa nem se cadastrar.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+ 
+ 
 </div>
 <style>
 #split-pdf-info {
