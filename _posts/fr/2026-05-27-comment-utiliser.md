@@ -6,7 +6,7 @@ description: "UnificarPDF.com est un outil de fusion PDF accessible depuis votre
 ref: como-usar
 ---
 
-**L’édition de PDF avec UniFicarPDF s’effectue de manière anonyme.** Le processus commence lorsqu’un fichier PDF est téléversé pour être modifié ; une fois le document traité et téléchargé, il est immédiatement supprimé. Pour en savoir plus, la page « Confidentialité en un coup d’œil » décrit en détail la manière dont ce processus anonyme est mis en œuvre. [Rapide, simple et sécurisé !](/blog/est-il-sur-de-televerser-des-fichiers-sur-unificarpdf/ "Rapide, simple et sécurisé !")
+**L’édition de PDF avec UniFicarPDF s’effectue de manière anonyme.** Le processus commence lorsqu’un fichier PDF est téléversé pour être modifié ; une fois le document traité et téléchargé, il est immédiatement supprimé. Pour en savoir plus, la page « Confidentialité en un coup d’œil » décrit en détail la manière dont ce processus anonyme est mis en œuvre. [Rapide, simple et sécurisé !](/fr/ "Rapide, simple et sécurisé !")
 
 ## Premiers pas
 
