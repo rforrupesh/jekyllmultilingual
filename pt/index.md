@@ -1,8 +1,8 @@
 ---
 layout: default
-title: juntar pdf​
-description: "Selecione vários arquivos PDF e combine-os em segundos. Mescle e combine arquivos PDF online, fácil e gratuito."
-keywords: "Merge PDF, Split PDF, Combine PDF, Separate PDF, Compress PDF, Convert PDF, Word to PDF, Excel to PDF, PowerPoint to PDF, PDF to JPG, JPG to PDF"
+title: Junte seus arquivos PDF em um só, grátis — Juntar PDF Online​
+description: "Envie e organize seus arquivos PDF com facilidade, depois baixe um único documento unificado. Rápido, ilimitado e grátis. Uma ferramenta online para juntar PDF sem limites."
+keywords: "Juntar PDF, Dividir PDF, Combinar PDF, Separar PDF, Comprimir PDF, Converter PDF, Word para PDF, Excel para PDF, PowerPoint para PDF, PDF para JPG, JPG para PDF"
 ref: home
 lang: pt
 permalink: /pt/
