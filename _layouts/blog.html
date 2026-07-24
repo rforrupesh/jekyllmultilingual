@@ -114,7 +114,3 @@ layout: default
   </div>
 </section>
 
-
-{% for cat in page.categories %}
-  <a href="{{ '/category.html' | relative_url }}?c={{ cat | slugify }}">{{ cat }}</a>
-{% endfor %}
