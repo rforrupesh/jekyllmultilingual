@@ -801,9 +801,9 @@ scripts:
         <p class="upload-note">
 
             By uploading files, you agree to our
-  <a href="https://rforrupesh.github.io/jekyllmultilingual/terminos-de-uso/" target="_blank">Terms of Use</a>
+  <a href="/en/terms-of-use/" target="_blank">Terms of Use</a>
   and our
-  <a href="https://rforrupesh.github.io/jekyllmultilingual/politica-de-privacidad/" target="_blank">Privacy Policy</a>.
+  <a href="/en/privacy-policy/" target="_blank">Privacy Policy</a>.
   
         </p>
       </div>
