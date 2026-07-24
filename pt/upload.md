@@ -721,7 +721,7 @@ scripts:
 </div>
 <main class="container1">
   <!-- H1 + P — visible before upload, hidden after -->
-  <h1 class="page-title" id="pageTitle">Select multiple PDF files and combine them into a single document with one click. No watermarks, no limits.</h1>
+  <h1 class="page-title" id="pageTitle">Selecione vários arquivos PDF e combine-os em um único documento com apenas um clique. Sem marcas d'água, sem limites.</h1>
   <p class="page-sub" id="pageSub"></p>
   <!-- UPLOAD STATE (centered, full viewport height) -->
   <div id="uploadState">
