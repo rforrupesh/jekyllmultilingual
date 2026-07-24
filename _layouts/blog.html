@@ -115,18 +115,6 @@ layout: default
 </section>
 
 
-<!-- Categories Display -->
-<div class="post-categories">
-  <strong>Categories:</strong>
-  {% for cat in page.category %}
-    <a href="{{ '/category.html' | relative_url }}?c={{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
-  {% endfor %}
-</div>
-
-<!-- Tags Display -->
-<div class="post-tags">
-  <strong>Tags:</strong>
-  {% for tag in page.tags %}
-    <a href="{{ '/tag.html' | relative_url }}?t={{ tag | slugify }}换">#{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-  {% endfor %}
-</div>
+{% for cat in page.categories %}
+  <a href="{{ '/category.html' | relative_url }}?c={{ cat | slugify }}">{{ cat }}</a>
+{% endfor %}
