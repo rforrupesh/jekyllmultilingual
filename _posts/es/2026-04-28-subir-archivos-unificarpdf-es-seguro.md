@@ -10,7 +10,7 @@ ref: subir-archivos-unificarpdf-es-seguro
 
 ## Sobre nosotros
 
-Nuestra aplicación se creó con un único propósito: facilitar la [edición de PDF](/blog/como-usar-unificarpdf-com/). Contamos con una audiencia diversa que incluye secretarias, estudiantes, abogados, profesores e incluso propietarios de pequeñas empresas. Cada persona que utiliza nuestro servicio merece nuestra atención y respeto.
+Nuestra aplicación se creó con un único propósito: facilitar la [edición de PDF](/upload/). Contamos con una audiencia diversa que incluye secretarias, estudiantes, abogados, profesores e incluso propietarios de pequeñas empresas. Cada persona que utiliza nuestro servicio merece nuestra atención y respeto.
 
 ## ¡Su archivo estará protegido automáticamente una vez que lo suba!
 
