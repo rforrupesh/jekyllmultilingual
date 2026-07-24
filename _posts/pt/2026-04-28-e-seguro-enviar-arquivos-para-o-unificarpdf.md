@@ -7,7 +7,7 @@ ref: subir-archivos-unificarpdf-es-seguro
 ---
 O que exatamente acontece com seus arquivos quando você usa o nosso site? Existe algo com que você deveria se preocupar? A resposta curta é não, de jeito nenhum. Mesmo assim, preferimos dar mais informações em vez de apenas responder à pergunta. Veja o porquê.
 ## Sobre Nós
-Nosso aplicativo foi criado com um único objetivo: tornar a [edição de PDF](/pt/) simples e acessível. Nosso público inclui secretárias, estudantes, advogados, professores e até pequenos empresários. Cada pessoa que usa o nosso serviço merece a nossa atenção e respeito.
+Nosso aplicativo foi criado com um único objetivo: tornar a [edição de PDF](/pt/upload/) simples e acessível. Nosso público inclui secretárias, estudantes, advogados, professores e até pequenos empresários. Cada pessoa que usa o nosso serviço merece a nossa atenção e respeito.
 ## Seu Arquivo É Protegido Automaticamente Assim que Você o Envia
 No momento em que você escolhe um arquivo, ele é transferido pela nossa conexão HTTPS segura, que funciona com os mesmos princípios usados por sistemas bancários online e redes de saúde. Ninguém consegue interceptar, acessar ou decodificar suas informações enquanto elas estão sendo transmitidas.
 Evitamos usar o protocolo HTTP simples, pois ele não oferece as mesmas proteções de segurança e permitiria que qualquer pessoa monitorando a rede lesse as informações transmitidas.
