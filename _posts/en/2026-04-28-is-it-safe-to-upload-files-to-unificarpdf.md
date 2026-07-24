@@ -10,7 +10,7 @@ What exactly happens to your files when you use our website? Is there anything y
 
 ## About Us
 
-Our application was created with a single goal: to make [PDF editing](/en/blog/how-to-use-unificarpdf-com/) simple and accessible. Our audience includes secretaries, students, lawyers, teachers, and even small business owners. Every person who uses our service deserves our attention and respect.
+Our application was created with a single goal: to make [PDF editing](/upload/) simple and accessible. Our audience includes secretaries, students, lawyers, teachers, and even small business owners. Every person who uses our service deserves our attention and respect.
 
 ## Your File Is Automatically Protected Once You Upload It
 
