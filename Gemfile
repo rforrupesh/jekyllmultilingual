@@ -1,7 +1,5 @@
 source "https://rubygems.org"
 
-gem 'jekyll-archives'
-
 gem "jekyll", "~> 4.3"
 gem "base64"
 gem "webrick"
