@@ -6,8 +6,6 @@ liquid:
   error_mode: strict
 author: RUPESH
 
-sass:
-  style: compressed
 
 # Multilingual settings
 languages: ["en", "fr", "es"]
