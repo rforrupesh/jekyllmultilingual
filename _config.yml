@@ -8,7 +8,7 @@ author: RUPESH
 
 
 # Multilingual settings
-languages: ["en", "fr", "es"]
+languages: ["en", "fr", "es", "pt"]
 default_lang: "es"
 
 # Build settings
@@ -18,7 +18,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Exclude from build
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -51,9 +50,13 @@ defaults:
       lang: fr
       permalink: /fr/:title/
 
+  - scope:
+      path: "_posts/pt"
+    values:
+      lang: pt
+      permalink: /pt/:title/
 
-sass:
-  style: compressed
+
 
 collections:
   en:
@@ -61,6 +64,8 @@ collections:
   fr:
     output: true
   es:
+    output: true
+  pt:
     output: true
 
 
