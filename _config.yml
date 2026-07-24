@@ -71,12 +71,3 @@ include:
   - _redirects
   - 404.html
 
-plugins:
-  - jekyll-archives
-
-# _config.yml
-category_list:
-  - tech
-  - cat
-  - tutorial
-  # jitni bhi categories hain
