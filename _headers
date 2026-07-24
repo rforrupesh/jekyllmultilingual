@@ -3,6 +3,9 @@
   Pragma: no-cache
   Expires: 0
 
+/postcat/*
+  Cache-Control: no-store, no-cache
+
 /assets/css/*
   Cache-Control: public, max-age=0, must-revalidate
 
