@@ -54,27 +54,85 @@
   </button>
   <div class="lang-dropdown" id="langDropdown">
 
-    {% if page.ref == nil or es_post or es_page %}
-      <a href="{{ es_switch }}" hreflang="es" {% if lang == "es" %}class="active-lang"{% endif %}>
-        <img src="/assets/img/flags/es.svg" alt="Español" /> Español
-      </a>
-    {% endif %}
+    {% comment %}
+      page.ref se same ref wale dusre language posts dhundo.
+      Agar page.ref nahi hai (normal page) toh sirf current lang dikhao.
+    {% endcomment %}
 
-    {% if page.ref == nil or en_post or en_page %}
-      <a href="{{ en_switch }}" hreflang="en" {% if lang == "en" %}class="active-lang"{% endif %}>
-        <img src="/assets/img/flags/en.svg" alt="English" /> English
-      </a>
-    {% endif %}
+    {% if page.ref %}
 
-    {% if page.ref == nil or fr_post or fr_page %}
-      <a href="{{ fr_switch }}" hreflang="fr" {% if lang == "fr" %}class="active-lang"{% endif %}>
-        <img src="/assets/img/flags/fr.svg" alt="Français" /> Français
+      {% comment %} En check {% endcomment %}
+      {% assign en_exists = false %}
+      {% for p in site.posts %}
+        {% if p.ref == page.ref and p.lang == "en" %}
+          {% assign en_exists = true %}
+          {% assign en_url = p.url %}
+        {% endif %}
+      {% endfor %}
+      {% for p in site.pages %}
+        {% if p.ref == page.ref and p.lang == "en" %}
+          {% assign en_exists = true %}
+          {% assign en_url = p.url %}
+        {% endif %}
+      {% endfor %}
+
+      {% comment %} Es check {% endcomment %}
+      {% assign es_exists = false %}
+      {% for p in site.posts %}
+        {% if p.ref == page.ref and p.lang == "es" %}
+          {% assign es_exists = true %}
+          {% assign es_url = p.url %}
+        {% endif %}
+      {% endfor %}
+      {% for p in site.pages %}
+        {% if p.ref == page.ref and p.lang == "es" %}
+          {% assign es_exists = true %}
+          {% assign es_url = p.url %}
+        {% endif %}
+      {% endfor %}
+
+      {% comment %} Fr check {% endcomment %}
+      {% assign fr_exists = false %}
+      {% for p in site.posts %}
+        {% if p.ref == page.ref and p.lang == "fr" %}
+          {% assign fr_exists = true %}
+          {% assign fr_url = p.url %}
+        {% endif %}
+      {% endfor %}
+      {% for p in site.pages %}
+        {% if p.ref == page.ref and p.lang == "fr" %}
+          {% assign fr_exists = true %}
+          {% assign fr_url = p.url %}
+        {% endif %}
+      {% endfor %}
+
+      {% if en_exists %}
+        <a href="{{ en_url | relative_url }}" hreflang="en" {% if lang == "en" %}class="active-lang"{% endif %}>
+          <img src="/assets/img/flags/en.svg" alt="English" /> English
+        </a>
+      {% endif %}
+
+      {% if es_exists %}
+        <a href="{{ es_url | relative_url }}" hreflang="es" {% if lang == "es" %}class="active-lang"{% endif %}>
+          <img src="/assets/img/flags/es.svg" alt="Español" /> Español
+        </a>
+      {% endif %}
+
+      {% if fr_exists %}
+        <a href="{{ fr_url | relative_url }}" hreflang="fr" {% if lang == "fr" %}class="active-lang"{% endif %}>
+          <img src="/assets/img/flags/fr.svg" alt="Français" /> Français
+        </a>
+      {% endif %}
+
+    {% else %}
+      {% comment %} Agar page.ref nahi — normal page, sirf current lang dikhao {% endcomment %}
+      <a href="#" class="active-lang">
+        <img src="/assets/img/flags/{{ lang }}.svg" alt="{{ lang }}" /> {{ lang | upcase }}
       </a>
     {% endif %}
 
   </div>
 </div>
-
 
 
   <button class="icon-btn" id="navbtn" aria-label="Open menu">
