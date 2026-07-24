@@ -1,146 +1,85 @@
 {% assign t = site.data.translations[page.lang] | default: site.data.translations["es"] %}
 {% assign base = site.baseurl %}
-{% assign lang = page.lang %}
+{% assign lang = page.lang | default: site.default_lang | default: "es" %}
 
-{% assign clean_url = page.url | remove_first: "/fr" | remove_first: "/en" %}
-
-{% assign es_switch = base | append: clean_url %}
-{% assign en_switch = base | append: "/en" | append: clean_url %}
-{% assign fr_switch = base | append: "/fr" | append: clean_url %}
+{% assign es_exists = false %}
+{% assign en_exists = false %}
+{% assign fr_exists = false %}
+{% assign es_switch = base | append: "/" %}
+{% assign en_switch = base | append: "/en/" %}
+{% assign fr_switch = base | append: "/fr/" %}
 
 {% if page.ref %}
   {% assign es_post = site.posts | where: "ref", page.ref | where: "lang", "es" | first %}
-  {% assign es_page = site.pages | where: "ref", page.ref | where: "lang", "es" | first %}
-  {% if es_post %}{% assign es_switch = base | append: es_post.url %}
-  {% elsif es_page %}{% assign es_switch = base | append: es_page.url %}{% endif %}
-
   {% assign en_post = site.posts | where: "ref", page.ref | where: "lang", "en" | first %}
-  {% assign en_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
-  {% if en_post %}{% assign en_switch = base | append: en_post.url %}
-  {% elsif en_page %}{% assign en_switch = base | append: en_page.url %}{% endif %}
-
   {% assign fr_post = site.posts | where: "ref", page.ref | where: "lang", "fr" | first %}
+  {% assign es_page = site.pages | where: "ref", page.ref | where: "lang", "es" | first %}
+  {% assign en_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
   {% assign fr_page = site.pages | where: "ref", page.ref | where: "lang", "fr" | first %}
-  {% if fr_post %}{% assign fr_switch = base | append: fr_post.url %}
-  {% elsif fr_page %}{% assign fr_switch = base | append: fr_page.url %}{% endif %}
+
+  {% if es_post %}{% assign es_exists = true %}{% assign es_switch = base | append: es_post.url %}
+  {% elsif es_page %}{% assign es_exists = true %}{% assign es_switch = base | append: es_page.url %}{% endif %}
+
+  {% if en_post %}{% assign en_exists = true %}{% assign en_switch = base | append: en_post.url %}
+  {% elsif en_page %}{% assign en_exists = true %}{% assign en_switch = base | append: en_page.url %}{% endif %}
+
+  {% if fr_post %}{% assign fr_exists = true %}{% assign fr_switch = base | append: fr_post.url %}
+  {% elsif fr_page %}{% assign fr_exists = true %}{% assign fr_switch = base | append: fr_page.url %}{% endif %}
 {% endif %}
 
-
-
 <nav aria-label="Main navigation">
+  <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}" class="logo">
+    <img src="/assets/img/logo.webp" alt="{{ site.title }}">
+    <span>UniFicar PDF</span>
+  </a>
 
- <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}" class="logo">
-  <img src="/assets/img/logo.webp" alt="{{ site.title }}">
-  <span>UniFicar PDF</span>
-</a>
-
-<div class="menu" id="menu">
-  {% for item in site.data.nav %}
-    {% assign nav_page = site.pages | where: "ref", item.key | where: "lang", lang | first %}
-    {% if nav_page %}
-      <a href="{{ base }}{{ nav_page.url }}">{{ t.nav[item.key] }}</a>
-    {% else %}
-      <a href="{{ base }}/{% if lang == 'en' %}en/{% elsif lang == 'fr' %}fr/{% endif %}{{ item.slug }}">{{ t.nav[item.key] }}</a>
-    {% endif %}
-  {% endfor %}
-</div>
-
-
-<div class="lang-switcher">
-  <button class="lang-btn" id="langBtn">
-    <img src="{{ base }}/assets/img/flags/{{ lang }}.svg" alt="{{ lang }}" />
-    {{ lang | upcase }}
-    <span>▾</span>
-  </button>
-  <div class="lang-dropdown" id="langDropdown">
-
-    {% comment %}
-      page.ref se same ref wale dusre language posts dhundo.
-      Agar page.ref nahi hai (normal page) toh sirf current lang dikhao.
-    {% endcomment %}
-
-    {% if page.ref %}
-
-      {% comment %} En check {% endcomment %}
-      {% assign en_exists = false %}
-      {% for p in site.posts %}
-        {% if p.ref == page.ref and p.lang == "en" %}
-          {% assign en_exists = true %}
-          {% assign en_url = p.url %}
-        {% endif %}
-      {% endfor %}
-      {% for p in site.pages %}
-        {% if p.ref == page.ref and p.lang == "en" %}
-          {% assign en_exists = true %}
-          {% assign en_url = p.url %}
-        {% endif %}
-      {% endfor %}
-
-      {% comment %} Es check {% endcomment %}
-      {% assign es_exists = false %}
-      {% for p in site.posts %}
-        {% if p.ref == page.ref and p.lang == "es" %}
-          {% assign es_exists = true %}
-          {% assign es_url = p.url %}
-        {% endif %}
-      {% endfor %}
-      {% for p in site.pages %}
-        {% if p.ref == page.ref and p.lang == "es" %}
-          {% assign es_exists = true %}
-          {% assign es_url = p.url %}
-        {% endif %}
-      {% endfor %}
-
-      {% comment %} Fr check {% endcomment %}
-      {% assign fr_exists = false %}
-      {% for p in site.posts %}
-        {% if p.ref == page.ref and p.lang == "fr" %}
-          {% assign fr_exists = true %}
-          {% assign fr_url = p.url %}
-        {% endif %}
-      {% endfor %}
-      {% for p in site.pages %}
-        {% if p.ref == page.ref and p.lang == "fr" %}
-          {% assign fr_exists = true %}
-          {% assign fr_url = p.url %}
-        {% endif %}
-      {% endfor %}
-
-      {% if en_exists %}
-        <a href="{{ en_url | relative_url }}" hreflang="en" {% if lang == "en" %}class="active-lang"{% endif %}>
-          <img src="/assets/img/flags/en.svg" alt="English" /> English
-        </a>
+  <div class="menu" id="menu">
+    {% for item in site.data.nav %}
+      {% assign nav_page = site.pages | where: "ref", item.key | where: "lang", lang | first %}
+      {% if nav_page %}
+        <a href="{{ base }}{{ nav_page.url }}">{{ t.nav[item.key] }}</a>
+      {% else %}
+        <a href="{{ base }}/{% if lang == 'en' %}en/{% elsif lang == 'fr' %}fr/{% endif %}{{ item.slug }}">{{ t.nav[item.key] }}</a>
       {% endif %}
-
-      {% if es_exists %}
-        <a href="{{ es_url | relative_url }}" hreflang="es" {% if lang == "es" %}class="active-lang"{% endif %}>
-          <img src="/assets/img/flags/es.svg" alt="Español" /> Español
-        </a>
-      {% endif %}
-
-      {% if fr_exists %}
-        <a href="{{ fr_url | relative_url }}" hreflang="fr" {% if lang == "fr" %}class="active-lang"{% endif %}>
-          <img src="/assets/img/flags/fr.svg" alt="Français" /> Français
-        </a>
-      {% endif %}
-
-    {% else %}
-      {% comment %} Agar page.ref nahi — normal page, sirf current lang dikhao {% endcomment %}
-      <a href="#" class="active-lang">
-        <img src="/assets/img/flags/{{ lang }}.svg" alt="{{ lang }}" /> {{ lang | upcase }}
-      </a>
-    {% endif %}
-
+    {% endfor %}
   </div>
-</div>
 
+  <div class="lang-switcher">
+    <button class="lang-btn" id="langBtn">
+      <img src="{{ base }}/assets/img/flags/{{ lang }}.svg" alt="{{ lang }}" />
+      {{ lang | upcase }}
+      <span>▾</span>
+    </button>
+    <div class="lang-dropdown" id="langDropdown">
+      {% if page.ref %}
+        {% if es_exists %}
+          <a href="{{ es_switch }}" hreflang="es" {% if lang == "es" %}class="active-lang"{% endif %}>
+            <img src="/assets/img/flags/es.svg" alt="Español" /> Español
+          </a>
+        {% endif %}
+        {% if en_exists %}
+          <a href="{{ en_switch }}" hreflang="en" {% if lang == "en" %}class="active-lang"{% endif %}>
+            <img src="/assets/img/flags/en.svg" alt="English" /> English
+          </a>
+        {% endif %}
+        {% if fr_exists %}
+          <a href="{{ fr_switch }}" hreflang="fr" {% if lang == "fr" %}class="active-lang"{% endif %}>
+            <img src="/assets/img/flags/fr.svg" alt="Français" /> Français
+          </a>
+        {% endif %}
+      {% else %}
+        <a href="#" class="active-lang">
+          <img src="/assets/img/flags/{{ lang }}.svg" alt="{{ lang }}" /> {{ lang | upcase }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
 
   <button class="icon-btn" id="navbtn" aria-label="Open menu">
     <span class="line"></span>
     <span class="line"></span>
     <span class="line"></span>
   </button>
-
 
   <!-- Search -->
   <style>
@@ -157,7 +96,6 @@
   transition: background 0.15s;
 }
 .search-open-btn:hover { background: var(--surface); }
-
 /* ─── Overlay ─────────────────────────────────────── */
 .search-overlay {
   display: none;
@@ -168,7 +106,6 @@
   z-index: 3000;
 }
 .search-overlay.active { display: block; }
-
 /* ─── Modal ───────────────────────────────────────── */
 .search-modal {
   display: none;
@@ -186,9 +123,7 @@
   overflow: hidden;
 }
 .search-modal.active { display: block; }
-
 .search-modal-inner { padding: 1rem; }
-
 .search-input-wrap {
   display: flex;
   align-items: center;
@@ -198,7 +133,6 @@
   padding: 0.6rem 0.9rem;
   background: var(--surface);
 }
-
 #searchInput {
   flex: 1;
   border: none;
@@ -208,7 +142,6 @@
   outline: none;
   font-family: inherit;
 }
-
 .search-close-btn {
   background: none;
   border: none;
@@ -219,14 +152,12 @@
   line-height: 1;
 }
 .search-close-btn:hover { color: var(--text); }
-
 /* ─── Results ─────────────────────────────────────── */
 .search-results {
   margin-top: 0.75rem;
   max-height: 380px;
   overflow-y: auto;
 }
-
 .search-result-item {
   display: block;
   padding: 0.75rem 0.9rem;
@@ -238,20 +169,17 @@
 }
 .search-result-item:last-child { border-bottom: none; }
 .search-result-item:hover { background: var(--surface); text-decoration: none; }
-
 .search-result-title {
   font-size: 0.95rem;
   font-weight: 700;
   margin-bottom: 0.2rem;
   color: var(--text);
 }
-
 .search-result-excerpt {
   font-size: 0.78rem;
   color: var(--muted);
   line-height: 1.4;
 }
-
 .search-result-lang {
   font-size: 0.68rem;
   font-weight: 700;
@@ -260,7 +188,6 @@
   margin-bottom: 0.2rem;
   display: block;
 }
-
 .search-no-results {
   text-align: center;
   color: var(--muted);
@@ -269,11 +196,14 @@
 }
   </style>
 
-<div class="search-wrap">
-  <button class="search-open-btn" id="searchOpenBtn" aria-label="Search">
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-  </button>
-</div>
+  <div class="search-wrap">
+    <button class="search-open-btn" id="searchOpenBtn" aria-label="Search">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+  </div>
+</nav>
+
+<div class="overlay" id="overlay"></div>
 
 <!-- Search Modal -->
 <div class="search-overlay" id="searchOverlay"></div>
@@ -288,86 +218,65 @@
   </div>
 </div>
 
-  
-</nav>
-
-<div class="overlay" id="overlay"></div>
-
 <script>
 const navbtn = document.getElementById("navbtn");
 const menu = document.getElementById("menu");
 const overlay = document.getElementById("overlay");
-
 navbtn.addEventListener("click", () => {
   menu.classList.toggle("active");
   navbtn.classList.toggle("active");
   overlay.classList.toggle("active");
   document.body.style.overflow = menu.classList.contains("active") ? "hidden" : "";
 });
-
 function closeMenu(){
   menu.classList.remove("active");
   navbtn.classList.remove("active");
   overlay.classList.remove("active");
   document.body.style.overflow = "";
 }
-
 overlay.addEventListener("click", closeMenu);
 document.querySelectorAll(".menu a").forEach(link => link.addEventListener("click", closeMenu));
-
 const langBtn = document.getElementById("langBtn");
 const langDropdown = document.getElementById("langDropdown");
-
 langBtn.addEventListener("click", (e) => {
   e.stopPropagation();
   langDropdown.classList.toggle("active");
 });
-
 document.addEventListener("click", () => langDropdown.classList.remove("active"));
 </script>
-
-
 
 <script>
 (function () {
   const base = "{{ site.baseurl }}";
-  const currentLang = "{{ page.lang | default: 'es' }}";
-
-  const openBtn    = document.getElementById('searchOpenBtn');
-  const closeBtn   = document.getElementById('searchCloseBtn');
-  const overlay    = document.getElementById('searchOverlay');
-  const modal      = document.getElementById('searchModal');
-  const input      = document.getElementById('searchInput');
-  const results    = document.getElementById('searchResults');
-
+  const openBtn   = document.getElementById('searchOpenBtn');
+  const closeBtn  = document.getElementById('searchCloseBtn');
+  const sOverlay  = document.getElementById('searchOverlay');
+  const modal     = document.getElementById('searchModal');
+  const input     = document.getElementById('searchInput');
+  const results   = document.getElementById('searchResults');
   let index = [];
   let loaded = false;
-
   function openSearch() {
     modal.classList.add('active');
-    overlay.classList.add('active');
+    sOverlay.classList.add('active');
     document.body.style.overflow = 'hidden';
     input.focus();
     if (!loaded) loadIndex();
   }
-
   function closeSearch() {
     modal.classList.remove('active');
-    overlay.classList.remove('active');
+    sOverlay.classList.remove('active');
     document.body.style.overflow = '';
     input.value = '';
     results.innerHTML = '';
   }
-
   openBtn.addEventListener('click', openSearch);
   closeBtn.addEventListener('click', closeSearch);
-  overlay.addEventListener('click', closeSearch);
-
+  sOverlay.addEventListener('click', closeSearch);
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeSearch();
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); openSearch(); }
   });
-
   function loadIndex() {
     fetch(base + '/search.json')
       .then(r => r.json())
@@ -379,21 +288,16 @@ document.addEventListener("click", () => langDropdown.classList.remove("active")
         results.innerHTML = '<p class="search-no-results">Could not load search index.</p>';
       });
   }
-
   input.addEventListener('input', function () {
     const q = input.value.trim().toLowerCase();
     if (!q) { results.innerHTML = ''; return; }
-
-    // Filter by current page language
     const filtered = index.filter(item =>
       (item.title.toLowerCase().includes(q) || item.excerpt.toLowerCase().includes(q))
     );
-
     if (!filtered.length) {
       results.innerHTML = '<p class="search-no-results">No results found.</p>';
       return;
     }
-
     results.innerHTML = filtered.slice(0, 8).map(item => `
       <a href="${item.url}" class="search-result-item">
         <span class="search-result-lang">${item.lang}</span>
@@ -402,7 +306,6 @@ document.addEventListener("click", () => langDropdown.classList.remove("active")
       </a>
     `).join('');
   });
-
   function highlight(text, q) {
     const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
     return text.replace(re, '<mark style="background:#fef08a;border-radius:2px;padding:0 2px;">$1</mark>');
