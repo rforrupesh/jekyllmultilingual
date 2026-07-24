@@ -718,81 +718,91 @@ scripts:
 
 <main class="container1">
 
-  <!-- H1 + P — visible before upload, hidden after -->
-  <h1 class="page-title" id="pageTitle">Merge PDF Files</h1>
-  <p class="page-sub" id="pageSub">Upload your files, arrange them, click Merge PDF, and download your new combined PDF file.</p>
+<!-- H1 + P — visible before upload, hidden after -->
+<h1 class="page-title" id="pageTitle">Juntar arquivos PDF</h1>
+<p class="page-sub" id="pageSub">Envie seus arquivos, organize-os, clique em <strong>Juntar PDF</strong> e baixe um único arquivo PDF.</p>
 
-  <!-- UPLOAD STATE (centered, full viewport height) -->
-  <div id="uploadState">
-    <div class="upload-box" id="dropZone">
-      <div class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
-          <polyline points="17 8 12 3 7 8"/>
-          <line x1="12" y1="3" x2="12" y2="15"/>
+<!-- UPLOAD STATE (centered, full viewport height) -->
+<div id="uploadState">
+  <div class="upload-box" id="dropZone">
+    <div class="icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+        <polyline points="17 8 12 3 7 8"/>
+        <line x1="12" y1="3" x2="12" y2="15"/>
+      </svg>
+    </div>
+
+    <h2>Arraste os arquivos PDF aqui</h2>
+    <p>ou clique no botão abaixo para selecionar os arquivos.</p>
+
+    <button class="btn-black" id="browseBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+      </svg>
+      Selecionar arquivos
+    </button>
+
+    <p class="upload-note">
+      Ao enviar arquivos, você concorda com nossos
+      <a href="/pt/termos-de-uso/" target="_blank">Termos de Uso</a>
+      e nossa
+      <a href="/pt/politica-de-privacidade/" target="_blank">Política de Privacidade</a>.
+    </p>
+  </div>
+
+  <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
+</div>
+
+<!-- UPLOADED STATE -->
+<div id="uploadedState">
+  <div class="toolbar">
+    <div class="toolbar-left">
+      <span class="toolbar-title">Arquivos para juntar</span>
+      <span class="file-count" id="fileCount">0</span>
+
+      <button class="btn-sm" onclick="sortFiles('asc')">
+        <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
+          <path d="M1 3h10M3 6h6M5 9h2"/>
         </svg>
-      </div>
-   <h2>Drag PDF files here</h2>
-<p>or click the button below to browse.</p>
-      <button class="btn-black" id="browseBtn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-          <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
-        </svg>
-  Select Files
+        A–Z
       </button>
-        <p class="upload-note">
- By uploading files, you agree to our
-  <a href="/en/terms-of-use/" target="_blank">Terms of Use</a>
-and 
-  <a href="/en/privacy-policy/" target="_blank">Privacy Policy</a>.
-</p> 
-    </div>
-    <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
 
-  
-  </div>
-
-  <!-- UPLOADED STATE -->
-  <div id="uploadedState">
-    <div class="toolbar">
-      <div class="toolbar-left">
-        <span class="toolbar-title">Files to merge</span>
-        <span class="file-count" id="fileCount">0</span>
-        <button class="btn-sm" onclick="sortFiles('asc')">
-          <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
-            <path d="M1 3h10M3 6h6M5 9h2"/>
-          </svg>A-Z
-        </button>
-        <button class="btn-sm" onclick="sortFiles('desc')">
-          <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
-            <path d="M1 9h10M3 6h6M5 3h2"/>
-          </svg>Z–A
-        </button>
-      </div>
-      <div class="toolbar-right">
-        <button class="btn-add-top" onclick="document.getElementById('moreInput').click()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
-          </svg>Add PDF
-        </button>
-        <button class="btn-merge-top" id="mergeBtnTop" onclick="mergePDFs()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <path d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h3M16 6h3a2 2 0 012 2v8a2 2 0 01-2 2h-3M12 3v18"/>
-          </svg>
-Combine PDF
-        </button>
-      </div>
+      <button class="btn-sm" onclick="sortFiles('desc')">
+        <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
+          <path d="M1 9h10M3 6h6M5 3h2"/>
+        </svg>
+        Z–A
+      </button>
     </div>
 
-    <div class="file-list-wrap" id="fileList"></div>
+    <div class="toolbar-right">
+      <button class="btn-add-top" onclick="document.getElementById('moreInput').click()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="12" y1="5" x2="12" y2="19"/>
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+        Adicionar PDF
+      </button>
 
-    <div class="progress-wrap" id="progressWrap">
-      <div class="spinner"></div>
-      <span class="progress-text" id="progressText">Merging…</span>
+      <button class="btn-merge-top" id="mergeBtnTop" onclick="mergePDFs()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h3M16 6h3a2 2 0 012 2v8a2 2 0 01-2 2h-3M12 3v18"/>
+        </svg>
+        Juntar PDF
+      </button>
     </div>
   </div>
 
-  <input type="file" id="moreInput" multiple accept="application/pdf" hidden>
+  <div class="file-list-wrap" id="fileList"></div>
+
+  <div class="progress-wrap" id="progressWrap">
+    <div class="spinner"></div>
+    <span class="progress-text" id="progressText">Juntando PDFs...</span>
+  </div>
+</div>
+
+<input type="file" id="moreInput" multiple accept="application/pdf" hidden>
 
   <!-- INFO — only shown before upload -->
 <div id="infoContent" class="post-content">
@@ -800,150 +810,131 @@ Combine PDF
 
 <div id="split-pdf-info">
  
-  <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
-    <p class="isec-card__text">
-         Merging multiple PDF documents into a single PDF file is extremely easy with our tool. Don't waste time combining PDFs manually.
-    </p> 
-    <p class="isec-card__text">
-      Our PDF Merger is a free online PDF tool that helps you join, merge, and combine two or more PDF files instantly
-      without reducing quality.
-    </p>
+<section class="isec-block isec-articles" aria-labelledby="isec-why-title">
+  <p class="isec-card__text">
+    Juntar vários documentos PDF em um único arquivo PDF é muito fácil com a nossa ferramenta. Não perca tempo juntando PDFs manualmente.
+  </p>
 
-    <p class="isec-card__text">
-      It uses advanced technology to merge your PDF documents quickly, easily, and securely with a single click. Easily
-      combine PDF pages, organize PDF files, and create a high-quality PDF online anytime, anywhere.
-    </p>
-  </section>
+  <p class="isec-card__text">
+    Nossa ferramenta para juntar PDF é gratuita e permite unir, juntar e combinar dois ou mais arquivos PDF instantaneamente, sem perder a qualidade.
+  </p>
+
+  <p class="isec-card__text">
+    Utilizamos tecnologia avançada para juntar seus documentos PDF de forma rápida, fácil e segura com apenas um clique. Organize páginas, una arquivos PDF e crie um PDF de alta qualidade online, a qualquer hora e em qualquer lugar.
+  </p>
+</section>
 
 <section>
-   <figure class="isec-media"> 
+  <figure class="isec-media">
     <img src="/assets/img/unir.webp"
-         alt="Combine multiple PDF files into one instantly"
+         alt="Junte vários arquivos PDF em um único documento instantaneamente"
          loading="lazy"
          width="710"
          height="350">
 
     <figcaption>
-        Combine multiple PDF files into one instantly
+      Junte vários arquivos PDF em um único documento instantaneamente
     </figcaption>
-</figure>
+  </figure>
 </section>
 
-  <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
-    <p class="isec-card__text">
-       Receiving hundreds of PDF files in your file manager from school projects, office work, university assignments, business documents, or professional tasks can make it difficult to manage important documents properly. These files can easily be misplaced, lost, or mixed with unnecessary documents if they are not organized in time.
+<section class="isec-block isec-articles" aria-labelledby="isec-why-title">
+  <p class="isec-card__text">
+    Receber centenas de arquivos PDF de projetos escolares, trabalhos do escritório, atividades da faculdade, documentos empresariais ou tarefas profissionais pode dificultar a organização dos documentos importantes. Sem uma boa organização, esses arquivos podem ser perdidos, ficar fora de ordem ou se misturar com documentos desnecessários.
+  </p>
 
+  <p class="isec-card__text">
+    Em vez de manter vários documentos PDF separados, é muito mais prático reuni-los em um único arquivo PDF. Isso facilita o gerenciamento dos documentos, o compartilhamento, o acesso rápido e o armazenamento seguro. Manter todos os PDFs em um único documento também ajuda a economizar espaço, aumentar a produtividade e manter seus arquivos sempre organizados.
+  </p>
+</section>
 
-    </p> 
-    <p class="isec-card__text">
-     Instead of storing multiple PDF documents separately, it is better to combine and organize them into a single PDF file for better document management, easier sharing, faster access, and secure storage. Managing PDFs in one document helps save storage space, improves productivity, and keeps important files well organized.
+<section class="isec-block isec-why" aria-labelledby="isec-why-title">
+  <div class="isec-block__head">
+    <h2 id="isec-why-title" class="isec-block__title">Por que usar o UnificarPDF.com para juntar arquivos PDF?</h2>
+  </div>
 
+  <div class="isec-card-grid">
 
-    </p>
-
-  </section>
-
-
-  <section class="isec-block isec-why" aria-labelledby="isec-why-title">
-    <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Why use UnificarPDF.com to merge PDF files?</h2>
+    <div class="isec-card">
+      <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg></span>
+      <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
+      </span>
+      <h3 class="isec-card__title">Junte arquivos rapidamente</h3>
+      <p class="isec-card__text">Nossa ferramenta online de alta velocidade é ideal para juntar relatórios, faturas, documentos digitalizados e arquivos empresariais sem atrasos. Ela aumenta a produtividade e facilita o gerenciamento de documentos digitais.</p>
     </div>
-    <div class="isec-card-grid">
 
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
-        </span>
-        <h3 class="isec-card__title">Fast File Merging</h3>
-        <p class="isec-card__text">This high-speed online merger is ideal for combining reports, invoices, scanned pages, and business documents without delays. It improves workflow efficiency and helps users manage digital files more easily.</p>
-      </div>
-
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
-        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
-        </span>
-        <h3 class="isec-card__title">Easy to Use</h3>
-        <p class="isec-card__text">A simple drag-and-drop interface allows users to merge PDF files easily without technical knowledge. Upload documents, rearrange pages, and create a clean, organized PDF in just a few clicks.</p>
-      </div>
-
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg></span>
-        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
-        </span>
-        <h3 class="isec-card__title">Secure File Processing</h3>
-        <p class="isec-card__text">All uploaded documents are processed securely. The tool is designed with privacy protection in mind, making it a reliable option for combining sensitive files such as contracts, financial reports, and personal documents. Files are automatically deleted after processing.</p>
-      </div>
-
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-        </span>
-        <h3 class="isec-card__title">High-Quality PDF Output</h3>
-        <p class="isec-card__text">Our PDF merge tool preserves original formatting, image clarity, and text quality when combining files. Whether for business reports, study notes, or scanned documents, the final merged file remains professional, clear, and ready to share or print.</p>
-      </div>
-
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></span>
-        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
-        </span>
-        <h3 class="isec-card__title">Available on all operating systems.</h3>
-        <p class="isec-card__text">The online PDF merging tool is available on Windows, Mac, Linux, Android, and iPhone without any installation.</p>
-      </div>
-
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span>
-        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
-        </span>
-        <h3 class="isec-card__title">Free and Practical Tool</h3>
-        <p class="isec-card__text"> Users can merge documents online without cost or registration. It is a practical solution for organizing assignments, invoices, ebooks, resumes, and scanned files into a single PDF document, available online anytime and anywhere.</p>
-      </div>
-
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
-        </span>
-        <h3 class="isec-card__title">It maintains the original page order</h3>
-        <p class="isec-card__text">The order of the pages is preserved in all files when you join them, or you can rearrange them as you prefer.</p>
-      </div>
-
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg></span>
-        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg>
-        </span>
-        <h3 class="isec-card__title">Unlimited Merges, No Daily Limit </h3>
-        <p class="isec-card__text">There's no cap on how many times you can use the tool in a day. Merge one file today and fifty tomorrow — the tool stays free and accessible every time.  </p>
-      </div>
-
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span>
-        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
-        </span>
-        <h3 class="isec-card__title">No Watermarks on the Output Files</h3>
-        <p class="isec-card__text">The merged PDF comes out clean — no branding, stamps, or watermark text added anywhere in the file, so it's ready to send to a client or submit as-is. </p>
-      </div>
-
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
-        </span>
-        <h3 class="isec-card__title">No Metadata Injected Into Your Output</h3>
-        <p class="isec-card__text">The tool does not add any hidden metadata or tracking information to the merged PDF. The output file is clean and free of any additional data that could compromise privacy or security.</p>
-      </div>
-    
-
-
+    <div class="isec-card">
+      <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
+      <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
+      </span>
+      <h3 class="isec-card__title">Fácil de usar</h3>
+      <p class="isec-card__text">A interface simples de arrastar e soltar permite juntar arquivos PDF sem precisar de conhecimentos técnicos. Basta enviar os arquivos, reorganizar as páginas e criar um PDF organizado em poucos cliques.</p>
     </div>
-  </section>
+
+    <div class="isec-card">
+      <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg></span>
+      <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+      </span>
+      <h3 class="isec-card__title">Processamento seguro</h3>
+      <p class="isec-card__text">Todos os documentos enviados são processados com segurança. A ferramenta protege sua privacidade e é ideal para juntar contratos, relatórios financeiros e documentos pessoais. Os arquivos são excluídos automaticamente após o processamento.</p>
+    </div>
+
+    <div class="isec-card">
+      <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
+      <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+      </span>
+      <h3 class="isec-card__title">PDF com qualidade original</h3>
+      <p class="isec-card__text">Nossa ferramenta preserva a formatação, a qualidade das imagens e a nitidez do texto. O PDF final mantém aparência profissional, pronto para compartilhar ou imprimir.</p>
+    </div>
+
+    <div class="isec-card">
+      <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></span>
+      <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
+      </span>
+      <h3 class="isec-card__title">Compatível com todos os dispositivos</h3>
+      <p class="isec-card__text">Use a ferramenta para juntar PDFs no Windows, Mac, Linux, Android e iPhone sem instalar nenhum programa.</p>
+    </div>
+
+    <div class="isec-card">
+      <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span>
+      <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
+      </span>
+      <h3 class="isec-card__title">Gratuito e prático</h3>
+      <p class="isec-card__text">Junte documentos online gratuitamente, sem cadastro. Ideal para organizar trabalhos, faturas, e-books, currículos e documentos digitalizados em um único PDF.</p>
+    </div>
+
+    <div class="isec-card">
+      <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg></span>
+      <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
+      </span>
+      <h3 class="isec-card__title">Mantém a ordem original das páginas</h3>
+      <p class="isec-card__text">A ordem das páginas é preservada automaticamente, mas você também pode reorganizar os arquivos como preferir antes de juntar.</p>
+    </div>
+
+    <div class="isec-card">
+      <h3 class="isec-card__title">Junte PDFs sem limites</h3>
+      <p class="isec-card__text">Não existe limite diário de uso. Você pode juntar quantos arquivos PDF quiser, sempre de forma gratuita.</p>
+    </div>
+
+    <div class="isec-card">
+      <h3 class="isec-card__title">Sem marca d'água</h3>
+      <p class="isec-card__text">O PDF gerado não recebe marcas d'água, logotipos ou textos adicionais. Seu documento permanece limpo e pronto para compartilhar.</p>
+    </div>
+
+    <div class="isec-card">
+      <h3 class="isec-card__title">Sem metadados adicionados</h3>
+      <p class="isec-card__text">Nenhum metadado oculto ou informação de rastreamento é adicionada ao PDF final. Seus arquivos permanecem privados e seguros.</p>
+    </div>
+
+  </div>
+</section>
 
   <section class="isec-block isec-how" aria-labelledby="isec-how-title">
     <div class="isec-block__head">
