@@ -10,7 +10,7 @@ Que se passe-t-il exactement avec vos fichiers lorsque vous utilisez notre site 
 
 ## À propos de nous
 
-Notre application a été créée dans un seul but : simplifier l’[édition de PDF](/blog/comment-utiliser-unificarpdf-com/). Notre audience est variée et comprend des secrétaires, des étudiants, des avocats, des enseignants ainsi que des propriétaires de petites entreprises. Chaque personne qui utilise notre service mérite notre attention et notre respect.
+Notre application a été créée dans un seul but : simplifier l’[édition de PDF](/fr/upload/). Notre audience est variée et comprend des secrétaires, des étudiants, des avocats, des enseignants ainsi que des propriétaires de petites entreprises. Chaque personne qui utilise notre service mérite notre attention et notre respect.
 
 ## Votre fichier est automatiquement protégé dès son téléversement
 
