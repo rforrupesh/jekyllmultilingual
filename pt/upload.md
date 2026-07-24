@@ -743,9 +743,9 @@ scripts:
       </button>
       <p class="upload-note">
         By uploading files, you agree to our
-        <a href="/en/terms-of-use/" target="_blank">Terms of Use</a>
+        <a href="/pt/termos-de-uso/" target="_blank">Terms of Use</a>
         and our
-        <a href="/en/privacy-policy/" target="_blank">Privacy Policy</a>.
+        <a href="/pt/politica-de-privacidade/" target="_blank">Privacy Policy</a>.
       </p>
     </div>
     <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
