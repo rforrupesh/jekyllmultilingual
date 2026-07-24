@@ -1,56 +1,61 @@
 ---
 layout: blog
 title: "Category Archive"
+permalink: /blog/category/
 ---
 
-<h1 id="category-title">Category: Loading...</h1>
+<h1 id="cat-title">Category</h1>
+<p id="no-posts" style="display:none;">Koi post nahi mila is category mein.</p>
 
-<!-- Agar aapka main layout post-list wrapper use karta hai toh thoda design theek kar sakte hain -->
-<ul id="post-list" style="list-style: none; padding: 0;">
-  {% for post in site.posts %}
-    {% for cat in post.categories %}
-      <!-- Humne data-category attribute add kiya hai jisme slugify category store hogi -->
-      <li class="post-item" data-category="{{ cat | slugify }}" style="display: none; margin-bottom: 10px;">
-        <a href="{{ post.url | relative_url }}" style="font-weight: bold; font-size: 1.2rem; text-decoration: none;">{{ post.title }}</a> 
-        <span style="color: #666; font-size: 0.9rem;">— {{ post.date | date: "%b %d, %Y" }}</span>
-      </li>
-    {% endfor %}
-  {% endfor %}
+<ul id="post-list" style="list-style:none; padding:0;">
+{% for post in site.posts %}
+  {% assign cats = post.categories | join: "," %}
+  <li class="post-item"
+      data-categories="{{ cats | slugify: 'latin' | downcase }}"
+      style="display:none; margin-bottom:1rem;">
+    <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a><br>
+    <small>{{ post.date | date: "%b %d, %Y" }}</small>
+    {% if post.categories.size > 0 %}
+      <br><small>Categories:
+        {% for cat in post.categories %}
+          <a href="/blog/category/?c={{ cat | slugify }}">{{ cat }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </small>
+    {% endif %}
+  </li>
+{% endfor %}
 </ul>
 
-<div id="no-posts" style="display: none; color: #777; font-style: italic;">
-  Is category me koi post nahi mila.
-</div>
-
 <script>
-  // 1. URL parameters se category read karein
-  const urlParams = new URLSearchParams(window.location.search);
-  let currentCat = urlParams.get('c');
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const currentCat = (params.get('c') || '').trim().toLowerCase();
 
-  if (currentCat) {
-    // 2. Browser text ko clean karke slug me badlein (spaces to hyphens, lowercase)
-    currentCat = currentCat.trim().toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-');
-
-    // Heading update karein (Thoda sundar dekhne ke liye capitalization handle karein)
-    const displayTitle = currentCat.replace(/-/g, ' ').toUpperCase();
-    document.getElementById('category-title').innerText = "Category: " + displayTitle;
-    
-    // 3. Sabhi post items ko loop karke data attribute match karein
-    const posts = document.querySelectorAll('.post-item');
-    let foundCount = 0;
-
-    posts.forEach(post => {
-      if (post.getAttribute('data-category') === currentCat) {
-        post.style.display = 'block';
-        foundCount++;
-      }
-    });
-
-    // 4. Agar koi post na mile toh fallback message dikhayein
-    if (foundCount === 0) {
-      document.getElementById('no-posts').style.display = 'block';
-    }
-  } else {
-    document.getElementById('category-title').innerText = "Koi category select nahi ki gayi hai.";
+  if (!currentCat) {
+    document.getElementById('cat-title').textContent = 'Koi category select nahi ki.';
+    return;
   }
+
+  // Display name: hyphens ko spaces mein badlo aur capitalize karo
+  const displayName = currentCat.replace(/-/g, ' ')
+    .replace(/\b\w/g, c => c.toUpperCase());
+  document.getElementById('cat-title').textContent = 'Category: ' + displayName;
+  document.title = 'Category: ' + displayName;
+
+  const items = document.querySelectorAll('.post-item');
+  let count = 0;
+
+  items.forEach(function(item) {
+    // data-categories mein comma-separated slugified cats hain
+    const itemCats = item.getAttribute('data-categories').split(',');
+    if (itemCats.some(c => c.trim() === currentCat)) {
+      item.style.display = 'block';
+      count++;
+    }
+  });
+
+  if (count === 0) {
+    document.getElementById('no-posts').style.display = 'block';
+  }
+})();
 </script>
