@@ -798,9 +798,9 @@ scripts:
         </button>
         <p class="upload-note">
             En chargeant vos fichiers, vous acceptez nos
-  <a href="https://rforrupesh.github.io/jekyllmultilingual/terminos-de-uso/" target="_blank">Conditions d'Utilisation</a>
+  <a href="/fr/conditions-dutilisation/" target="_blank">Conditions d'Utilisation</a>
   ainsi que notre
-  <a href="https://rforrupesh.github.io/jekyllmultilingual/politica-de-privacidad/" target="_blank">Politique de Confidentialité</a>.
+  <a href="/fr/politique-de-confidentialite/" target="_blank">Politique de Confidentialité</a>.
   
         </p>
       </div>
