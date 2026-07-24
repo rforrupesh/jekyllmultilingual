@@ -40,7 +40,7 @@ layout: default
           "@type": "ListItem",
           "position": 1,
           "name": "{{ t.nav.home }}",
-          "item": "{{ site.url }}{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}"
+"item": "{{ site.url }}{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% elsif lang == 'pt' %}pt/{% endif %}"     
         },
         {
           "@type": "ListItem",
@@ -80,8 +80,8 @@ layout: default
 <nav class="breadcrumb" aria-label="breadcrumb">
   <div class="container">
     <ol>
-      <li><a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% endif %}">{{ t.nav.home }}</a></li>
-      <li aria-current="page">{{ t.blog.title }}</li>
+<li><a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% elsif lang == 'pt' %}pt/{% endif %}">{{ t.nav.home }}</a></li>
+         <li aria-current="page">{{ t.blog.title }}</li>
     </ol>
   </div>
 </nav>
