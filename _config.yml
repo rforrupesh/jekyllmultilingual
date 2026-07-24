@@ -74,11 +74,9 @@ include:
 plugins:
   - jekyll-archives
 
-jekyll-archives:
-  enabled: [categories, tags]
-  layout: 'blog' # Aapka universal layout
-  permalinks:
-    category: '/blog/category/:name/'
-    tag: '/blog/tag/:name/'
-
-  
+# _config.yml
+category_list:
+  - tech
+  - cat
+  - tutorial
+  # jitni bhi categories hain
