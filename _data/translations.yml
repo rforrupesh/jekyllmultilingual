@@ -78,3 +78,30 @@ es:
     rights: "Todos los derechos reservados. Hecho con Love"
     terms: "Términos de Uso"
     privacy: "Política de Privacidad"
+
+pt:
+  lang_name: "Português"
+  lang_code: "pt"
+  dir: "ltr"
+  nav:
+    home: "Início"
+    upload: "Unir PDF"
+    blog: "Blog"
+    about: "Sobre"
+    splitpdf: "Dividir PDF"
+    jpgapdf: "JPG para PDF"
+  blog:
+    title: "Blog"
+    read_more: "Leia mais"
+    back: "← Voltar ao Blog"
+    posted_on: "Publicado em"
+    keep_reading: "Continue lendo"
+    toc: "Índice"
+  home:
+    heading: "Bem-vindo"
+    subheading: "Um site simples multilíngue desenvolvido com Jekyll."
+    cta: "Ler o blog"
+  footer:
+    rights: "Todos os direitos reservados. Feito com Love"
+    terms: "Termos de Uso"
+    privacy: "Política de Privacidade"
