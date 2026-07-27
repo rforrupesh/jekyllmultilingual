@@ -6,23 +6,26 @@
 {% assign en_exists = false %}
 {% assign fr_exists = false %}
 {% assign pt_exists = false %}
+{% assign th_exists = false %}
 
 {% assign es_switch = base | append: "/" %}
 {% assign en_switch = base | append: "/en/" %}
 {% assign fr_switch = base | append: "/fr/" %}
 {% assign pt_switch = base | append: "/pt/" %}
-
+{% assign th_switch = base | append: "/th/" %}
 
 {% if page.ref %}
   {% assign es_post = site.posts | where: "ref", page.ref | where: "lang", "es" | first %}
   {% assign en_post = site.posts | where: "ref", page.ref | where: "lang", "en" | first %}
   {% assign fr_post = site.posts | where: "ref", page.ref | where: "lang", "fr" | first %}
   {% assign pt_post = site.posts | where: "ref", page.ref | where: "lang", "pt" | first %}
+  {% assign th_post = site.posts | where: "ref", page.ref | where: "lang", "th" | first %}
+
   {% assign es_page = site.pages | where: "ref", page.ref | where: "lang", "es" | first %}
   {% assign en_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
   {% assign fr_page = site.pages | where: "ref", page.ref | where: "lang", "fr" | first %}
   {% assign pt_page = site.pages | where: "ref", page.ref | where: "lang", "pt" | first %}
-
+  {% assign th_page = site.pages | where: "ref", page.ref | where: "lang", "th" | first %}
 
   {% if es_post %}{% assign es_exists = true %}{% assign es_switch = base | append: es_post.url %}
   {% elsif es_page %}{% assign es_exists = true %}{% assign es_switch = base | append: es_page.url %}{% endif %}
@@ -35,11 +38,14 @@
 
   {% if pt_post %}{% assign pt_exists = true %}{% assign pt_switch = base | append: pt_post.url %}
   {% elsif pt_page %}{% assign pt_exists = true %}{% assign pt_switch = base | append: pt_page.url %}{% endif %}
+
+  {% if th_post %}{% assign th_exists = true %}{% assign th_switch = base | append: th_post.url %}
+  {% elsif th_page %}{% assign th_exists = true %}{% assign th_switch = base | append: th_page.url %}{% endif %}
 {% endif %}
 
 <nav aria-label="Main navigation">
-  <a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% elsif lang == 'pt' %}pt/{% endif %}" class="logo">
-    <img src="/assets/img/logo.webp" alt="{{ site.title }}">
+<a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% elsif lang == 'pt' %}pt/{% elsif lang == 'th' %}th/{% endif %}" class="logo">
+  <img src="/assets/img/logo.webp" alt="{{ site.title }}">
     <span>UniFicar PDF</span>
   </a>
 
@@ -49,7 +55,7 @@
        {% if nav_page %}
     <a href="{{ base }}{{ nav_page.url }}">{{ t.nav[item.key] }}</a>
         {% else %}
-    <a href="{{ base }}/{% if lang == 'en' %}en/{% elsif lang == 'fr' %}fr/{% elsif lang == 'pt' %}pt/{% endif %}{{ item.slug }}">{{ t.nav[item.key] }}</a>
+<a href="{{ base }}/{% if lang == 'en' %}en/{% elsif lang == 'fr' %}fr/{% elsif lang == 'pt' %}pt/{% elsif lang == 'th' %}th/{% endif %}{{ item.slug }}">{{ t.nav[item.key] }}</a>
     {% endif %}
   {% endfor %}
   </div>
@@ -81,6 +87,11 @@
     <a href="{{ pt_switch }}" hreflang="pt" {% if lang == "pt" %}class="active-lang"{% endif %}>
       <img src="/assets/img/flags/pt.svg" alt="Português" /> Português
     </a>
+  {% endif %}
+  {% if th_exists %}
+  <a href="{{ th_switch }}" hreflang="th" {% if lang == "th" %}class="active-lang"{% endif %}>
+    <img src="/assets/img/flags/th.svg" alt="ไทย" /> ไทย
+  </a>
   {% endif %}
 {% else %}
   <a href="#" class="active-lang">
