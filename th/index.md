@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Merge PDF Files Online for Free — Combine PDFs into One Document​
-description: "Upload and organize your PDF files easily, then download a single merged document. Fast, unlimited, and free. An online PDF Merge tool with no limits."
-keywords: "Merge PDF, Split PDF, Combine PDF, Separate PDF, Compress PDF, Convert PDF, Word to PDF, Excel to PDF, PowerPoint to PDF, PDF to JPG, JPG to PDF"
+title: รวมไฟล์ PDF ออนไลน์ฟรี — รวม PDF หลายไฟล์เป็นเอกสารเดียว​
+description: "อัปโหลดและจัดเรียงไฟล์ PDF ของคุณได้ง่าย ๆ จากนั้นดาวน์โหลดเป็นเอกสารเดียว รวดเร็ว ไม่จำกัดจำนวน และฟรี เครื่องมือรวม PDF ออนไลน์ไม่มีข้อจำกัด"
+keywords: "รวม PDF, รวมไฟล์ PDF, แยกไฟล์ PDF, รวมไฟล์ PDF ออนไลน์, แยก PDF, บีบอัด PDF, แปลงไฟล์ PDF, Word เป็น PDF, Excel เป็น PDF, PowerPoint เป็น PDF, PDF เป็น JPG, JPG เป็น PDF"
 ref: home
-lang: en
-permalink: /en/
+lang: th
+permalink: /th/
 head_style: |
   #infoContent {
   max-width: 1120px;
@@ -720,7 +720,7 @@ scripts:
 
   <!-- H1 + P — visible before upload, hidden after -->
   <h1 class="page-title" id="pageTitle">รวมไฟล์ PDF</h1>
-  <p class="page-sub" id="pageSub">Upload your files, arrange them, click Merge PDF, and download your new combined PDF file.</p>
+  <p class="page-sub" id="pageSub">อัปโหลดไฟล์ของคุณ จัดเรียงลำดับ กดปุ่ม "รวม PDF" แล้วดาวน์โหลดไฟล์ PDF ที่รวมเสร็จแล้วได้เลย</p>
 
   <!-- UPLOAD STATE (centered, full viewport height) -->
   <div id="uploadState">
