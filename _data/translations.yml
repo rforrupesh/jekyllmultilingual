@@ -105,3 +105,30 @@ pt:
     rights: "Todos os direitos reservados. Feito com Love"
     terms: "Termos de Uso"
     privacy: "Política de Privacidade"
+
+th:
+  lang_name: "ไทย"
+  lang_code: "th"
+  dir: "ltr"
+  nav:
+    home: "หน้าแรก"
+    upload: "รวม PDF"
+    blog: "บล็อก"
+    about: "เกี่ยวกับ"
+    splitpdf: "แยก PDF"
+    jpgapdf: "JPG เป็น PDF"
+  blog:
+    title: "บล็อก"
+    read_more: "อ่านเพิ่มเติม"
+    back: "← กลับไปที่บล็อก"
+    posted_on: "เผยแพร่เมื่อ"
+    keep_reading: "อ่านต่อ"
+    toc: "สารบัญ"
+  home:
+    heading: "ยินดีต้อนรับ"
+    subheading: "เว็บไซต์หลายภาษาที่เรียบง่าย สร้างด้วย Jekyll"
+    cta: "อ่านบล็อก"
+  footer:
+    rights: "สงวนลิขสิทธิ์ทั้งหมด Made with Love"
+    terms: "ข้อกำหนดการใช้งาน"
+    privacy: "นโยบายความเป็นส่วนตัว"
