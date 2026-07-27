@@ -732,19 +732,18 @@ scripts:
           <line x1="12" y1="3" x2="12" y2="15"/>
         </svg>
       </div>
-   <h2>Drag PDF files here</h2>
-<p>or click the button below to browse.</p>
+   <h2>ลากไฟล์ PDF มาที่นี่</h2>
+<p>หรือคลิกปุ่มด้านล่างเพื่อเรียกดูข้อมูลเพิ่มเติม</p>
       <button class="btn-black" id="browseBtn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
         </svg>
-  Select Files
+ เลือกไฟล์
       </button>
         <p class="upload-note">
- By uploading files, you agree to our
-  <a href="/en/terms-of-use/" target="_blank">Terms of Use</a>
-and 
-  <a href="/en/privacy-policy/" target="_blank">Privacy Policy</a>.
+เมื่อคุณอัปโหลดไฟล์ คุณตกลงที่จะปฏิบัติตาม
+  <a href="/en/terms-of-use/" target="_blank">ข้อกำหนดการใช้งาน</a>
+และ   <a href="/en/privacy-policy/" target="_blank">นโยบายความเป็นส่วนตัว</a>.
 </p> 
     </div>
     <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
@@ -756,7 +755,7 @@ and
   <div id="uploadedState">
     <div class="toolbar">
       <div class="toolbar-left">
-        <span class="toolbar-title">Files to merge</span>
+        <span class="toolbar-title">ไฟล์ที่จะรวมเข้าด้วยกัน</span>
         <span class="file-count" id="fileCount">0</span>
         <button class="btn-sm" onclick="sortFiles('asc')">
           <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
@@ -773,13 +772,13 @@ and
         <button class="btn-add-top" onclick="document.getElementById('moreInput').click()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
-          </svg>Add PDF
+          </svg>เพิ่มไฟล์ PDF
         </button>
         <button class="btn-merge-top" id="mergeBtnTop" onclick="mergePDFs()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <path d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h3M16 6h3a2 2 0 012 2v8a2 2 0 01-2 2h-3M12 3v18"/>
           </svg>
-Combine PDF
+รวมไฟล์ PDF
         </button>
       </div>
     </div>
@@ -1921,7 +1920,7 @@ function render() {
 
   const addBtn = document.createElement('button');
   addBtn.className = 'add-row-btn';
-  addBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Add more files`;
+  addBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>เพิ่มไฟล์เพิ่มเติม`;
   addBtn.onclick = () => $('moreInput').click();
   list.appendChild(addBtn);
 }
