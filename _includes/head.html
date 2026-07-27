@@ -9,20 +9,26 @@
 {% assign en_url = page.url %}
 {% assign fr_url = page.url %}
 {% assign pt_url = page.url %}
+{% assign th_url = page.url %}
 {% assign es_exists = false %}
 {% assign en_exists = false %}
 {% assign fr_exists = false %}
 {% assign pt_exists = false %}
+{% assign th_exists = false %}
+
 
 {% if page.ref %}
   {% assign es_post = site.posts | where: "ref", page.ref | where: "lang", "es" | first %}
   {% assign en_post = site.posts | where: "ref", page.ref | where: "lang", "en" | first %}
   {% assign fr_post = site.posts | where: "ref", page.ref | where: "lang", "fr" | first %}
   {% assign pt_post = site.posts | where: "ref", page.ref | where: "lang", "pt" | first %}
+  {% assign th_post = site.posts | where: "ref", page.ref | where: "lang", "th" | first %}
   {% assign es_page = site.pages | where: "ref", page.ref | where: "lang", "es" | first %}
   {% assign en_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
   {% assign fr_page = site.pages | where: "ref", page.ref | where: "lang", "fr" | first %}
   {% assign pt_page = site.pages | where: "ref", page.ref | where: "lang", "pt" | first %}
+  {% assign th_page = site.pages | where: "ref", page.ref | where: "lang", "th" | first %}
+
 
   {% if es_post %}{% assign es_exists = true %}{% assign es_url = es_post.url %}
   {% elsif es_page %}{% assign es_exists = true %}{% assign es_url = es_page.url %}{% endif %}
@@ -35,6 +41,10 @@
 
   {% if pt_post %}{% assign pt_exists = true %}{% assign pt_url = pt_post.url %}
   {% elsif pt_page %}{% assign pt_exists = true %}{% assign pt_url = pt_page.url %}{% endif %}
+
+{% if th_post %}{% assign th_exists = true %}{% assign th_url = th_post.url %}
+  {% elsif th_page %}{% assign th_exists = true %}{% assign th_url = th_page.url %}{% endif %}
+
 {% endif %}
 
 <!-- Meta -->
@@ -54,6 +64,7 @@
 {% if en_exists %}<link rel="alternate" href="{{ base }}{{ en_url }}" hreflang="en" />{% endif %}
 {% if fr_exists %}<link rel="alternate" href="{{ base }}{{ fr_url }}" hreflang="fr" />{% endif %}
 {% if pt_exists %}<link rel="alternate" href="{{ base }}{{ pt_url }}" hreflang="pt" />{% endif %}
+{% if th_exists %}<link rel="alternate" href="{{ base }}{{ th_url }}" hreflang="th" />{% endif %}
 {% if es_exists %}<link rel="alternate" href="{{ base }}{{ es_url }}" hreflang="x-default" />{% endif %}
 
 <!-- Favicon -->
@@ -67,11 +78,12 @@
 <meta property="og:description" content="{{ page_desc }}" />
 <meta property="og:url" content="{{ canonical_url }}" />
 <meta property="og:site_name" content="{{ site.title }}" />
-<meta property="og:locale" content="{% if lang == 'fr' %}fr_FR{% elsif lang == 'en' %}en_US{% elsif lang == 'pt' %}pt_PT{% else %}es_ES{% endif %}" />
+<meta property="og:locale" content="{% if lang == 'fr' %}fr_FR{% elsif lang == 'en' %}en_US{% elsif lang == 'pt' %}pt_PT{% elsif lang == 'th' %}th_TH{% else %}es_ES{% endif %}" />
 {% if es_exists %}<meta property="og:locale:alternate" content="es_ES" />{% endif %}
 {% if en_exists %}<meta property="og:locale:alternate" content="en_US" />{% endif %}
 {% if fr_exists %}<meta property="og:locale:alternate" content="fr_FR" />{% endif %}
 {% if pt_exists %}<meta property="og:locale:alternate" content="pt_PT" />{% endif %}
+{% if th_exists %}<meta property="og:locale:alternate" content="th_TH" />{% endif %}
 {% if page.image %}
 <meta property="og:image" content="{{ base }}/assets/img/{{ page.image }}" />
 <meta property="og:image:alt" content="{{ page_title }}" />
