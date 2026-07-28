@@ -799,8 +799,8 @@ scripts:
         <p class="upload-note">
 
            เมื่อคุณอัปโหลดไฟล์ คุณตกลงที่จะปฏิบัติตาม
-  <a href="/en/terms-of-use/" target="_blank">ข้อกำหนดการใช้งาน</a>
-   และ <a href="/en/privacy-policy/" target="_blank">นโยบายความเป็นส่วนตัว</a> ของ เรา
+  <a href="/th/terms-of-use/" target="_blank">ข้อกำหนดการใช้งาน</a>
+   และ <a href="/th/privacy-policy/" target="_blank">นโยบายความเป็นส่วนตัว</a> ของ เรา
   
         </p>
       </div>
