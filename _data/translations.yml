@@ -132,3 +132,30 @@ th:
     rights: "สงวนลิขสิทธิ์ทั้งหมด Made with Love"
     terms: "ข้อกำหนดการใช้งาน"
     privacy: "นโยบายความเป็นส่วนตัว"
+
+id:
+  lang_name: "Bahasa Indonesia"
+  lang_code: "id"
+  dir: "ltr"
+  nav:
+    home: "Beranda"
+    upload: "Gabungkan PDF"
+    blog: "Blog"
+    about: "Tentang"
+    splitpdf: "Pisahkan PDF"
+    jpgapdf: "JPG ke PDF"
+  blog:
+    title: "Blog"
+    read_more: "Baca selengkapnya"
+    back: "← Kembali ke Blog"
+    posted_on: "Diposting pada"
+    keep_reading: "Baca Terus"
+    toc: "Daftar Isi"
+  home:
+    heading: "Selamat Datang"
+    subheading: "Situs multibahasa sederhana yang dibuat dengan Jekyll."
+    cta: "Baca blog"
+  footer:
+    rights: "Semua hak dilindungi undang-undang. Dibuat dengan Love"
+    terms: "Ketentuan Penggunaan"
+    privacy: "Kebijakan Privasi"
