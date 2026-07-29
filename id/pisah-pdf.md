@@ -775,11 +775,11 @@ scripts:
 
 <div class="app-shell">
 
-  <!-- ─── UPLOAD STATE ─── -->
+<!-- ─── UPLOAD STATE ─── -->
   <div id="uploadState">
     <div class="upload-inner">
-      <h1>Split PDF file</h1>
-      <p class="sub">Separate individual pages or complete document sets into standalone PDF files.</p>
+      <h1>Pisah file PDF</h1>
+      <p class="sub">Pisahkan halaman individual atau kumpulan dokumen lengkap menjadi file PDF tersendiri.</p>
       <div class="drop-zone" id="dropZone">
         <div class="dz-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -788,20 +788,19 @@ scripts:
             <line x1="12" y1="3" x2="12" y2="15"/>
           </svg>
         </div>
-        <h2>Drop a PDF file here</h2>
-        <p>or click the button below to browse</p>
+        <h2>Seret file PDF ke sini</h2>
+        <p>atau klik tombol di bawah untuk mencari file</p>
         <button class="btn-blue" id="browseBtn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
           </svg>
-          Select File
+          Pilih File
         </button>
         <p class="upload-note">
-
-            By uploading files, you agree to our
-  <a href="/en/terms-of-use/" target="_blank">Terms of Use</a>
-  and our
-  <a href="/en/privacy-policy/" target="_blank">Privacy Policy</a>.
+            Dengan mengunggah file, Anda menyetujui
+  <a href="/id/syarat-penggunaan/" target="_blank">Syarat Penggunaan</a>
+  dan
+  <a href="/id/kebijakan-privasi/" target="_blank">Kebijakan Privasi</a> kami.
   
         </p>
       </div>
