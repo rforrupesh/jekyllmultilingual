@@ -746,7 +746,7 @@ scripts:
       Mit dem Hochladen von Dateien stimmen Sie unseren
       <a href="/de/nutzungsbedingungen/" target="_blank">Nutzungsbedingungen</a>
       und unserer
-      <a href="/de/datenschutzrichtlinie/" target="_blank">Datenschutzerklärung</a>
+      <a href="/de/datenschutz/" target="_blank">Datenschutzerklärung</a>
       zu.
     </p>
   </div>
