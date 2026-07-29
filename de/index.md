@@ -718,81 +718,87 @@ scripts:
 
 <main class="container1">
 
-  <!-- H1 + P — visible before upload, hidden after -->
-  <h1 class="page-title" id="pageTitle">Merge PDF Files</h1>
-  <p class="page-sub" id="pageSub">Upload your files, arrange them, click Merge PDF, and download your new combined PDF file.</p>
+<!-- H1 + P — visible before upload, hidden after -->
+<h1 class="page-title" id="pageTitle">PDF-Dateien zusammenführen (Merge PDF)</h1>
+<p class="page-sub" id="pageSub">Laden Sie Ihre Dateien hoch, ordnen Sie sie an, klicken Sie auf „PDF zusammenführen“ und laden Sie anschließend Ihre zusammengeführte PDF-Datei herunter.</p>
 
-  <!-- UPLOAD STATE (centered, full viewport height) -->
-  <div id="uploadState">
-    <div class="upload-box" id="dropZone">
-      <div class="icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
-          <polyline points="17 8 12 3 7 8"/>
-          <line x1="12" y1="3" x2="12" y2="15"/>
-        </svg>
-      </div>
-   <h2>Drag PDF files here</h2>
-<p>or click the button below to browse.</p>
-      <button class="btn-black" id="browseBtn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-          <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
-        </svg>
-  Select Files
-      </button>
-        <p class="upload-note">
- By uploading files, you agree to our
-  <a href="/en/terms-of-use/" target="_blank">Terms of Use</a>
-and 
-  <a href="/en/privacy-policy/" target="_blank">Privacy Policy</a>.
-</p> 
+<!-- UPLOAD STATE (centered, full viewport height) -->
+<div id="uploadState">
+  <div class="upload-box" id="dropZone">
+    <div class="icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/>
+        <polyline points="17 8 12 3 7 8"/>
+        <line x1="12" y1="3" x2="12" y2="15"/>
+      </svg>
     </div>
-    <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
+
+    <h2>PDF-Dateien hierher ziehen</h2>
+    <p>oder auf die Schaltfläche unten klicken, um Dateien auszuwählen.</p>
+
+    <button class="btn-black" id="browseBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
+      </svg>
+      Dateien auswählen
+    </button>
+
+    <p class="upload-note">
+      Mit dem Hochladen von Dateien stimmen Sie unseren
+      <a href="/de/nutzungsbedingungen/" target="_blank">Nutzungsbedingungen</a>
+      und unserer
+      <a href="/de/datenschutzrichtlinie/" target="_blank">Datenschutzerklärung</a>
+      zu.
+    </p>
+  </div>
+
+  <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
+<
 
   
   </div>
 
-  <!-- UPLOADED STATE -->
-  <div id="uploadedState">
-    <div class="toolbar">
-      <div class="toolbar-left">
-        <span class="toolbar-title">Files to merge</span>
-        <span class="file-count" id="fileCount">0</span>
-        <button class="btn-sm" onclick="sortFiles('asc')">
-          <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
-            <path d="M1 3h10M3 6h6M5 9h2"/>
-          </svg>A-Z
-        </button>
-        <button class="btn-sm" onclick="sortFiles('desc')">
-          <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
-            <path d="M1 9h10M3 6h6M5 3h2"/>
-          </svg>Z–A
-        </button>
-      </div>
-      <div class="toolbar-right">
-        <button class="btn-add-top" onclick="document.getElementById('moreInput').click()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
-          </svg>Add PDF
-        </button>
-        <button class="btn-merge-top" id="mergeBtnTop" onclick="mergePDFs()">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <path d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h3M16 6h3a2 2 0 012 2v8a2 2 0 01-2 2h-3M12 3v18"/>
-          </svg>
-Combine PDF
-        </button>
-      </div>
+<!-- UPLOADED STATE -->
+<div id="uploadedState">
+  <div class="toolbar">
+    <div class="toolbar-left">
+      <span class="toolbar-title">Zusammenzuführende Dateien</span>
+      <span class="file-count" id="fileCount">0</span>
+      <button class="btn-sm" onclick="sortFiles('asc')">
+        <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
+          <path d="M1 3h10M3 6h6M5 9h2"/>
+        </svg>A–Z
+      </button>
+      <button class="btn-sm" onclick="sortFiles('desc')">
+        <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
+          <path d="M1 9h10M3 6h6M5 3h2"/>
+        </svg>Z–A
+      </button>
     </div>
-
-    <div class="file-list-wrap" id="fileList"></div>
-
-    <div class="progress-wrap" id="progressWrap">
-      <div class="spinner"></div>
-      <span class="progress-text" id="progressText">Merging…</span>
+    <div class="toolbar-right">
+      <button class="btn-add-top" onclick="document.getElementById('moreInput').click()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>PDF hinzufügen
+      </button>
+      <button class="btn-merge-top" id="mergeBtnTop" onclick="mergePDFs()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h3M16 6h3a2 2 0 012 2v8a2 2 0 01-2 2h-3M12 3v18"/>
+        </svg>
+PDF zusammenführen
+      </button>
     </div>
   </div>
 
-  <input type="file" id="moreInput" multiple accept="application/pdf" hidden>
+  <div class="file-list-wrap" id="fileList"></div>
+
+  <div class="progress-wrap" id="progressWrap">
+    <div class="spinner"></div>
+    <span class="progress-text" id="progressText">Wird zusammengeführt…</span>
+  </div>
+</div>
+
+<input type="file" id="moreInput" multiple accept="application/pdf" hidden>
 
   <!-- INFO — only shown before upload -->
 <div id="infoContent" class="post-content">
@@ -800,33 +806,31 @@ Combine PDF
 
 <div id="split-pdf-info">
  
-  <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
-    <p class="isec-card__text">
-         Merging multiple PDF documents into a single PDF file is extremely easy with our tool. Don't waste time combining PDFs manually.
-    </p> 
-    <p class="isec-card__text">
-      Our PDF Merger is a free online PDF tool that helps you join, merge, and combine two or more PDF files instantly
-      without reducing quality.
-    </p>
+<section class="isec-block isec-articles" aria-labelledby="isec-why-title">
+  <p class="isec-card__text">
+       Mit unserem Tool können Sie mehrere PDF-Dokumente ganz einfach zu einer einzigen PDF-Datei zusammenführen. Verschwenden Sie keine Zeit mit dem manuellen Zusammenfügen von PDFs.
+  </p> 
+  <p class="isec-card__text">
+    Unser PDF-Zusammenführer ist ein kostenloses Online-Tool, mit dem Sie zwei oder mehr PDF-Dateien sofort zusammenführen können – schnell, einfach und ohne Qualitätsverlust.
+  </p>
 
-    <p class="isec-card__text">
-      It uses advanced technology to merge your PDF documents quickly, easily, and securely with a single click. Easily
-      combine PDF pages, organize PDF files, and create a high-quality PDF online anytime, anywhere.
-    </p>
-  </section>
+  <p class="isec-card__text">
+    Dank moderner Technologie werden Ihre PDF-Dokumente schnell, einfach und sicher mit nur einem Klick zusammengeführt. Kombinieren Sie PDF-Seiten, organisieren Sie Ihre Dokumente und erstellen Sie jederzeit und überall hochwertige PDF-Dateien online.
+  </p>
+</section>
 
 <section>
-   <figure class="isec-media"> 
+  <figure class="isec-media"> 
     <img src="/assets/img/unir.webp"
-         alt="Combine multiple PDF files into one instantly"
+         alt="Mehrere PDF-Dateien sofort zu einer Datei zusammenführen"
          loading="lazy"
          width="710"
          height="350">
 
     <figcaption>
-        Combine multiple PDF files into one instantly
+      Mehrere PDF-Dateien sofort zu einer Datei zusammenführen
     </figcaption>
-</figure>
+  </figure>
 </section>
 
   <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
