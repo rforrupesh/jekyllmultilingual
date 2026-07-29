@@ -741,9 +741,9 @@ scripts:
       </button>
         <p class="upload-note">
  Dengan mengunggah file, Anda menyetujui
-  <a href="/id/terms-of-use/" target="_blank">Syarat Penggunaan</a>
+  <a href="/id/syarat-penggunaan/" target="_blank">Syarat Penggunaan</a>
 and 
-  <a href="/id/privacy-policy/" target="_blank">Kebijakan Privasi</a>.
+  <a href="/id/kebijakan-privasi/" target="_blank">Kebijakan Privasi</a>.
 </p> 
     </div>
     <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
