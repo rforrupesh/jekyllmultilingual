@@ -808,11 +808,12 @@ scripts:
     </div>
 
     <div class="info-section">
-          <div id="split-pdf-info">
+
+<div id="split-pdf-info">
 
   <section class="isec-block isec-why" aria-labelledby="isec-why-title">
     <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Why Choose UnificarPDF.com for Remove PDF Pages?</h2>
+      <h2 id="isec-why-title" class="isec-block__title">Mengapa Memilih UnificarPDF.com untuk Menghapus Halaman PDF?</h2>
     </div>
     <div class="isec-card-grid">
 
@@ -821,8 +822,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
         </span>
-        <h3 class="isec-card__title">Single Page Split / Multi Document Split</h3>
-        <p class="isec-card__text">Split the individual page from a document or split the document in pages.</p>
+        <h3 class="isec-card__title">Pisahkan Satu Halaman / Pisahkan Banyak Dokumen</h3>
+        <p class="isec-card__text">Pisahkan satu halaman tertentu dari sebuah dokumen, atau pecah dokumen menjadi beberapa halaman terpisah.</p>
       </div>
 
       <div class="isec-card">
@@ -830,8 +831,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
         </span>
-        <h3 class="isec-card__title">Split Specific/Customized Pages</h3>
-        <p class="isec-card__text">Here you have an option to select specific or customize page ranges to split.</p>
+        <h3 class="isec-card__title">Pisahkan Halaman Tertentu/Kustom</h3>
+        <p class="isec-card__text">Di sini Anda bisa memilih rentang halaman tertentu atau kustom untuk dipisahkan.</p>
       </div>
 
       <div class="isec-card">
@@ -839,8 +840,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
         </span>
-        <h3 class="isec-card__title">Split to Individual Documents</h3>
-        <p class="isec-card__text">Documents split from a single PDF can be saved separately.</p>
+        <h3 class="isec-card__title">Pisahkan Menjadi Dokumen Terpisah</h3>
+        <p class="isec-card__text">Dokumen hasil pemisahan dari satu PDF dapat disimpan secara terpisah.</p>
       </div>
 
       <div class="isec-card">
@@ -848,8 +849,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
         </span>
-        <h3 class="isec-card__title">Interactive Elements are Preserved</h3>
-        <p class="isec-card__text">The page split preserves all the interactive elements such as bookmark, hyperlink etc.</p>
+        <h3 class="isec-card__title">Elemen Interaktif Tetap Terjaga</h3>
+        <p class="isec-card__text">Proses pemisahan halaman tetap mempertahankan semua elemen interaktif seperti bookmark, hyperlink, dan lainnya.</p>
       </div>
 
       <div class="isec-card">
@@ -857,8 +858,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
         </span>
-        <h3 class="isec-card__title">Live Page Previews</h3>
-        <p class="isec-card__text">Thumbnails show your actual page content, not generic placeholders, so you can verify exactly what you're splitting before downloading.</p>
+        <h3 class="isec-card__title">Pratinjau Halaman Langsung</h3>
+        <p class="isec-card__text">Thumbnail menampilkan isi halaman Anda yang sebenarnya, bukan placeholder umum, sehingga Anda bisa memastikan apa yang akan dipisahkan sebelum mengunduhnya.</p>
       </div>
 
       <div class="isec-card">
@@ -866,8 +867,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
         </span>
-        <h3 class="isec-card__title">Remove Any Unwanted Pages in One Click</h3>
-        <p class="isec-card__text">Each thumbnail comes with a delete button, enabling you to delete a page that is not required without even splitting it.</p>
+        <h3 class="isec-card__title">Hapus Halaman yang Tidak Diinginkan Hanya dengan Satu Klik</h3>
+        <p class="isec-card__text">Setiap thumbnail dilengkapi tombol hapus, sehingga Anda bisa menghapus halaman yang tidak diperlukan tanpa harus melakukan pemisahan terlebih dahulu.</p>
       </div>
 
       <div class="isec-card">
@@ -875,8 +876,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
         </span>
-        <h3 class="isec-card__title">Rotate Either Individual Pages or All Pages at Once</h3>
-        <p class="isec-card__text">You can correct the orientation of an individual page or rotate all the pages at once. In case your page is in the wrong orientation, Restore makes it right again.</p>
+        <h3 class="isec-card__title">Putar Halaman Satu per Satu atau Sekaligus Semua</h3>
+        <p class="isec-card__text">Anda dapat memperbaiki orientasi satu halaman saja atau memutar semua halaman sekaligus. Jika orientasi halaman Anda salah, tombol Restore akan mengembalikannya seperti semula.</p>
       </div>
 
       <div class="isec-card">
@@ -884,8 +885,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg>
         </span>
-        <h3 class="isec-card__title">Smaller File Size</h3>
-        <p class="isec-card__text">The files generated after splitting the PDF files are small in size without losing the quality.</p>
+        <h3 class="isec-card__title">Ukuran File Lebih Kecil</h3>
+        <p class="isec-card__text">File yang dihasilkan setelah pemisahan PDF berukuran kecil tanpa mengurangi kualitasnya.</p>
       </div>
 
       <div class="isec-card">
@@ -893,8 +894,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
         </span>
-        <h3 class="isec-card__title">No Interruption while Processing</h3>
-        <p class="isec-card__text">When processing the files, they will not get interrupted during the procedure.</p>
+        <h3 class="isec-card__title">Proses Tanpa Gangguan</h3>
+        <p class="isec-card__text">Saat memproses file, prosesnya tidak akan terganggu di tengah jalan.</p>
       </div>
 
       <div class="isec-card">
@@ -902,8 +903,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
         </span>
-        <h3 class="isec-card__title">Watermark Free Files</h3>
-        <p class="isec-card__text">The generated files after splitting the PDF are free from watermarks and the files have high quality.</p>
+        <h3 class="isec-card__title">File Bebas Watermark</h3>
+        <p class="isec-card__text">File yang dihasilkan setelah pemisahan PDF bebas dari watermark dan tetap berkualitas tinggi.</p>
       </div>
 
       <div class="isec-card">
@@ -911,8 +912,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
         </span>
-        <h3 class="isec-card__title">Available on Multiple Operating Systems</h3>
-        <p class="isec-card__text">The online PDF splitter is available on different operating systems like Windows, Mac, Linux, Android, and iPhone.</p>
+        <h3 class="isec-card__title">Tersedia di Berbagai Sistem Operasi</h3>
+        <p class="isec-card__text">Pemisah PDF online ini dapat digunakan di berbagai sistem operasi seperti Windows, Mac, Linux, Android, dan iPhone.</p>
       </div>
 
       <div class="isec-card">
@@ -920,8 +921,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg>
         </span>
-        <h3 class="isec-card__title">Accessible through Browser</h3>
-        <p class="isec-card__text">It is accessible through the browser, so there is no need to install the software or application on your device.</p>
+        <h3 class="isec-card__title">Dapat Diakses melalui Browser</h3>
+        <p class="isec-card__text">Alat ini dapat diakses langsung melalui browser, jadi tidak perlu menginstal software atau aplikasi apa pun di perangkat Anda.</p>
       </div>
 
       <div class="isec-card">
@@ -929,8 +930,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg>
         </span>
-        <h3 class="isec-card__title">Can Upload PDF Files Easily</h3>
-        <p class="isec-card__text">You can upload your file on the splitter easily.</p>
+        <h3 class="isec-card__title">Mudah Mengunggah File PDF</h3>
+        <p class="isec-card__text">Anda dapat mengunggah file Anda ke pemisah PDF dengan mudah.</p>
       </div>
 
       <div class="isec-card">
@@ -938,8 +939,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
         </span>
-        <h3 class="isec-card__title">No Sign-Up Required</h3>
-        <p class="isec-card__text">There is no need to sign up on the website to process your PDF file. It is free of cost.</p>
+        <h3 class="isec-card__title">Tanpa Perlu Mendaftar</h3>
+        <p class="isec-card__text">Tidak perlu mendaftar di situs ini untuk memproses file PDF Anda. Semuanya gratis.</p>
       </div>
 
       <div class="isec-card">
@@ -947,8 +948,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </span>
-        <h3 class="isec-card__title">Process PDFs Securely without Any Delays</h3>
-        <p class="isec-card__text">The PDF files can be processed without any interruption or delay.</p>
+        <h3 class="isec-card__title">Proses PDF Aman Tanpa Penundaan</h3>
+        <p class="isec-card__text">File PDF dapat diproses tanpa gangguan atau penundaan.</p>
       </div>
 
       <div class="isec-card">
@@ -956,8 +957,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
         </span>
-        <h3 class="isec-card__title">Downloadable Files are Available Immediately</h3>
-        <p class="isec-card__text">Once the splitting process of the page is done, the downloadable files are available for immediate download.</p>
+        <h3 class="isec-card__title">File Bisa Langsung Diunduh</h3>
+        <p class="isec-card__text">Setelah proses pemisahan halaman selesai, file hasilnya langsung tersedia untuk diunduh.</p>
       </div>
 
       <div class="isec-card">
@@ -965,8 +966,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg>
         </span>
-        <h3 class="isec-card__title">Same Page Order</h3>
-        <p class="isec-card__text">The same page order can be selected in all the files.</p>
+        <h3 class="isec-card__title">Urutan Halaman Tetap Sama</h3>
+        <p class="isec-card__text">Urutan halaman yang sama dapat dipilih di semua file.</p>
       </div>
 
       <div class="isec-card">
@@ -974,8 +975,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg>
         </span>
-        <h3 class="isec-card__title">Change files anytime</h3>
-        <p class="isec-card__text">Uploaded the wrong PDF? Change button to change them instantly without refreshing the page.</p>
+        <h3 class="isec-card__title">Ganti File Kapan Saja</h3>
+        <p class="isec-card__text">Salah unggah PDF? Gunakan tombol Ganti untuk menggantinya secara instan tanpa perlu memuat ulang halaman.</p>
       </div>
 
     </div>
@@ -983,44 +984,44 @@ scripts:
 
   <section class="isec-block isec-how" aria-labelledby="isec-how-title">
     <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">How Our PDF Splitter Works</h2>
-      <p class="isec-block__subtitle">The UnifcarPDF program makes it very easy to split a PDF file. Here's how to do it:</p>
+      <h2 id="isec-how-title" class="isec-block__title">Cara Kerja Pemisah PDF Kami</h2>
+      <p class="isec-block__subtitle">Program UnifcarPDF membuat proses pemisahan file PDF menjadi sangat mudah. Berikut cara melakukannya:</p>
     </div>
     <ol class="isec-steps">
       <li>
         <span class="isec-steps__num">1</span>
-        <div class="isec-steps__body">Upload your file. File details will be available right away, so you can be sure that the correct file is there — and if not, a "Change" button located right next to the file details allows you to upload another PDF without reloading the page.</div>
+        <div class="isec-steps__body">Unggah file Anda. Detail file akan langsung tersedia, sehingga Anda bisa memastikan file yang benar sudah terunggah — dan jika ternyata salah, tombol "Ganti" di sebelah detail file memungkinkan Anda mengunggah PDF lain tanpa perlu memuat ulang halaman.</div>
       </li>
       <li>
         <span class="isec-steps__num">2</span>
         <div class="isec-steps__body">
-          Pick a splitting mode:
+          Pilih mode pemisahan:
           <ul class="isec-substeps">
-            <li><strong>Range</strong> — select an easy "From To" range, use several ranges simultaneously (they will all be returned in a ZIP), or divide the entire file in equal portions.</li>
-            <li><strong>Selection</strong> — click on page thumbnails to select exactly what you need, with handy Select All, Clear and Invert tools.</li>
-            <li><strong>Skip</strong> — just enter the pages needed in any format, e.g., 4 56-34 1 2-10. Reverse ranges are supported too.</li>
+            <li><strong>Range</strong> — pilih rentang "Dari Ke" yang sederhana, gunakan beberapa rentang sekaligus (semuanya akan dikembalikan dalam satu file ZIP), atau bagi seluruh file menjadi beberapa bagian yang sama rata.</li>
+            <li><strong>Selection</strong> — klik pada thumbnail halaman untuk memilih persis halaman yang Anda butuhkan, dilengkapi tombol Pilih Semua, Bersihkan, dan Balik Pilihan yang praktis.</li>
+            <li><strong>Skip</strong> — cukup masukkan nomor halaman yang dibutuhkan dalam format apa pun, misalnya 4 56-34 1 2-10. Rentang terbalik juga didukung.</li>
           </ul>
         </div>
       </li>
       <li>
         <span class="isec-steps__num">3</span>
-        <div class="isec-steps__body">Check the entire grid. Each page is displayed as a live thumbnail preview of itself — not just a placeholder, but the actual page content — labeled Page 1, Page 2, and so on. You can drag and drop any thumbnail to reorder the pages before splitting or downloading. Hover over any page and you'll get a little trash icon to delete just that page, and a rotate icon to rotate that page individually - or use Rotate All at the top to rotate all pages at once. If a page (or the entire set) ends up rotated the wrong way, the Restore button will put everything back the way it was.</div>
+        <div class="isec-steps__body">Periksa seluruh grid. Setiap halaman ditampilkan sebagai pratinjau thumbnail langsung dari halaman itu sendiri — bukan sekadar placeholder, melainkan isi halaman yang sebenarnya — diberi label Halaman 1, Halaman 2, dan seterusnya. Anda bisa menyeret dan melepas thumbnail mana pun untuk mengatur ulang urutan halaman sebelum memisahkan atau mengunduhnya. Arahkan kursor ke halaman mana pun untuk memunculkan ikon tempat sampah kecil guna menghapus halaman itu saja, dan ikon putar untuk memutar halaman itu secara individual — atau gunakan Putar Semua di bagian atas untuk memutar semua halaman sekaligus. Jika satu halaman (atau seluruh set) berakhir dengan rotasi yang salah, tombol Restore akan mengembalikan semuanya seperti semula.</div>
       </li>
       <li>
         <span class="isec-steps__num">4</span>
-        <div class="isec-steps__body">To the right of the "Pages" header is a zoom slider which lets you increase or decrease the thumbnail size (it even tells you the current value, like 140) depending on how close you need to look at the content.</div>
+        <div class="isec-steps__body">Di sebelah kanan judul "Pages" terdapat penggeser zoom yang memungkinkan Anda memperbesar atau memperkecil ukuran thumbnail (bahkan menunjukkan nilai saat ini, misalnya 140) sesuai seberapa dekat Anda perlu melihat isinya.</div>
       </li>
       <li>
         <span class="isec-steps__num">5</span>
-        <div class="isec-steps__body">View your result. Download the PDF (or ZIP if you have split it into several files) or share it immediately.</div>
+        <div class="isec-steps__body">Lihat hasilnya. Unduh PDF (atau ZIP jika Anda memisahkannya menjadi beberapa file) atau bagikan langsung.</div>
       </li>
     </ol>
   </section>
 
   <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
     <div class="isec-block__head">
-      <h2 id="isec-usecases-title" class="isec-block__title">Perfect for Every Use Case</h2>
-      <p class="isec-block__subtitle">See how our PDF splitter helps you easily organize and split PDF documents.</p>
+      <h2 id="isec-usecases-title" class="isec-block__title">Cocok untuk Setiap Kebutuhan</h2>
+      <p class="isec-block__subtitle">Lihat bagaimana pemisah PDF kami membantu Anda mengatur dan memisahkan dokumen PDF dengan mudah.</p>
     </div>
     <div class="isec-card-grid isec-card-grid--use">
 
@@ -1029,8 +1030,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
         </span>
-        <h3 class="isec-card__title">Business PDF</h3>
-        <p class="isec-card__text">Create separate files for contracts, reports, invoices and Presentations.</p>
+        <h3 class="isec-card__title">PDF Bisnis</h3>
+        <p class="isec-card__text">Buat file terpisah untuk kontrak, laporan, faktur, dan presentasi.</p>
       </div>
 
       <div class="isec-card">
@@ -1038,8 +1039,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
         </span>
-        <h3 class="isec-card__title">Student PDFs</h3>
-        <p class="isec-card__text">Extract specific content from your academic PDFs like chapters, lectures, or assignments.</p>
+        <h3 class="isec-card__title">PDF Pelajar</h3>
+        <p class="isec-card__text">Ekstrak konten tertentu dari PDF akademik Anda, seperti bab, materi kuliah, atau tugas.</p>
       </div>
 
       <div class="isec-card">
@@ -1047,8 +1048,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg>
         </span>
-        <h3 class="isec-card__title">PDFs - Legal and Financial</h3>
-        <p class="isec-card__text">Extract relevant pages from legal documents, bank documents and other official documents.</p>
+        <h3 class="isec-card__title">PDF Hukum dan Keuangan</h3>
+        <p class="isec-card__text">Ekstrak halaman yang relevan dari dokumen hukum, dokumen bank, dan dokumen resmi lainnya.</p>
       </div>
 
       <div class="isec-card">
@@ -1056,8 +1057,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg>
         </span>
-        <h3 class="isec-card__title">Easier to share &amp; save</h3>
-        <p class="isec-card__text">Small documents are easy to share and store.</p>
+        <h3 class="isec-card__title">Lebih Mudah Dibagikan &amp; Disimpan</h3>
+        <p class="isec-card__text">Dokumen berukuran kecil lebih mudah dibagikan dan disimpan.</p>
       </div>
 
     </div>
@@ -1065,184 +1066,184 @@ scripts:
 
   <section class="isec-block isec-faq" aria-labelledby="isec-faq-title">
     <div class="isec-block__head">
-      <h2 id="isec-faq-title" class="isec-block__title">Frequently Asked Questions</h2>
-      <p class="isec-block__subtitle">Got questions? We have answers. Find everything you need to know about our PDF Splitter.</p>
+      <h2 id="isec-faq-title" class="isec-block__title">Pertanyaan yang Sering Diajukan</h2>
+      <p class="isec-block__subtitle">Ada pertanyaan? Kami punya jawabannya. Temukan semua yang perlu Anda ketahui tentang Pemisah PDF kami.</p>
     </div>
-    <p class="isec-faq__eyebrow">Getting Started</p>
+    <p class="isec-faq__eyebrow">Memulai</p>
     <div class="isec-faq__list">
       <div class="isec-faq__item is-open">
         <button type="button" class="isec-faq__summary" aria-expanded="true">
-          <span>What is PDF Splitter?</span>
+          <span>Apa itu Pemisah PDF?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>A PDF Splitter is a web application where users will be able to split their existing PDF document(s) into smaller PDFs based on some page numbers or ranges.</p>
+            <p>Pemisah PDF adalah aplikasi web yang memungkinkan pengguna memecah dokumen PDF yang sudah ada menjadi beberapa PDF yang lebih kecil berdasarkan nomor halaman atau rentang tertentu.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How to Split PDF Online?</span>
+          <span>Bagaimana Cara Memisahkan PDF Secara Online?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Upload PDF(s) Select the pages (or page ranges) you want Hit Split PDF Download your file</p>
+            <p>Unggah PDF Anda Pilih halaman (atau rentang halaman) yang Anda inginkan Klik Split PDF Unduh file Anda</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I upload my PDF using Drag &amp; Drop?</span>
+          <span>Bisakah Saya Mengunggah PDF dengan Drag &amp; Drop?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes. Simply drag and drop your PDF documents at UnificarPDF.com and upload them.</p>
+            <p>Ya. Cukup seret dan lepas dokumen PDF Anda di UnificarPDF.com untuk mengunggahnya.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is it possible to reorder or delete uploaded PDF documents?</span>
+          <span>Apakah Mungkin Mengatur Ulang atau Menghapus Dokumen PDF yang Sudah Diunggah?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes. You can reorder the uploaded PDF files before conversion or just delete the files you no longer need.</p>
+            <p>Ya. Anda dapat mengatur ulang urutan file PDF yang sudah diunggah sebelum diproses, atau menghapus file yang tidak lagi Anda butuhkan.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Selection, Range and Skip – What's the difference?</span>
+          <span>Apa Perbedaan Selection, Range, dan Skip?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Range is for structured splits like single ranges, multiple ranges or equal groups. Selection is visually clicking through thumbnails. Skip is fastest if you already know exactly what page numbers you want.</p>
+            <p>Range cocok untuk pemisahan terstruktur seperti rentang tunggal, banyak rentang, atau kelompok yang sama besar. Selection adalah cara memilih secara visual dengan mengklik thumbnail. Skip adalah cara tercepat jika Anda sudah tahu persis nomor halaman yang diinginkan.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I split my PDF by page numbers/page ranges?</span>
+          <span>Bisakah Saya Memisahkan PDF Berdasarkan Nomor/Rentang Halaman?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes. Choose the pages or pages range you want to split from the PDF.</p>
+            <p>Ya. Pilih halaman atau rentang halaman yang ingin Anda pisahkan dari PDF.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is it possible to extract selected pages from the PDF?</span>
+          <span>Apakah Mungkin Mengekstrak Halaman Tertentu dari PDF?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes. You can extract and save a single page, multiple pages or a specific page range into a new PDF.</p>
+            <p>Ya. Anda dapat mengekstrak dan menyimpan satu halaman, beberapa halaman, atau rentang halaman tertentu ke dalam PDF baru.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>What happens when I split my pdf?</span>
+          <span>Apa yang Terjadi Saat Saya Memisahkan PDF Saya?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>If you split your PDF and the result is only one PDF, it will be downloaded as PDF. If it splits into several PDFs it will be packed as ZIP archive.</p>
+            <p>Jika Anda memisahkan PDF dan hasilnya hanya satu PDF, file tersebut akan diunduh sebagai PDF. Jika hasilnya berupa beberapa PDF, file-file tersebut akan dikemas sebagai arsip ZIP.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Will my PDF file quality be affected by splitting?</span>
+          <span>Apakah Kualitas File PDF Saya Akan Terpengaruh Setelah Dipisahkan?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No. The formatting, font, layout, images, text and all else remain intact.</p>
+            <p>Tidak. Format, font, tata letak, gambar, teks, dan semua elemen lainnya tetap utuh.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can you split large pdfs?</span>
+          <span>Bisakah Anda Memisahkan PDF Berukuran Besar?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yeah. It will work with any size PDF, big or small.</p>
+            <p>Tentu saja. Alat ini bekerja dengan PDF berukuran apa pun, besar maupun kecil.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is it possible to split password protected PDFs?</span>
+          <span>Apakah Mungkin Memisahkan PDF yang Dilindungi Kata Sandi?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Of course. Crack it with the password and get it split.</p>
+            <p>Tentu saja. Buka kunci dengan kata sandinya lalu pisahkan seperti biasa.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I have to download or install any software?</span>
+          <span>Apakah Saya Harus Mengunduh atau Menginstal Software Apa Pun?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No. Everything runs in your web browser. You don't have to do anything else.</p>
+            <p>Tidak. Semuanya berjalan langsung di browser Anda. Anda tidak perlu melakukan hal lain.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I have to create an account?</span>
+          <span>Apakah Saya Harus Membuat Akun?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No, UnificarPDF.com is usable without registration, without login.</p>
+            <p>Tidak, UnificarPDF.com dapat digunakan tanpa registrasi dan tanpa login.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is the tool compatible with mobile devices?</span>
+          <span>Apakah Alat Ini Kompatibel dengan Perangkat Mobile?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, sir. You can split PDFs on Android, iPhone, tablet, laptop and PC.</p>
+            <p>Ya, benar. Anda bisa memisahkan PDF di Android, iPhone, tablet, laptop, dan PC.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is my PDF file secure?</span>
+          <span>Apakah File PDF Saya Aman?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes. Files are securely transferred. After you done wth cut pdf then pdf file automatically removes the uploaded and generated files from its server.</p>
+            <p>Ya. File ditransfer secara aman. Setelah Anda selesai memisahkan PDF, sistem akan otomatis menghapus file yang diunggah maupun yang dihasilkan dari server.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is UnificarPDF.com free to use?</span>
+          <span>Apakah UnificarPDF.com Gratis Digunakan?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes. Free online split pdf files without software download and registration.</p>
+            <p>Ya. Pisahkan file PDF secara online dan gratis, tanpa perlu mengunduh software atau melakukan registrasi.</p>
           </div>
         </div>
       </div>
@@ -1250,7 +1251,7 @@ scripts:
   </section>
 
 </div>
-
+     
 <style>
 #split-pdf-info {
   --isec-ink: var(--text, #1a1d27);
