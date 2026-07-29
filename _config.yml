@@ -8,7 +8,7 @@ author: RUPESH
 
 
 # Multilingual settings
-languages: ["en", "fr", "es", "pt", "th", "id"]
+languages: ["en", "fr", "es", "pt", "th", "id", "de"]
 default_lang: "es"
 
 # Build settings
@@ -67,6 +67,12 @@ defaults:
     values:
       lang: id
       permalink: /id/:title/
+   
+  - scope:
+      path: "_posts/de"
+    values:
+      lang: de
+      permalink: /de/:title/
 
 
 collections:
@@ -81,6 +87,8 @@ collections:
   th:
     output: true
   id:
+    output: true
+  de:
     output: true
 
 
