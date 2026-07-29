@@ -778,7 +778,7 @@ scripts:
 <!-- ─── UPLOAD STATE ─── -->
   <div id="uploadState">
     <div class="upload-inner">
-      <h1>Pisah file PDF</h1>
+      <h1>Pisah file PDF (Split PDF)</h1>
       <p class="sub">Pisahkan halaman individual atau kumpulan dokumen lengkap menjadi file PDF tersendiri.</p>
       <div class="drop-zone" id="dropZone">
         <div class="dz-icon">
