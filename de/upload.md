@@ -743,9 +743,9 @@ scripts:
       </button>
       <p class="upload-note">
         Durch das Hochladen von Dateien stimmen Sie unseren
-        <a href="/en/terms-of-use/" target="_blank">Nutzungsbedingungen</a>
+        <a href="/de/nutzungsbedingungen/" target="_blank">Nutzungsbedingungen</a>
         und unserer
-        <a href="/en/privacy-policy/" target="_blank">Datenschutzrichtlinie</a> zu.
+        <a href="/de/datenschutz/" target="_blank">Datenschutzrichtlinie</a> zu.
       </p>
     </div>
     <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
