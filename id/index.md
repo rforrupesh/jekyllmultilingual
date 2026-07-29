@@ -801,43 +801,39 @@ Combine PDF
  
   <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
     <p class="isec-card__text">
-         Merging multiple PDF documents into a single PDF file is extremely easy with our tool. Don't waste time combining PDFs manually.
+         Menggabungkan beberapa dokumen PDF menjadi satu file PDF sangat mudah dengan alat kami. Jangan buang waktu menggabungkan PDF secara manual.
     </p> 
     <p class="isec-card__text">
-      Our PDF Merger is a free online PDF tool that helps you join, merge, and combine two or more PDF files instantly
-      without reducing quality.
+      PDF Merger kami adalah alat PDF online gratis yang membantu Anda menggabungkan, menyatukan, dan mengombinasikan dua atau lebih file PDF secara instan
+      tanpa mengurangi kualitas.
     </p>
 
     <p class="isec-card__text">
-      It uses advanced technology to merge your PDF documents quickly, easily, and securely with a single click. Easily
-      combine PDF pages, organize PDF files, and create a high-quality PDF online anytime, anywhere.
+      Alat ini menggunakan teknologi canggih untuk menggabungkan dokumen PDF Anda dengan cepat, mudah, dan aman hanya dengan satu klik. Dengan mudah
+      gabungkan halaman PDF, atur file PDF, dan buat PDF berkualitas tinggi secara online kapan saja, di mana saja.
     </p>
   </section>
 
 <section>
    <figure class="isec-media"> 
     <img src="/assets/img/unir.webp"
-         alt="Combine multiple PDF files into one instantly"
+         alt="Gabungkan beberapa file PDF menjadi satu secara instan"
          loading="lazy"
          width="710"
          height="350">
 
     <figcaption>
-        Combine multiple PDF files into one instantly
+        Gabungkan beberapa file PDF menjadi satu secara instan
     </figcaption>
 </figure>
 </section>
 
   <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
     <p class="isec-card__text">
-       Receiving hundreds of PDF files in your file manager from school projects, office work, university assignments, business documents, or professional tasks can make it difficult to manage important documents properly. These files can easily be misplaced, lost, or mixed with unnecessary documents if they are not organized in time.
-
-
+       Menerima ratusan file PDF di pengelola file Anda dari proyek sekolah, pekerjaan kantor, tugas universitas, dokumen bisnis, atau tugas profesional dapat mempersulit pengelolaan dokumen penting dengan benar. File-file ini dapat dengan mudah salah tempat, hilang, atau bercampur dengan dokumen yang tidak diperlukan jika tidak diorganisir tepat waktu.
     </p> 
     <p class="isec-card__text">
-     Instead of storing multiple PDF documents separately, it is better to combine and organize them into a single PDF file for better document management, easier sharing, faster access, and secure storage. Managing PDFs in one document helps save storage space, improves productivity, and keeps important files well organized.
-
-
+     Daripada menyimpan beberapa dokumen PDF secara terpisah, lebih baik menggabungkan dan mengorganisirnya menjadi satu file PDF untuk manajemen dokumen yang lebih baik, berbagi yang lebih mudah, akses lebih cepat, dan penyimpanan yang aman. Mengelola PDF dalam satu dokumen membantu menghemat ruang penyimpanan, meningkatkan produktivitas, dan menjaga file penting tetap terorganisir dengan baik.
     </p>
 
   </section>
@@ -845,7 +841,7 @@ Combine PDF
 
   <section class="isec-block isec-why" aria-labelledby="isec-why-title">
     <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Why use UnificarPDF.com to merge PDF files?</h2>
+      <h2 id="isec-why-title" class="isec-block__title">Mengapa menggunakan UnificarPDF.com untuk menggabungkan file PDF?</h2>
     </div>
     <div class="isec-card-grid">
 
@@ -854,8 +850,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
         </span>
-        <h3 class="isec-card__title">Fast File Merging</h3>
-        <p class="isec-card__text">This high-speed online merger is ideal for combining reports, invoices, scanned pages, and business documents without delays. It improves workflow efficiency and helps users manage digital files more easily.</p>
+        <h3 class="isec-card__title">Penggabungan File Cepat</h3>
+        <p class="isec-card__text">Penggabung online berkecepatan tinggi ini ideal untuk menggabungkan laporan, faktur, halaman yang dipindai, dan dokumen bisnis tanpa penundaan. Ini meningkatkan efisiensi alur kerja dan membantu pengguna mengelola file digital dengan lebih mudah.</p>
       </div>
 
       <div class="isec-card">
@@ -863,8 +859,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
         </span>
-        <h3 class="isec-card__title">Easy to Use</h3>
-        <p class="isec-card__text">A simple drag-and-drop interface allows users to merge PDF files easily without technical knowledge. Upload documents, rearrange pages, and create a clean, organized PDF in just a few clicks.</p>
+        <h3 class="isec-card__title">Mudah Digunakan</h3>
+        <p class="isec-card__text">Antarmuka seret dan lepas yang sederhana memungkinkan pengguna menggabungkan file PDF dengan mudah tanpa pengetahuan teknis. Unggah dokumen, susun ulang halaman, dan buat PDF yang bersih dan terorganisir hanya dalam beberapa klik.</p>
       </div>
 
       <div class="isec-card">
@@ -872,8 +868,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
         </span>
-        <h3 class="isec-card__title">Secure File Processing</h3>
-        <p class="isec-card__text">All uploaded documents are processed securely. The tool is designed with privacy protection in mind, making it a reliable option for combining sensitive files such as contracts, financial reports, and personal documents. Files are automatically deleted after processing.</p>
+        <h3 class="isec-card__title">Pemrosesan File yang Aman</h3>
+        <p class="isec-card__text">Semua dokumen yang diunggah diproses dengan aman. Alat ini dirancang dengan mempertimbangkan perlindungan privasi, menjadikannya pilihan andal untuk menggabungkan file sensitif seperti kontrak, laporan keuangan, dan dokumen pribadi. File dihapus secara otomatis setelah diproses.</p>
       </div>
 
       <div class="isec-card">
@@ -881,8 +877,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
         </span>
-        <h3 class="isec-card__title">High-Quality PDF Output</h3>
-        <p class="isec-card__text">Our PDF merge tool preserves original formatting, image clarity, and text quality when combining files. Whether for business reports, study notes, or scanned documents, the final merged file remains professional, clear, and ready to share or print.</p>
+        <h3 class="isec-card__title">Output PDF Berkualitas Tinggi</h3>
+        <p class="isec-card__text">Alat gabungan PDF kami mempertahankan format asli, kejernihan gambar, dan kualitas teks saat menggabungkan file. Baik untuk laporan bisnis, catatan belajar, atau dokumen yang dipindai, file gabungan akhir tetap profesional, jelas, dan siap dibagikan atau dicetak.</p>
       </div>
 
       <div class="isec-card">
@@ -890,8 +886,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
         </span>
-        <h3 class="isec-card__title">Available on all operating systems.</h3>
-        <p class="isec-card__text">The online PDF merging tool is available on Windows, Mac, Linux, Android, and iPhone without any installation.</p>
+        <h3 class="isec-card__title">Tersedia di semua sistem operasi.</h3>
+        <p class="isec-card__text">Alat penggabungan PDF online tersedia di Windows, Mac, Linux, Android, dan iPhone tanpa instalasi apa pun.</p>
       </div>
 
       <div class="isec-card">
@@ -899,8 +895,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
         </span>
-        <h3 class="isec-card__title">Free and Practical Tool</h3>
-        <p class="isec-card__text"> Users can merge documents online without cost or registration. It is a practical solution for organizing assignments, invoices, ebooks, resumes, and scanned files into a single PDF document, available online anytime and anywhere.</p>
+        <h3 class="isec-card__title">Alat Gratis dan Praktis</h3>
+        <p class="isec-card__text">Pengguna dapat menggabungkan dokumen secara online tanpa biaya atau pendaftaran. Ini adalah solusi praktis untuk mengorganisir tugas, faktur, ebook, resume, dan file yang dipindai menjadi satu dokumen PDF, tersedia online kapan saja dan di mana saja.</p>
       </div>
 
       <div class="isec-card">
@@ -908,8 +904,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
         </span>
-        <h3 class="isec-card__title">It maintains the original page order</h3>
-        <p class="isec-card__text">The order of the pages is preserved in all files when you join them, or you can rearrange them as you prefer.</p>
+        <h3 class="isec-card__title">Mempertahankan urutan halaman asli</h3>
+        <p class="isec-card__text">Urutan halaman dipertahankan di semua file saat Anda menggabungkannya, atau Anda dapat menyusunnya ulang sesuai keinginan.</p>
       </div>
 
       <div class="isec-card">
@@ -917,8 +913,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg>
         </span>
-        <h3 class="isec-card__title">Unlimited Merges, No Daily Limit </h3>
-        <p class="isec-card__text">There's no cap on how many times you can use the tool in a day. Merge one file today and fifty tomorrow — the tool stays free and accessible every time.  </p>
+        <h3 class="isec-card__title">Penggabungan Tak Terbatas, Tanpa Batas Harian</h3>
+        <p class="isec-card__text">Tidak ada batasan berapa kali Anda dapat menggunakan alat ini dalam sehari. Gabungkan satu file hari ini dan lima puluh besok — alat ini tetap gratis dan dapat diakses setiap saat.</p>
       </div>
 
       <div class="isec-card">
@@ -926,8 +922,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
         </span>
-        <h3 class="isec-card__title">No Watermarks on the Output Files</h3>
-        <p class="isec-card__text">The merged PDF comes out clean — no branding, stamps, or watermark text added anywhere in the file, so it's ready to send to a client or submit as-is. </p>
+        <h3 class="isec-card__title">Tanpa Tanda Air pada File Keluaran</h3>
+        <p class="isec-card__text">PDF yang digabungkan keluar dengan bersih — tanpa merek, stempel, atau teks tanda air yang ditambahkan di mana pun dalam file, sehingga siap dikirim ke klien atau diserahkan apa adanya.</p>
       </div>
 
       <div class="isec-card">
@@ -935,8 +931,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
         </span>
-        <h3 class="isec-card__title">No Metadata Injected Into Your Output</h3>
-        <p class="isec-card__text">The tool does not add any hidden metadata or tracking information to the merged PDF. The output file is clean and free of any additional data that could compromise privacy or security.</p>
+        <h3 class="isec-card__title">Tidak Ada Metadata yang Disuntikkan ke Output Anda</h3>
+        <p class="isec-card__text">Alat ini tidak menambahkan metadata tersembunyi atau informasi pelacakan apa pun ke PDF yang digabungkan. File keluaran bersih dan bebas dari data tambahan apa pun yang dapat membahayakan privasi atau keamanan.</p>
       </div>
     
 
@@ -946,37 +942,37 @@ Combine PDF
 
   <section class="isec-block isec-how" aria-labelledby="isec-how-title">
     <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">How to Combine PDF Files into One PDF?</h2>
-      <p class="isec-block__subtitle">You do not need to do much to merge PDF files into a single document. If you do not know how to merge PDF files, simply follow these easy steps:</p>
+      <h2 id="isec-how-title" class="isec-block__title">Cara Menggabungkan File PDF menjadi Satu PDF?</h2>
+      <p class="isec-block__subtitle">Anda tidak perlu melakukan banyak hal untuk menggabungkan file PDF menjadi satu dokumen. Jika Anda tidak tahu cara menggabungkan file PDF, cukup ikuti langkah-langkah mudah ini:</p>
     </div>
     <ol class="isec-steps">
       <li>
         <span class="isec-steps__num">1</span>
-        <div class="isec-steps__body"> Upload your PDF documents or drag and drop the files into the PDF merge tool.</div>
+        <div class="isec-steps__body">Unggah dokumen PDF Anda atau seret dan lepaskan file ke alat penggabung PDF.</div>
       </li>
      <li> 
         <span class="isec-steps__num">2</span>
-        <div class="isec-steps__body"> Arrange and reorder PDF pages or files if necessary.</div>
+        <div class="isec-steps__body">Atur dan susun ulang halaman atau file PDF jika diperlukan.</div>
       </li>
       <li>
         <span class="isec-steps__num">3</span>
-        <div class="isec-steps__body">Click the Merge PDF button.</div>
+        <div class="isec-steps__body">Klik tombol Gabungkan PDF.</div>
       </li>
       <li>
         <span class="isec-steps__num">4</span>
-        <div class="isec-steps__body">Wait a few seconds while the tool securely processes your files.</div>
+        <div class="isec-steps__body">Tunggu beberapa detik sementara alat memproses file Anda dengan aman.</div>
       </li>
       <li>
         <span class="isec-steps__num">5</span>
-        <div class="isec-steps__body">Download your new merged PDF instantly or share it online.</div>
+        <div class="isec-steps__body">Unduh PDF gabungan baru Anda secara instan atau bagikan secara online.</div>
       </li>
     </ol>
   </section>
 
   <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
     <div class="isec-block__head">
-      <h2 id="isec-usecases-title" class="isec-block__title">Combine PDF To PDF tool for any use case</h2>
-      <p class="isec-block__subtitle">See how our PDF Merger helps you easily organize and  PDF documents.</p>
+      <h2 id="isec-usecases-title" class="isec-block__title">Alat Gabungkan PDF ke PDF untuk setiap kasus penggunaan</h2>
+      <p class="isec-block__subtitle">Lihat bagaimana PDF Merger kami membantu Anda dengan mudah mengorganisir dan mengelola dokumen PDF.</p>
     </div>
     <div class="isec-card-grid isec-card-grid--use">
 
@@ -985,8 +981,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
         </span>
-        <h3 class="isec-card__title">Business PDF</h3>
-        <p class="isec-card__text">Businesses use PDF mergers to combine invoices, contracts, reports, and presentations into a single organized file. This makes document sharing easier and keeps important records in one place.</p>
+        <h3 class="isec-card__title">PDF Bisnis</h3>
+        <p class="isec-card__text">Bisnis menggunakan penggabung PDF untuk menggabungkan faktur, kontrak, laporan, dan presentasi menjadi satu file yang terorganisir. Ini membuat berbagi dokumen lebih mudah dan menyimpan catatan penting di satu tempat.</p>
       </div>
 
       <div class="isec-card">
@@ -994,8 +990,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
         </span>
-        <h3 class="isec-card__title">Student PDFs</h3>
-        <p class="isec-card__text">Students can merge notes, research papers, and assignment pages into one PDF before submitting work online. This helps create a clean and professional document.</p>
+        <h3 class="isec-card__title">PDF Pelajar</h3>
+        <p class="isec-card__text">Pelajar dapat menggabungkan catatan, makalah penelitian, dan halaman tugas menjadi satu PDF sebelum mengirimkan pekerjaan secara online. Ini membantu membuat dokumen yang bersih dan profesional.</p>
       </div>
 
       <div class="isec-card">
@@ -1003,8 +999,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg>
         </span>
-        <h3 class="isec-card__title">Scanned Files</h3>
-        <p class="isec-card__text">When documents are scanned page by page, a PDF merger can combine all scanned pages into a single file. This is useful for ID documents, forms, and office paperwork.</p>
+        <h3 class="isec-card__title">File yang Dipindai</h3>
+        <p class="isec-card__text">Ketika dokumen dipindai halaman demi halaman, penggabung PDF dapat menggabungkan semua halaman yang dipindai menjadi satu file. Ini berguna untuk dokumen identitas, formulir, dan dokumen administrasi.</p>
       </div>
 
       <div class="isec-card">
@@ -1012,8 +1008,8 @@ Combine PDF
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg>
         </span>
-        <h3 class="isec-card__title">Travel and Personal Records</h3>
-        <p class="isec-card__text">It is common to combine tickets, hotel reservations, passports, and travel documents into one PDF for easy access while traveling. This reduces the hassle of managing multiple files.</p>
+        <h3 class="isec-card__title">Catatan Perjalanan dan Pribadi</h3>
+        <p class="isec-card__text">Sangat umum untuk menggabungkan tiket, reservasi hotel, paspor, dan dokumen perjalanan menjadi satu PDF untuk kemudahan akses saat bepergian. Ini mengurangi kerumitan mengelola beberapa file.</p>
       </div>
       
 
@@ -1038,9 +1034,8 @@ Combine PDF
             <path d="M8 9h2" />
           </svg>
         </span>
-        <h3 class="isec-card__title">Portfolio and Resume Creation</h3>
-        <p class="isec-card__text"> Job seekers and designers use PDF merge tools to combine resumes, cover letters,
-          certificates, and portfolio samples into a single professional document for easy sharing.</p>
+        <h3 class="isec-card__title">Pembuatan Portofolio dan Resume</h3>
+        <p class="isec-card__text">Pencari kerja dan desainer menggunakan alat gabungan PDF untuk menggabungkan resume, surat lamaran, sertifikat, dan sampel portofolio menjadi satu dokumen profesional untuk berbagi dengan mudah.</p>
       </div>
 
         <div class="isec-card">
@@ -1060,8 +1055,8 @@ Combine PDF
               <path d="m8.6 10.5 6.8-3.9" />
               <path d="m8.6 13.5 6.8 3.9" /></svg>
           </span>
-          <h3 class="isec-card__title">Healthcare and Medical Records</h3>
-          <p class="isec-card__text">Patients and clinics merge prescriptions, lab reports, insurance forms, and medical history pages into a single file, making it easier to carry or share complete records with doctors or insurers.
+          <h3 class="isec-card__title">Catatan Kesehatan dan Medis</h3>
+          <p class="isec-card__text">Pasien dan klinik menggabungkan resep, laporan laboratorium, formulir asuransi, dan halaman riwayat medis menjadi satu file, sehingga lebih mudah dibawa atau dibagikan ke dokter atau perusahaan asuransi.
           </p>
         </div>
 
@@ -1070,173 +1065,173 @@ Combine PDF
 
   <section class="isec-block isec-faq" aria-labelledby="isec-faq-title">
     <div class="isec-block__head">
-      <h2 id="isec-faq-title" class="isec-block__title">Frequently Asked Questions</h2>
-      <p class="isec-block__subtitle">Got questions? We have answers. Find everything you need to know about our PDF Merger.</p>
+      <h2 id="isec-faq-title" class="isec-block__title">Pertanyaan yang Sering Diajukan</h2>
+      <p class="isec-block__subtitle">Punya pertanyaan? Kami punya jawabannya. Temukan semua yang perlu Anda ketahui tentang PDF Merger kami.</p>
     </div>
-    <p class="isec-faq__eyebrow">Getting Started</p>
+    <p class="isec-faq__eyebrow">Memulai</p>
     <div class="isec-faq__list">
       <div class="isec-faq__item is-open">
         <button type="button" class="isec-faq__summary" aria-expanded="true">
-          <span>What is PDF merging?</span>
+          <span>Apa itu penggabungan PDF?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>PDF merging is the process of combining two or more separate PDF files into a single, unified document.  delivers fast, secure, and automated merging directly in your browser.</p>
+            <p>Penggabungan PDF adalah proses menggabungkan dua atau lebih file PDF terpisah menjadi satu dokumen yang terpadu. Alat ini memberikan penggabungan yang cepat, aman, dan otomatis langsung di browser Anda.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How can I merge PDF files online?</span>
+          <span>Bagaimana cara menggabungkan file PDF secara online?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>You can merge PDF files online by uploading your documents to UnificarPDF.com. The tool automatically arranges and combines them into one file within seconds.</p>
+            <p>Anda dapat menggabungkan file PDF secara online dengan mengunggah dokumen Anda ke UnificarPDF.com. Alat ini secara otomatis mengatur dan menggabungkannya menjadi satu file dalam hitungan detik.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I need to install software to merge PDFs?</span>
+          <span>Apakah saya perlu menginstal perangkat lunak untuk menggabungkan PDF?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No. You can merge PDF files online by uploading your documents to UnificarPDF.com. The tool automatically arranges and combines them into one file within seconds.</p>
+            <p>Tidak. Anda dapat menggabungkan file PDF secara online dengan mengunggah dokumen Anda ke UnificarPDF.com. Alat ini secara otomatis mengatur dan menggabungkannya menjadi satu file dalam hitungan detik.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I need to create an account?</span>
+          <span>Apakah saya perlu membuat akun?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No! You can start merging immediately without any registration, email, or account creation. Just upload your files and begin — it’s that simple.</p>
+            <p>Tidak! Anda dapat langsung mulai menggabungkan tanpa registrasi, email, atau pembuatan akun apa pun. Cukup unggah file Anda dan mulai — semudah itu.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>What file formats can be merged?</span>
+          <span>Format file apa saja yang dapat digabungkan?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>UnificarPDF.com is built specifically for combining PDF files. It doesn’t convert other formats like Word, Excel, or images into PDF.</p>
+            <p>UnificarPDF.com dibuat khusus untuk menggabungkan file PDF. Alat ini tidak mengonversi format lain seperti Word, Excel, atau gambar menjadi PDF.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Does we upload large PDF files?</span>
+          <span>Apakah kami mengunggah file PDF berukuran besar?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, the tool is designed to handle both small documents and larger multi-page PDFs without compromising formatting or quality.</p>
+            <p>Ya, alat ini dirancang untuk menangani dokumen kecil maupun PDF multi-halaman yang lebih besar tanpa mengorbankan format atau kualitas.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I export the merged file in different formats?</span>
+          <span>Bisakah saya mengekspor file yang digabungkan dalam format berbeda?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>The merged output is delivered as a single PDF file, ready for download, sharing, or printing.</p>
+            <p>Hasil gabungan dikirimkan sebagai satu file PDF, siap diunduh, dibagikan, atau dicetak.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I rearrange pages before merging?</span>
+          <span>Bisakah saya mengatur ulang halaman sebelum menggabungkan?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, once your files are uploaded you can drag and reorder them to set the exact page sequence before combining.</p>
+            <p>Ya, setelah file Anda diunggah, Anda dapat menyeret dan mengurutkan ulang untuk menentukan urutan halaman yang tepat sebelum digabungkan.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can UnificarPDF.com detect and organize multiple files at once?</span>
+          <span>Bisakah UnificarPDF.com mendeteksi dan mengorganisir beberapa file sekaligus?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes! The tool lets you upload several PDFs together, automatically listing them so you can arrange the merge order visually.</p>
+            <p>Ya! Alat ini memungkinkan Anda mengunggah beberapa PDF sekaligus, secara otomatis mencantumkannya sehingga Anda dapat mengatur urutan penggabungan secara visual.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDFs in any language?</span>
+          <span>Bisakah saya menggabungkan PDF dalam bahasa apa pun?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, the tool supports merging PDFs in any language, preserving the text and formatting.</p>
+            <p>Ya, alat ini mendukung penggabungan PDF dalam bahasa apa pun, mempertahankan teks dan formatnya.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDF files on mobile devices?</span>
+          <span>Bisakah saya menggabungkan file PDF di perangkat mobile?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, UnificarPDF.com is fully responsive and works seamlessly on desktops, tablets, and mobile devices.</p>
+            <p>Ya, UnificarPDF.com sepenuhnya responsif dan bekerja dengan mulus di desktop, tablet, dan perangkat mobile.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is UnificarPDF.com suitable for business and academic use?</span>
+          <span>Apakah UnificarPDF.com cocok untuk penggunaan bisnis dan akademis?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Absolutely. It’s ideal for combining reports, invoices, contracts, research papers, and assignment pages into clear, organized documents.</p>
+            <p>Tentu saja. Ini ideal untuk menggabungkan laporan, faktur, kontrak, makalah penelitian, dan halaman tugas menjadi dokumen yang jelas dan terorganisir.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is my data secure when merging PDFs?</span>
+          <span>Apakah data saya aman saat menggabungkan PDF?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, your data is secure when using UnificarPDF.com. We implement industry-standard security measures to protect your files during the merging process.</p>
+            <p>Ya, data Anda aman saat menggunakan UnificarPDF.com. Kami menerapkan langkah-langkah keamanan standar industri untuk melindungi file Anda selama proses penggabungan.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How is UnificarPDF.com different from Adobe Acrobat for merging?</span>
+          <span>Apa perbedaan UnificarPDF.com dengan Adobe Acrobat untuk penggabungan?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>UnificarPDF.com offers a user-friendly, web-based solution for merging PDFs without the need for software installation or account creation. Unlike Adobe Acrobat, which requires a paid subscription and desktop software, UnificarPDF.com provides a free, accessible alternative that works directly in your browser.</p>
+            <p>UnificarPDF.com menawarkan solusi berbasis web yang ramah pengguna untuk menggabungkan PDF tanpa perlu instalasi perangkat lunak atau pembuatan akun. Tidak seperti Adobe Acrobat yang memerlukan langganan berbayar dan perangkat lunak desktop, UnificarPDF.com menyediakan alternatif gratis yang dapat diakses langsung di browser Anda.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDFs locally without an internet connection? </span>
+          <span>Bisakah saya menggabungkan PDF secara lokal tanpa koneksi internet?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No, this tool processes files on the server, so an internet connection is required. For fully offline merging, a desktop tool would be needed instead.</p>
+            <p>Tidak, alat ini memproses file di server, sehingga koneksi internet diperlukan. Untuk penggabungan sepenuhnya offline, diperlukan alat desktop sebagai gantinya.</p>
           </div>
         </div>
       </div>
@@ -1246,32 +1241,32 @@ Combine PDF
 
   <section>
         <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Common Combining Problems: Problems and Solutions</h2>
+      <h2 id="isec-why-title" class="isec-block__title">Masalah Umum Penggabungan: Masalah dan Solusi</h2>
 
     </div>
     <div class="isec-table-wrap">
   <table class="isec-table">
     <thead>
       <tr>
-        <th>Problem</th>
-        <th>Solution</th>
+        <th>Masalah</th>
+        <th>Solusi</th>
       </tr>
     </thead>
 
     <tbody>
       <tr>
-        <td>The files are not connecting correctly.</td>
-        <td>Make sure all <a href="https://en.wikipedia.org/wiki/PDF" class="alink">PDF files</a> are not corrupted and re-upload any missing files.</td>
+        <td>File tidak terhubung dengan benar.</td>
+        <td>Pastikan semua <a href="https://en.wikipedia.org/wiki/PDF" class="alink">file PDF</a> tidak rusak dan unggah ulang file yang hilang.</td>
       </tr>
 
       <tr>
-        <td>The merge button is not working.</td>
-        <td>Refresh the page, disable browser extensions, or try using the latest version of Chrome.</td>
+        <td>Tombol gabungkan tidak berfungsi.</td>
+        <td>Muat ulang halaman, nonaktifkan ekstensi browser, atau coba gunakan versi terbaru Chrome.</td>
       </tr>
 
       <tr>
-        <td>Incorrect file order.</td>
-        <td>Manually reorder the files before merging them, or rename the files using numbers to keep them in the correct sequence.</td>
+        <td>Urutan file salah.</td>
+        <td>Atur ulang file secara manual sebelum menggabungkannya, atau ganti nama file menggunakan angka untuk menjaga urutan yang benar.</td>
       </tr>
     </tbody>
   </table>
