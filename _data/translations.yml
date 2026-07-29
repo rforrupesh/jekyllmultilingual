@@ -159,3 +159,30 @@ id:
     rights: "Semua hak dilindungi undang-undang. Dibuat dengan Love"
     terms: "Ketentuan Penggunaan"
     privacy: "Kebijakan Privasi"
+
+de:
+  lang_name: "Deutsch"
+  lang_code: "de"
+  dir: "ltr"
+  nav:
+    home: "Startseite"
+    upload: "PDF zusammenführen"
+    blog: "Blog"
+    about: "Über uns"
+    splitpdf: "PDF teilen"
+    jpgapdf: "JPG zu PDF"
+  blog:
+    title: "Blog"
+    read_more: "Weiterlesen"
+    back: "← Zurück zum Blog"
+    posted_on: "Veröffentlicht am"
+    keep_reading: "Weiterlesen"
+    toc: "Inhaltsverzeichnis"
+  home:
+    heading: "Willkommen"
+    subheading: "Eine einfache mehrsprachige Website mit Jekyll."
+    cta: "Blog lesen"
+  footer:
+    rights: "Alle Rechte vorbehalten. Made with Love"
+    terms: "Nutzungsbedingungen"
+    privacy: "Datenschutzrichtlinie"
