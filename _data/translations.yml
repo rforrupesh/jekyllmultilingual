@@ -223,7 +223,7 @@ tr:
     upload: "PDF Birleştir"
     blog: "Blog"
     about: "Hakkımızda"
-    splitpdf: "PDF Böl"
+    splitpdf: "pdf ayırma"
     jpgapdf: "JPG'den PDF'ye"
   blog:
     title: "Blog"
