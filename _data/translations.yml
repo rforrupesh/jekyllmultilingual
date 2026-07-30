@@ -186,3 +186,30 @@ de:
     rights: "Alle Rechte vorbehalten. Made with Love"
     terms: "Nutzungsbedingungen"
     privacy: "Datenschutzrichtlinie"
+
+it:
+  lang_name: "Italiano"
+  lang_code: "it"
+  dir: "ltr"
+  nav:
+    home: "Home"
+    upload: "Unisci PDF"
+    blog: "Blog"
+    about: "Chi siamo"
+    splitpdf: "Dividi PDF"
+    jpgapdf: "JPG in PDF"
+  blog:
+    title: "Blog"
+    read_more: "Leggi di più"
+    back: "← Torna al Blog"
+    posted_on: "Pubblicato il"
+    keep_reading: "Continua a leggere"
+    toc: "Indice"
+  home:
+    heading: "Benvenuto"
+    subheading: "Un semplice sito web multilingue creato con Jekyll."
+    cta: "Leggi il blog"
+  footer:
+    rights: "Tutti i diritti riservati. Fatto con Love"
+    terms: "Termini di Utilizzo"
+    privacy: "Informativa sulla Privacy"
