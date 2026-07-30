@@ -810,53 +810,48 @@ scripts:
 
 <div id="split-pdf-info">
  
-  <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
+<section class="isec-block isec-articles" aria-labelledby="isec-why-title">
     <p class="isec-card__text">
-         Merging multiple PDF documents into a single PDF file is extremely easy with our tool. Don't waste time combining PDFs manually.
-    </p> 
-    <p class="isec-card__text">
-      Our PDF Merger is a free online PDF tool that helps you join, merge, and combine two or more PDF files instantly
-      without reducing quality.
+        Aracımızla birden fazla PDF belgesini tek bir PDF dosyasında birleştirmek son derece kolaydır. PDF dosyalarını manuel olarak birleştirerek zaman kaybetmeyin.
     </p>
 
     <p class="isec-card__text">
-      It uses advanced technology to merge your PDF documents quickly, easily, and securely with a single click. Easily
-      combine PDF pages, organize PDF files, and create a high-quality PDF online anytime, anywhere.
+        PDF Birleştirme aracımız, iki veya daha fazla PDF dosyasını kalite kaybı olmadan anında birleştirmenize yardımcı olan ücretsiz bir çevrim içi PDF aracıdır.
     </p>
-  </section>
 
-<section>
-   <figure class="isec-media"> 
-    <img src="/assets/img/unir.webp"
-         alt="Combine multiple PDF files into one instantly"
-         loading="lazy"
-         width="710"
-         height="350">
-
-    <figcaption>
-        Combine multiple PDF files into one instantly
-    </figcaption>
-</figure>
+    <p class="isec-card__text">
+        Gelişmiş teknolojisi sayesinde PDF belgelerinizi tek bir tıklamayla hızlı, kolay ve güvenli bir şekilde birleştirir. PDF sayfalarını kolayca bir araya getirin, PDF dosyalarınızı düzenleyin ve istediğiniz zaman, istediğiniz yerde yüksek kaliteli PDF'ler oluşturun.
+    </p>
 </section>
 
-  <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
+<section>
+    <figure class="isec-media">
+        <img src="/assets/img/unir.webp"
+             alt="Birden fazla PDF dosyasını anında tek bir dosyada birleştirin"
+             loading="lazy"
+             width="710"
+             height="350">
+
+        <figcaption>
+            Birden fazla PDF dosyasını anında tek bir dosyada birleştirin
+        </figcaption>
+    </figure>
+</section>
+
+<section class="isec-block isec-articles" aria-labelledby="isec-why-title">
     <p class="isec-card__text">
-       Receiving hundreds of PDF files in your file manager from school projects, office work, university assignments, business documents, or professional tasks can make it difficult to manage important documents properly. These files can easily be misplaced, lost, or mixed with unnecessary documents if they are not organized in time.
-
-
-    </p> 
-    <p class="isec-card__text">
-     Instead of storing multiple PDF documents separately, it is better to combine and organize them into a single PDF file for better document management, easier sharing, faster access, and secure storage. Managing PDFs in one document helps save storage space, improves productivity, and keeps important files well organized.
-
-
+        Okul projeleri, ofis çalışmaları, üniversite ödevleri, iş belgeleri veya profesyonel çalışmalar nedeniyle dosya yöneticinizde yüzlerce PDF dosyası birikebilir. Bu durum, önemli belgelerinizi düzenli bir şekilde yönetmeyi zorlaştırır. Belgeler zamanında düzenlenmezse kolayca kaybolabilir, yanlış yere taşınabilir veya gereksiz dosyalarla karışabilir.
     </p>
 
-  </section>
+    <p class="isec-card__text">
+        Birden fazla PDF belgesini ayrı ayrı saklamak yerine, daha iyi belge yönetimi, daha kolay paylaşım, daha hızlı erişim ve güvenli depolama için bunları tek bir PDF dosyasında birleştirip düzenlemek daha iyi bir çözümdür. PDF'leri tek bir belgede yönetmek depolama alanından tasarruf sağlar, verimliliği artırır ve önemli dosyalarınızı düzenli tutmanıza yardımcı olur.
+    </p>
+</section>
 
 
-  <section class="isec-block isec-why" aria-labelledby="isec-why-title">
+<section class="isec-block isec-why" aria-labelledby="isec-why-title">
     <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Why use UnificarPDF.com to merge PDF files?</h2>
+      <h2 id="isec-why-title" class="isec-block__title">PDF dosyalarını birleştirmek için neden UnificarPDF.com kullanılmalı?</h2>
     </div>
     <div class="isec-card-grid">
 
@@ -865,8 +860,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
         </span>
-        <h3 class="isec-card__title">Fast File Merging</h3>
-        <p class="isec-card__text">This high-speed online merger is ideal for combining reports, invoices, scanned pages, and business documents without delays. It improves workflow efficiency and helps users manage digital files more easily.</p>
+        <h3 class="isec-card__title">Hızlı Dosya Birleştirme</h3>
+        <p class="isec-card__text">Bu yüksek hızlı çevrimiçi birleştirici, raporları, faturaları, taranmış sayfaları ve iş belgelerini gecikmeden birleştirmek için idealdir. İş akışı verimliliğini artırır ve kullanıcıların dijital dosyalarını daha kolay yönetmesine yardımcı olur.</p>
       </div>
 
       <div class="isec-card">
@@ -874,8 +869,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
         </span>
-        <h3 class="isec-card__title">Easy to Use</h3>
-        <p class="isec-card__text">A simple drag-and-drop interface allows users to merge PDF files easily without technical knowledge. Upload documents, rearrange pages, and create a clean, organized PDF in just a few clicks.</p>
+        <h3 class="isec-card__title">Kullanımı Kolay</h3>
+        <p class="isec-card__text">Basit bir sürükle-bırak arayüzü, kullanıcıların teknik bilgiye ihtiyaç duymadan PDF dosyalarını kolayca birleştirmesine olanak tanır. Belgeleri yükleyin, sayfaları yeniden düzenleyin ve birkaç tıklamayla düzenli, temiz bir PDF oluşturun.</p>
       </div>
 
       <div class="isec-card">
@@ -883,8 +878,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
         </span>
-        <h3 class="isec-card__title">Secure File Processing</h3>
-        <p class="isec-card__text">All uploaded documents are processed securely. The tool is designed with privacy protection in mind, making it a reliable option for combining sensitive files such as contracts, financial reports, and personal documents. Files are automatically deleted after processing.</p>
+        <h3 class="isec-card__title">Güvenli Dosya İşleme</h3>
+        <p class="isec-card__text">Yüklenen tüm belgeler güvenli bir şekilde işlenir. Araç, gizliliği koruyacak şekilde tasarlanmıştır ve sözleşmeler, finansal raporlar ve kişisel belgeler gibi hassas dosyaları birleştirmek için güvenilir bir seçenektir. Dosyalar işlendikten sonra otomatik olarak silinir.</p>
       </div>
 
       <div class="isec-card">
@@ -892,8 +887,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
         </span>
-        <h3 class="isec-card__title">High-Quality PDF Output</h3>
-        <p class="isec-card__text">Our PDF merge tool preserves original formatting, image clarity, and text quality when combining files. Whether for business reports, study notes, or scanned documents, the final merged file remains professional, clear, and ready to share or print.</p>
+        <h3 class="isec-card__title">Yüksek Kaliteli PDF Çıktısı</h3>
+        <p class="isec-card__text">PDF birleştirme aracımız, dosyaları birleştirirken orijinal biçimlendirmeyi, görüntü netliğini ve metin kalitesini korur. İster iş raporları, ister ders notları, ister taranmış belgeler için olsun, son birleştirilmiş dosya profesyonel, net ve paylaşıma veya baskıya hazır kalır.</p>
       </div>
 
       <div class="isec-card">
@@ -901,8 +896,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
         </span>
-        <h3 class="isec-card__title">Available on all operating systems.</h3>
-        <p class="isec-card__text">The online PDF merging tool is available on Windows, Mac, Linux, Android, and iPhone without any installation.</p>
+        <h3 class="isec-card__title">Tüm işletim sistemlerinde kullanılabilir.</h3>
+        <p class="isec-card__text">Çevrimiçi PDF birleştirme aracı, herhangi bir kurulum gerektirmeden Windows, Mac, Linux, Android ve iPhone üzerinde kullanılabilir.</p>
       </div>
 
       <div class="isec-card">
@@ -910,8 +905,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
         </span>
-        <h3 class="isec-card__title">Free and Practical Tool</h3>
-        <p class="isec-card__text"> Users can merge documents online without cost or registration. It is a practical solution for organizing assignments, invoices, ebooks, resumes, and scanned files into a single PDF document, available online anytime and anywhere.</p>
+        <h3 class="isec-card__title">Ücretsiz ve Pratik Araç</h3>
+        <p class="isec-card__text">Kullanıcılar belgeleri ücretsiz ve kayıt olmadan çevrimiçi birleştirebilir. Ödevleri, faturaları, e-kitapları, özgeçmişleri ve taranmış dosyaları tek bir PDF belgesinde düzenlemek için pratik bir çözümdür; her zaman ve her yerde çevrimiçi kullanılabilir.</p>
       </div>
 
       <div class="isec-card">
@@ -919,8 +914,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
         </span>
-        <h3 class="isec-card__title">It maintains the original page order</h3>
-        <p class="isec-card__text">The order of the pages is preserved in all files when you join them, or you can rearrange them as you prefer.</p>
+        <h3 class="isec-card__title">Orijinal sayfa sırasını korur</h3>
+        <p class="isec-card__text">Dosyaları birleştirdiğinizde sayfa sırası korunur; isterseniz sayfaları kendi tercihinize göre yeniden düzenleyebilirsiniz.</p>
       </div>
 
       <div class="isec-card">
@@ -928,8 +923,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg>
         </span>
-        <h3 class="isec-card__title">Unlimited Merges, No Daily Limit </h3>
-        <p class="isec-card__text">There's no cap on how many times you can use the tool in a day. Merge one file today and fifty tomorrow — the tool stays free and accessible every time.  </p>
+        <h3 class="isec-card__title">Sınırsız Birleştirme, Günlük Limit Yok</h3>
+        <p class="isec-card__text">Aracı bir günde kaç kez kullanabileceğinize dair bir sınır yoktur. Bugün bir dosya birleştirin, yarın elli dosya — araç her zaman ücretsiz ve erişilebilir kalır.</p>
       </div>
 
       <div class="isec-card">
@@ -937,8 +932,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
         </span>
-        <h3 class="isec-card__title">No Watermarks on the Output Files</h3>
-        <p class="isec-card__text">The merged PDF comes out clean — no branding, stamps, or watermark text added anywhere in the file, so it's ready to send to a client or submit as-is. </p>
+        <h3 class="isec-card__title">Çıktı Dosyalarında Filigran Yok</h3>
+        <p class="isec-card__text">Birleştirilmiş PDF temiz çıkar — dosyanın hiçbir yerine marka, damga veya filigran metni eklenmez; bu sayede bir müşteriye göndermeye veya olduğu gibi teslim etmeye hazırdır.</p>
       </div>
 
       <div class="isec-card">
@@ -946,8 +941,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
         </span>
-        <h3 class="isec-card__title">No Metadata Injected Into Your Output</h3>
-        <p class="isec-card__text">The tool does not add any hidden metadata or tracking information to the merged PDF. The output file is clean and free of any additional data that could compromise privacy or security.</p>
+        <h3 class="isec-card__title">Çıktınıza Herhangi Bir Meta Veri Eklenmez</h3>
+        <p class="isec-card__text">Araç, birleştirilmiş PDF'ye gizli meta veri veya izleme bilgisi eklemez. Çıktı dosyası temizdir ve gizliliği veya güvenliği tehlikeye atabilecek ek verilerden arındırılmıştır.</p>
       </div>
     
 
@@ -957,37 +952,37 @@ scripts:
 
   <section class="isec-block isec-how" aria-labelledby="isec-how-title">
     <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">How to Combine PDF Files into One PDF?</h2>
-      <p class="isec-block__subtitle">You do not need to do much to merge PDF files into a single document. If you do not know how to merge PDF files, simply follow these easy steps:</p>
+      <h2 id="isec-how-title" class="isec-block__title">PDF Dosyaları Tek Bir PDF'de Nasıl Birleştirilir?</h2>
+      <p class="isec-block__subtitle">PDF dosyalarını birleştirmek için fazla bir şey yapmanıza gerek yok. PDF dosyalarını nasıl birleştireceğinizi bilmiyorsanız, şu basit adımları izlemeniz yeterli:</p>
     </div>
     <ol class="isec-steps">
       <li>
         <span class="isec-steps__num">1</span>
-        <div class="isec-steps__body"> Upload your PDF documents or drag and drop the files into the PDF merge tool.</div>
+        <div class="isec-steps__body">PDF belgelerinizi yükleyin veya dosyaları PDF birleştirme aracına sürükleyip bırakın.</div>
       </li>
      <li> 
         <span class="isec-steps__num">2</span>
-        <div class="isec-steps__body"> Arrange and reorder PDF pages or files if necessary.</div>
+        <div class="isec-steps__body">Gerekirse PDF sayfalarını veya dosyalarını düzenleyin ve yeniden sıralayın.</div>
       </li>
       <li>
         <span class="isec-steps__num">3</span>
-        <div class="isec-steps__body">Click the Merge PDF button.</div>
+        <div class="isec-steps__body">PDF Birleştir düğmesine tıklayın.</div>
       </li>
       <li>
         <span class="isec-steps__num">4</span>
-        <div class="isec-steps__body">Wait a few seconds while the tool securely processes your files.</div>
+        <div class="isec-steps__body">Araç dosyalarınızı güvenli bir şekilde işlerken birkaç saniye bekleyin.</div>
       </li>
       <li>
         <span class="isec-steps__num">5</span>
-        <div class="isec-steps__body">Download your new merged PDF instantly or share it online.</div>
+        <div class="isec-steps__body">Yeni birleştirilmiş PDF'nizi anında indirin veya çevrimiçi olarak paylaşın.</div>
       </li>
     </ol>
   </section>
 
   <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
     <div class="isec-block__head">
-      <h2 id="isec-usecases-title" class="isec-block__title">Combine PDF To PDF tool for any use case</h2>
-      <p class="isec-block__subtitle">See how our PDF Merger helps you easily organize and  PDF documents.</p>
+      <h2 id="isec-usecases-title" class="isec-block__title">Her kullanım senaryosu için PDF Birleştirme aracı</h2>
+      <p class="isec-block__subtitle">PDF Birleştiricimizin PDF belgelerinizi kolayca düzenlemenize nasıl yardımcı olduğunu görün.</p>
     </div>
     <div class="isec-card-grid isec-card-grid--use">
 
@@ -996,8 +991,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
         </span>
-        <h3 class="isec-card__title">Business PDF</h3>
-        <p class="isec-card__text">Businesses use PDF mergers to combine invoices, contracts, reports, and presentations into a single organized file. This makes document sharing easier and keeps important records in one place.</p>
+        <h3 class="isec-card__title">İş için PDF</h3>
+        <p class="isec-card__text">İşletmeler, faturaları, sözleşmeleri, raporları ve sunumları tek bir düzenli dosyada birleştirmek için PDF birleştiricileri kullanır. Bu, belge paylaşımını kolaylaştırır ve önemli kayıtları tek bir yerde tutar.</p>
       </div>
 
       <div class="isec-card">
@@ -1005,8 +1000,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
         </span>
-        <h3 class="isec-card__title">Student PDFs</h3>
-        <p class="isec-card__text">Students can merge notes, research papers, and assignment pages into one PDF before submitting work online. This helps create a clean and professional document.</p>
+        <h3 class="isec-card__title">Öğrenci PDF'leri</h3>
+        <p class="isec-card__text">Öğrenciler, notlarını, araştırma makalelerini ve ödev sayfalarını çevrimiçi teslim etmeden önce tek bir PDF'de birleştirebilir. Bu, temiz ve profesyonel bir belge oluşturmaya yardımcı olur.</p>
       </div>
 
       <div class="isec-card">
@@ -1014,8 +1009,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg>
         </span>
-        <h3 class="isec-card__title">Scanned Files</h3>
-        <p class="isec-card__text">When documents are scanned page by page, a PDF merger can combine all scanned pages into a single file. This is useful for ID documents, forms, and office paperwork.</p>
+        <h3 class="isec-card__title">Taranmış Dosyalar</h3>
+        <p class="isec-card__text">Belgeler sayfa sayfa tarandığında, bir PDF birleştirici tüm taranmış sayfaları tek bir dosyada birleştirebilir. Bu, kimlik belgeleri, formlar ve ofis evrakları için kullanışlıdır.</p>
       </div>
 
       <div class="isec-card">
@@ -1023,8 +1018,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg>
         </span>
-        <h3 class="isec-card__title">Travel and Personal Records</h3>
-        <p class="isec-card__text">It is common to combine tickets, hotel reservations, passports, and travel documents into one PDF for easy access while traveling. This reduces the hassle of managing multiple files.</p>
+        <h3 class="isec-card__title">Seyahat ve Kişisel Kayıtlar</h3>
+        <p class="isec-card__text">Biletleri, otel rezervasyonlarını, pasaportları ve seyahat belgelerini seyahat sırasında kolay erişim için tek bir PDF'de birleştirmek yaygındır. Bu, birden fazla dosyayı yönetme zahmetini azaltır.</p>
       </div>
       
 
@@ -1049,9 +1044,8 @@ scripts:
             <path d="M8 9h2" />
           </svg>
         </span>
-        <h3 class="isec-card__title">Portfolio and Resume Creation</h3>
-        <p class="isec-card__text"> Job seekers and designers use PDF merge tools to combine resumes, cover letters,
-          certificates, and portfolio samples into a single professional document for easy sharing.</p>
+        <h3 class="isec-card__title">Portföy ve Özgeçmiş Oluşturma</h3>
+        <p class="isec-card__text">İş arayanlar ve tasarımcılar, özgeçmişleri, ön yazıları, sertifikaları ve portföy örneklerini kolay paylaşım için tek bir profesyonel belgede birleştirmek amacıyla PDF birleştirme araçlarını kullanır.</p>
       </div>
 
         <div class="isec-card">
@@ -1071,8 +1065,8 @@ scripts:
               <path d="m8.6 10.5 6.8-3.9" />
               <path d="m8.6 13.5 6.8 3.9" /></svg>
           </span>
-          <h3 class="isec-card__title">Healthcare and Medical Records</h3>
-          <p class="isec-card__text">Patients and clinics merge prescriptions, lab reports, insurance forms, and medical history pages into a single file, making it easier to carry or share complete records with doctors or insurers.
+          <h3 class="isec-card__title">Sağlık ve Tıbbi Kayıtlar</h3>
+          <p class="isec-card__text">Hastalar ve klinikler; reçeteleri, laboratuvar raporlarını, sigorta formlarını ve tıbbi geçmiş sayfalarını tek bir dosyada birleştirerek, eksiksiz kayıtları doktorlarla veya sigortacılarla taşımayı ya da paylaşmayı kolaylaştırır.
           </p>
         </div>
 
@@ -1081,173 +1075,173 @@ scripts:
 
   <section class="isec-block isec-faq" aria-labelledby="isec-faq-title">
     <div class="isec-block__head">
-      <h2 id="isec-faq-title" class="isec-block__title">Frequently Asked Questions</h2>
-      <p class="isec-block__subtitle">Got questions? We have answers. Find everything you need to know about our PDF Merger.</p>
+      <h2 id="isec-faq-title" class="isec-block__title">Sıkça Sorulan Sorular</h2>
+      <p class="isec-block__subtitle">Sorularınız mı var? Cevaplarımız var. PDF Birleştiricimiz hakkında bilmeniz gereken her şeyi burada bulun.</p>
     </div>
-    <p class="isec-faq__eyebrow">Getting Started</p>
+    <p class="isec-faq__eyebrow">Başlarken</p>
     <div class="isec-faq__list">
       <div class="isec-faq__item is-open">
         <button type="button" class="isec-faq__summary" aria-expanded="true">
-          <span>What is PDF merging?</span>
+          <span>PDF birleştirme nedir?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>PDF merging is the process of combining two or more separate PDF files into a single, unified document.  delivers fast, secure, and automated merging directly in your browser.</p>
+            <p>PDF birleştirme, iki veya daha fazla ayrı PDF dosyasını tek, bütünleşik bir belgede bir araya getirme işlemidir. Tarayıcınızda hızlı, güvenli ve otomatik birleştirme sağlar.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How can I merge PDF files online?</span>
+          <span>PDF dosyalarını çevrimiçi nasıl birleştirebilirim?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>You can merge PDF files online by uploading your documents to UnificarPDF.com. The tool automatically arranges and combines them into one file within seconds.</p>
+            <p>Belgelerinizi UnificarPDF.com'a yükleyerek PDF dosyalarını çevrimiçi birleştirebilirsiniz. Araç, dosyalarınızı saniyeler içinde otomatik olarak düzenler ve tek bir dosyada birleştirir.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I need to install software to merge PDFs?</span>
+          <span>PDF'leri birleştirmek için yazılım yüklemem gerekiyor mu?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No. You can merge PDF files online by uploading your documents to UnificarPDF.com. The tool automatically arranges and combines them into one file within seconds.</p>
+            <p>Hayır. Belgelerinizi UnificarPDF.com'a yükleyerek PDF dosyalarını çevrimiçi birleştirebilirsiniz. Araç, dosyalarınızı saniyeler içinde otomatik olarak düzenler ve tek bir dosyada birleştirir.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I need to create an account?</span>
+          <span>Hesap oluşturmam gerekiyor mu?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No! You can start merging immediately without any registration, email, or account creation. Just upload your files and begin — it’s that simple.</p>
+            <p>Hayır! Herhangi bir kayıt, e-posta veya hesap oluşturma olmadan hemen birleştirmeye başlayabilirsiniz. Sadece dosyalarınızı yükleyin ve başlayın — bu kadar basit.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>What file formats can be merged?</span>
+          <span>Hangi dosya formatları birleştirilebilir?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>UnificarPDF.com is built specifically for combining PDF files. It doesn’t convert other formats like Word, Excel, or images into PDF.</p>
+            <p>UnificarPDF.com özellikle PDF dosyalarını birleştirmek için oluşturulmuştur. Word, Excel veya resim gibi diğer formatları PDF'ye dönüştürmez.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Does we upload large PDF files?</span>
+          <span>Büyük PDF dosyalarını yükleyebiliyor muyuz?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, the tool is designed to handle both small documents and larger multi-page PDFs without compromising formatting or quality.</p>
+            <p>Evet, araç hem küçük belgeleri hem de biçimlendirme veya kaliteden ödün vermeden büyük çok sayfalı PDF'leri işleyecek şekilde tasarlanmıştır.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I export the merged file in different formats?</span>
+          <span>Birleştirilmiş dosyayı farklı formatlarda dışa aktarabilir miyim?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>The merged output is delivered as a single PDF file, ready for download, sharing, or printing.</p>
+            <p>Birleştirilmiş çıktı, indirmeye, paylaşmaya veya yazdırmaya hazır tek bir PDF dosyası olarak teslim edilir.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I rearrange pages before merging?</span>
+          <span>Birleştirmeden önce sayfaları yeniden düzenleyebilir miyim?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, once your files are uploaded you can drag and reorder them to set the exact page sequence before combining.</p>
+            <p>Evet, dosyalarınız yüklendikten sonra birleştirmeden önce tam sayfa sırasını ayarlamak için onları sürükleyip yeniden düzenleyebilirsiniz.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can UnificarPDF.com detect and organize multiple files at once?</span>
+          <span>UnificarPDF.com aynı anda birden fazla dosyayı algılayıp düzenleyebilir mi?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes! The tool lets you upload several PDFs together, automatically listing them so you can arrange the merge order visually.</p>
+            <p>Evet! Araç, birden fazla PDF'yi birlikte yüklemenize izin verir ve bunları otomatik olarak listeleyerek birleştirme sırasını görsel olarak düzenlemenizi sağlar.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDFs in any language?</span>
+          <span>PDF'leri herhangi bir dilde birleştirebilir miyim?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, the tool supports merging PDFs in any language, preserving the text and formatting.</p>
+            <p>Evet, araç herhangi bir dildeki PDF'lerin birleştirilmesini destekler ve metin ile biçimlendirmeyi korur.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDF files on mobile devices?</span>
+          <span>PDF dosyalarını mobil cihazlarda birleştirebilir miyim?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, UnificarPDF.com is fully responsive and works seamlessly on desktops, tablets, and mobile devices.</p>
+            <p>Evet, UnificarPDF.com tamamen duyarlıdır ve masaüstü, tablet ve mobil cihazlarda sorunsuz çalışır.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is UnificarPDF.com suitable for business and academic use?</span>
+          <span>UnificarPDF.com iş ve akademik kullanım için uygun mu?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Absolutely. It’s ideal for combining reports, invoices, contracts, research papers, and assignment pages into clear, organized documents.</p>
+            <p>Kesinlikle. Raporları, faturaları, sözleşmeleri, araştırma makalelerini ve ödev sayfalarını net, düzenli belgelerde birleştirmek için idealdir.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is my data secure when merging PDFs?</span>
+          <span>PDF birleştirirken verilerim güvende mi?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, your data is secure when using UnificarPDF.com. We implement industry-standard security measures to protect your files during the merging process.</p>
+            <p>Evet, UnificarPDF.com'u kullanırken verileriniz güvendedir. Dosyalarınızı birleştirme işlemi sırasında korumak için endüstri standardı güvenlik önlemleri uyguluyoruz.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How is UnificarPDF.com different from Adobe Acrobat for merging?</span>
+          <span>UnificarPDF.com, birleştirme açısından Adobe Acrobat'tan nasıl farklıdır?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>UnificarPDF.com offers a user-friendly, web-based solution for merging PDFs without the need for software installation or account creation. Unlike Adobe Acrobat, which requires a paid subscription and desktop software, UnificarPDF.com provides a free, accessible alternative that works directly in your browser.</p>
+            <p>UnificarPDF.com, yazılım kurulumu veya hesap oluşturma gerektirmeden PDF'leri birleştirmek için kullanıcı dostu, web tabanlı bir çözüm sunar. Ücretli abonelik ve masaüstü yazılımı gerektiren Adobe Acrobat'ın aksine, UnificarPDF.com doğrudan tarayıcınızda çalışan ücretsiz, erişilebilir bir alternatif sunar.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDFs locally without an internet connection? </span>
+          <span>PDF'leri internet bağlantısı olmadan yerel olarak birleştirebilir miyim?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No, this tool processes files on the server, so an internet connection is required. For fully offline merging, a desktop tool would be needed instead.</p>
+            <p>Hayır, bu araç dosyaları sunucuda işler, bu nedenle internet bağlantısı gereklidir. Tamamen çevrimdışı birleştirme için masaüstü bir araç gerekir.</p>
           </div>
         </div>
       </div>
@@ -1257,37 +1251,38 @@ scripts:
 
   <section>
         <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Common Combining Problems: Problems and Solutions</h2>
+      <h2 id="isec-why-title" class="isec-block__title">Yaygın Birleştirme Sorunları: Sorunlar ve Çözümler</h2>
 
     </div>
     <div class="isec-table-wrap">
   <table class="isec-table">
     <thead>
       <tr>
-        <th>Problem</th>
-        <th>Solution</th>
+        <th>Sorun</th>
+        <th>Çözüm</th>
       </tr>
     </thead>
 
     <tbody>
       <tr>
-        <td>The files are not connecting correctly.</td>
-        <td>Make sure all <a href="https://en.wikipedia.org/wiki/PDF" class="alink">PDF files</a> are not corrupted and re-upload any missing files.</td>
+        <td>Dosyalar doğru şekilde birleşmiyor.</td>
+        <td>Tüm <a href="https://en.wikipedia.org/wiki/PDF" class="alink">PDF dosyalarının</a> bozuk olmadığından emin olun ve eksik dosyaları yeniden yükleyin.</td>
       </tr>
 
       <tr>
-        <td>The merge button is not working.</td>
-        <td>Refresh the page, disable browser extensions, or try using the latest version of Chrome.</td>
+        <td>Birleştir düğmesi çalışmıyor.</td>
+        <td>Sayfayı yenileyin, tarayıcı uzantılarını devre dışı bırakın veya Chrome'un en son sürümünü kullanmayı deneyin.</td>
       </tr>
 
       <tr>
-        <td>Incorrect file order.</td>
-        <td>Manually reorder the files before merging them, or rename the files using numbers to keep them in the correct sequence.</td>
+        <td>Yanlış dosya sırası.</td>
+        <td>Dosyaları birleştirmeden önce manuel olarak yeniden sıralayın veya doğru sırayı korumak için dosyaları numaralarla yeniden adlandırın.</td>
       </tr>
     </tbody>
   </table>
 </div>
   </section>
+
 </div>
 
 <style>
