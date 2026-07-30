@@ -938,7 +938,7 @@ Combina PDF
 
   <section class="isec-block isec-how" aria-labelledby="isec-how-title">
     <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">Come combinare file PDF in un unico PDF?</h2>
+      <h2 id="isec-how-title" class="isec-block__title">Come combinare file PDF (Merge PDF) in un unico PDF?</h2>
       <p class="isec-block__subtitle">Non serve fare molto per unire i file PDF in un unico documento. Se non sai come unire i file PDF, segui semplicemente questi passaggi:</p>
     </div>
     <ol class="isec-steps">
@@ -1179,7 +1179,7 @@ Combina PDF
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Posso unire file PDF su dispositivi mobili?</span>
+          <span>Posso unificare PDF su dispositivi mobili?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
