@@ -40,7 +40,7 @@ layout: default
           "@type": "ListItem",
           "position": 1,
           "name": "{{ t.nav.home }}",
-"item": "{{ site.url }}{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% elsif lang == 'pt' %}pt/{% elsif lang == 'th' %}th/{% elsif lang == 'id' %}id/{% endif %}"
+"item": "{{ site.url }}{{ base }}{% if lang != site.default_lang %}/{{ lang }}{% endif %}/"
      },
         {
           "@type": "ListItem",
@@ -81,8 +81,8 @@ layout: default
   <div class="container">
     <ol>
 <li>
-<a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% elsif lang == 'pt' %}pt/{% elsif lang == 'th' %}th/{% elsif lang == 'id' %}id/{% endif %}">
-{{ t.nav.home }}
+<a href="{{ base }}{% if lang != site.default_lang %}/{{ lang }}{% endif %}/">
+     {{ t.nav.home }}
 </a>
 </li>
          <li aria-current="page">{{ t.blog.title }}</li>
