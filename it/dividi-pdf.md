@@ -909,7 +909,7 @@ scripts:
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
         </span>
         <h3 class="isec-card__title">Disponibile su più sistemi operativi</h3>
-        <p class="isec-card__text">Lo splitter PDF online è disponibile su diversi sistemi operativi come Windows, Mac, Linux, Android e iPhone.</p>
+        <p class="isec-card__text">Lo Split PDF online è disponibile su diversi sistemi operativi come Windows, Mac, Linux, Android e iPhone.</p>
       </div>
 
       <div class="isec-card">
@@ -927,7 +927,7 @@ scripts:
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 8 5-5 5 5"/><path d="M5 21h14"/></svg>
         </span>
         <h3 class="isec-card__title">Carica file PDF con facilità</h3>
-        <p class="isec-card__text">Puoi caricare il tuo file sullo splitter facilmente.</p>
+        <p class="isec-card__text">Puoi caricare il tuo file sullo Split facilmente.</p>
       </div>
 
       <div class="isec-card">
@@ -980,7 +980,7 @@ scripts:
 
   <section class="isec-block isec-how" aria-labelledby="isec-how-title">
     <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">Come funziona il nostro Splitter PDF</h2>
+      <h2 id="isec-how-title" class="isec-block__title">Come funziona il nostro Dividi PDF</h2>
       <p class="isec-block__subtitle">Il programma UnifcarPDF rende molto semplice dividere un file PDF. Ecco come fare:</p>
     </div>
     <ol class="isec-steps">
@@ -1017,7 +1017,7 @@ scripts:
   <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
     <div class="isec-block__head">
       <h2 id="isec-usecases-title" class="isec-block__title">Perfetto per ogni esigenza</h2>
-      <p class="isec-block__subtitle">Scopri come il nostro splitter PDF ti aiuta a organizzare e dividere facilmente i documenti PDF.</p>
+      <p class="isec-block__subtitle">Scopri come il nostro Cut PDF ti aiuta a organizzare e dividere facilmente i documenti PDF.</p>
     </div>
     <div class="isec-card-grid isec-card-grid--use">
 
@@ -1063,7 +1063,7 @@ scripts:
   <section class="isec-block isec-faq" aria-labelledby="isec-faq-title">
     <div class="isec-block__head">
       <h2 id="isec-faq-title" class="isec-block__title">Domande frequenti</h2>
-      <p class="isec-block__subtitle">Hai domande? Abbiamo le risposte. Trova tutto ciò che devi sapere sul nostro Splitter PDF.</p>
+      <p class="isec-block__subtitle">Hai domande? Abbiamo le risposte. Trova tutto ciò che devi sapere sul nostro splitting pdf.</p>
     </div>
     <p class="isec-faq__eyebrow">Per iniziare</p>
     <div class="isec-faq__list">
