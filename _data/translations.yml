@@ -213,3 +213,30 @@ it:
     rights: "Tutti i diritti riservati. Fatto con Love"
     terms: "Termini di Utilizzo"
     privacy: "Informativa sulla Privacy"
+
+tr:
+  lang_name: "Türkçe"
+  lang_code: "tr"
+  dir: "ltr"
+  nav:
+    home: "Ana Sayfa"
+    upload: "PDF Birleştir"
+    blog: "Blog"
+    about: "Hakkımızda"
+    splitpdf: "PDF Böl"
+    jpgapdf: "JPG'den PDF'ye"
+  blog:
+    title: "Blog"
+    read_more: "Devamını Oku"
+    back: "← Bloga Dön"
+    posted_on: "Yayınlanma Tarihi"
+    keep_reading: "Okumaya Devam Et"
+    toc: "İçindekiler"
+  home:
+    heading: "Hoş Geldiniz"
+    subheading: "Jekyll ile oluşturulmuş basit çok dilli bir web sitesi."
+    cta: "Blogu Oku"
+  footer:
+    rights: "Tüm hakları saklıdır. Made with Love"
+    terms: "Kullanım Şartları"
+    privacy: "Gizlilik Politikası"
