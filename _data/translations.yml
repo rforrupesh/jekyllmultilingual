@@ -224,7 +224,7 @@ tr:
     blog: "Blog"
     about: "Hakkımızda"
     splitpdf: "pdf ayırma"
-    jpgapdf: "JPG'den PDF'ye"
+    jpgapdf: "JPG PDF Çevirme"
   blog:
     title: "Blog"
     read_more: "Devamını Oku"
