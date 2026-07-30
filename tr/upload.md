@@ -743,9 +743,9 @@ scripts:
       </button>
       <p class="upload-note">
         Dosya yükleyerek
-        <a href="/en/terms-of-use/" target="_blank">Kullanım Koşullarımızı</a>
+        <a href="/tr/terms-of-use/" target="_blank">Kullanım Koşullarımızı</a>
         ve
-        <a href="/en/privacy-policy/" target="_blank">Gizlilik Politikamızı</a>
+        <a href="/tr/privacy-policy/" target="_blank">Gizlilik Politikamızı</a>
         kabul etmiş olursunuz.
       </p>
     </div>
