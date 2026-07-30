@@ -10,6 +10,7 @@
 {% assign id_exists = false %}
 {% assign de_exists = false %}
 {% assign it_exists = false %}
+{% assign tr_exists = false %}
 
 {% assign es_switch = base | append: "/" %}
 {% assign en_switch = base | append: "/en/" %}
@@ -19,6 +20,7 @@
 {% assign id_switch = base | append: "/id/" %}
 {% assign de_switch = base | append: "/de/" %}
 {% assign it_switch = base | append: "/it/" %}
+{% assign tr_switch = base | append: "/tr/" %}
 
 {% if page.ref %}
   {% assign es_post = site.posts | where: "ref", page.ref | where: "lang", "es" | first %}
@@ -29,6 +31,7 @@
   {% assign id_post = site.posts | where: "ref", page.ref | where: "lang", "id" | first %}
   {% assign de_post = site.posts | where: "ref", page.ref | where: "lang", "de" | first %}
   {% assign it_post = site.posts | where: "ref", page.ref | where: "lang", "it" | first %}
+  {% assign tr_post = site.posts | where: "ref", page.ref | where: "lang", "tr" | first %}
 
   {% assign es_page = site.pages | where: "ref", page.ref | where: "lang", "es" | first %}
   {% assign en_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
@@ -38,6 +41,7 @@
   {% assign id_page = site.pages | where: "ref", page.ref | where: "lang", "id" | first %}
   {% assign de_page = site.pages | where: "ref", page.ref | where: "lang", "de" | first %}
   {% assign it_page = site.pages | where: "ref", page.ref | where: "lang", "it" | first %}
+  {% assign tr_page = site.pages | where: "ref", page.ref | where: "lang", "tr" | first %}
 
   {% if es_post %}
     {% assign es_exists = true %}
@@ -102,11 +106,19 @@
     {% assign it_exists = true %}
     {% assign it_switch = base | append: it_page.url %}
   {% endif %}
+
+  {% if tr_post %}
+    {% assign tr_exists = true %}
+    {% assign tr_switch = base | append: tr_post.url %}
+  {% elsif tr_page %}
+    {% assign tr_exists = true %}
+    {% assign tr_switch = base | append: tr_page.url %}
+  {% endif %}
 {% endif %}
 
 <nav aria-label="Main navigation">
 
-<a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% elsif lang == 'pt' %}pt/{% elsif lang == 'th' %}th/{% elsif lang == 'id' %}id/{% elsif lang == 'de' %}de/{% elsif lang == 'it' %}it/{% endif %}" class="logo">
+<a href="{{ base }}{% if page.lang == 'es' %}/{% else %}/{{ page.lang }}/{% endif %}" class="logo">
   <img src="/assets/img/logo.webp" alt="{{ site.title }}">
   <span>UniFicar PDF</span>
 </a>
@@ -154,6 +166,9 @@
 {% if de_exists %}<a href="{{ de_switch }}" hreflang="de" {% if lang == "de" %}class="active-lang"{% endif %}><img src="/assets/img/flags/de.svg" alt="Deutsch"> Deutsch</a>{% endif %}
 
 {% if it_exists %}<a href="{{ it_switch }}" hreflang="it" {% if lang == "it" %}class="active-lang"{% endif %}><img src="/assets/img/flags/it.svg" alt="Italiano"> Italiano</a>{% endif %}
+
+{% if tr_exists %}<a href="{{ tr_switch }}" hreflang="tr" {% if lang == "tr" %}class="active-lang"{% endif %}><img src="/assets/img/flags/tr.svg" alt="Türkçe"> Türkçe</a>{% endif %}
+
 {% else %}
 
 <a href="#" class="active-lang">
