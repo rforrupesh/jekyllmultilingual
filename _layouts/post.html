@@ -5,6 +5,11 @@ layout: default
 {% assign base = site.baseurl %}
 {% assign lang = page.lang %}
 
+{% assign lang_prefix = "" %}
+{% unless lang == site.default_lang %}
+  {% assign lang_prefix = "/" | append: lang %}
+{% endunless %}
+
 <!-- JSON-LD structured data for Google -->
 <script type="application/ld+json">
 {
@@ -38,11 +43,12 @@ layout: default
       <article>
 
         <!-- Breadcrumb -->
-        <nav class="breadcrumb-post" aria-label="Breadcrumb">
-<a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% elsif lang == 'pt' %}pt/{% elsif lang == 'th' %}th/{% elsif lang == 'id' %}id/{% endif %}">{{ t.nav.home }}</a>
-          <span class="breadcrumb-sep" aria-hidden="true">›</span>
-<a href="{{ base }}/{% if lang == 'fr' %}fr/{% elsif lang == 'en' %}en/{% elsif lang == 'pt' %}pt/{% elsif lang == 'th' %}th/{% elsif lang == 'id' %}id/{% endif %}blog/">{{ t.nav.blog }}</a>
-        </nav>
+       <!-- Breadcrumb -->
+<nav class="breadcrumb-post" aria-label="Breadcrumb">
+  <a href="{{ base }}{{ lang_prefix }}/">{{ t.nav.home }}</a>
+  <span class="breadcrumb-sep" aria-hidden="true">›</span>
+  <a href="{{ base }}{{ lang_prefix }}/blog/">{{ t.nav.blog }}</a>
+</nav>
 
         <!-- Hero Image -->
         {% if page.thumbnail %}
