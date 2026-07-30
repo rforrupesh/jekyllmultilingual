@@ -963,9 +963,9 @@ scripts:
 
       <div class="app-shell">
         <div id="uploadState">
-          <h1 class="page-title">Free JPG to PDF Converter</h1>
+          <h1 class="page-title">Convertitore gratuito da JPG a PDF</h1>
           <p class="page-sub">
-Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JPG, PNG, or any IMAGE file and get a high-quality PDF in minutes. No signup required, no downloads needed.
+Converti le tue immagini JPG in PDF istantaneamente online con i nostri strumenti PDF 100% gratuiti. Carica file JPG, PNG o qualsiasi immagine e ottieni un PDF di alta qualità in pochi minuti. Nessuna registrazione richiesta, nessun download necessario.
 
           </p>
           <div class="upload-box" id="dropZone">
@@ -982,8 +982,8 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                 <polyline points="21 15 16 10 5 21" />
               </svg>
             </div>
-            <h2>Drop images here</h2>
-            <p>JPG, PNG, WebP, GIF, BMP — all welcome</p>
+            <h2>Trascina le immagini qui</h2>
+            <p>JPG, PNG, WebP, GIF, BMP — tutti benvenuti</p>
             <button class="btn-black" id="browseBtn">
               <svg
                 viewBox="0 0 24 24"
@@ -996,10 +996,10 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                   d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"
                 />
               </svg>
-              Select Images
+              Seleziona immagini
             </button>
-             <p class="upload-note">By uploading files,
-             you agree to our <a href="/en/terms-of-use/">Terms of Use</a> and our <a href="/en/privacy-policy/">Privacy Policy</a>. 
+             <p class="upload-note">Caricando i file,
+             accetti i nostri <a href="/en/terms-of-use/">Termini di Utilizzo</a> e la nostra <a href="/en/privacy-policy/">Informativa sulla Privacy</a>. 
              </p>
           </div>
         </div>
@@ -1009,14 +1009,14 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
             <div class="preview-panel">
               <div class="preview-toolbar">
                 <div class="preview-toolbar-left">
-                  <span class="preview-label">Images</span>
+                  <span class="preview-label">Immagini</span>
                   <span class="file-count" id="fileCount">0</span>
 
                   <div class="sort-row">
                     <button
                       class="btn-sm"
                       onclick="sortFiles('asc')"
-                      title="Sort A–Z"
+                      title="Ordina A–Z"
                     >
                       <svg
                         viewBox="0 0 12 12"
@@ -1031,7 +1031,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                     <button
                       class="btn-sm"
                       onclick="sortFiles('desc')"
-                      title="Sort Z–A"
+                      title="Ordina Z–A"
                     >
                       <svg
                         viewBox="0 0 12 12"
@@ -1050,7 +1050,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                       class="btn-sm"
                       id="undoBtn"
                       onclick="undo()"
-                      title="Undo (Ctrl+Z)"
+                      title="Annulla (Ctrl+Z)"
                       disabled
                     >
                       <svg
@@ -1063,14 +1063,14 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                         <path d="M9 14L4 9l5-5" />
                         <path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11" />
                       </svg>
-                      Undo
+                      Annulla
                     </button>
 
                     <button
                       class="btn-sm"
                       id="redoBtn"
                       onclick="redo()"
-                      title="Redo (Ctrl+Y)"
+                      title="Ripeti (Ctrl+Y)"
                       disabled
                     >
                       <svg
@@ -1083,7 +1083,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                         <path d="M15 14l5-5-5-5" />
                         <path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13" />
                       </svg>
-                      Redo
+                      Ripeti
                     </button>
                   </div>
                 </div>
@@ -1093,14 +1093,14 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
 
               <div class="progress-wrap" id="progressWrap">
                 <div class="spinner"></div>
-                <span class="progress-text" id="progressText">Converting…</span>
+                <span class="progress-text" id="progressText">Conversione in corso…</span>
               </div>
             </div>
 
             <div class="settings-panel" id="settingsPanel">
               <div class="settings-inner">
                 <div class="setting-group">
-                  <span class="setting-label">Page Size</span>
+                  <span class="setting-label">Dimensione pagina</span>
                   <div class="option-pills" id="pageSizeGroup">
                     <div
                       class="option-pill active"
@@ -1164,8 +1164,8 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                             d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"
                           /></svg
                       ></span>
-                      Fit to image
-                      <span class="pill-sub">auto</span>
+                      Adatta all'immagine
+                      <span class="pill-sub">automatico</span>
                     </div>
                   </div>
                 </div>
@@ -1173,7 +1173,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                 <hr class="settings-divider" />
 
                 <div class="setting-group">
-                  <span class="setting-label">Orientation</span>
+                  <span class="setting-label">Orientamento</span>
                   <div class="option-pills-row" id="orientGroup">
                     <div
                       class="option-pill-sq active"
@@ -1181,7 +1181,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                       onclick="selectOpt(this, 'orientGroup')"
                     >
                       <div class="orient-icon"></div>
-                      Portrait
+                      Verticale
                     </div>
                     <div
                       class="option-pill-sq"
@@ -1189,7 +1189,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                       onclick="selectOpt(this, 'orientGroup')"
                     >
                       <div class="orient-icon orient-land"></div>
-                      Landscape
+                      Orizzontale
                     </div>
                   </div>
                 </div>
@@ -1197,7 +1197,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                 <hr class="settings-divider" />
 
                 <div class="setting-group">
-                  <span class="setting-label">Margin</span>
+                  <span class="setting-label">Margine</span>
                   <div class="option-pills" id="marginGroup">
                     <div
                       class="option-pill active"
@@ -1219,7 +1219,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                             rx="2"
                           /></svg
                       ></span>
-                      No margin
+                      Nessun margine
                     </div>
                     <div
                       class="option-pill"
@@ -1241,7 +1241,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                             rx="1.5"
                           /></svg
                       ></span>
-                      Small
+                      Piccolo
                       <span class="pill-sub">10 pt</span>
                     </div>
                     <div
@@ -1264,7 +1264,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                             rx="1.5"
                           /></svg
                       ></span>
-                      Big
+                      Grande
                       <span class="pill-sub">30 pt</span>
                     </div>
                   </div>
@@ -1276,7 +1276,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                   <button
                     class="btn-add-img"
                     id="addImgBtnDesktop"
-                    title="Add more images"
+                    title="Aggiungi altre immagini"
                     onclick="$('moreInput').click()"
                   >
                     <svg
@@ -1289,7 +1289,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                       <line x1="12" y1="5" x2="12" y2="19" />
                       <line x1="5" y1="12" x2="19" y2="12" />
                     </svg>
-                    Add
+                    Aggiungi
                   </button>
                   <button
                     class="btn-convert"
@@ -1310,7 +1310,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
                       <line x1="12" y1="18" x2="12" y2="12" />
                       <line x1="9" y1="15" x2="15" y2="15" />
                     </svg>
-                    Convert to PDF
+                    Converti in PDF
                   </button>
                 </div>
               </div>
@@ -1330,12 +1330,12 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
               <line x1="3" y1="12" x2="21" y2="12" />
               <line x1="3" y1="18" x2="21" y2="18" />
             </svg>
-            Options
+            Opzioni
           </button>
           <button
             class="btn-add-mobile"
             onclick="$('moreInput').click()"
-            title="Add more images"
+            title="Aggiungi altre immagini"
           >
             <svg
               viewBox="0 0 24 24"
@@ -1347,7 +1347,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
               <line x1="12" y1="5" x2="12" y2="19" />
               <line x1="5" y1="12" x2="19" y2="12" />
             </svg>
-            Add
+            Aggiungi
           </button>
           <button
             class="btn-convert"
@@ -1364,7 +1364,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
               <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
               <polyline points="14 2 14 8 20 8" />
             </svg>
-            Convert
+            Converti
           </button>
         </div>
 
@@ -1376,7 +1376,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
         <div class="mobile-settings-drawer" id="settingsDrawer">
           <div class="drawer-handle"></div>
           <button class="drawer-close" onclick="closeDrawer()">✕</button>
-          <div class="drawer-title">PDF Options</div>
+          <div class="drawer-title">Opzioni PDF</div>
           <div class="drawer-body" id="drawerBody">
           </div>
         </div>
@@ -1389,14 +1389,12 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
 
 
       <div id="infoContent">
-
- 
-        <div id="split-pdf-info">
+<div id="split-pdf-info">
   <section class="isec-block isec-why" aria-labelledby="isec-why-title">
     <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Why Choose UniFicarPDF.com for Image to PDF Conversion? </h2>
+      <h2 id="isec-why-title" class="isec-block__title">Perché scegliere UniFicarPDF.com per la conversione da immagine a PDF? </h2>
       <div class="isec-block__desc">
-        <p> Create professional PDF files from your images with fast, secure, and reliable conversion 
+        <p> Crea file PDF professionali dalle tue immagini con una conversione rapida, sicura e affidabile 
        </p>
       </div>
     </div>
@@ -1406,56 +1404,56 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
         </span>
-        <h3 class="isec-card__title">Instant & Free</h3>
-        <p class="isec-card__text">No registration required. No installation needed. Convert JPG/JPEG files to PDF instantly and download it immediately</p>
+        <h3 class="isec-card__title">Istantaneo e gratuito</h3>
+        <p class="isec-card__text">Nessuna registrazione richiesta. Nessuna installazione necessaria. Converti file JPG/JPEG in PDF istantaneamente e scaricalo subito</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
         </span>
-        <h3 class="isec-card__title">100% Secure & Private</h3>
-        <p class="isec-card__text">We value your privacy. All uploaded images are secured with encryption while being processed and are automatically deleted right after conversion, ensuring that all personal and business files remain private</p>
+        <h3 class="isec-card__title">100% sicuro e privato</h3>
+        <p class="isec-card__text">La tua privacy è importante per noi. Tutte le immagini caricate sono protette con crittografia durante l'elaborazione e vengono eliminate automaticamente subito dopo la conversione, garantendo che tutti i file personali e aziendali rimangano privati</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
         </span>
-        <h3 class="isec-card__title">Combine Many JPGs</h3>
-        <p class="isec-card__text">Convert 50-page scanned document or one picture without any file size limitation. Upload several JPEG files and get a multi-page PDF. You can drag-and-drop images to change order before conversion.</p>
+        <h3 class="isec-card__title">Combina molti JPG</h3>
+        <p class="isec-card__text">Converti un documento scansionato di 50 pagine o una singola immagine senza alcun limite di dimensione del file. Carica più file JPEG e ottieni un PDF multi-pagina. Puoi trascinare le immagini per cambiare l'ordine prima della conversione.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
         </span>
-        <h3 class="isec-card__title">Original quality intact</h3>
-        <p class="isec-card__text">Ensure that you get a high-resolution PDF document, which will retain all the colors and sharpness of the images in the original quality.</p>
+        <h3 class="isec-card__title">Qualità originale intatta</h3>
+        <p class="isec-card__text">Garantisce un documento PDF ad alta risoluzione, che manterrà tutti i colori e la nitidezza delle immagini nella qualità originale.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
         </span>
-        <h3 class="isec-card__title">Full Control</h3>
-        <p class="isec-card__text">Select the page size for the document as A4, Letter or Fit-to-Image; the orientation either in portrait or landscape mode; margin size and image quality.</p>
+        <h3 class="isec-card__title">Controllo completo</h3>
+        <p class="isec-card__text">Seleziona la dimensione della pagina del documento tra A4, Letter o Adatta all'immagine; l'orientamento in modalità verticale o orizzontale; la dimensione del margine e la qualità dell'immagine.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
         </span>
-        <h3 class="isec-card__title">Unlimited Conversions</h3>
-        <p class="isec-card__text">Make unlimited conversions without any limitations on the number of times per day and size of the file, limited only by your device.</p>
+        <h3 class="isec-card__title">Conversioni illimitate</h3>
+        <p class="isec-card__text">Effettua conversioni illimitate senza alcun limite sul numero di volte al giorno e sulla dimensione del file, limitato solo dal tuo dispositivo.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
         </span>
-        <h3 class="isec-card__title">Live Preview</h3>
-        <p class="isec-card__text">See how your PDF will look like once it's done. Rearrange the images and check each page with confidence.</p>
+        <h3 class="isec-card__title">Anteprima dal vivo</h3>
+        <p class="isec-card__text">Guarda come apparirà il tuo PDF una volta completato. Riordina le immagini e controlla ogni pagina con sicurezza.</p>
       </div>
     </div>
   </section>
@@ -1464,9 +1462,9 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
 
 <section class="isec-block isec-how" aria-labelledby="isec-how-title">
   <div class="isec-block__head">
-    <h2 id="isec-how-title" class="isec-block__title">How to Convert JPG to PDF Files Online</h2>
+    <h2 id="isec-how-title" class="isec-block__title">Come convertire file JPG in PDF online</h2>
     <p class="isec-block__subtitle">
-      Converting your images to PDF with <strong>UniFicarPDF.com</strong> is quick and easy. Follow these simple steps to create a high-quality PDF in just a few clicks.
+      Convertire le tue immagini in PDF con <strong>UniFicarPDF.com</strong> è rapido e semplice. Segui questi semplici passaggi per creare un PDF di alta qualità in pochi clic.
     </p>
   </div>
 
@@ -1474,25 +1472,25 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
     <li>
       <span class="isec-steps__num">1</span>
       <div class="isec-steps__body">
-        Upload your JPG, JPEG, PNG, WEBP, or other supported image files by dragging and dropping them into the upload area, or click <strong>Choose File</strong> to browse your device.
+        Carica i tuoi file JPG, JPEG, PNG, WEBP o altri formati di immagine supportati trascinandoli nell'area di caricamento, oppure clicca su <strong>Scegli file</strong> per sfogliare il tuo dispositivo.
       </div>
     </li>
 
     <li>
       <span class="isec-steps__num">2</span>
       <div class="isec-steps__body">
-        If any image is not in the correct direction, use the <strong>Rotate</strong> option to adjust it. Each image can be rotated individually before conversion.
+        Se un'immagine non è nell'orientamento corretto, usa l'opzione <strong>Ruota</strong> per correggerla. Ogni immagine può essere ruotata singolarmente prima della conversione.
       </div>
     </li>
 
     <li>
       <span class="isec-steps__num">3</span>
       <div class="isec-steps__body">
-        Select your preferred page size:
+        Seleziona la dimensione di pagina preferita:
         <ul class="isec-substeps">
-          <li><strong>A4</strong> – Best for printing and standard documents.</li>
-          <li><strong>US Letter</strong> – Ideal for office and business use.</li>
-          <li><strong>Fit to Image</strong> – Automatically matches the PDF page size to your image.</li>
+          <li><strong>A4</strong> – Ideale per la stampa e i documenti standard.</li>
+          <li><strong>US Letter</strong> – Perfetto per l'uso in ufficio e in azienda.</li>
+          <li><strong>Adatta all'immagine</strong> – Adatta automaticamente la dimensione della pagina PDF alla tua immagine.</li>
         </ul>
       </div>
     </li>
@@ -1500,10 +1498,10 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
     <li>
       <span class="isec-steps__num">4</span>
       <div class="isec-steps__body">
-        Choose the page orientation and margins that suit your needs.
+        Scegli l'orientamento della pagina e i margini più adatti alle tue esigenze.
         <ul class="isec-substeps">
-          <li><strong>Portrait</strong> or <strong>Landscape</strong> orientation.</li>
-          <li><strong>No Margin</strong>, <strong>Small Margin</strong>, or <strong>Large Margin</strong> for the page layout.</li>
+          <li>Orientamento <strong>Verticale</strong> o <strong>Orizzontale</strong>.</li>
+          <li><strong>Nessun margine</strong>, <strong>Margine piccolo</strong> o <strong>Margine grande</strong> per il layout della pagina.</li>
         </ul>
       </div>
     </li>
@@ -1511,7 +1509,7 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
     <li>
       <span class="isec-steps__num">5</span>
       <div class="isec-steps__body">
-        Click <strong>Add</strong> to include more images if needed. When everything is ready, click <strong>Convert to PDF</strong>. Your PDF will be created in seconds and will be ready to download instantly.
+        Clicca su <strong>Aggiungi</strong> per includere altre immagini, se necessario. Quando tutto è pronto, clicca su <strong>Converti in PDF</strong>. Il tuo PDF verrà creato in pochi secondi e sarà pronto per il download immediato.
       </div>
     </li>
   </ol>
@@ -1521,8 +1519,8 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
           
   <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
     <div class="isec-block__head">
-      <h2 id="isec-usecases-title" class="isec-block__title">Perfect for All Use Cases of your JPG images to PDF</h2>
-      <p class="isec-block__subtitle">Find out the various things you can do with our tool when merging your photos</p>
+      <h2 id="isec-usecases-title" class="isec-block__title">Perfetto per ogni utilizzo delle tue immagini JPG in PDF</h2>
+      <p class="isec-block__subtitle">Scopri le varie cose che puoi fare con il nostro strumento quando unisci le tue foto</p>
     </div>
     <div class="isec-card-grid isec-card-grid--use">
       <div class="isec-card">
@@ -1530,116 +1528,116 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
         </span>
-        <h3 class="isec-card__title">Scanning Documents</h3>
-        <p class="isec-card__text">Convert photos of paper documents into clean, searchable PDF files that are easy to store, print and share across devices.</p>
+        <h3 class="isec-card__title">Scansione di documenti</h3>
+        <p class="isec-card__text">Converti foto di documenti cartacei in file PDF puliti e ricercabili, facili da conservare, stampare e condividere tra i dispositivi.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg></span>
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
         </span>
-        <h3 class="isec-card__title">Assignment Submission</h3>
-        <p class="isec-card__text">Create a single PDF by combining multiple images of your handwritten homework, notes or projects for fast and easy online submission.</p>
+        <h3 class="isec-card__title">Invio di compiti</h3>
+        <p class="isec-card__text">Crea un unico PDF combinando più immagini dei tuoi compiti scritti a mano, appunti o progetti per un invio online rapido e semplice.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg></span>
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg>
         </span>
-        <h3 class="isec-card__title">Business & Office Documents</h3>
-        <p class="isec-card__text">Convert invoices, receipts, contracts and forms to professional PDF documents that are easy to organize, archive and send.</p>
+        <h3 class="isec-card__title">Documenti aziendali e d'ufficio</h3>
+        <p class="isec-card__text">Converti fatture, ricevute, contratti e moduli in documenti PDF professionali, facili da organizzare, archiviare e inviare.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg></span>
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg>
         </span>
-        <h3 class="isec-card__title">ID & Certificate Sharing</h3>
-        <p class="isec-card__text">Create secure PDF files from passports, ID cards, licenses, and certificates for job applications, admissions, banking and government services</p>
+        <h3 class="isec-card__title">Condivisione di documenti d'identità e certificati</h3>
+        <p class="isec-card__text">Crea file PDF sicuri da passaporti, carte d'identità, patenti e certificati per candidature di lavoro, ammissioni, servizi bancari e governativi</p>
       </div>
     </div>
   </section>
   <section class="isec-block isec-faq" aria-labelledby="isec-faq-title">
     <div class="isec-block__head">
-      <h2 id="isec-faq-title" class="isec-block__title">Frequently Asked Questions</h2>
-      <p class="isec-block__subtitle">Des questions sur comment diviser, séparer ou extraire page d'un PDF ? Voici les réponses.</p>
+      <h2 id="isec-faq-title" class="isec-block__title">Domande frequenti</h2>
+      <p class="isec-block__subtitle">Domande su come dividere, separare o estrarre pagine da un PDF? Ecco le risposte.</p>
     </div>
-    <p class="isec-faq__eyebrow">Getting Started</p>
+    <p class="isec-faq__eyebrow">Per iniziare</p>
     <div class="isec-faq__list">
       <div class="isec-faq__item is-open">
         <button type="button" class="isec-faq__summary" aria-expanded="true">
-          <span>Is the conversion process secure?</span>
+          <span>Il processo di conversione è sicuro?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes. Your images are processed securely, and uploaded files are automatically removed after a short time to protect your privacy.</p>
+            <p>Sì. Le tue immagini vengono elaborate in modo sicuro, e i file caricati vengono rimossi automaticamente dopo un breve periodo per proteggere la tua privacy.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I Merge multiple images to one PDF?</span>
+          <span>Posso unire più immagini in un unico PDF?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes. You can upload multiple JPG, PNG, or other supported images and combine them into a single PDF in your preferred order.</p>
+            <p>Sì. Puoi caricare più immagini JPG, PNG o altri formati supportati e combinarle in un unico PDF nell'ordine che preferisci.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>What file formats are supported?</span>
+          <span>Quali formati di file sono supportati?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>The tool On UnificarPDF.com supports popular image formats including JPG, JPEG, PNG, WEBP, BMP, GIF, and TIFF.</p>
+            <p>Lo strumento su UnificarPDF.com supporta i formati di immagine più diffusi, tra cui JPG, JPEG, PNG, WEBP, BMP, GIF e TIFF.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is there a file size limit?</span>
+          <span>Esiste un limite di dimensione del file?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>You can upload large images, but very large files may take a little longer to process. If you encounter a limit, try reducing the image size or splitting the files.</p>
+            <p>Puoi caricare immagini di grandi dimensioni, ma i file molto grandi potrebbero richiedere un po' più di tempo per l'elaborazione. Se riscontri un limite, prova a ridurre la dimensione dell'immagine o a dividere i file.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I need to register or pay?</span>
+          <span>Devo registrarmi o pagare?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No. The JPG to PDF tool is completely free to use, and no registration or sign-up is required.</p>
+            <p>No. Lo strumento JPG in PDF è completamente gratuito, e non è richiesta alcuna registrazione o iscrizione.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How is the PDF quality maintained?</span>
+          <span>Come viene mantenuta la qualità del PDF?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Your images are converted with high quality, preserving their original resolution, clarity, and layout as much as possible.</p>
+            <p>Le tue immagini vengono convertite con alta qualità, mantenendo il più possibile la risoluzione originale, la nitidezza e il layout.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How do I turn a picture into a PDF on a Mac or Windows PC?</span>
+          <span>Come trasformo un'immagine in PDF su Mac o PC Windows?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Simply open the JPG to PDF tool in your browser, upload your image(s), arrange them if needed, and click Convert to PDF. Once the conversion is complete, download your PDF instantly. No software installation is required.</p>
+            <p>Basta aprire lo strumento JPG in PDF nel tuo browser, caricare le tue immagini, riordinarle se necessario e cliccare su Converti in PDF. Una volta completata la conversione, scarica il tuo PDF immediatamente. Non è richiesta alcuna installazione di software.</p>
           </div>
         </div>
       </div>
@@ -1647,12 +1645,9 @@ Convert Your JPG to PDF online instantly with our 100% free PDF tools. Upload JP
     </div>
   </section>
 </div>
+ 
+   
 <style>
-
-
-
-
-  
 #split-pdf-info {
   --isec-ink: var(--text, #1a1d27);
   --isec-ink-soft: var(--text-muted, #6b7280);
