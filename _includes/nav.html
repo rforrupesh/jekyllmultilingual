@@ -11,6 +11,7 @@
 {% assign de_exists = false %}
 {% assign it_exists = false %}
 {% assign tr_exists = false %}
+{% assign hu_exists = false %}
 
 {% assign es_switch = base | append: "/" %}
 {% assign en_switch = base | append: "/en/" %}
@@ -21,6 +22,7 @@
 {% assign de_switch = base | append: "/de/" %}
 {% assign it_switch = base | append: "/it/" %}
 {% assign tr_switch = base | append: "/tr/" %}
+{% assign hu_switch = base | append: "/hu/" %}
 
 {% if page.ref %}
   {% assign es_post = site.posts | where: "ref", page.ref | where: "lang", "es" | first %}
@@ -32,6 +34,7 @@
   {% assign de_post = site.posts | where: "ref", page.ref | where: "lang", "de" | first %}
   {% assign it_post = site.posts | where: "ref", page.ref | where: "lang", "it" | first %}
   {% assign tr_post = site.posts | where: "ref", page.ref | where: "lang", "tr" | first %}
+  {% assign hu_post = site.posts | where: "ref", page.ref | where: "lang", "hu" | first %}
 
   {% assign es_page = site.pages | where: "ref", page.ref | where: "lang", "es" | first %}
   {% assign en_page = site.pages | where: "ref", page.ref | where: "lang", "en" | first %}
@@ -42,6 +45,7 @@
   {% assign de_page = site.pages | where: "ref", page.ref | where: "lang", "de" | first %}
   {% assign it_page = site.pages | where: "ref", page.ref | where: "lang", "it" | first %}
   {% assign tr_page = site.pages | where: "ref", page.ref | where: "lang", "tr" | first %}
+  {% assign hu_page = site.pages | where: "ref", page.ref | where: "lang", "hu" | first %}
 
   {% if es_post %}
     {% assign es_exists = true %}
@@ -116,6 +120,14 @@
   {% endif %}
 {% endif %}
 
+{% if hu_post %}
+  {% assign hu_exists = true %}
+  {% assign hu_switch = base | append: hu_post.url %}
+{% elsif hu_page %}
+  {% assign hu_exists = true %}
+  {% assign hu_switch = base | append: hu_page.url %}
+{% endif %}
+
 <nav aria-label="Main navigation">
 
 <a href="{{ base }}{% if page.lang == 'es' %}/{% else %}/{{ page.lang }}/{% endif %}" class="logo">
@@ -168,6 +180,8 @@
 {% if it_exists %}<a href="{{ it_switch }}" hreflang="it" {% if lang == "it" %}class="active-lang"{% endif %}><img src="/assets/img/flags/it.svg" alt="Italiano"> Italiano</a>{% endif %}
 
 {% if tr_exists %}<a href="{{ tr_switch }}" hreflang="tr" {% if lang == "tr" %}class="active-lang"{% endif %}><img src="/assets/img/flags/tr.svg" alt="Türkçe"> Türkçe</a>{% endif %}
+
+{% if hu_exists %}<a href="{{ hu_switch }}" hreflang="hu" {% if lang == "hu" %}class="active-lang"{% endif %}><img src="/assets/img/flags/hu.svg" alt="Magyar"> Magyar</a>{% endif %}
 
 {% else %}
 
