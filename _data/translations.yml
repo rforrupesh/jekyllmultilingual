@@ -250,8 +250,8 @@ hu:
     upload: "PDF Egyesítése"
     blog: "Blog"
     about: "Rólunk"
-    splitpdf: "PDF Felosztása"
-    jpgapdf: "JPG PDF-be"
+    splitpdf: "PDF Szétszedése"
+    jpgapdf: "JPG Ből PDF"
   blog:
     title: "Blog"
     read_more: "Tovább olvasom"
