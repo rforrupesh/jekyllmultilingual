@@ -1,8 +1,8 @@
 ---
 layout: default
-title: PDF fájlok egyesítése online ingyen – Több PDF egyetlen dokumentumba
-description: "Töltsd fel és rendezd könnyedén PDF-fájljaidat, majd tölts le egyetlen egyesített dokumentumot. Gyors, korlátlan és teljesen ingyenes online PDF-egyesítő."
-keywords: "PDF egyesítés, PDF felosztás, PDF egyesítő, PDF szétválasztás, PDF tömörítés, PDF konvertálás, Word PDF-be, Excel PDF-be, PowerPoint PDF-be, PDF JPG-be, JPG PDF-be"
+title: PDF összefűzés online ingyen – Több PDF egyetlen dokumentumba
+description: "PDF összefűzés online ingyen. Tölts fel több PDF-fájlt, rendezd őket tetszőleges sorrendbe, majd egyesítsd őket egyetlen PDF dokumentummá gyorsan, biztonságosan és korlátok nélkül."
+keywords: "PDF összefűzés, PDF összefűző, PDF fájlok egyesítése, PDF egyesítés, PDF egyesítő, PDF online összefűzés, PDF egyesítése online, PDF tömörítés, PDF felosztás, PDF konvertálás, Word PDF-be, Excel PDF-be, PowerPoint PDF-be, PDF JPG-be, JPG PDF-be"
 ref: home
 lang: hu
 permalink: /hu/
