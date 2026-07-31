@@ -721,7 +721,7 @@ scripts:
 </div>
 <main class="container1">
   <!-- H1 + P — visible before upload, hidden after -->
-  <h1 class="page-title" id="pageTitle">Select multiple PDF files and combine them into a single document with one click. No watermarks, no limits.</h1>
+  <h1 class="page-title" id="pageTitle">Válasszon ki több PDF fájlt, és fűzze össze őket egyetlen dokumentummá egyetlen kattintással. Vízjel nélkül, korlátok nélkül.</h1>
   <p class="page-sub" id="pageSub"></p>
   <!-- UPLOAD STATE (centered, full viewport height) -->
   <div id="uploadState">
@@ -733,19 +733,19 @@ scripts:
           <line x1="12" y1="3" x2="12" y2="15"/>
         </svg>
       </div>
-      <h2>Drag PDF files here</h2>
-      <p>or click the button below to browse.</p>
+      <h2>Húzza ide a PDF fájlokat</h2>
+      <p>vagy kattintson az alábbi gombra a tallózáshoz.</p>
       <button class="btn-black" id="browseBtn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
         </svg>
-        Select files
+        Fájlok kiválasztása
       </button>
       <p class="upload-note">
-        By uploading files, you agree to our
-        <a href="/en/terms-of-use/" target="_blank">Terms of Use</a>
-        and our
-        <a href="/en/privacy-policy/" target="_blank">Privacy Policy</a>.
+        A fájlok feltöltésével elfogadja
+        <a href="/hu/terms-of-use/" target="_blank">felhasználási feltételeinket</a>
+        és
+        <a href="/hu/privacy-policy/" target="_blank">adatvédelmi irányelveinket</a>.
       </p>
     </div>
     <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
@@ -754,7 +754,7 @@ scripts:
   <div id="uploadedState">
     <div class="toolbar">
       <div class="toolbar-left">
-        <span class="toolbar-title">Files to merge</span>
+        <span class="toolbar-title">Összefűzendő fájlok</span>
         <span class="file-count" id="fileCount">0</span>
         <button class="btn-sm" onclick="sortFiles('asc')">
           <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
@@ -771,20 +771,20 @@ scripts:
         <button class="btn-add-top" onclick="document.getElementById('moreInput').click()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
-          </svg>Add PDF
+          </svg>PDF hozzáadása
         </button>
         <button class="btn-merge-top" id="mergeBtnTop" onclick="mergePDFs()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <path d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h3M16 6h3a2 2 0 012 2v8a2 2 0 01-2 2h-3M12 3v18"/>
           </svg>
-          Merge PDF
+          PDF összefűzése
         </button>
       </div>
     </div>
     <div class="file-list-wrap" id="fileList"></div>
     <div class="progress-wrap" id="progressWrap">
       <div class="spinner"></div>
-      <span class="progress-text" id="progressText">Merging…</span>
+      <span class="progress-text" id="progressText">Összefűzés folyamatban…</span>
     </div>
   </div>
   <input type="file" id="moreInput" multiple accept="application/pdf" hidden>
@@ -794,12 +794,12 @@ scripts:
   <button class="add-btn" onclick="document.getElementById('moreInput').click()">
     <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
       <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
-    </svg>Add
+    </svg>Hozzáadás
   </button>
   <button class="btn-merge-full" id="mergeBtnBottom" onclick="mergePDFs()">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
       <path d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h3M16 6h3a2 2 0 012 2v8a2 2 0 01-2 2h-3M12 3v18"/>
-    </svg>Merge PDF
+    </svg>PDF összefűzése
   </button>
 </div>
 <!-- FOOTER — hidden until files uploaded -->
