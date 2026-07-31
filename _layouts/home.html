@@ -8,8 +8,7 @@ layout: default
   <div class="hero-inner">
     <h1>{{ t.home.heading }}</h1>
     <p class="hero-sub">{{ t.home.subheading }}</p>
-<a class="btn" href="{{ base }}/{% if page.lang == 'fr' %}fr/{% elsif page.lang == 'en' %}en/{% elsif page.lang == 'pt' %}pt/{% elsif page.lang == 'th' %}th/{% endif %}blog/">
-  {{ t.home.cta }}
+<a class="btn" href="{{ base }}/{% if page.lang == 'fr' %}fr/{% elsif page.lang == 'en' %}en/{% elsif page.lang == 'pt' %}pt/{% elsif page.lang == 'th' %}th/{% elsif page.lang == 'id' %}id/{% elsif page.lang == 'de' %}de/{% elsif page.lang == 'it' %}it/{% elsif page.lang == 'tr' %}tr/{% elsif page.lang == 'hu' %}hu/{% endif %}blog/">  {{ t.home.cta }}
 </a>
   </div>
 </section>
