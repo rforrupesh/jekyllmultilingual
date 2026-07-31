@@ -805,21 +805,18 @@ scripts:
   <!-- INFO — only shown before upload -->
 <div id="infoContent" class="post-content">
 
-
 <div id="split-pdf-info">
  
   <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
     <p class="isec-card__text">
-         Merging multiple PDF documents into a single PDF file is extremely easy with our tool. Don't waste time combining PDFs manually.
+         Több PDF dokumentum egyetlen fájllá való PDF összefűzése rendkívül egyszerű az eszközünkkel. Ne pazarolja az idejét a PDF-ek kézi egyesítésével.
     </p> 
     <p class="isec-card__text">
-      Our PDF Merger is a free online PDF tool that helps you join, merge, and combine two or more PDF files instantly
-      without reducing quality.
+      A PDF összefűző eszközünk egy ingyenes online megoldás, amely segít két vagy több PDF fájl azonnali, minőségveszteség nélküli PDF egyesítésében.
     </p>
 
     <p class="isec-card__text">
-      It uses advanced technology to merge your PDF documents quickly, easily, and securely with a single click. Easily
-      combine PDF pages, organize PDF files, and create a high-quality PDF online anytime, anywhere.
+      Fejlett technológiát alkalmaz, hogy egyetlen kattintással gyorsan, egyszerűen és biztonságosan elvégezze a PDF összefűzést online. Rendezze PDF oldalait, szervezze fájljait, és hozzon létre kiváló minőségű dokumentumot bárhol, bármikor.
     </p>
   </section>
 
@@ -832,21 +829,17 @@ scripts:
          height="350">
 
     <figcaption>
-        Combine multiple PDF files into one instantly
+        Több PDF fájl azonnali egyesítése egyetlen dokumentummá
     </figcaption>
 </figure>
 </section>
 
   <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
     <p class="isec-card__text">
-       Receiving hundreds of PDF files in your file manager from school projects, office work, university assignments, business documents, or professional tasks can make it difficult to manage important documents properly. These files can easily be misplaced, lost, or mixed with unnecessary documents if they are not organized in time.
-
-
+       Ha iskolai projektek, irodai munkák, egyetemi feladatok, üzleti iratok vagy szakmai teendők miatt több száz PDF fájl gyűlik össze a fájlkezelőjében, a fontos dokumentumok megfelelő kezelése komoly kihívássá válhat. Ezek a fájlok könnyen elkeveredhetnek, elveszhetnek vagy szükségtelen dokumentumok közé kerülhetnek, ha nem rendezi őket időben.
     </p> 
     <p class="isec-card__text">
-     Instead of storing multiple PDF documents separately, it is better to combine and organize them into a single PDF file for better document management, easier sharing, faster access, and secure storage. Managing PDFs in one document helps save storage space, improves productivity, and keeps important files well organized.
-
-
+      Ahelyett, hogy több PDF dokumentumot külön tárolna, érdemesebb azokat egyetlen PDF fájlba összefűzni és rendezni a jobb dokumentumkezelés, az egyszerűbb megosztás, a gyorsabb hozzáférés és a biztonságos tárolás érdekében. A PDF összefűzés ingyen elvégezhető eszközünkkel tárhelyet takarít meg, növeli a termelékenységet és rendben tartja a fontos fájlokat.
     </p>
 
   </section>
@@ -854,7 +847,7 @@ scripts:
 
   <section class="isec-block isec-why" aria-labelledby="isec-why-title">
     <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Why use UnificarPDF.com to merge PDF files?</h2>
+      <h2 id="isec-why-title" class="isec-block__title">Miért válassza az UnificarPDF.com-ot PDF összefűzéshez?</h2>
     </div>
     <div class="isec-card-grid">
 
@@ -863,8 +856,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
         </span>
-        <h3 class="isec-card__title">Fast File Merging</h3>
-        <p class="isec-card__text">This high-speed online merger is ideal for combining reports, invoices, scanned pages, and business documents without delays. It improves workflow efficiency and helps users manage digital files more easily.</p>
+        <h3 class="isec-card__title">Gyors fájl-összefűzés</h3>
+        <p class="isec-card__text">Ez a nagy sebességű online PDF összefűző ideális jelentések, számlák, szkennelt oldalak és üzleti dokumentumok késedelem nélküli egyesítéséhez. Javítja a munkafolyamat hatékonyságát és megkönnyíti a digitális fájlok kezelését.</p>
       </div>
 
       <div class="isec-card">
@@ -872,8 +865,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
         </span>
-        <h3 class="isec-card__title">Easy to Use</h3>
-        <p class="isec-card__text">A simple drag-and-drop interface allows users to merge PDF files easily without technical knowledge. Upload documents, rearrange pages, and create a clean, organized PDF in just a few clicks.</p>
+        <h3 class="isec-card__title">Egyszerű kezelhetőség</h3>
+        <p class="isec-card__text">Az egyszerű húzd-és-ejtsd felület lehetővé teszi, hogy technikai tudás nélkül végezzen PDF összefűzést online. Töltsön fel dokumentumokat, rendezze az oldalakat, és hozzon létre tiszta, áttekinthető PDF-et néhány kattintással.</p>
       </div>
 
       <div class="isec-card">
@@ -881,8 +874,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
         </span>
-        <h3 class="isec-card__title">Secure File Processing</h3>
-        <p class="isec-card__text">All uploaded documents are processed securely. The tool is designed with privacy protection in mind, making it a reliable option for combining sensitive files such as contracts, financial reports, and personal documents. Files are automatically deleted after processing.</p>
+        <h3 class="isec-card__title">Biztonságos fájlfeldolgozás</h3>
+        <p class="isec-card__text">Minden feltöltött dokumentum biztonságosan kerül feldolgozásra. Az eszköz adatvédelemre lett tervezve, így megbízható megoldást kínál érzékeny fájlok – például szerződések, pénzügyi jelentések és személyes dokumentumok – PDF egyesítéséhez. A fájlok a feldolgozás után automatikusan törlődnek.</p>
       </div>
 
       <div class="isec-card">
@@ -890,8 +883,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
         </span>
-        <h3 class="isec-card__title">High-Quality PDF Output</h3>
-        <p class="isec-card__text">Our PDF merge tool preserves original formatting, image clarity, and text quality when combining files. Whether for business reports, study notes, or scanned documents, the final merged file remains professional, clear, and ready to share or print.</p>
+        <h3 class="isec-card__title">Kiváló minőségű PDF kimenet</h3>
+        <p class="isec-card__text">PDF összefűző eszközünk megőrzi az eredeti formázást, a képek tisztaságát és a szöveg minőségét a fájlok kombinálása során. Legyen szó üzleti jelentésekről, tanulmányi anyagokról vagy szkennelt dokumentumokról, a végső összefűzött fájl professzionális, áttekinthető és nyomtatásra vagy megosztásra kész marad.</p>
       </div>
 
       <div class="isec-card">
@@ -899,8 +892,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
         </span>
-        <h3 class="isec-card__title">Available on all operating systems.</h3>
-        <p class="isec-card__text">The online PDF merging tool is available on Windows, Mac, Linux, Android, and iPhone without any installation.</p>
+        <h3 class="isec-card__title">Minden operációs rendszeren elérhető</h3>
+        <p class="isec-card__text">Az online PDF összefűző eszköz telepítés nélkül elérhető Windows, Mac, Linux, Android és iPhone rendszereken.</p>
       </div>
 
       <div class="isec-card">
@@ -908,8 +901,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
         </span>
-        <h3 class="isec-card__title">Free and Practical Tool</h3>
-        <p class="isec-card__text"> Users can merge documents online without cost or registration. It is a practical solution for organizing assignments, invoices, ebooks, resumes, and scanned files into a single PDF document, available online anytime and anywhere.</p>
+        <h3 class="isec-card__title">Ingyenes és praktikus eszköz</h3>
+        <p class="isec-card__text">A felhasználók PDF összefűzést ingyen végezhetnek, regisztráció nélkül. Praktikus megoldás feladatok, számlák, e-könyvek, önéletrajzok és szkennelt fájlok egyetlen PDF dokumentummá szervezéséhez, online, bármikor és bárhol.</p>
       </div>
 
       <div class="isec-card">
@@ -917,8 +910,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
         </span>
-        <h3 class="isec-card__title">It maintains the original page order</h3>
-        <p class="isec-card__text">The order of the pages is preserved in all files when you join them, or you can rearrange them as you prefer.</p>
+        <h3 class="isec-card__title">Megőrzi az eredeti oldalsorrendet</h3>
+        <p class="isec-card__text">Az oldalak sorrendje megmarad az összes fájlban az összefűzés során, vagy igény szerint saját maga is átrendezheti azokat.</p>
       </div>
 
       <div class="isec-card">
@@ -926,8 +919,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg>
         </span>
-        <h3 class="isec-card__title">Unlimited Merges, No Daily Limit </h3>
-        <p class="isec-card__text">There's no cap on how many times you can use the tool in a day. Merge one file today and fifty tomorrow — the tool stays free and accessible every time.  </p>
+        <h3 class="isec-card__title">Korlátlan összefűzés, napi limit nélkül</h3>
+        <p class="isec-card__text">Nincs korlátozva, hányszor használhatja az eszközt naponta. Fűzzön össze egy fájlt ma és ötvenet holnap – a PDF összefűző ingyenes és mindig elérhető marad.</p>
       </div>
 
       <div class="isec-card">
@@ -935,8 +928,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
         </span>
-        <h3 class="isec-card__title">No Watermarks on the Output Files</h3>
-        <p class="isec-card__text">The merged PDF comes out clean — no branding, stamps, or watermark text added anywhere in the file, so it's ready to send to a client or submit as-is. </p>
+        <h3 class="isec-card__title">Nincs vízjel a kimeneti fájlokon</h3>
+        <p class="isec-card__text">Az összefűzött PDF tisztán jelenik meg – nincs márkajelzés, bélyeg vagy vízjelszöveg a fájlban, így azonnal elküldhető ügyfélnek vagy benyújtható.</p>
       </div>
 
       <div class="isec-card">
@@ -944,8 +937,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
         </span>
-        <h3 class="isec-card__title">No Metadata Injected Into Your Output</h3>
-        <p class="isec-card__text">The tool does not add any hidden metadata or tracking information to the merged PDF. The output file is clean and free of any additional data that could compromise privacy or security.</p>
+        <h3 class="isec-card__title">Nincs rejtett metaadat a kimenetben</h3>
+        <p class="isec-card__text">Az eszköz nem ad hozzá rejtett metaadatot vagy nyomkövetési információt az összefűzött PDF-hez. A kimeneti fájl tiszta és mentes minden olyan adattól, amely veszélyeztethetné az adatvédelmet vagy a biztonságot.</p>
       </div>
     
 
@@ -955,37 +948,37 @@ scripts:
 
   <section class="isec-block isec-how" aria-labelledby="isec-how-title">
     <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">How to Combine PDF Files into One PDF?</h2>
-      <p class="isec-block__subtitle">You do not need to do much to merge PDF files into a single document. If you do not know how to merge PDF files, simply follow these easy steps:</p>
+      <h2 id="isec-how-title" class="isec-block__title">Hogyan lehet PDF fájlokat egyetlen PDF-be egyesíteni?</h2>
+      <p class="isec-block__subtitle">Nem kell sokat tennie a PDF fájlok egyetlen dokumentummá való összefűzéséhez. Ha nem tudja, hogyan végezze el a PDF összefűzést, egyszerűen kövesse az alábbi könnyű lépéseket:</p>
     </div>
     <ol class="isec-steps">
       <li>
         <span class="isec-steps__num">1</span>
-        <div class="isec-steps__body"> Upload your PDF documents or drag and drop the files into the PDF merge tool.</div>
+        <div class="isec-steps__body">Töltse fel PDF dokumentumait, vagy húzza és ejtse a fájlokat a PDF összefűző eszközbe.</div>
       </li>
      <li> 
         <span class="isec-steps__num">2</span>
-        <div class="isec-steps__body"> Arrange and reorder PDF pages or files if necessary.</div>
+        <div class="isec-steps__body">Szükség esetén rendezze át a PDF oldalakat vagy fájlokat.</div>
       </li>
       <li>
         <span class="isec-steps__num">3</span>
-        <div class="isec-steps__body">Click the Merge PDF button.</div>
+        <div class="isec-steps__body">Kattintson a PDF összefűzése gombra.</div>
       </li>
       <li>
         <span class="isec-steps__num">4</span>
-        <div class="isec-steps__body">Wait a few seconds while the tool securely processes your files.</div>
+        <div class="isec-steps__body">Várjon néhány másodpercet, amíg az eszköz biztonságosan feldolgozza a fájlokat.</div>
       </li>
       <li>
         <span class="isec-steps__num">5</span>
-        <div class="isec-steps__body">Download your new merged PDF instantly or share it online.</div>
+        <div class="isec-steps__body">Töltse le azonnal az új összefűzött PDF-et, vagy ossza meg online.</div>
       </li>
     </ol>
   </section>
 
   <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
     <div class="isec-block__head">
-      <h2 id="isec-usecases-title" class="isec-block__title">Combine PDF To PDF tool for any use case</h2>
-      <p class="isec-block__subtitle">See how our PDF Merger helps you easily organize and  PDF documents.</p>
+      <h2 id="isec-usecases-title" class="isec-block__title">PDF összefűző eszköz minden felhasználási célra</h2>
+      <p class="isec-block__subtitle">Tekintse meg, hogyan segít a PDF összefűzőnk a PDF dokumentumok egyszerű rendezésében és kezelésében.</p>
     </div>
     <div class="isec-card-grid isec-card-grid--use">
 
@@ -994,8 +987,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
         </span>
-        <h3 class="isec-card__title">Business PDF</h3>
-        <p class="isec-card__text">Businesses use PDF mergers to combine invoices, contracts, reports, and presentations into a single organized file. This makes document sharing easier and keeps important records in one place.</p>
+        <h3 class="isec-card__title">Üzleti PDF-ek</h3>
+        <p class="isec-card__text">A vállalkozások PDF összefűző eszközöket használnak számlák, szerződések, jelentések és prezentációk egyetlen rendezett fájlba való egyesítéséhez. Ez megkönnyíti a dokumentummegosztást és egy helyen tartja a fontos nyilvántartásokat.</p>
       </div>
 
       <div class="isec-card">
@@ -1003,8 +996,8 @@ scripts:
         <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
         </span>
-        <h3 class="isec-card__title">Student PDFs</h3>
-        <p class="isec-card__text">Students can merge notes, research papers, and assignment pages into one PDF before submitting work online. This helps create a clean and professional document.</p>
+        <h3 class="isec-card__title">Diák PDF-ek</h3>
+        <p class="isec-card__text">A diákok összefűzhetik a jegyzeteiket, kutatási anyagaikat és feladatlapjaikat egyetlen PDF-be az online beadás előtt. Ez segít egy letisztult és professzionális dokumentum létrehozásában.</p>
       </div>
 
       <div class="isec-card">
@@ -1012,8 +1005,8 @@ scripts:
         <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg>
         </span>
-        <h3 class="isec-card__title">Scanned Files</h3>
-        <p class="isec-card__text">When documents are scanned page by page, a PDF merger can combine all scanned pages into a single file. This is useful for ID documents, forms, and office paperwork.</p>
+        <h3 class="isec-card__title">Szkennelt fájlok</h3>
+        <p class="isec-card__text">Ha a dokumentumokat oldalanként szkennelték be, a PDF összefűző online eszköz az összes szkennelt oldalt egyetlen fájlba kombinálhatja. Ez hasznos személyazonosító dokumentumokhoz, nyomtatványokhoz és irodai iratokhoz.</p>
       </div>
 
       <div class="isec-card">
@@ -1021,8 +1014,8 @@ scripts:
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg>
         </span>
-        <h3 class="isec-card__title">Travel and Personal Records</h3>
-        <p class="isec-card__text">It is common to combine tickets, hotel reservations, passports, and travel documents into one PDF for easy access while traveling. This reduces the hassle of managing multiple files.</p>
+        <h3 class="isec-card__title">Utazási és személyes iratok</h3>
+        <p class="isec-card__text">Bevett megoldás a jegyek, szállodafoglalások, útlevelek és utazási dokumentumok egyetlen PDF-be való összefűzése az utazás közbeni egyszerű hozzáférés érdekében. Ez csökkenti a több fájl kezelésének nehézségét.</p>
       </div>
       
 
@@ -1047,9 +1040,8 @@ scripts:
             <path d="M8 9h2" />
           </svg>
         </span>
-        <h3 class="isec-card__title">Portfolio and Resume Creation</h3>
-        <p class="isec-card__text"> Job seekers and designers use PDF merge tools to combine resumes, cover letters,
-          certificates, and portfolio samples into a single professional document for easy sharing.</p>
+        <h3 class="isec-card__title">Portfólió és önéletrajz készítés</h3>
+        <p class="isec-card__text">Az álláskeresők és tervezők PDF összefűző eszközökkel kombinálják önéletrajzaikat, motivációs leveleiket, tanúsítványaikat és portfólió mintáikat egyetlen professzionális dokumentummá a könnyű megosztás érdekében.</p>
       </div>
 
         <div class="isec-card">
@@ -1069,8 +1061,8 @@ scripts:
               <path d="m8.6 10.5 6.8-3.9" />
               <path d="m8.6 13.5 6.8 3.9" /></svg>
           </span>
-          <h3 class="isec-card__title">Healthcare and Medical Records</h3>
-          <p class="isec-card__text">Patients and clinics merge prescriptions, lab reports, insurance forms, and medical history pages into a single file, making it easier to carry or share complete records with doctors or insurers.
+          <h3 class="isec-card__title">Egészségügyi és orvosi nyilvántartások</h3>
+          <p class="isec-card__text">A betegek és klinikák recepteket, laboreredményeket, biztosítási nyomtatványokat és kórtörténeti oldalakat fűznek össze egyetlen fájlba, megkönnyítve az átfogó nyilvántartások orvosokkal vagy biztosítókkal való megosztását.
           </p>
         </div>
 
@@ -1079,173 +1071,173 @@ scripts:
 
   <section class="isec-block isec-faq" aria-labelledby="isec-faq-title">
     <div class="isec-block__head">
-      <h2 id="isec-faq-title" class="isec-block__title">Frequently Asked Questions</h2>
-      <p class="isec-block__subtitle">Got questions? We have answers. Find everything you need to know about our PDF Merger.</p>
+      <h2 id="isec-faq-title" class="isec-block__title">Gyakran Ismételt Kérdések</h2>
+      <p class="isec-block__subtitle">Kérdései vannak? Nálunk megtalálja a válaszokat. Tudjon meg mindent a PDF összefűzőről.</p>
     </div>
-    <p class="isec-faq__eyebrow">Getting Started</p>
+    <p class="isec-faq__eyebrow">Első lépések</p>
     <div class="isec-faq__list">
       <div class="isec-faq__item is-open">
         <button type="button" class="isec-faq__summary" aria-expanded="true">
-          <span>What is PDF merging?</span>
+          <span>Mi az a PDF összefűzés?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>PDF merging is the process of combining two or more separate PDF files into a single, unified document.  delivers fast, secure, and automated merging directly in your browser.</p>
+            <p>A PDF összefűzés két vagy több különálló PDF fájl egyetlen egységes dokumentummá való kombinálásának folyamata. Az UnificarPDF.com gyors, biztonságos és automatizált PDF egyesítést biztosít közvetlenül a böngészőjében.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How can I merge PDF files online?</span>
+          <span>Hogyan végezhetek PDF összefűzést online?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>You can merge PDF files online by uploading your documents to UnificarPDF.com. The tool automatically arranges and combines them into one file within seconds.</p>
+            <p>PDF összefűzést online úgy végezhet, hogy feltölti dokumentumait az UnificarPDF.com-ra. Az eszköz automatikusan rendezi és egyesíti azokat egyetlen fájlba néhány másodpercen belül.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I need to install software to merge PDFs?</span>
+          <span>Kell szoftvert telepítenem a PDF-ek összefűzéséhez?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No. You can merge PDF files online by uploading your documents to UnificarPDF.com. The tool automatically arranges and combines them into one file within seconds.</p>
+            <p>Nem. PDF összefűzést online végezhet dokumentumainak az UnificarPDF.com-ra való feltöltésével. Az eszköz automatikusan rendezi és egyesíti azokat egyetlen fájlba másodpercek alatt.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Do I need to create an account?</span>
+          <span>Létre kell hoznom fiókot?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No! You can start merging immediately without any registration, email, or account creation. Just upload your files and begin — it’s that simple.</p>
+            <p>Nem! Azonnal elkezdhet PDF összefűzést ingyen, regisztráció, e-mail cím vagy fiók létrehozása nélkül. Csak töltse fel a fájlokat és kezdjen hozzá – ilyen egyszerű.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>What file formats can be merged?</span>
+          <span>Milyen fájlformátumok fűzhetők össze?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>UnificarPDF.com is built specifically for combining PDF files. It doesn’t convert other formats like Word, Excel, or images into PDF.</p>
+            <p>Az UnificarPDF.com kifejezetten PDF fájlok PDF összefűzésére lett tervezve. Más formátumokat, mint Word, Excel vagy képek, nem konvertál PDF-be.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Does we upload large PDF files?</span>
+          <span>Feltölthetek nagy PDF fájlokat?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, the tool is designed to handle both small documents and larger multi-page PDFs without compromising formatting or quality.</p>
+            <p>Igen, az eszköz kis dokumentumok és nagyobb, több oldalas PDF-ek kezelésére egyaránt alkalmas, a formázás vagy a minőség csökkentése nélkül.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I export the merged file in different formats?</span>
+          <span>Exportálhatom az összefűzött fájlt különböző formátumokban?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>The merged output is delivered as a single PDF file, ready for download, sharing, or printing.</p>
+            <p>Az összefűzött kimenet egyetlen PDF fájlként kerül kézbesítésre, amely letöltésre, megosztásra vagy nyomtatásra kész.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I rearrange pages before merging?</span>
+          <span>Átrendezhetem az oldalakat összefűzés előtt?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, once your files are uploaded you can drag and reorder them to set the exact page sequence before combining.</p>
+            <p>Igen, a fájlok feltöltése után húzással átrendezheti azokat, hogy beállítsa a pontos oldalsorrendet az összefűzés előtt.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can UnificarPDF.com detect and organize multiple files at once?</span>
+          <span>Az UnificarPDF.com képes egyszerre több fájlt felismerni és rendezni?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes! The tool lets you upload several PDFs together, automatically listing them so you can arrange the merge order visually.</p>
+            <p>Igen! Az eszköz lehetővé teszi több PDF egyidejű feltöltését, automatikusan listázva azokat, hogy vizuálisan rendezhesse a PDF összefűzés sorrendjét.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDFs in any language?</span>
+          <span>Összefűzhetem a PDF-eket bármilyen nyelven?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, the tool supports merging PDFs in any language, preserving the text and formatting.</p>
+            <p>Igen, az eszköz bármilyen nyelvű PDF összefűzést támogat, megőrizve a szöveget és a formázást.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDF files on mobile devices?</span>
+          <span>Összefűzhetem a PDF fájlokat mobileszközökön?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, UnificarPDF.com is fully responsive and works seamlessly on desktops, tablets, and mobile devices.</p>
+            <p>Igen, az UnificarPDF.com teljesen reszponzív és zökkenőmentesen működik asztali gépeken, táblagépeken és mobileszközökön egyaránt.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is UnificarPDF.com suitable for business and academic use?</span>
+          <span>Alkalmas az UnificarPDF.com üzleti és tanulmányi célokra?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Absolutely. It’s ideal for combining reports, invoices, contracts, research papers, and assignment pages into clear, organized documents.</p>
+            <p>Természetesen. Ideális jelentések, számlák, szerződések, kutatási anyagok és feladatlapok tiszta, rendezett dokumentumokba való PDF összefűzéséhez.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Is my data secure when merging PDFs?</span>
+          <span>Biztonságban vannak az adataim PDF összefűzés során?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>Yes, your data is secure when using UnificarPDF.com. We implement industry-standard security measures to protect your files during the merging process.</p>
+            <p>Igen, adatai biztonságban vannak az UnificarPDF.com használata során. Iparági szabványos biztonsági intézkedéseket alkalmazunk fájljai védelmére az összefűzési folyamat során.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>How is UnificarPDF.com different from Adobe Acrobat for merging?</span>
+          <span>Miben különbözik az UnificarPDF.com az Adobe Acrobattól az összefűzés terén?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>UnificarPDF.com offers a user-friendly, web-based solution for merging PDFs without the need for software installation or account creation. Unlike Adobe Acrobat, which requires a paid subscription and desktop software, UnificarPDF.com provides a free, accessible alternative that works directly in your browser.</p>
+            <p>Az UnificarPDF.com felhasználóbarát, webalapú megoldást kínál a PDF összefűzéshez szoftver telepítése vagy fiók létrehozása nélkül. Az Adobe Acrobattal ellentétben, amely fizetős előfizetést és asztali szoftvert igényel, az UnificarPDF.com ingyenes, könnyen hozzáférhető alternatívát biztosít, amely közvetlenül a böngészőjében működik.</p>
           </div>
         </div>
       </div>
       <div class="isec-faq__item">
         <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>Can I merge PDFs locally without an internet connection? </span>
+          <span>Összefűzhetem a PDF-eket helyben, internetkapcsolat nélkül?</span>
           <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
         </button>
         <div class="isec-faq__panel">
           <div class="isec-faq__panel-inner">
-            <p>No, this tool processes files on the server, so an internet connection is required. For fully offline merging, a desktop tool would be needed instead.</p>
+            <p>Nem, ez az eszköz a szerveren dolgozza fel a fájlokat, ezért internetkapcsolat szükséges. A teljesen offline PDF összefűzéshez asztali szoftverre lenne szükség.</p>
           </div>
         </div>
       </div>
@@ -1255,32 +1247,32 @@ scripts:
 
   <section>
         <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Common Combining Problems: Problems and Solutions</h2>
+      <h2 id="isec-why-title" class="isec-block__title">Gyakori PDF egyesítési problémák és megoldások</h2>
 
     </div>
     <div class="isec-table-wrap">
   <table class="isec-table">
     <thead>
       <tr>
-        <th>Problem</th>
-        <th>Solution</th>
+        <th>Probléma</th>
+        <th>Megoldás</th>
       </tr>
     </thead>
 
     <tbody>
       <tr>
-        <td>The files are not connecting correctly.</td>
-        <td>Make sure all <a href="https://en.wikipedia.org/wiki/PDF" class="alink">PDF files</a> are not corrupted and re-upload any missing files.</td>
+        <td>A fájlok nem kapcsolódnak megfelelően.</td>
+        <td>Győződjön meg arról, hogy minden <a href="https://en.wikipedia.org/wiki/PDF" class="alink">PDF fájl</a> sértetetlen, és töltse fel újra a hiányzó fájlokat.</td>
       </tr>
 
       <tr>
-        <td>The merge button is not working.</td>
-        <td>Refresh the page, disable browser extensions, or try using the latest version of Chrome.</td>
+        <td>Az összefűzés gomb nem működik.</td>
+        <td>Frissítse az oldalt, tiltsa le a böngészőbővítményeket, vagy próbálja a Chrome legújabb verzióját.</td>
       </tr>
 
       <tr>
-        <td>Incorrect file order.</td>
-        <td>Manually reorder the files before merging them, or rename the files using numbers to keep them in the correct sequence.</td>
+        <td>Helytelen fájlsorrend.</td>
+        <td>Kézzel rendezze át a fájlokat összefűzés előtt, vagy nevezze át a fájlokat számozással a helyes sorrend megtartásához.</td>
       </tr>
     </tbody>
   </table>
