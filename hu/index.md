@@ -703,8 +703,6 @@ scripts:
     - https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js
 
 ---
-
-
 <!-- Floating ghost -->
 <div id="dragGhost">
   <div class="ghost-icon">
@@ -719,8 +717,8 @@ scripts:
 <main class="container1">
 
   <!-- H1 + P — visible before upload, hidden after -->
-  <h1 class="page-title" id="pageTitle">Merge PDF Files</h1>
-  <p class="page-sub" id="pageSub">Upload your files, arrange them, click Merge PDF, and download your new combined PDF file.</p>
+  <h1 class="page-title" id="pageTitle">PDF fájlok egyesítése</h1>
+  <p class="page-sub" id="pageSub">Töltsd fel a fájlokat, rendezd őket a kívánt sorrendbe, kattints a <strong>PDF egyesítése</strong> gombra, majd töltsd le az új egyesített PDF-fájlt.</p>
 
   <!-- UPLOAD STATE (centered, full viewport height) -->
   <div id="uploadState">
@@ -732,54 +730,64 @@ scripts:
           <line x1="12" y1="3" x2="12" y2="15"/>
         </svg>
       </div>
-   <h2>Drag PDF files here</h2>
-<p>or click the button below to browse.</p>
+
+      <h2>Húzd ide a PDF-fájlokat</h2>
+      <p>vagy kattints az alábbi gombra a fájlok kiválasztásához.</p>
+
       <button class="btn-black" id="browseBtn">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/>
         </svg>
-  Select Files
+        Fájlok kiválasztása
       </button>
-        <p class="upload-note">
- By uploading files, you agree to our
-  <a href="/en/terms-of-use/" target="_blank">Terms of Use</a>
-and 
-  <a href="/en/privacy-policy/" target="_blank">Privacy Policy</a>.
-</p> 
-    </div>
-    <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
 
-  
+      <p class="upload-note">
+        A fájlok feltöltésével elfogadod a
+        <a href="/hu/terms-of-use/" target="_blank">Felhasználási feltételeket</a>
+        és az
+        <a href="/hu/privacy-policy/" target="_blank">Adatvédelmi irányelveket</a>.
+      </p>
+    </div>
+
+    <input type="file" id="fileInput" multiple accept="application/pdf" hidden>
   </div>
 
   <!-- UPLOADED STATE -->
   <div id="uploadedState">
     <div class="toolbar">
       <div class="toolbar-left">
-        <span class="toolbar-title">Files to merge</span>
+        <span class="toolbar-title">Egyesítendő fájlok</span>
         <span class="file-count" id="fileCount">0</span>
+
         <button class="btn-sm" onclick="sortFiles('asc')">
           <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
             <path d="M1 3h10M3 6h6M5 9h2"/>
-          </svg>A-Z
+          </svg>
+          A–Z
         </button>
+
         <button class="btn-sm" onclick="sortFiles('desc')">
           <svg viewBox="0 0 12 12" fill="none" stroke-width="1.6" stroke-linecap="round">
             <path d="M1 9h10M3 6h6M5 3h2"/>
-          </svg>Z–A
+          </svg>
+          Z–A
         </button>
       </div>
+
       <div class="toolbar-right">
         <button class="btn-add-top" onclick="document.getElementById('moreInput').click()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
-          </svg>Add PDF
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <line x1="5" y1="12" x2="19" y2="12"/>
+          </svg>
+          PDF hozzáadása
         </button>
+
         <button class="btn-merge-top" id="mergeBtnTop" onclick="mergePDFs()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
             <path d="M8 6H5a2 2 0 00-2 2v8a2 2 0 002 2h3M16 6h3a2 2 0 012 2v8a2 2 0 01-2 2h-3M12 3v18"/>
           </svg>
-Combine PDF
+          PDF egyesítése
         </button>
       </div>
     </div>
@@ -788,7 +796,7 @@ Combine PDF
 
     <div class="progress-wrap" id="progressWrap">
       <div class="spinner"></div>
-      <span class="progress-text" id="progressText">Merging…</span>
+      <span class="progress-text" id="progressText">Egyesítés folyamatban…</span>
     </div>
   </div>
 
