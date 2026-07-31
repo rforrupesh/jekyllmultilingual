@@ -11,8 +11,8 @@
     {{ content }}
   </div>
 
-  {% include footer.html %}
-
+{% include_cached footer.html %}
+  
   <script>
     const dropdown = document.querySelector('.lang-dropdown');
     const btn = document.querySelector('.lang-btn');
