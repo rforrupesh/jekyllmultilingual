@@ -247,7 +247,7 @@ hu:
   dir: "ltr"
   nav:
     home: "Kezdőlap"
-    upload: "PDF Egyesítése"
+    upload: "PDF összefűzés"
     blog: "Blog"
     about: "Rólunk"
     splitpdf: "PDF Szétszedése"
