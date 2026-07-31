@@ -717,7 +717,7 @@ scripts:
 <main class="container1">
 
   <!-- H1 + P — visible before upload, hidden after -->
-  <h1 class="page-title" id="pageTitle">PDF fájlok egyesítése</h1>
+  <h1 class="page-title" id="pageTitle">PDF fájlok egyesítése (PDF Merge)</h1>
   <p class="page-sub" id="pageSub">Töltsd fel a fájlokat, rendezd őket a kívánt sorrendbe, kattints a <strong>PDF egyesítése</strong> gombra, majd töltsd le az új egyesített PDF-fájlt.</p>
 
   <!-- UPLOAD STATE (centered, full viewport height) -->
