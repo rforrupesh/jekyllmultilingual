@@ -240,3 +240,30 @@ tr:
     rights: "Tüm hakları saklıdır. Made with Love"
     terms: "Kullanım Şartları"
     privacy: "Gizlilik Politikası"
+
+hu:
+  lang_name: "Magyar"
+  lang_code: "hu"
+  dir: "ltr"
+  nav:
+    home: "Kezdőlap"
+    upload: "PDF Egyesítése"
+    blog: "Blog"
+    about: "Rólunk"
+    splitpdf: "PDF Felosztása"
+    jpgapdf: "JPG PDF-be"
+  blog:
+    title: "Blog"
+    read_more: "Tovább olvasom"
+    back: "← Vissza a Bloghoz"
+    posted_on: "Közzétéve"
+    keep_reading: "Olvass tovább"
+    toc: "Tartalomjegyzék"
+  home:
+    heading: "Üdvözöljük"
+    subheading: "Egy egyszerű, többnyelvű weboldal, amely Jekyll segítségével készült."
+    cta: "Blog olvasása"
+  footer:
+    rights: "Minden jog fenntartva. Made with Love"
+    terms: "Felhasználási Feltételek"
+    privacy: "Adatvédelmi Szabályzat"
