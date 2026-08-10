@@ -718,7 +718,7 @@ scripts:
 <main class="container1">
 
   <!-- H1 + P — visible before upload, hidden after -->
-  <h1 class="page-title" id="pageTitle">Gabungkan File PDF</h1>
+  <h1 class="page-title" id="pageTitle">Gabungkan File PDF (Merge PDF)</h1>
   <p class="page-sub" id="pageSub">Unggah file Anda, atur urutannya, klik Gabungkan PDF, lalu unduh file PDF yang telah digabungkan</p>
 
   <!-- UPLOAD STATE (centered, full viewport height) -->
