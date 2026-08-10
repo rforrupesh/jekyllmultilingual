@@ -1,5 +1,5 @@
-{% assign t = site.data.translations[page.lang] %}
 {% assign lang = page.lang | default: site.default_lang | default: "es" %}
+{% assign t = site.data.translations[lang] %}
 
 {% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", lang | first %}
 {% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", lang | first %}
@@ -24,9 +24,6 @@
     </p>
 
   </div>
-
-
-
 
 <div class="fab-grp">
   <button class="fab fab-top" id="fabTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
@@ -158,9 +155,6 @@
   </div>
 </div>
 
-
-
-
 </footer>
 
-      <script src="https://unirpdf-73b.pages.dev/assets/js/script.js"></script>
+<script src="https://unirpdf-73b.pages.dev/assets/js/script.js"></script>
