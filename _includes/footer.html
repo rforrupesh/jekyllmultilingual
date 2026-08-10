@@ -1,8 +1,8 @@
-{% assign lang = page.lang | default: site.default_lang | default: "es" %}
+{% assign lang = page.lang | default: site.default_lang | default: "en" %}
 {% assign t = site.data.translations[lang] %}
-{% assign all_docs = site.pages | concat: site.es | concat: site.en | concat: site.fr | concat: site.de | concat: site.pt | concat: site.it | concat: site.tr | concat: site.id | concat: site.th | concat: site.hu %}
-{% assign terms_page = all_docs | where: "ref", "terms" | where: "lang", lang | first %}
-{% assign privacy_page = all_docs | where: "ref", "privacy" | where: "lang", lang | first %}
+
+{% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", lang | first %}
+{% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", lang | first %}
 
 <footer class="site-footer footer" id="mainFooter">
   <div class="footer-container">
