@@ -79,6 +79,7 @@
 {% assign t = site.data.translations[current_lang] %}
 
 {% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", current_lang | first %}
+{% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", current_lang | first %}
 
 
 
