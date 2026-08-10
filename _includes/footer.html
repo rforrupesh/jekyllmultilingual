@@ -1,54 +1,26 @@
-{% comment %}
-  Language detection, simplified: every page/post already carries a
-  `lang` value (explicit front matter, or via the per-folder `defaults`
-  in _config.yml). No need to reverse-match by ref/url — just read it.
-  Root homepage (no lang set) falls back to site.default_lang / "es".
-{% endcomment %}
+{% assign t = site.data.translations[page.lang] %}
 
-{% assign current_lang = page.lang | default: site.default_lang | default: "es" %}
-
-{% assign t = site.data.translations[current_lang] %}
-
-{% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", current_lang | first %}
-{% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", current_lang | first %}
-
-
-
+{% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", page.lang | first %}
+{% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", page.lang | first %}
 
 <footer class="site-footer footer" id="mainFooter">
   <div class="footer-container">
 
-  <p>
-  © {{ "now" | date: "%Y" }} {{ site.title }} — {{ t.footer.rights }}
-</p>
+    <p>
+      © {{ "now" | date: "%Y" }} {{ site.title }} — {{ t.footer.rights }}
+    </p>
 
-<p class="footer-links">
+    <p class="footer-links">
+      {% if terms_page %}
+        <a href="{{ site.baseurl }}{{ terms_page.url }}">{{ t.footer.terms }}</a>
+      {% endif %}
 
-  {% if terms_page %}
-    {% if terms_page.url == page.url %}
-      <span class="footer-link-current" aria-current="page">{{ t.footer.terms }}</span>
-    {% else %}
-      <a href="{{ site.baseurl }}{{ terms_page.url }}">
-        {{ t.footer.terms }}
-      </a>
-    {% endif %}
-  {% endif %}
+      {% if terms_page and privacy_page %} | {% endif %}
 
-  {% if terms_page and privacy_page %}
-    |
-  {% endif %}
-
-  {% if privacy_page %}
-    {% if privacy_page.url == page.url %}
-      <span class="footer-link-current" aria-current="page">{{ t.footer.privacy }}</span>
-    {% else %}
-      <a href="{{ site.baseurl }}{{ privacy_page.url }}">
-        {{ t.footer.privacy }}
-      </a>
-    {% endif %}
-  {% endif %}
-
-</p>
+      {% if privacy_page %}
+        <a href="{{ site.baseurl }}{{ privacy_page.url }}">{{ t.footer.privacy }}</a>
+      {% endif %}
+    </p>
 
   </div>
 
