@@ -1,29 +1,31 @@
-{% assign lang = page.lang | default: site.default_lang | default: "es" %}
+{% assign lang = page.lang | default: "es" %}
 {% assign t = site.data.translations[lang] %}
 
-{% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", lang | first %}
-{% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", lang | first %}
+<!-- Debugging line: isko temporary save karke website par dekhein ki kya print ho raha hai -->
+<!-- Lang Code: {{ lang }} -->
 
 <footer class="site-footer footer" id="mainFooter">
   <div class="footer-container">
-
     <p>
-    © {{ "now" | date: "%Y" }} {{ site.title }} — {{ t.footer.rights }}
+      © {{ "now" | date: "%Y" }} {{ site.title }} — {{ t.footer.rights }}
     </p>
 
     <p class="footer-links">
+      {% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", lang | first %}
+      {% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", lang | first %}
+
       {% if terms_page %}
-        <a href="{{ site.baseurl }}{{ terms_page.url }}">{{ t.footer.terms }}</a>
+        <a href="{{ terms_page.url | relative_url }}">{{ t.footer.terms }}</a>
       {% endif %}
 
       {% if terms_page and privacy_page %} | {% endif %}
 
       {% if privacy_page %}
-        <a href="{{ site.baseurl }}{{ privacy_page.url }}">{{ t.footer.privacy }}</a>
+        <a href="{{ privacy_page.url | relative_url }}">{{ t.footer.privacy }}</a>
       {% endif %}
     </p>
-
   </div>
+
 
 
 
