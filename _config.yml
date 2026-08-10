@@ -85,6 +85,31 @@ defaults:
       permalink: /hu/:title/
 
 
+collections:
+  en:
+    output: true
+  fr:
+    output: true
+  es:
+    output: true
+  pt:
+    output: true
+  th:
+    output: true
+  id:
+    output: true
+  de:
+    output: true
+  it:
+    output: true
+  tr:
+    output: true
+  hu:
+    output: true
+
+default_lang: "es"
+
+
 
 
 include:
