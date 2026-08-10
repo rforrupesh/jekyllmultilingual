@@ -86,29 +86,29 @@
 <footer class="site-footer footer" id="mainFooter">
   <div class="footer-container">
 
-    <p>
-      © {{ "now" | date: "%Y" }} {{ site.title }} — {{ t.footer.rights }}
-    </p>
+  <p>
+  © {{ "now" | date: "%Y" }} {{ site.title }} — {{ t.footer.rights }}
+</p>
 
-    <p class="footer-links">
+<p class="footer-links">
 
-      {% if terms_page %}
-        <a href="{{ site.baseurl }}{{ terms_page.url }}">
-          {{ t.footer.terms }}
-        </a>
-      {% endif %}
+  {% if terms_page %}
+    <a href="{{ site.baseurl }}{{ terms_page.url }}">
+      {{ t.footer.terms }}
+    </a>
+  {% endif %}
 
-      {% if terms_page and privacy_page %}
-        |
-      {% endif %}
+  {% if terms_page and privacy_page %}
+    |
+  {% endif %}
 
-      {% if privacy_page %}
-        <a href="{{ site.baseurl }}{{ privacy_page.url }}">
-          {{ t.footer.privacy }}
-        </a>
-      {% endif %}
+  {% if privacy_page %}
+    <a href="{{ site.baseurl }}{{ privacy_page.url }}">
+      {{ t.footer.privacy }}
+    </a>
+  {% endif %}
 
-    </p>
+</p>
 
   </div>
 
