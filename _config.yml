@@ -6,7 +6,6 @@ liquid:
   error_mode: strict
 author: RUPESH
 
-
 # Multilingual settings
 languages: ["en", "fr", "es", "pt", "th", "id", "de", "it", "tr", "hu"]
 default_lang: "es"
@@ -31,59 +30,150 @@ kramdown:
   auto_ids: true
   toc_levels: [2, 3]
 
-# Custom permalinks per language folder
+# Custom lang + permalinks per language folder
 defaults:
+
+  # ---------- POSTS (_posts/<lang>/) ----------
   - scope:
       path: "_posts/es"
+      type: "posts"
     values:
       lang: es
       permalink: /:title/
+
   - scope:
       path: "_posts/en"
+      type: "posts"
     values:
       lang: en
       permalink: /en/:title/
+
   - scope:
       path: "_posts/fr"
+      type: "posts"
     values:
       lang: fr
       permalink: /fr/:title/
+
   - scope:
       path: "_posts/pt"
+      type: "posts"
     values:
       lang: pt
       permalink: /pt/:title/
+
   - scope:
       path: "_posts/th"
+      type: "posts"
     values:
       lang: th
       permalink: /th/:title/
+
   - scope:
       path: "_posts/id"
+      type: "posts"
     values:
       lang: id
       permalink: /id/:title/
+
   - scope:
       path: "_posts/de"
+      type: "posts"
     values:
       lang: de
       permalink: /de/:title/
+
   - scope:
       path: "_posts/it"
+      type: "posts"
     values:
       lang: it
       permalink: /it/:title/
+
   - scope:
       path: "_posts/tr"
+      type: "posts"
     values:
       lang: tr
       permalink: /tr/:title/
+
   - scope:
       path: "_posts/hu"
+      type: "posts"
     values:
       lang: hu
       permalink: /hu/:title/
 
+  # ---------- PAGES (root-level <lang>/ folders) ----------
+  - scope:
+      path: "es"
+      type: "pages"
+    values:
+      lang: es
+      permalink: /:path/
+
+  - scope:
+      path: "en"
+      type: "pages"
+    values:
+      lang: en
+      permalink: /en/:path/
+
+  - scope:
+      path: "fr"
+      type: "pages"
+    values:
+      lang: fr
+      permalink: /fr/:path/
+
+  - scope:
+      path: "pt"
+      type: "pages"
+    values:
+      lang: pt
+      permalink: /pt/:path/
+
+  - scope:
+      path: "th"
+      type: "pages"
+    values:
+      lang: th
+      permalink: /th/:path/
+
+  - scope:
+      path: "id"
+      type: "pages"
+    values:
+      lang: id
+      permalink: /id/:path/
+
+  - scope:
+      path: "de"
+      type: "pages"
+    values:
+      lang: de
+      permalink: /de/:path/
+
+  - scope:
+      path: "it"
+      type: "pages"
+    values:
+      lang: it
+      permalink: /it/:path/
+
+  - scope:
+      path: "tr"
+      type: "pages"
+    values:
+      lang: tr
+      permalink: /tr/:path/
+
+  - scope:
+      path: "hu"
+      type: "pages"
+    values:
+      lang: hu
+      permalink: /hu/:path/
 
 collections:
   en:
@@ -106,11 +196,6 @@ collections:
     output: true
   hu:
     output: true
-
-default_lang: "es"
-
-
-
 
 include:
   - _headers
