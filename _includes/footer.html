@@ -94,9 +94,13 @@
 <p class="footer-links">
 
   {% if terms_page %}
-    <a href="{{ site.baseurl }}{{ terms_page.url }}">
-      {{ t.footer.terms }}
-    </a>
+    {% if terms_page.url == page.url %}
+      <span class="footer-link-current" aria-current="page">{{ t.footer.terms }}</span>
+    {% else %}
+      <a href="{{ site.baseurl }}{{ terms_page.url }}">
+        {{ t.footer.terms }}
+      </a>
+    {% endif %}
   {% endif %}
 
   {% if terms_page and privacy_page %}
@@ -104,9 +108,13 @@
   {% endif %}
 
   {% if privacy_page %}
-    <a href="{{ site.baseurl }}{{ privacy_page.url }}">
-      {{ t.footer.privacy }}
-    </a>
+    {% if privacy_page.url == page.url %}
+      <span class="footer-link-current" aria-current="page">{{ t.footer.privacy }}</span>
+    {% else %}
+      <a href="{{ site.baseurl }}{{ privacy_page.url }}">
+        {{ t.footer.privacy }}
+      </a>
+    {% endif %}
   {% endif %}
 
 </p>
