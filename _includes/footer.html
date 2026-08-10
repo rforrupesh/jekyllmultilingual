@@ -1,12 +1,7 @@
-{% assign lang = page.lang | default: site.default_lang | default: "es" %}
-{% assign t = site.data.translations[lang] %}
+{% assign t = site.data.translations[page.lang] %}
 
-{% assign all_docs = site.pages | concat: site.es | concat: site.en | concat: site.fr | concat: site.de | concat: site.pt | concat: site.it | concat: site.tr | concat: site.id | concat: site.th | concat: site.hu %}
-
-{% assign terms_page = all_docs | where: "ref", "terms" | where: "lang", lang | first %}
-{% assign privacy_page = all_docs | where: "ref", "privacy" | where: "lang", lang | first %}
-
-<!-- DEBUG: lang={{ lang }} | terms={{ terms_page.url }} | privacy={{ privacy_page.url }} -->
+{% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", page.lang | first %}
+{% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", page.lang | first %}
 
 <footer class="site-footer footer" id="mainFooter">
   <div class="footer-container">
@@ -28,6 +23,9 @@
     </p>
 
   </div>
+
+
+
 
 <div class="fab-grp">
   <button class="fab fab-top" id="fabTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
@@ -159,6 +157,9 @@
   </div>
 </div>
 
+
+
+
 </footer>
 
-<script src="https://unirpdf-73b.pages.dev/assets/js/script.js"></script>
+      <script src="https://unirpdf-73b.pages.dev/assets/js/script.js"></script>
