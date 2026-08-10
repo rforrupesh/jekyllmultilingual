@@ -1,7 +1,8 @@
 {% assign t = site.data.translations[page.lang] %}
+{% assign lang = page.lang | default: site.default_lang | default: "es" %}
 
-{% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", page.lang | first %}
-{% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", page.lang | first %}
+{% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", lang | first %}
+{% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", lang | first %}
 
 <footer class="site-footer footer" id="mainFooter">
   <div class="footer-container">
