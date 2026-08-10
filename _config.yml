@@ -37,103 +37,53 @@ defaults:
       path: "_posts/es"
     values:
       lang: es
-      permalink: /blog/:title/
+      permalink: /:title/
   - scope:
       path: "_posts/en"
     values:
       lang: en
-      permalink: /en/blog/:title/
+      permalink: /en/:title/
   - scope:
       path: "_posts/fr"
     values:
       lang: fr
-      permalink: /fr/blog/:title/
+      permalink: /fr/:title/
   - scope:
       path: "_posts/pt"
     values:
       lang: pt
-      permalink: /pt/blog/:title/
+      permalink: /pt/:title/
   - scope:
       path: "_posts/th"
     values:
       lang: th
-      permalink: /th/blog/:title/
+      permalink: /th/:title/
   - scope:
       path: "_posts/id"
     values:
       lang: id
-      permalink: /id/blog/:title/
+      permalink: /id/:title/
   - scope:
       path: "_posts/de"
     values:
       lang: de
-      permalink: /de/blog/:title/
+      permalink: /de/:title/
   - scope:
       path: "_posts/it"
     values:
       lang: it
-      permalink: /it/blog/:title/
+      permalink: /it/:title/
   - scope:
       path: "_posts/tr"
     values:
       lang: tr
-      permalink: /tr/blog/:title/
+      permalink: /tr/:title/
   - scope:
       path: "_posts/hu"
     values:
       lang: hu
-      permalink: /hu/blog/:title/
-
-  - scope:
-      path: "/es"
-    values:
-      lang: es
-      permalink: /:title/
-  - scope:
-      path: "/en"
-    values:
-      lang: en
-      permalink: /en/:title/
-  - scope:
-      path: "/fr"
-    values:
-      lang: fr
-      permalink: /fr/:title/
-  - scope:
-      path: "/pt"
-    values:
-      lang: pt
-      permalink: /pt/:title/
-  - scope:
-      path: "/th"
-    values:
-      lang: th
-      permalink: /th/:title/
-  - scope:
-      path: "/id"
-    values:
-      lang: id
-      permalink: /id/:title/
-  - scope:
-      path: "/de"
-    values:
-      lang: de
-      permalink: /de/:title/
-  - scope:
-      path: "/it"
-    values:
-      lang: it
-      permalink: /it/:title/
-  - scope:
-      path: "/tr"
-    values:
-      lang: tr
-      permalink: /tr/:title/
-  - scope:
-      path: "/hu"
-    values:
-      lang: hu
       permalink: /hu/:title/
+
 
 
 
