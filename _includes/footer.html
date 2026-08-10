@@ -1,8 +1,32 @@
-{% assign current_lang = page.lang | default: site.default_lang %}
+{% assign current_lang = site.default_lang %}
+
+{% if page.url == "/" or page.url == "" %}
+  {% assign current_lang = "es" %}
+{% elsif page.url contains "/en/" %}
+  {% assign current_lang = "en" %}
+{% elsif page.url contains "/fr/" %}
+  {% assign current_lang = "fr" %}
+{% elsif page.url contains "/pt/" %}
+  {% assign current_lang = "pt" %}
+{% elsif page.url contains "/th/" %}
+  {% assign current_lang = "th" %}
+{% elsif page.url contains "/id/" %}
+  {% assign current_lang = "id" %}
+{% elsif page.url contains "/de/" %}
+  {% assign current_lang = "de" %}
+{% elsif page.url contains "/it/" %}
+  {% assign current_lang = "it" %}
+{% elsif page.url contains "/tr/" %}
+  {% assign current_lang = "tr" %}
+{% elsif page.url contains "/hu/" %}
+  {% assign current_lang = "hu" %}
+{% endif %}
+
 {% assign t = site.data.translations[current_lang] %}
 
 {% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", current_lang | first %}
 {% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", current_lang | first %}
+
 
 <footer class="site-footer footer" id="mainFooter">
   <div class="footer-container">
