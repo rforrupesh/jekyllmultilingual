@@ -37,58 +37,52 @@ defaults:
       path: "_posts/es"
     values:
       lang: es
-      permalink: /:title/
-
+      permalink: /blog/:title/
   - scope:
       path: "_posts/en"
     values:
       lang: en
-      permalink: /en/:title/
-
+      permalink: /en/blog/:title/
   - scope:
       path: "_posts/fr"
     values:
       lang: fr
-      permalink: /fr/:title/
-
+      permalink: /fr/blog/:title/
   - scope:
       path: "_posts/pt"
     values:
       lang: pt
-      permalink: /pt/:title/
-
+      permalink: /pt/blog/:title/
   - scope:
       path: "_posts/th"
     values:
       lang: th
-      permalink: /th/:title/
-
+      permalink: /th/blog/:title/
   - scope:
       path: "_posts/id"
     values:
       lang: id
-      permalink: /id/:title/
-   
+      permalink: /id/blog/:title/
   - scope:
       path: "_posts/de"
     values:
       lang: de
-      permalink: /de/:title/
+      permalink: /de/blog/:title/
   - scope:
       path: "_posts/it"
     values:
       lang: it
-      permalink: /it/:title/
+      permalink: /it/blog/:title/
   - scope:
       path: "_posts/tr"
     values:
       lang: tr
-      permalink: /tr/:title/
+      permalink: /tr/blog/:title/
   - scope:
       path: "_posts/hu"
     values:
       lang: hu
-      permalink: /hu/:title/
+      permalink: /hu/blog/:title/
 
 
 collections:
