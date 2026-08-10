@@ -84,60 +84,56 @@ defaults:
       lang: hu
       permalink: /hu/blog/:title/
 
-# Custom permalinks per language folder
-defaults:
+  # Language pages
   - scope:
-      path: "/es"
+      path: "es"
     values:
       lang: es
-      permalink: /:title/
+
   - scope:
-      path: "/en"
+      path: "en"
     values:
       lang: en
-      permalink: /en/:title/
+
   - scope:
-      path: "/fr"
+      path: "fr"
     values:
       lang: fr
-      permalink: /fr/:title/
+
   - scope:
-      path: "/pt"
+      path: "pt"
     values:
       lang: pt
-      permalink: /pt/:title/
+
   - scope:
-      path: "/th"
+      path: "th"
     values:
       lang: th
-      permalink: /th/:title/
+
   - scope:
-      path: "/id"
+      path: "id"
     values:
       lang: id
-      permalink: /id/:title/
+
   - scope:
-      path: "/de"
+      path: "de"
     values:
       lang: de
-      permalink: /de/:title/
+
   - scope:
-      path: "/it"
+      path: "it"
     values:
       lang: it
-      permalink: /it/:title/
+
   - scope:
-      path: "/tr"
+      path: "tr"
     values:
       lang: tr
-      permalink: /tr/:title/
+
   - scope:
-      path: "/hu"
+      path: "hu"
     values:
       lang: hu
-      permalink: /hu/:title/
-
-
 
 
 include:
