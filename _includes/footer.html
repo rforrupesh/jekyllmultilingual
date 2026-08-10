@@ -1,31 +1,86 @@
-{% assign current_lang = site.default_lang %}
+{% comment %}
+  Detect current language using the same ref/lang system as nav.html.
+  Root homepage defaults to Spanish.
+{% endcomment %}
 
-{% if page.url == "/" or page.url == "" %}
-  {% assign current_lang = "es" %}
-{% elsif page.url contains "/en/" %}
-  {% assign current_lang = "en" %}
-{% elsif page.url contains "/fr/" %}
-  {% assign current_lang = "fr" %}
-{% elsif page.url contains "/pt/" %}
-  {% assign current_lang = "pt" %}
-{% elsif page.url contains "/th/" %}
-  {% assign current_lang = "th" %}
-{% elsif page.url contains "/id/" %}
-  {% assign current_lang = "id" %}
-{% elsif page.url contains "/de/" %}
-  {% assign current_lang = "de" %}
-{% elsif page.url contains "/it/" %}
-  {% assign current_lang = "it" %}
-{% elsif page.url contains "/tr/" %}
-  {% assign current_lang = "tr" %}
-{% elsif page.url contains "/hu/" %}
-  {% assign current_lang = "hu" %}
+{% assign current_lang = site.default_lang | default: "es" %}
+
+{% if page.ref %}
+
+  {% assign current_ref = page.ref %}
+
+  {% assign current_es = site.pages | where: "ref", current_ref | where: "lang", "es" | first %}
+  {% assign current_en = site.pages | where: "ref", current_ref | where: "lang", "en" | first %}
+  {% assign current_fr = site.pages | where: "ref", current_ref | where: "lang", "fr" | first %}
+  {% assign current_pt = site.pages | where: "ref", current_ref | where: "lang", "pt" | first %}
+  {% assign current_th = site.pages | where: "ref", current_ref | where: "lang", "th" | first %}
+  {% assign current_id = site.pages | where: "ref", current_ref | where: "lang", "id" | first %}
+  {% assign current_de = site.pages | where: "ref", current_ref | where: "lang", "de" | first %}
+  {% assign current_it = site.pages | where: "ref", current_ref | where: "lang", "it" | first %}
+  {% assign current_tr = site.pages | where: "ref", current_ref | where: "lang", "tr" | first %}
+  {% assign current_hu = site.pages | where: "ref", current_ref | where: "lang", "hu" | first %}
+
+  {% assign current_es_post = site.posts | where: "ref", current_ref | where: "lang", "es" | first %}
+  {% assign current_en_post = site.posts | where: "ref", current_ref | where: "lang", "en" | first %}
+  {% assign current_fr_post = site.posts | where: "ref", current_ref | where: "lang", "fr" | first %}
+  {% assign current_pt_post = site.posts | where: "ref", current_ref | where: "lang", "pt" | first %}
+  {% assign current_th_post = site.posts | where: "ref", current_ref | where: "lang", "th" | first %}
+  {% assign current_id_post = site.posts | where: "ref", current_ref | where: "lang", "id" | first %}
+  {% assign current_de_post = site.posts | where: "ref", current_ref | where: "lang", "de" | first %}
+  {% assign current_it_post = site.posts | where: "ref", current_ref | where: "lang", "it" | first %}
+  {% assign current_tr_post = site.posts | where: "ref", current_ref | where: "lang", "tr" | first %}
+  {% assign current_hu_post = site.posts | where: "ref", current_ref | where: "lang", "hu" | first %}
+
+  {% if current_es and current_es.url == page.url %}
+    {% assign current_lang = "es" %}
+  {% elsif current_en and current_en.url == page.url %}
+    {% assign current_lang = "en" %}
+  {% elsif current_fr and current_fr.url == page.url %}
+    {% assign current_lang = "fr" %}
+  {% elsif current_pt and current_pt.url == page.url %}
+    {% assign current_lang = "pt" %}
+  {% elsif current_th and current_th.url == page.url %}
+    {% assign current_lang = "th" %}
+  {% elsif current_id and current_id.url == page.url %}
+    {% assign current_lang = "id" %}
+  {% elsif current_de and current_de.url == page.url %}
+    {% assign current_lang = "de" %}
+  {% elsif current_it and current_it.url == page.url %}
+    {% assign current_lang = "it" %}
+  {% elsif current_tr and current_tr.url == page.url %}
+    {% assign current_lang = "tr" %}
+  {% elsif current_hu and current_hu.url == page.url %}
+    {% assign current_lang = "hu" %}
+
+  {% elsif current_es_post and current_es_post.url == page.url %}
+    {% assign current_lang = "es" %}
+  {% elsif current_en_post and current_en_post.url == page.url %}
+    {% assign current_lang = "en" %}
+  {% elsif current_fr_post and current_fr_post.url == page.url %}
+    {% assign current_lang = "fr" %}
+  {% elsif current_pt_post and current_pt_post.url == page.url %}
+    {% assign current_lang = "pt" %}
+  {% elsif current_th_post and current_th_post.url == page.url %}
+    {% assign current_lang = "th" %}
+  {% elsif current_id_post and current_id_post.url == page.url %}
+    {% assign current_lang = "id" %}
+  {% elsif current_de_post and current_de_post.url == page.url %}
+    {% assign current_lang = "de" %}
+  {% elsif current_it_post and current_it_post.url == page.url %}
+    {% assign current_lang = "it" %}
+  {% elsif current_tr_post and current_tr_post.url == page.url %}
+    {% assign current_lang = "tr" %}
+  {% elsif current_hu_post and current_hu_post.url == page.url %}
+    {% assign current_lang = "hu" %}
+  {% endif %}
+
 {% endif %}
 
 {% assign t = site.data.translations[current_lang] %}
 
 {% assign terms_page = site.pages | where: "ref", "terms" | where: "lang", current_lang | first %}
-{% assign privacy_page = site.pages | where: "ref", "privacy" | where: "lang", current_lang | first %}
+
+
 
 
 <footer class="site-footer footer" id="mainFooter">
