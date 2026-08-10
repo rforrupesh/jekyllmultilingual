@@ -83,53 +83,8 @@ defaults:
     values:
       lang: hu
       permalink: /hu/blog/:title/
-  # ── Root Pages ─────────────────────────────────
-  - scope:
-      path: "es"
-    values:
-      lang: es
-  - scope:
-      path: "en"
-    values:
-      lang: en
-  - scope:
-      path: "fr"
-    values:
-      lang: fr
-  - scope:
-      path: "pt"
-    values:
-      lang: pt
-  - scope:
-      path: "th"
-    values:
-      lang: th
-  - scope:
-      path: "id"
-    values:
-      lang: id
-  - scope:
-      path: "de"
-    values:
-      lang: de
-  - scope:
-      path: "it"
-    values:
-      lang: it
-  - scope:
-      path: "tr"
-    values:
-      lang: tr
-  - scope:
-      path: "hu"
-    values:
-      lang: hu
 
-  # ── Root es (default) ──────────────────────────
-  - scope:
-      path: ""
-    values:
-      lang: es
+
 
 collections:
   en:
