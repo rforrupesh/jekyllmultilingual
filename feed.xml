@@ -2,20 +2,45 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml"/>
-    {% for post in site.posts limit:20 %}
-    <item>
-      <title>{{ post.title | xml_escape }}</title>
-      <link>{{ site.url }}{{ post.url }}</link>
-      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-      <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
-      <description>{{ post.excerpt | xml_escape }}</description>
-    </item>
-    {% endfor %}
-  </channel>
-</rss>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
+  <link href="{{ site.url }}/feed.xml" rel="self" type="application/atom+xml"/>
+  <link href="{{ site.url }}/" rel="alternate" type="text/html"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ site.url }}/feed.xml</id>
+  <title type="html">{{ site.title | xml_escape }}</title>
+  <subtitle>{{ site.description | xml_escape }}</subtitle>
+  <author>
+    <name>{{ site.author.name | default: "RUPESH" }}</name>
+  </author>
+
+  {% for post in site.posts %}
+  <entry xml:lang="{{ post.lang | default: 'en' }}">
+    <title type="html">{{ post.title | xml_escape }}</title>
+    <link href="{{ site.url }}{{ post.url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}"/>
+    <published>{{ post.date | date_to_xmlschema }}</published>
+    <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
+    <id>{{ site.url }}{{ post.url | remove_first: '/' }}</id>
+    <content type="html" xml:base="{{ site.url }}{{ post.url }}">
+      <![CDATA[ {{ post.content }} ]]>
+    </content>
+    <summary type="html"><![CDATA[ {{ post.excerpt | xml_escape }} ]]></summary>
+  </entry>
+  {% endfor %}
+
+  {% for page in site.pages %}
+    {% if page.title and page.url != '/feed.xml' %}
+  <entry xml:lang="{{ page.lang | default: 'en' }}">
+    <title type="html">{{ page.title | xml_escape }}</title>
+    <link href="{{ site.url }}{{ page.url }}" rel="alternate" type="text/html" title="{{ page.title | xml_escape }}"/>
+    <published>{{ page.date | default: site.time | date_to_xmlschema }}</published>
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>{{ site.url }}{{ page.url | remove_first: '/' }}</id>
+    <content type="html" xml:base="{{ site.url }}{{ page.url }}">
+      <![CDATA[ {{ page.content }} ]]>
+    </content>
+  </entry>
+    {% endif %}
+  {% endfor %}
+
+</feed>
