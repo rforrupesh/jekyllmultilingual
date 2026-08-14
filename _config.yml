@@ -14,9 +14,7 @@ default_lang: "es"
 markdown: kramdown
 theme: null
 plugins:
-  - jekyll-feed
   - jekyll-include-cache
-  - jekyll-feed
 
 exclude:
   - Gemfile
