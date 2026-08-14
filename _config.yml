@@ -16,6 +16,7 @@ theme: null
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-feed
 
 exclude:
   - Gemfile
