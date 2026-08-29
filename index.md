@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Combina tus archivos PDF en uno gratis — Unir PDF Online​
+title: Unir PDF Online — Combina tus archivos PDF en uno gratis
 description: "Sube y organiza tus PDF fácilmente, y descarga un único archivo combinado. Rápido y sin límites. Una herramienta en línea gratuita e ilimitada para Unir PDF."
 keywords: "Unir PDF, dividir PDF, combinar PDF, separar PDF, comprimir PDF, convertir PDF, Word a PDF, Excel a PDF, Powerpoint a PDF, PDF a JPG, JPG a PDF"
 thumbnail: /assets/img/unir.webp
