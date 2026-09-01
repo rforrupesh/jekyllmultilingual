@@ -136,7 +136,7 @@ Unir PDF
   
   <section class="isec-block isec-why" aria-labelledby="isec-why-title" id="features">
     <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">¿Por qué usar UnificarPDF.com para unir PDF files?</h2>
+      <h2 id="isec-why-title" class="isec-block__title">¿Por qué usar UnificarPDF para unir PDF files?</h2>
     </div>
     <div class="isec-card-grid">
       <div class="isec-card">
@@ -144,7 +144,7 @@ Unir PDF
         <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
         </span>
-        <h3 class="isec-card__title">Merge de Files Rápido</h3>
+        <h3 class="isec-card__title">Unir de Files Rápido</h3>
         <p class="isec-card__text">Este merger online de alta velocidad es ideal para combinar reportes, facturas, páginas escaneadas y documentos de negocio sin demoras. Mejora la eficiencia del workflow y ayuda a los usuarios a manejar sus digital files más fácilmente.</p>
       </div>
       <div class="isec-card">
