@@ -6,8 +6,9 @@ description: "Conoce todo sobre la seguridad de tus archivos en UnificarPDF: cif
 ref: subir-archivos-unificarpdf-es-seguro
 ---
 
-¿Qué sucederá exactamente con sus archivos al usar nuestro sitio web? ¿Hay algo de qué preocuparse? La respuesta corta es sí, absolutamente nada. Sin embargo, preferimos brindarle más información en lugar de simplemente responder a la pregunta. Y aquí le explicamos por qué.
+> Si te preguntas si UniFicarPDF es seguro, la respuesta es sí: lo es. Tus archivos no se suben a nuestros servidores; se procesan directamente en tu dispositivo local. Por lo tanto, ya sea que utilices UniFicarPDF para combinar, dividir o editar archivos PDF, tus documentos permanecen en tu dispositivo.
 
+> Nos tomamos muy en serio tu privacidad y seguridad. Tu privacidad y seguridad son nuestra máxima prioridad.
 ## Sobre nosotros
 
 Nuestra aplicación se creó con un único propósito: facilitar la [edición de PDF](/upload/). Contamos con una audiencia diversa que incluye secretarias, estudiantes, abogados, profesores e incluso propietarios de pequeñas empresas. Cada persona que utiliza nuestro servicio merece nuestra atención y respeto.
