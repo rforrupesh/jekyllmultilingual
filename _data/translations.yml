@@ -4,7 +4,7 @@ en:
   dir: "ltr"
   nav:
     home: "Home"
-    upload: "Merge PDF"
+    upload: "Merge"
     blog: "Blog"
     about: "About"
     splitpdf: "Split PDF"
@@ -58,7 +58,7 @@ es:
   dir: "ltr"
   nav:
     home: "Inicio"
-    upload: "Unir PDF"
+    upload: "Juntar"
     blog: "Blog"
     about: "Acerca de"
     splitpdf: "Dividir PDF"
