@@ -136,7 +136,7 @@ Unir PDF
   
   <section class="isec-block isec-why" aria-labelledby="isec-why-title" id="features">
     <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">¿Por qué usar UnificarPDF.com para unir PDF files?</h2>
+      <h2 id="isec-why-title" class="isec-block__title">Qué te ofrece esta herramienta</h2>
     </div>
     <div class="isec-card-grid">
       <div class="isec-card">
@@ -224,7 +224,7 @@ Unir PDF
   </section>
   <section class="isec-block isec-how" aria-labelledby="isec-how-title" id="how-it-works">
     <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">¿Cómo unir PDF files en un solo PDF?</h2>
+      <h2 id="isec-how-title" class="isec-block__title">¿Cómo unir PDF online gratis? (5 pasos)</h2>
       <p class="isec-block__subtitle">No necesitas hacer mucho para unir PDF files en un solo documento. Si no sabes cómo hacerlo, sigue estos sencillos pasos:</p>
     </div>
     <ol class="isec-steps">
@@ -252,7 +252,7 @@ Unir PDF
   </section>
   <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
     <div class="isec-block__head">
-      <h2 id="isec-usecases-title" class="isec-block__title">Herramienta para unir PDF para cualquier uso</h2>
+      <h2 id="isec-usecases-title" class="isec-block__title">¿Para qué se utiliza PDF Tools? Usos más comunes</h2>
       <p class="isec-block__subtitle">Mira cómo nuestro PDF Merger te ayuda a organizar fácilmente tus PDF documents.</p>
     </div>
     <div class="isec-card-grid isec-card-grid--use">
