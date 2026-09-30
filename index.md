@@ -513,7 +513,7 @@ Unir PDF
   </section>
   <section>
         <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Problemas Comunes al Unir PDFs: Problemas y Soluciones</h2>
+      <h2 id="isec-why-title" class="isec-block__title">Problemas comunes y sus soluciones</h2>
     </div>
     <div class="isec-table-wrap">
   <table class="isec-table">
