@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Combina tus archivos PDF en uno
-description: "Sube y organiza tus PDF fácilmente, y descarga un único archivo combinado. Rápido y sin límites. Una herramienta en línea gratuita e ilimitada para Unir PDF."
+title: UniFicar PDF
+description: "Une PDF gratis online: junta y combina varios archivos en uno sin marca de agua, sin registro y sin límites. Funciona en PC, Android e iPhone"
 keywords: "Unir PDF, dividir PDF, combinar PDF, separar PDF, comprimir PDF, convertir PDF, Word a PDF, Excel a PDF, Powerpoint a PDF, PDF a JPG, JPG a PDF"
 thumbnail: /assets/img/unir.webp
 lang: es
