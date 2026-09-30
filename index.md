@@ -25,7 +25,7 @@ permalink: /
 
  <!-- H1 + P — visible before upload, hidden after -->
   <h1 class="page-title" id="pageTitle">Unir PDF Files</h1>
-  <p class="page-sub" id="pageSub">Sube tus archivos, organízalos, haz clic en Unir PDF y descarga tu nuevo PDF combinado gratis.</p>
+  <p class="page-sub" id="pageSub">Sube tus archivos, ordénalos y descarga un solo PDF en segundos. Sin registro, sin marca de agua y sin límite diario.</p>
   <!-- UPLOAD STATE (centered, full viewport height) -->
   <div id="uploadState">
     <div class="upload-box" id="dropZone">
