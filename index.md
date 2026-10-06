@@ -97,453 +97,124 @@ Unir PDF
 <div id="infoContent" class="post-content">
 
 
-<div id="split-pdf-info">
- 
- <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
-    <p class="isec-card__text">
-         Unir múltiples PDF documents en un solo archivo es súper fácil con nuestra herramienta. No pierdas tiempo combinando PDFs de forma manual.
-    </p> 
-    <p class="isec-card__text">
-      Nuestro PDF Merger es una herramienta online gratis que te ayuda a juntar, unir y combinar dos o más PDF files al instante
-      sin reducir la calidad.
-    </p>
-    <p class="isec-card__text">
-      Usa tecnología avanzada para unir tus PDF documents de forma rápida, fácil y segura con un solo clic. Combina páginas PDF, organiza tus files y crea un PDF de alta calidad online desde cualquier lugar.
-    </p>
-  </section>
-<section>
-   <figure class="isec-media"> 
-    <img src="./assets/img/unir.webp"
-         alt="Unir múltiples PDF files en uno al instante"
-         loading="lazy" 
-         width="710"
-         height="350">
-    <figcaption>
-        Unir múltiples PDF files en uno al instante
-    </figcaption>
-</figure>
-</section>
-  <section class="isec-block isec-articles" aria-labelledby="isec-why-title">
-    <p class="isec-card__text">
-       Recibir cientos de PDF files en tu computador desde proyectos del colegio, trabajo de oficina, tareas universitarias, documentos de negocio o labores profesionales puede dificultar el manejo correcto de documentos importantes. Estos files se pueden perder fácilmente o mezclarse con documentos innecesarios si no se organizan a tiempo.
-    </p> 
-    <p class="isec-card__text">
-     En vez de guardar múltiples PDF documents por separado, es mejor unirlos y organizarlos en un solo PDF file para un mejor manejo, compartir más fácil, acceso más rápido y almacenamiento seguro. Manejar PDFs en un solo documento ayuda a ahorrar espacio, mejora la productividad y mantiene los files importantes bien organizados.
-    </p>
-  </section>
 
-<div> <a href="#features">Características</a> | <a href="#how-it-works">Cómo funciona</a> | <a href="#faq">Preguntas frecuentes</a></div>
-  
-  <section class="isec-block isec-why" aria-labelledby="isec-why-title" id="features">
-    <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Qué te ofrece esta herramienta</h2>
-    </div>
-    <div class="isec-card-grid">
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="12" height="16" rx="2"/><path d="M4 6v14a2 2 0 0 0 2 2h10"/></svg>
-        </span>
-        <h3 class="isec-card__title">Unir de Files Rápido</h3>
-        <p class="isec-card__text">Este merger online de alta velocidad es ideal para combinar reportes, facturas, páginas escaneadas y documentos de negocio sin demoras. Mejora la eficiencia del workflow y ayuda a los usuarios a manejar sus digital files más fácilmente.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg></span>
-        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
-        </span>
-        <h3 class="isec-card__title">Fácil de Usar</h3>
-        <p class="isec-card__text">Una interfaz sencilla de drag-and-drop permite unir PDF files fácilmente sin conocimientos técnicos. Sube tus documents, reorganiza las páginas y crea un PDF limpio y organizado en pocos clics.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg></span>
-        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
-        </span>
-        <h3 class="isec-card__title">Procesamiento Seguro de Files</h3>
-        <p class="isec-card__text">Todos los documents subidos se procesan de forma segura. La herramienta está diseñada con la privacidad en mente, siendo una opción confiable para combinar files sensibles como contratos, reportes financieros y documentos personales. Los files se eliminan automáticamente después del procesamiento.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-        </span>
-        <h3 class="isec-card__title">PDF Output de Alta Calidad</h3>
-        <p class="isec-card__text">Nuestro PDF merge tool conserva el formato original, la claridad de imágenes y la calidad del texto al combinar files. Ya sea para reportes de negocio, notas de estudio o documentos escaneados, el archivo unido final queda profesional, claro y listo para compartir o imprimir.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg></span>
-        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>
-        </span>
-        <h3 class="isec-card__title">Disponible en todos los sistemas operativos.</h3>
-        <p class="isec-card__text">La herramienta para unir PDF online está disponible en Windows, Mac, Linux, Android e iPhone sin necesidad de instalar nada.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></span>
-        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
-        </span>
-        <h3 class="isec-card__title">Herramienta Gratis y Práctica</h3>
-        <p class="isec-card__text">Puedes unir PDF gratis online sin costo ni registro. Es una solución práctica para organizar tareas, facturas, ebooks, hojas de vida y files escaneados en un solo PDF document, disponible online en cualquier momento y desde cualquier lugar.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.85.99 6.57 2.57L21 8"/><path d="M21 3v5h-5"/></svg>
-        </span>
-        <h3 class="isec-card__title">Mantiene el orden original de páginas</h3>
-        <p class="isec-card__text">El orden de las páginas se conserva en todos los files al unirlos, o puedes reorganizarlos como prefieras.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg></span>
-        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h6v6"/><path d="M20 10h-6V4"/><path d="m14 10 7-7"/><path d="m3 21 7-7"/></svg>
-        </span>
-        <h3 class="isec-card__title">Merges Ilimitados, Sin Límite Diario</h3>
-        <p class="isec-card__text">No hay límite en cuántas veces puedes usar la herramienta en un día. Une un file hoy y cincuenta mañana — la herramienta sigue gratis y disponible siempre.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span>
-        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
-        </span>
-        <h3 class="isec-card__title">Sin Watermarks en los Output Files</h3>
-        <p class="isec-card__text">El PDF unido sale limpio — sin marcas, sellos ni texto de watermark en ninguna parte del file, listo para enviar a un cliente o entregar tal como está.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
-        </span>
-        <h3 class="isec-card__title">Sin Metadata Inyectada en tu Output</h3>
-        <p class="isec-card__text">La herramienta no agrega ningún metadata oculto ni información de tracking al PDF unido. El output file está limpio y libre de datos adicionales que puedan comprometer la privacidad o seguridad.</p>
-      </div>
+
+
+# FREE Online Merge PDF
+
+Combine multiple PDF files into one document quickly, while the original PDF quality is carefully preserved. No sign up needed.
+
+## Free PDF Merging Tool
+
+The easiest tool to join PDFs from your device at no cost. It works smoothly without Adobe, and nothing needs to be installed.
+
+## Get an Instant PDF Solution
+
+Take your document workflow to the next level with professional, organized PDF files using UniFicarPDF.com’s fast and easy document processing. Your files are handled efficiently, so the finished document is ready in moments.
+
+### Live Preview
+
+See your PDF files and page order clearly before the final document is created. Review everything at a glance and make any changes before your finished PDF is downloaded.
+
+### Works Everywhere
+
+Use UniFicarPDF.com on your mobile, computer, or laptop. Merge and manage your PDF files whenever you need to, no matter which device you're using. It runs smoothly in your browser on Windows, Mac, Linux, Android, and iPhone.
+
+## Frequently Asked Questions
+
+Here, we have answered some of the most commonly asked questions by our users. If you cannot find the information you need, feel free to contact us for further assistance.
+
+### How to merge PDF files into one?
+
+Upload your documents, arrange them in the order you want, and create your final file in a few simple steps. First, add your PDF files from your device. Then, drag them into the sequence you need. Once the order looks right in the preview, click the button and the final document is created, ready to be downloaded as a single PDF.
+
+### Is there a free service to merge PDF online?
+
+Yes. UniFicarPDF.com is completely free to use. You can simply open the website in your browser, add your files, and download the result without paying anything. Since nothing has to be installed, you can start right away from any device.
+
+### What is the easiest way to combine PDF documents?
+
+Add your documents, organize their order, and start the process. Everything can be done directly from your browser with simple drag and drop. Moreover, no desktop software or technical skills are required, and the whole process is usually finished within seconds.
+
+### Can I add photos to a PDF?
+
+Yes. You can work with supported image formats when preparing a document containing photos or scanned pages, such as JPG and PNG images. This is especially useful when photos, scanned forms, or ID copies need to be placed into the same document as your other PDF files.
+
+### Can I use UniFicarPDF.com without Adobe Acrobat?
+
+Yes. You only need a modern web browser. There is no need to install Adobe Acrobat or other desktop software. In other words, it works as a free alternative for anyone who does not have Acrobat or prefers not to pay for it.
+
+### Can I join PDF documents on Android?
+
+Yes. The tool works smoothly through a mobile browser, so it can be used on Android phones, iPhone, and other mobile devices. Simply open the website in Chrome, Safari, or any other browser, select your files from your phone, and download the finished PDF.
+
+### Can I create one document from several files?
+
+Yes. Add the files you need and arrange them in your preferred order before processing. Several files can be added at once, and their sequence can be changed at any time, until the final document looks exactly the way you want it.
+
+### Can I rearrange pages before downloading?
+
+Yes. You can organize the files before the final document is created, giving you full control over the page sequence. Check the order in the live preview, move files up or down as needed, and create the final PDF only when you are happy with the arrangement.
+
+### Does UniFicarPDF.com require registration?
+
+No. You can use the tool without creating an account or providing personal information.
+
+### Does it work on mobile and Mac?
+
+Yes. It works well on phones, tablets, laptops, and desktop computers with a supported browser, including Mac, Windows, and Linux. Because the steps are the same on every device, nothing new needs to be learned when you switch between them.
+
+### Will my document quality be preserved?
+
+Yes. The tool is designed to maintain the original quality of your PDF documents during processing. Your text, images, and page layout stay exactly the same in the final file, and the document is not unnecessarily compressed.
+
+### Are my documents uploaded to a server?
+
+No. Your files are processed locally in your browser (client-side) rather than being uploaded or stored on our servers. As a result, your documents stay safely on your own device during the process, which is particularly helpful when private or sensitive files are being handled.
+
+## About UniFicarPDF.com
+
+UniFicarPDF.com is a browser-based PDF tool built for people who just want their documents in one file, without hunting for software. Here is what you can expect when you use it.
+
+**Supports Multiple PDF Files**
+
+UniFicarPDF.com lets you add as many PDF files as you need, either by dragging them in or by selecting them from your device. Additionally, all of them are handled in a single session, so the process does not have to be repeated for each file.
+
+**Beginner-Friendly Interface**
+
+You do not need any technical knowledge. Every step is clearly laid out on one page, from adding files to downloading the result.
+
+**Combine Multiple Files**
+
+Add several files at once and set their order before the final document is created. This helps greatly when reports, assignments, forms, invoices, or any other related documents are being put together.
+
+**Save Time With Simple Processing**
+
+The whole process takes only seconds and runs without editing software. Your original files are left untouched, and you simply download the finished document.
+
+**Easy File Organization**
+
+Check the order of your files in the preview and change it whenever needed. As a result, you get the sequence you want without opening or editing each document one by one.
+
+**Why Should You Combine PDF Files?**
+
+Working with separate PDF files can make documents harder to organize, share, and manage. However, when related files are brought together, one convenient document is created that is easier to review, send, print, and keep for your records. This can be especially useful for assignments, reports, applications, presentations, and other everyday documents.
+
+**How to Combine PDF Files Using UniFicarPDF.com?**
+
+Creating one organized PDF is a simple 3-step process:
+
+• Step one is to visit the UniFicarPDF.com website and upload your PDF files.
+
+• Next, the files are arranged in your preferred order before they are processed.
+
+• Finally, click the button, and your final PDF is created and downloaded.
+
+## File Security and PDF Quality When Combining Documents
+
+-   **Security:** Your files are processed directly in your browser during the PDF creation process. UniFicarPDF.com does not upload or store your documents on its servers, so your files are kept private.
     
-    </div>
-  </section>
-  <section class="isec-block isec-how" aria-labelledby="isec-how-title" id="how-it-works">
-    <div class="isec-block__head">
-      <h2 id="isec-how-title" class="isec-block__title">¿Cómo unir PDF online gratis? (5 pasos)</h2>
-      <p class="isec-block__subtitle">No necesitas hacer mucho para unir PDF files en un solo documento. Si no sabes cómo hacerlo, sigue estos sencillos pasos:</p>
-    </div>
-    <ol class="isec-steps">
-      <li>
-        <span class="isec-steps__num">1</span>
-        <div class="isec-steps__body">Sube tus PDF documents o arrastra y suelta los files en el PDF merge tool.</div>
-      </li>
-     <li> 
-        <span class="isec-steps__num">2</span>
-        <div class="isec-steps__body">Organiza y reordena las páginas o files PDF si es necesario.</div>
-      </li>
-      <li>
-        <span class="isec-steps__num">3</span>
-        <div class="isec-steps__body">Haz clic en el botón Unir PDF.</div>
-      </li>
-      <li>
-        <span class="isec-steps__num">4</span>
-        <div class="isec-steps__body">Espera unos segundos mientras la herramienta procesa tus files de forma segura.</div>
-      </li>
-      <li>
-        <span class="isec-steps__num">5</span>
-        <div class="isec-steps__body">Descarga tu nuevo PDF unido al instante o compártelo online.</div>
-      </li>
-    </ol>
-  </section>
-  <section class="isec-block isec-usecases" aria-labelledby="isec-usecases-title">
-    <div class="isec-block__head">
-      <h2 id="isec-usecases-title" class="isec-block__title">¿Para qué se utiliza PDF Tools? Usos más comunes</h2>
-      <p class="isec-block__subtitle">Mira cómo nuestro PDF Merger te ayuda a organizar fácilmente tus PDF documents.</p>
-    </div>
-    <div class="isec-card-grid isec-card-grid--use">
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-        </span>
-        <h3 class="isec-card__title">PDF de Negocios</h3>
-        <p class="isec-card__text">Las empresas usan PDF mergers para combinar facturas, contratos, reportes y presentaciones en un solo file organizado. Esto facilita compartir documentos y mantiene los registros importantes en un solo lugar.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg></span>
-        <span class="isec-card__icon isec-icon-purple" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
-        </span>
-        <h3 class="isec-card__title">PDFs de Estudiantes</h3>
-        <p class="isec-card__text">Los estudiantes pueden unir apuntes, papers de investigación y páginas de tareas en un PDF antes de entregar su trabajo online. Esto ayuda a crear un documento limpio y profesional.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg></span>
-        <span class="isec-card__icon isec-icon-teal" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 7h14"/><path d="m5 7-3 6a3 3 0 0 0 6 0Z"/><path d="m19 7-3 6a3 3 0 0 0 6 0Z"/></svg>
-        </span>
-        <h3 class="isec-card__title">Files Escaneados</h3>
-        <p class="isec-card__text">Cuando los documentos se escanean página por página, un PDF merger puede combinar todas las páginas escaneadas en un solo file. Muy útil para documentos de identidad, formularios y papeleo de oficina.</p>
-      </div>
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg></span>
-        <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.5 6.8-3.9"/><path d="m8.6 13.5 6.8 3.9"/></svg>
-        </span>
-        <h3 class="isec-card__title">Viajes y Documentos Personales</h3>
-        <p class="isec-card__text">Es muy común combinar tiquetes, reservas de hotel, pasaportes y documentos de viaje en un solo PDF para tenerlos a mano. Así evitas el problema de manejar múltiples files por separado.</p>
-      </div>
-      
-      <div class="isec-card">
-        <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-            <path d="M14 2v6h6" />
-            <circle cx="10" cy="11" r="2" />
-            <path d="M7.5 16c.8-1.5 4.2-1.5 5 0" />
-            <path d="M15 11h2" />
-            <path d="M15 15h2" />
-          </svg>
-        </span><span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-            <path d="M14 2v6h6" />
-            <path d="M8 13h8" />
-            <path d="M8 17h8" />
-            <path d="M8 9h2" />
-          </svg>
-        </span>
-        <h3 class="isec-card__title">Portfolio y Hoja de Vida</h3>
-        <p class="isec-card__text">Los que buscan trabajo y los diseñadores usan PDF merge tools para combinar hojas de vida, cartas de presentación, certificados y muestras de portfolio en un solo documento profesional fácil de compartir.</p>
-      </div>
-        <div class="isec-card">
-          <span class="isec-card__bg-icon isec-icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="18" cy="5" r="3" />
-              <circle cx="6" cy="12" r="3" />
-              <circle cx="18" cy="19" r="3" />
-              <path d="m8.6 10.5 6.8-3.9" />
-              <path d="m8.6 13.5 6.8 3.9" /></svg></span>
-          <span class="isec-card__icon isec-icon-blue" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <circle cx="18" cy="5" r="3" />
-              <circle cx="6" cy="12" r="3" />
-              <circle cx="18" cy="19" r="3" />
-              <path d="m8.6 10.5 6.8-3.9" />
-              <path d="m8.6 13.5 6.8 3.9" /></svg>
-          </span>
-          <h3 class="isec-card__title">Historiales Médicos y de Salud</h3>
-          <p class="isec-card__text">Pacientes y clínicas unen fórmulas médicas, resultados de laboratorio, formularios de seguro y páginas de historial médico en un solo file, facilitando llevar o compartir los records completos con médicos o aseguradoras.
-          </p>
-        </div>
-    </div>
-  </section>
-  <section class="isec-block isec-faq" aria-labelledby="isec-faq-title" id="faq">
-    <div class="isec-block__head">
-      <h2 id="isec-faq-title" class="isec-block__title">Preguntas Frecuentes</h2>
-      <p class="isec-block__subtitle">¿Tienes preguntas? Tenemos las respuestas. Encuentra todo lo que necesitas saber sobre nuestro PDF Merger.</p>
-    </div>
-    <p class="isec-faq__eyebrow">Para Empezar</p>
-    <div class="isec-faq__list">
-      <div class="isec-faq__item is-open">
-        <button type="button" class="isec-faq__summary" aria-expanded="true">
-          <span>¿Qué es el merge de PDF?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>El merge de PDF es el proceso de combinar dos o más PDF files separados en un solo documento unificado. Nuestra herramienta entrega un merging rápido, seguro y automatizado directamente en tu browser.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Cómo puedo unir PDF files online?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>Puedes unir PDF en linea subiendo tus documentos a UnificarPDF.com. La herramienta los organiza y combina automáticamente en un solo file en cuestión de segundos.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Necesito instalar un software para unir PDFs?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>No. Puedes unir PDF online subiendo tus documentos a UnificarPDF.com. La herramienta los organiza y combina automáticamente en un solo file en segundos.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Necesito crear una cuenta?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>¡No! Puedes empezar a unir de inmediato sin ningún registro, email ni creación de cuenta. Solo sube tus files y listo — así de simple.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Qué formatos de file se pueden unir?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>UnificarPDF.com está hecho específicamente para combinar PDF files. No convierte otros formatos como Word, Excel o imágenes en PDF.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Se pueden subir PDF files grandes?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>Sí, la herramienta está diseñada para manejar tanto documentos pequeños como PDFs grandes de múltiples páginas sin comprometer el formato ni la calidad.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Puedo exportar el file unido en diferentes formatos?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>El output unido se entrega como un solo PDF file, listo para descargar, compartir o imprimir.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Puedo reorganizar las páginas antes de unir?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>Sí, una vez subidos tus files puedes arrastrarlos y reordenarlos para definir el orden exacto de las páginas antes de combinarlos.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿UnificarPDF.com puede detectar y organizar múltiples files a la vez?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>¡Sí! La herramienta te permite subir varios PDFs juntos, listándolos automáticamente para que puedas organizar el orden del merge de forma visual.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Puedo unir PDFs en cualquier idioma?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>Sí, la herramienta soporta unir PDFs en cualquier idioma, preservando el texto y el formato.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Puedo unir PDF files desde dispositivos móviles?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>Sí, UnificarPDF.com es totalmente responsive y funciona perfecto en computadores, tablets y dispositivos móviles.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Es UnificarPDF.com apto para uso empresarial y académico?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>Claro que sí. Es ideal para combinar reportes, facturas, contratos, papers de investigación y páginas de tareas en documentos claros y organizados.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Mis datos están seguros al unir PDFs?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>Sí, tus datos están seguros al usar UnificarPDF.com. Implementamos medidas de seguridad estándar de la industria para proteger tus files durante el proceso de merge.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿En qué se diferencia UnificarPDF.com de Adobe Acrobat para hacer merge?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>UnificarPDF.com ofrece una solución web fácil de usar para unir PDFs sin necesidad de instalar software ni crear una cuenta. A diferencia de Adobe Acrobat, que requiere suscripción paga y software de escritorio, UnificarPDF.com es una alternativa gratis y accesible que funciona directamente en tu browser.</p>
-          </div>
-        </div>
-      </div>
-      <div class="isec-faq__item">
-        <button type="button" class="isec-faq__summary" aria-expanded="false">
-          <span>¿Puedo unir PDFs sin conexión a internet?</span>
-          <span class="isec-faq__chev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-        </button>
-        <div class="isec-faq__panel">
-          <div class="isec-faq__panel-inner">
-            <p>No, esta herramienta procesa los files en el servidor, por lo que se necesita conexión a internet. Para hacer merge completamente offline, se necesitaría una herramienta de escritorio.</p>
-          </div>
-        </div>
-      </div>
-     
-    </div>
-  </section>
-  <section>
-        <div class="isec-block__head">
-      <h2 id="isec-why-title" class="isec-block__title">Problemas comunes y sus soluciones</h2>
-    </div>
-    <div class="isec-table-wrap">
-  <table class="isec-table">
-    <thead>
-      <tr>
-        <th>Problema</th>
-        <th>Solución</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Los files no se están uniendo correctamente.</td>
-        <td>Asegúrate de que todos los <a href="https://en.wikipedia.org/wiki/PDF" class="alink">PDF files</a> no estén dañados y vuelve a subir los files que falten.</td>
-      </tr>
-      <tr>
-        <td>El botón de merge no funciona.</td>
-        <td>Recarga la página, desactiva las extensiones del browser o intenta usar la última versión de Chrome.</td>
-      </tr>
-      <tr>
-        <td>Orden incorrecto de files.</td>
-        <td>Reorganiza manualmente los files antes de unirlos, o renómbralos usando números para mantenerlos en la secuencia correcta.</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-  </section>
-
-
-</div>
-
+-   **Quality:** The text, images, and page layout of your original files are carried over to the final PDF exactly as they are.
 
 
 
