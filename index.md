@@ -25,7 +25,7 @@ permalink: /
 
  <!-- H1 + P — visible before upload, hidden after -->
   <h1 class="page-title" id="pageTitle">Unir PDF Files</h1>
-  <p class="page-sub" id="pageSub">Combine multiple PDF files into one document quickly, while the original PDF quality is carefully preserved. No sign up needed.</p>
+  <p class="page-sub" id="pageSub">Combina rápidamente varios archivos PDF en un solo documento, conservando la calidad original del PDF. No es necesario registrarse.</p>
   <!-- UPLOAD STATE (centered, full viewport height) -->
   <div id="uploadState">
     <div class="upload-box" id="dropZone">
