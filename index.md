@@ -401,16 +401,6 @@ Unir PDF
 
 </section>
 
-<script>
-  // FAQ accordion (skip this block if your site already handles .isec-faq__item toggling)
-  document.querySelectorAll('#split-pdf-info .isec-faq__item').forEach(function (item) {
-    var btn = item.querySelector('.isec-faq__summary');
-    btn.addEventListener('click', function () {
-      var open = item.classList.toggle('is-open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  });
-</script>
 
 
 
