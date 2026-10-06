@@ -98,125 +98,319 @@ Unir PDF
 
 
 
+<!-- Icon sprite (hidden) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-device" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="14" height="11" rx="2"/><path d="M8 19h2M5 19h8"/><rect x="17" y="8" width="5" height="11" rx="1"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-sort" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h12M3 18h6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+</svg>
 
+<section id="split-pdf-info">
 
-# FREE Online Merge PDF
+  <!-- Hero -->
+  <div class="isec-hero">
+    <h1 class="isec-hero__title">FREE Online Merge PDF</h1>
+    <p class="isec-hero__subtitle">Combine multiple PDF files into one document quickly, while the original PDF quality is carefully preserved. No sign up needed.</p>
+  </div>
 
-Combine multiple PDF files into one document quickly, while the original PDF quality is carefully preserved. No sign up needed.
+  <!-- Free PDF Merging Tool -->
+  <div class="isec-block">
+    <div class="isec-block__head">
+      <h2 class="isec-block__title">Free PDF Merging Tool</h2>
+      <p class="isec-block__subtitle">The easiest tool to join PDFs from your device at no cost. It works smoothly without Adobe, and nothing needs to be installed.</p>
+    </div>
+  </div>
 
-## Free PDF Merging Tool
+  <!-- Get an Instant PDF Solution -->
+  <div class="isec-block">
+    <div class="isec-block__head">
+      <h2 class="isec-block__title">Get an Instant PDF Solution</h2>
+      <p class="isec-block__subtitle">Take your document workflow to the next level with professional, organized PDF files using UniFicarPDF.com’s fast and easy document processing. Your files are handled efficiently, so the finished document is ready in moments.</p>
+    </div>
+    <div class="isec-card-grid">
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-eye"/></svg></span>
+        <span class="isec-card__icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-eye"/></svg></span>
+        <h3 class="isec-card__title">Live Preview</h3>
+        <p class="isec-card__text">See your PDF files and page order clearly before the final document is created. Review everything at a glance and make any changes before your finished PDF is downloaded.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-device"/></svg></span>
+        <span class="isec-card__icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-device"/></svg></span>
+        <h3 class="isec-card__title">Works Everywhere</h3>
+        <p class="isec-card__text">Use UniFicarPDF.com on your mobile, computer, or laptop. Merge and manage your PDF files whenever you need to, no matter which device you're using. It runs smoothly in your browser on Windows, Mac, Linux, Android, and iPhone.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-file"/></svg></span>
+        <span class="isec-card__icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-file"/></svg></span>
+        <h3 class="isec-card__title">No File Size Limit</h3>
+        <p class="isec-card__text">There is no file size limit, so even very large PDF files can be handled.</p>
+      </div>
+    </div>
+  </div>
 
-The easiest tool to join PDFs from your device at no cost. It works smoothly without Adobe, and nothing needs to be installed.
+  <!-- FAQ -->
+  <div class="isec-block">
+    <div class="isec-block__head">
+      <p class="isec-faq__eyebrow">FAQ</p>
+      <h2 class="isec-block__title">Frequently Asked Questions</h2>
+      <p class="isec-block__subtitle">Here, we have answered some of the most commonly asked questions by our users. If you cannot find the information you need, feel free to contact us for further assistance.</p>
+    </div>
+    <div class="isec-faq__list">
 
-## Get an Instant PDF Solution
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>How to merge PDF files into one?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>Upload your documents, arrange them in the order you want, and create your final file in a few simple steps. First, add your PDF files from your device. Then, drag them into the sequence you need. Once the order looks right in the preview, click the button and the final document is created, ready to be downloaded as a single PDF.</p>
+        </div></div>
+      </div>
 
-Take your document workflow to the next level with professional, organized PDF files using UniFicarPDF.com’s fast and easy document processing. Your files are handled efficiently, so the finished document is ready in moments.
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>Is there a free service to merge PDF online?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>Yes. UniFicarPDF.com is completely free to use. You can simply open the website in your browser, add your files, and download the result without paying anything. Since nothing has to be installed, you can start right away from any device.</p>
+        </div></div>
+      </div>
 
-### Live Preview
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>What is the easiest way to combine PDF documents?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>Add your documents, organize their order, and start the process. Everything can be done directly from your browser with simple drag and drop. Moreover, no desktop software or technical skills are required, and the whole process is usually finished within seconds.</p>
+        </div></div>
+      </div>
 
-See your PDF files and page order clearly before the final document is created. Review everything at a glance and make any changes before your finished PDF is downloaded.
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>How many PDF files can I merge at once?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>Up to 20 files can be added at a time for the smoothest experience. If you add more than 20 files, the process still works perfectly well, but it will take a little more time to finish. As a result, you can bring a large number of documents together without splitting them into smaller batches.</p>
+        </div></div>
+      </div>
 
-### Works Everywhere
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>Is there a file size limit?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>No. There is no limit on file size, and even PDF files that are several gigabytes in size can be merged. However, larger files naturally take longer to process, so a little patience may be needed when you are working with very heavy documents.</p>
+        </div></div>
+      </div>
 
-Use UniFicarPDF.com on your mobile, computer, or laptop. Merge and manage your PDF files whenever you need to, no matter which device you're using. It runs smoothly in your browser on Windows, Mac, Linux, Android, and iPhone.
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>Can I add photos to a PDF?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>Yes. You can work with supported image formats when preparing a document containing photos or scanned pages, such as JPG and PNG images. This is especially useful when photos, scanned forms, or ID copies need to be placed into the same document as your other PDF files.</p>
+        </div></div>
+      </div>
 
-## Frequently Asked Questions
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>Can I use UniFicarPDF.com without Adobe Acrobat?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>Yes. You only need a modern web browser. There is no need to install Adobe Acrobat or other desktop software. In other words, it works as a free alternative for anyone who does not have Acrobat or prefers not to pay for it.</p>
+        </div></div>
+      </div>
 
-Here, we have answered some of the most commonly asked questions by our users. If you cannot find the information you need, feel free to contact us for further assistance.
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>Can I join PDF documents on Android?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>Yes. The tool works smoothly through a mobile browser, so it can be used on Android phones, iPhone, and other mobile devices. Simply open the website in Chrome, Safari, or any other browser, select your files from your phone, and download the finished PDF.</p>
+        </div></div>
+      </div>
 
-### How to merge PDF files into one?
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>Can I create one document from several files?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>Yes. Add the files you need and arrange them in your preferred order before processing. Several files can be added at once, and their sequence can be changed at any time, until the final document looks exactly the way you want it.</p>
+        </div></div>
+      </div>
 
-Upload your documents, arrange them in the order you want, and create your final file in a few simple steps. First, add your PDF files from your device. Then, drag them into the sequence you need. Once the order looks right in the preview, click the button and the final document is created, ready to be downloaded as a single PDF.
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>Can I rearrange pages before downloading?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>Yes. You can organize the files before the final document is created, giving you full control over the page sequence. Check the order in the live preview, move files up or down as needed, and create the final PDF only when you are happy with the arrangement.</p>
+        </div></div>
+      </div>
 
-### Is there a free service to merge PDF online?
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>Does UniFicarPDF.com require registration?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>No. You can use the tool without creating an account or providing personal information.</p>
+        </div></div>
+      </div>
 
-Yes. UniFicarPDF.com is completely free to use. You can simply open the website in your browser, add your files, and download the result without paying anything. Since nothing has to be installed, you can start right away from any device.
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>Does it work on mobile and Mac?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>Yes. It works well on phones, tablets, laptops, and desktop computers with a supported browser, including Mac, Windows, and Linux. Because the steps are the same on every device, nothing new needs to be learned when you switch between them.</p>
+        </div></div>
+      </div>
 
-### What is the easiest way to combine PDF documents?
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>Will my document quality be preserved?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>Yes. The tool is designed to maintain the original quality of your PDF documents during processing. Your text, images, and page layout stay exactly the same in the final file, and the document is not unnecessarily compressed.</p>
+        </div></div>
+      </div>
 
-Add your documents, organize their order, and start the process. Everything can be done directly from your browser with simple drag and drop. Moreover, no desktop software or technical skills are required, and the whole process is usually finished within seconds.
+      <div class="isec-faq__item">
+        <button class="isec-faq__summary" type="button" aria-expanded="false">
+          <span>Are my documents uploaded to a server?</span>
+          <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
+        </button>
+        <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
+          <p>No. Your files are processed locally in your browser (client-side) rather than being uploaded or stored on our servers. As a result, your documents stay safely on your own device during the process, which is particularly helpful when private or sensitive files are being handled.</p>
+        </div></div>
+      </div>
 
-### Can I add photos to a PDF?
+    </div>
+  </div>
 
-Yes. You can work with supported image formats when preparing a document containing photos or scanned pages, such as JPG and PNG images. This is especially useful when photos, scanned forms, or ID copies need to be placed into the same document as your other PDF files.
+  <!-- About -->
+  <div class="isec-block">
+    <div class="isec-block__head">
+      <h2 class="isec-block__title">About UniFicarPDF.com</h2>
+      <p class="isec-block__subtitle">UniFicarPDF.com is a browser-based PDF tool built for people who just want their documents in one file, without hunting for software. Here is what you can expect when you use it.</p>
+    </div>
+    <div class="isec-card-grid">
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-layers"/></svg></span>
+        <span class="isec-card__icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-layers"/></svg></span>
+        <h3 class="isec-card__title">Supports Multiple PDF Files</h3>
+        <p class="isec-card__text">UniFicarPDF.com lets you add as many PDF files as you need, either by dragging them in or by selecting them from your device. Additionally, all of them are handled in a single session, so the process does not have to be repeated for each file. Batches of up to 20 files work best, while larger batches simply take more time.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-user"/></svg></span>
+        <span class="isec-card__icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-user"/></svg></span>
+        <h3 class="isec-card__title">Beginner-Friendly Interface</h3>
+        <p class="isec-card__text">You do not need any technical knowledge. Every step is clearly laid out on one page, from adding files to downloading the result.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-file"/></svg></span>
+        <span class="isec-card__icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-file"/></svg></span>
+        <h3 class="isec-card__title">Combine Multiple Files</h3>
+        <p class="isec-card__text">Add several files at once and set their order before the final document is created. This helps greatly when reports, assignments, forms, invoices, or any other related documents are being put together.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-clock"/></svg></span>
+        <span class="isec-card__icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-clock"/></svg></span>
+        <h3 class="isec-card__title">Save Time With Simple Processing</h3>
+        <p class="isec-card__text">The whole process usually takes only seconds and runs without editing software. Large files naturally need more time, but they are handled just as reliably. Your original files are left untouched, and you simply download the finished document.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-sort"/></svg></span>
+        <span class="isec-card__icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-sort"/></svg></span>
+        <h3 class="isec-card__title">Easy File Organization</h3>
+        <p class="isec-card__text">Check the order of your files in the preview and change it whenever needed. As a result, you get the sequence you want without opening or editing each document one by one.</p>
+      </div>
+    </div>
+  </div>
 
-### Can I use UniFicarPDF.com without Adobe Acrobat?
+  <!-- Why combine -->
+  <div class="isec-block">
+    <div class="isec-block__head">
+      <h2 class="isec-block__title">Why Should You Combine PDF Files?</h2>
+      <p class="isec-block__subtitle">Working with separate PDF files can make documents harder to organize, share, and manage. However, when related files are brought together, one convenient document is created that is easier to review, send, print, and keep for your records. This can be especially useful for assignments, reports, applications, presentations, and other everyday documents.</p>
+    </div>
+  </div>
 
-Yes. You only need a modern web browser. There is no need to install Adobe Acrobat or other desktop software. In other words, it works as a free alternative for anyone who does not have Acrobat or prefers not to pay for it.
+  <!-- How to -->
+  <div class="isec-block">
+    <div class="isec-block__head">
+      <h2 class="isec-block__title">How to Combine PDF Files Using UniFicarPDF.com?</h2>
+      <p class="isec-block__subtitle">Creating one organized PDF is a simple 3-step process:</p>
+    </div>
+    <ol class="isec-steps">
+      <li>
+        <span class="isec-steps__num">1</span>
+        <div class="isec-steps__body">Step one is to visit the UniFicarPDF.com website and upload your PDF files.</div>
+      </li>
+      <li>
+        <span class="isec-steps__num">2</span>
+        <div class="isec-steps__body">Next, the files are arranged in your preferred order before they are processed.</div>
+      </li>
+      <li>
+        <span class="isec-steps__num">3</span>
+        <div class="isec-steps__body">Finally, click the button, and your final PDF is created and downloaded.</div>
+      </li>
+    </ol>
+  </div>
 
-### Can I join PDF documents on Android?
+  <!-- Security & Quality -->
+  <div class="isec-block">
+    <div class="isec-block__head">
+      <h2 class="isec-block__title">File Security and PDF Quality When Combining Documents</h2>
+    </div>
+    <div class="isec-card-grid">
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-shield"/></svg></span>
+        <span class="isec-card__icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-shield"/></svg></span>
+        <h3 class="isec-card__title">Security</h3>
+        <p class="isec-card__text">Your files are processed directly in your browser during the PDF creation process. UniFicarPDF.com does not upload or store your documents on its servers, so your files are kept private.</p>
+      </div>
+      <div class="isec-card">
+        <span class="isec-card__bg-icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-check"/></svg></span>
+        <span class="isec-card__icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-check"/></svg></span>
+        <h3 class="isec-card__title">Quality</h3>
+        <p class="isec-card__text">The text, images, and page layout of your original files are carried over to the final PDF exactly as they are.</p>
+      </div>
+    </div>
+  </div>
 
-Yes. The tool works smoothly through a mobile browser, so it can be used on Android phones, iPhone, and other mobile devices. Simply open the website in Chrome, Safari, or any other browser, select your files from your phone, and download the finished PDF.
+</section>
 
-### Can I create one document from several files?
-
-Yes. Add the files you need and arrange them in your preferred order before processing. Several files can be added at once, and their sequence can be changed at any time, until the final document looks exactly the way you want it.
-
-### Can I rearrange pages before downloading?
-
-Yes. You can organize the files before the final document is created, giving you full control over the page sequence. Check the order in the live preview, move files up or down as needed, and create the final PDF only when you are happy with the arrangement.
-
-### Does UniFicarPDF.com require registration?
-
-No. You can use the tool without creating an account or providing personal information.
-
-### Does it work on mobile and Mac?
-
-Yes. It works well on phones, tablets, laptops, and desktop computers with a supported browser, including Mac, Windows, and Linux. Because the steps are the same on every device, nothing new needs to be learned when you switch between them.
-
-### Will my document quality be preserved?
-
-Yes. The tool is designed to maintain the original quality of your PDF documents during processing. Your text, images, and page layout stay exactly the same in the final file, and the document is not unnecessarily compressed.
-
-### Are my documents uploaded to a server?
-
-No. Your files are processed locally in your browser (client-side) rather than being uploaded or stored on our servers. As a result, your documents stay safely on your own device during the process, which is particularly helpful when private or sensitive files are being handled.
-
-## About UniFicarPDF.com
-
-UniFicarPDF.com is a browser-based PDF tool built for people who just want their documents in one file, without hunting for software. Here is what you can expect when you use it.
-
-**Supports Multiple PDF Files**
-
-UniFicarPDF.com lets you add as many PDF files as you need, either by dragging them in or by selecting them from your device. Additionally, all of them are handled in a single session, so the process does not have to be repeated for each file.
-
-**Beginner-Friendly Interface**
-
-You do not need any technical knowledge. Every step is clearly laid out on one page, from adding files to downloading the result.
-
-**Combine Multiple Files**
-
-Add several files at once and set their order before the final document is created. This helps greatly when reports, assignments, forms, invoices, or any other related documents are being put together.
-
-**Save Time With Simple Processing**
-
-The whole process takes only seconds and runs without editing software. Your original files are left untouched, and you simply download the finished document.
-
-**Easy File Organization**
-
-Check the order of your files in the preview and change it whenever needed. As a result, you get the sequence you want without opening or editing each document one by one.
-
-**Why Should You Combine PDF Files?**
-
-Working with separate PDF files can make documents harder to organize, share, and manage. However, when related files are brought together, one convenient document is created that is easier to review, send, print, and keep for your records. This can be especially useful for assignments, reports, applications, presentations, and other everyday documents.
-
-**How to Combine PDF Files Using UniFicarPDF.com?**
-
-Creating one organized PDF is a simple 3-step process:
-
-• Step one is to visit the UniFicarPDF.com website and upload your PDF files.
-
-• Next, the files are arranged in your preferred order before they are processed.
-
-• Finally, click the button, and your final PDF is created and downloaded.
-
-## File Security and PDF Quality When Combining Documents
-
--   **Security:** Your files are processed directly in your browser during the PDF creation process. UniFicarPDF.com does not upload or store your documents on its servers, so your files are kept private.
-    
--   **Quality:** The text, images, and page layout of your original files are carried over to the final PDF exactly as they are.
-
-
+<script>
+  // FAQ accordion (skip this block if your site already handles .isec-faq__item toggling)
+  document.querySelectorAll('#split-pdf-info .isec-faq__item').forEach(function (item) {
+    var btn = item.querySelector('.isec-faq__summary');
+    btn.addEventListener('click', function () {
+      var open = item.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+</script>
 
 
 
