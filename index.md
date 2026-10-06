@@ -25,7 +25,7 @@ permalink: /
 
  <!-- H1 + P — visible before upload, hidden after -->
   <h1 class="page-title" id="pageTitle">Unir PDF Files</h1>
-  <p class="page-sub" id="pageSub">Sube tus archivos, ordénalos y descarga un solo PDF en segundos. Sin registro, sin marca de agua y sin límite diario.</p>
+  <p class="page-sub" id="pageSub">Combine multiple PDF files into one document quickly, while the original PDF quality is carefully preserved. No sign up needed.</p>
   <!-- UPLOAD STATE (centered, full viewport height) -->
   <div id="uploadState">
     <div class="upload-box" id="dropZone">
@@ -114,44 +114,40 @@ Unir PDF
 
 <section id="split-pdf-info">
 
-  <!-- Hero -->
-  <div class="isec-hero">
-    <h1 class="isec-hero__title">FREE Online Merge PDF</h1>
-    <p class="isec-hero__subtitle">Combine multiple PDF files into one document quickly, while the original PDF quality is carefully preserved. No sign up needed.</p>
-  </div>
+
 
   <!-- Free PDF Merging Tool -->
   <div class="isec-block">
     <div class="isec-block__head">
-      <h2 class="isec-block__title">Free PDF Merging Tool</h2>
-      <p class="isec-block__subtitle">The easiest tool to join PDFs from your device at no cost. It works smoothly without Adobe, and nothing needs to be installed.</p>
+      <h2 class="isec-block__title">Herramienta gratuita para combinar archivos PDF</h2>
+      <p class="isec-block__subtitle">La herramienta más sencilla para unir archivos PDF desde tu dispositivo, sin coste alguno. Funciona a la perfección sin Adobe y no requiere instalación.</p>
     </div>
   </div>
 
   <!-- Get an Instant PDF Solution -->
   <div class="isec-block">
     <div class="isec-block__head">
-      <h2 class="isec-block__title">Get an Instant PDF Solution</h2>
-      <p class="isec-block__subtitle">Take your document workflow to the next level with professional, organized PDF files using UniFicarPDF.com’s fast and easy document processing. Your files are handled efficiently, so the finished document is ready in moments.</p>
+      <h2 class="isec-block__title">Obtenga una solución PDF instantánea</h2>
+      <p class="isec-block__subtitle">Optimiza tu flujo de trabajo con archivos PDF profesionales y organizados gracias al procesamiento rápido y sencillo de documentos de UniFicarPDF.com. Tus archivos se gestionan de forma eficiente, para que el documento final esté listo en cuestión de segundos.</p>
     </div>
     <div class="isec-card-grid">
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-eye"/></svg></span>
         <span class="isec-card__icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-eye"/></svg></span>
-        <h3 class="isec-card__title">Live Preview</h3>
-        <p class="isec-card__text">See your PDF files and page order clearly before the final document is created. Review everything at a glance and make any changes before your finished PDF is downloaded.</p>
+        <h3 class="isec-card__title">Vista previa en vivo</h3>
+        <p class="isec-card__text">Visualice claramente sus archivos PDF y el orden de las páginas antes de crear el documento final. Revise todo de un vistazo y realice los cambios necesarios antes de descargar el PDF final.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-device"/></svg></span>
         <span class="isec-card__icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-device"/></svg></span>
-        <h3 class="isec-card__title">Works Everywhere</h3>
-        <p class="isec-card__text">Use UniFicarPDF.com on your mobile, computer, or laptop. Merge and manage your PDF files whenever you need to, no matter which device you're using. It runs smoothly in your browser on Windows, Mac, Linux, Android, and iPhone.</p>
+        <h3 class="isec-card__title">Funciona en todas partes</h3>
+        <p class="isec-card__text">Usa UniFicarPDF.com en tu móvil, ordenador o portátil. Combina y gestiona tus archivos PDF cuando lo necesites, independientemente del dispositivo que uses. Funciona sin problemas en tu navegador en Windows, Mac, Linux, Android y iPhone.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-file"/></svg></span>
         <span class="isec-card__icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-file"/></svg></span>
-        <h3 class="isec-card__title">No File Size Limit</h3>
-        <p class="isec-card__text">There is no file size limit, so even very large PDF files can be handled.</p>
+        <h3 class="isec-card__title">Sin límite de tamaño de archivo</h3>
+        <p class="isec-card__text">No hay límite de tamaño de archivo, por lo que incluso los archivos PDF muy grandes pueden ser procesados.</p>
       </div>
     </div>
   </div>
@@ -159,242 +155,241 @@ Unir PDF
   <!-- FAQ -->
   <div class="isec-block">
     <div class="isec-block__head">
-      <p class="isec-faq__eyebrow">FAQ</p>
       <h2 class="isec-block__title">Frequently Asked Questions</h2>
-      <p class="isec-block__subtitle">Here, we have answered some of the most commonly asked questions by our users. If you cannot find the information you need, feel free to contact us for further assistance.</p>
+      <p class="isec-block__subtitle">Aquí respondemos algunas de las preguntas más frecuentes de nuestros usuarios. Si no encuentra la información que necesita, no dude en contactarnos para obtener más ayuda.</p>
     </div>
     <div class="isec-faq__list">
 
-      <div class="isec-faq__item">
+    <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>How to merge PDF files into one?</span>
+          <span>¿Cómo unir archivos PDF en uno solo?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>Upload your documents, arrange them in the order you want, and create your final file in a few simple steps. First, add your PDF files from your device. Then, drag them into the sequence you need. Once the order looks right in the preview, click the button and the final document is created, ready to be downloaded as a single PDF.</p>
+          <p>Sube tus documentos, organízalos en el orden que quieras y crea tu archivo final en unos pocos pasos sencillos. Primero, agrega tus archivos PDF desde tu dispositivo. Luego, arrástralos hasta darles la secuencia que necesitas. Cuando el orden se vea bien en la vista previa, haz clic en el botón y se crea el documento final, listo para descargarse como un único PDF.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>Is there a free service to merge PDF online?</span>
+          <span>¿Existe un servicio gratuito para unir PDF en línea?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>Yes. UniFicarPDF.com is completely free to use. You can simply open the website in your browser, add your files, and download the result without paying anything. Since nothing has to be installed, you can start right away from any device.</p>
+          <p>Sí. UniFicarPDF.com es completamente gratis. Solo abre el sitio web en tu navegador, agrega tus archivos y descarga el resultado sin pagar nada. Como no hay que instalar nada, puedes empezar de inmediato desde cualquier dispositivo.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>What is the easiest way to combine PDF documents?</span>
+          <span>¿Cuál es la forma más fácil de combinar documentos PDF?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>Add your documents, organize their order, and start the process. Everything can be done directly from your browser with simple drag and drop. Moreover, no desktop software or technical skills are required, and the whole process is usually finished within seconds.</p>
+          <p>Agrega tus documentos, organiza su orden e inicia el proceso. Todo se puede hacer directamente desde tu navegador, con un simple arrastrar y soltar. Además, no se necesita software de escritorio ni conocimientos técnicos, y todo el proceso normalmente termina en cuestión de segundos.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>How many PDF files can I merge at once?</span>
+          <span>¿Cuántos archivos PDF puedo unir a la vez?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>Up to 20 files can be added at a time for the smoothest experience. If you add more than 20 files, the process still works perfectly well, but it will take a little more time to finish. As a result, you can bring a large number of documents together without splitting them into smaller batches.</p>
+          <p>Se pueden agregar hasta 20 archivos a la vez para una experiencia más fluida. Si agregas más de 20 archivos, el proceso igual funciona sin problema, pero tardará un poco más en terminar. Así, puedes reunir una gran cantidad de documentos sin dividirlos en lotes más pequeños.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>Is there a file size limit?</span>
+          <span>¿Hay un límite de tamaño de archivo?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>No. There is no limit on file size, and even PDF files that are several gigabytes in size can be merged. However, larger files naturally take longer to process, so a little patience may be needed when you are working with very heavy documents.</p>
+          <p>No. No hay límite de tamaño de archivo, e incluso se pueden unir archivos PDF de varios gigabytes. Sin embargo, los archivos más grandes naturalmente tardan más en procesarse, así que puede ser necesaria un poco de paciencia al trabajar con documentos muy pesados.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>Can I add photos to a PDF?</span>
+          <span>¿Puedo agregar fotos a un PDF?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>Yes. You can work with supported image formats when preparing a document containing photos or scanned pages, such as JPG and PNG images. This is especially useful when photos, scanned forms, or ID copies need to be placed into the same document as your other PDF files.</p>
+          <p>Sí. Puedes trabajar con los formatos de imagen compatibles al preparar un documento con fotos o páginas escaneadas, como imágenes JPG y PNG. Esto es especialmente útil cuando las fotos, los formularios escaneados o las copias de documentos de identidad deben ir en el mismo documento que tus otros archivos PDF.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>Can I use UniFicarPDF.com without Adobe Acrobat?</span>
+          <span>¿Puedo usar UniFicarPDF.com sin Adobe Acrobat?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>Yes. You only need a modern web browser. There is no need to install Adobe Acrobat or other desktop software. In other words, it works as a free alternative for anyone who does not have Acrobat or prefers not to pay for it.</p>
+          <p>Sí. Solo necesitas un navegador web moderno. No hace falta instalar Adobe Acrobat ni otro software de escritorio. En otras palabras, funciona como una alternativa gratuita para quienes no tienen Acrobat o prefieren no pagar por él.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>Can I join PDF documents on Android?</span>
+          <span>¿Puedo unir documentos PDF en Android?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>Yes. The tool works smoothly through a mobile browser, so it can be used on Android phones, iPhone, and other mobile devices. Simply open the website in Chrome, Safari, or any other browser, select your files from your phone, and download the finished PDF.</p>
+          <p>Sí. La herramienta funciona sin problemas desde un navegador móvil, así que se puede usar en celulares Android, iPhone y otros dispositivos móviles. Simplemente abre el sitio web en Chrome, Safari o cualquier otro navegador, selecciona tus archivos desde tu celular y descarga el PDF terminado.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>Can I create one document from several files?</span>
+          <span>¿Puedo crear un solo documento a partir de varios archivos?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>Yes. Add the files you need and arrange them in your preferred order before processing. Several files can be added at once, and their sequence can be changed at any time, until the final document looks exactly the way you want it.</p>
+          <p>Sí. Agrega los archivos que necesites y organízalos en el orden que prefieras antes de procesarlos. Se pueden agregar varios archivos a la vez y su secuencia se puede cambiar en cualquier momento, hasta que el documento final quede exactamente como quieres.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>Can I rearrange pages before downloading?</span>
+          <span>¿Puedo reorganizar las páginas antes de descargar?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>Yes. You can organize the files before the final document is created, giving you full control over the page sequence. Check the order in the live preview, move files up or down as needed, and create the final PDF only when you are happy with the arrangement.</p>
+          <p>Sí. Puedes organizar los archivos antes de crear el documento final, lo que te da control total sobre la secuencia de páginas. Revisa el orden en la vista previa en vivo, sube o baja los archivos según sea necesario y crea el PDF final solo cuando estés conforme con la disposición.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>Does UniFicarPDF.com require registration?</span>
+          <span>¿UniFicarPDF.com requiere registro?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>No. You can use the tool without creating an account or providing personal information.</p>
+          <p>No. Puedes usar la herramienta sin crear una cuenta ni proporcionar información personal.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>Does it work on mobile and Mac?</span>
+          <span>¿Funciona en celular y en Mac?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>Yes. It works well on phones, tablets, laptops, and desktop computers with a supported browser, including Mac, Windows, and Linux. Because the steps are the same on every device, nothing new needs to be learned when you switch between them.</p>
+          <p>Sí. Funciona muy bien en celulares, tabletas, portátiles y computadores de escritorio con un navegador compatible, incluidos Mac, Windows y Linux. Como los pasos son los mismos en todos los dispositivos, no tienes que aprender nada nuevo al cambiar de uno a otro.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>Will my document quality be preserved?</span>
+          <span>¿Se conservará la calidad de mis documentos?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>Yes. The tool is designed to maintain the original quality of your PDF documents during processing. Your text, images, and page layout stay exactly the same in the final file, and the document is not unnecessarily compressed.</p>
+          <p>Sí. La herramienta está diseñada para mantener la calidad original de tus documentos PDF durante el procesamiento. Tu texto, tus imágenes y el diseño de las páginas quedan exactamente igual en el archivo final, y el documento no se comprime innecesariamente.</p>
         </div></div>
       </div>
 
       <div class="isec-faq__item">
         <button class="isec-faq__summary" type="button" aria-expanded="false">
-          <span>Are my documents uploaded to a server?</span>
+          <span>¿Mis documentos se suben a un servidor?</span>
           <span class="isec-faq__chev"><svg aria-hidden="true"><use href="#i-chev"/></svg></span>
         </button>
         <div class="isec-faq__panel"><div class="isec-faq__panel-inner">
-          <p>No. Your files are processed locally in your browser (client-side) rather than being uploaded or stored on our servers. As a result, your documents stay safely on your own device during the process, which is particularly helpful when private or sensitive files are being handled.</p>
+          <p>No. Tus archivos se procesan localmente en tu navegador (del lado del cliente) en lugar de subirse o almacenarse en nuestros servidores. Por eso, tus documentos permanecen seguros en tu propio dispositivo durante el proceso, algo especialmente útil cuando se manejan archivos privados o sensibles.</p>
         </div></div>
       </div>
 
     </div>
   </div>
 
-  <!-- About -->
+<!-- About -->
   <div class="isec-block">
     <div class="isec-block__head">
-      <h2 class="isec-block__title">About UniFicarPDF.com</h2>
-      <p class="isec-block__subtitle">UniFicarPDF.com is a browser-based PDF tool built for people who just want their documents in one file, without hunting for software. Here is what you can expect when you use it.</p>
+      <h2 class="isec-block__title">Acerca de UniFicarPDF.com</h2>
+      <p class="isec-block__subtitle">UniFicarPDF.com es una herramienta PDF que funciona en el navegador, creada para quienes solo quieren tener sus documentos en un solo archivo, sin andar buscando software. Esto es lo que puedes esperar cuando la uses.</p>
     </div>
     <div class="isec-card-grid">
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-layers"/></svg></span>
         <span class="isec-card__icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-layers"/></svg></span>
-        <h3 class="isec-card__title">Supports Multiple PDF Files</h3>
-        <p class="isec-card__text">UniFicarPDF.com lets you add as many PDF files as you need, either by dragging them in or by selecting them from your device. Additionally, all of them are handled in a single session, so the process does not have to be repeated for each file. Batches of up to 20 files work best, while larger batches simply take more time.</p>
+        <h3 class="isec-card__title">Compatible con varios archivos PDF</h3>
+        <p class="isec-card__text">UniFicarPDF.com te permite agregar tantos archivos PDF como necesites, ya sea arrastrándolos o seleccionándolos desde tu dispositivo. Además, todos se manejan en una sola sesión, por lo que no tienes que repetir el proceso con cada archivo. Los lotes de hasta 20 archivos funcionan mejor, mientras que los lotes más grandes simplemente tardan más tiempo.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-user"/></svg></span>
         <span class="isec-card__icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-user"/></svg></span>
-        <h3 class="isec-card__title">Beginner-Friendly Interface</h3>
-        <p class="isec-card__text">You do not need any technical knowledge. Every step is clearly laid out on one page, from adding files to downloading the result.</p>
+        <h3 class="isec-card__title">Interfaz fácil para principiantes</h3>
+        <p class="isec-card__text">No necesitas ningún conocimiento técnico. Cada paso está claramente presentado en una sola página, desde agregar los archivos hasta descargar el resultado.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-file"/></svg></span>
         <span class="isec-card__icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-file"/></svg></span>
-        <h3 class="isec-card__title">Combine Multiple Files</h3>
-        <p class="isec-card__text">Add several files at once and set their order before the final document is created. This helps greatly when reports, assignments, forms, invoices, or any other related documents are being put together.</p>
+        <h3 class="isec-card__title">Combina varios archivos</h3>
+        <p class="isec-card__text">Agrega varios archivos a la vez y define su orden antes de crear el documento final. Esto ayuda muchísimo cuando se están armando informes, tareas, formularios, facturas o cualquier otro documento relacionado.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-clock"/></svg></span>
         <span class="isec-card__icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-clock"/></svg></span>
-        <h3 class="isec-card__title">Save Time With Simple Processing</h3>
-        <p class="isec-card__text">The whole process usually takes only seconds and runs without editing software. Large files naturally need more time, but they are handled just as reliably. Your original files are left untouched, and you simply download the finished document.</p>
+        <h3 class="isec-card__title">Ahorra tiempo con un proceso sencillo</h3>
+        <p class="isec-card__text">Todo el proceso normalmente toma solo unos segundos y funciona sin software de edición. Los archivos grandes naturalmente necesitan más tiempo, pero se manejan con la misma confiabilidad. Tus archivos originales no se modifican y solo tienes que descargar el documento terminado.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-sort"/></svg></span>
         <span class="isec-card__icon isec-icon-purple"><svg aria-hidden="true"><use href="#i-sort"/></svg></span>
-        <h3 class="isec-card__title">Easy File Organization</h3>
-        <p class="isec-card__text">Check the order of your files in the preview and change it whenever needed. As a result, you get the sequence you want without opening or editing each document one by one.</p>
+        <h3 class="isec-card__title">Organización fácil de archivos</h3>
+        <p class="isec-card__text">Revisa el orden de tus archivos en la vista previa y cámbialo cuando lo necesites. Así, obtienes la secuencia que quieres sin tener que abrir ni editar cada documento uno por uno.</p>
       </div>
     </div>
   </div>
 
-  <!-- Why combine -->
+ <!-- Why combine -->
   <div class="isec-block">
     <div class="isec-block__head">
-      <h2 class="isec-block__title">Why Should You Combine PDF Files?</h2>
-      <p class="isec-block__subtitle">Working with separate PDF files can make documents harder to organize, share, and manage. However, when related files are brought together, one convenient document is created that is easier to review, send, print, and keep for your records. This can be especially useful for assignments, reports, applications, presentations, and other everyday documents.</p>
+      <h2 class="isec-block__title">¿Por qué deberías combinar archivos PDF?</h2>
+      <p class="isec-block__subtitle">Trabajar con archivos PDF separados puede dificultar la organización, el envío y la gestión de los documentos. Sin embargo, cuando se reúnen los archivos relacionados, se crea un documento práctico que es más fácil de revisar, enviar, imprimir y conservar para tus registros. Esto puede ser especialmente útil para tareas, informes, solicitudes, presentaciones y otros documentos de uso diario.</p>
     </div>
   </div>
 
   <!-- How to -->
   <div class="isec-block">
     <div class="isec-block__head">
-      <h2 class="isec-block__title">How to Combine PDF Files Using UniFicarPDF.com?</h2>
-      <p class="isec-block__subtitle">Creating one organized PDF is a simple 3-step process:</p>
+      <h2 class="isec-block__title">¿Cómo combinar archivos PDF con UniFicarPDF.com?</h2>
+      <p class="isec-block__subtitle">Crear un único PDF organizado es un proceso sencillo de 3 pasos:</p>
     </div>
     <ol class="isec-steps">
       <li>
         <span class="isec-steps__num">1</span>
-        <div class="isec-steps__body">Step one is to visit the UniFicarPDF.com website and upload your PDF files.</div>
+        <div class="isec-steps__body">El primer paso es visitar el sitio web de UniFicarPDF.com y subir tus archivos PDF.</div>
       </li>
       <li>
         <span class="isec-steps__num">2</span>
-        <div class="isec-steps__body">Next, the files are arranged in your preferred order before they are processed.</div>
+        <div class="isec-steps__body">Luego, organiza los archivos en el orden que prefieras antes de procesarlos.</div>
       </li>
       <li>
         <span class="isec-steps__num">3</span>
-        <div class="isec-steps__body">Finally, click the button, and your final PDF is created and downloaded.</div>
+        <div class="isec-steps__body">Por último, haz clic en el botón y tu PDF final se crea y se descarga.</div>
       </li>
     </ol>
   </div>
-
-  <!-- Security & Quality -->
+  
+ <!-- Security & Quality -->
   <div class="isec-block">
     <div class="isec-block__head">
-      <h2 class="isec-block__title">File Security and PDF Quality When Combining Documents</h2>
+      <h2 class="isec-block__title">Seguridad de los archivos y calidad del PDF al combinar documentos</h2>
     </div>
     <div class="isec-card-grid">
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-shield"/></svg></span>
         <span class="isec-card__icon isec-icon-teal"><svg aria-hidden="true"><use href="#i-shield"/></svg></span>
-        <h3 class="isec-card__title">Security</h3>
-        <p class="isec-card__text">Your files are processed directly in your browser during the PDF creation process. UniFicarPDF.com does not upload or store your documents on its servers, so your files are kept private.</p>
+        <h3 class="isec-card__title">Seguridad</h3>
+        <p class="isec-card__text">Tus archivos se procesan directamente en tu navegador durante la creación del PDF. UniFicarPDF.com no sube ni almacena tus documentos en sus servidores, por lo que tus archivos se mantienen privados.</p>
       </div>
       <div class="isec-card">
         <span class="isec-card__bg-icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-check"/></svg></span>
         <span class="isec-card__icon isec-icon-blue"><svg aria-hidden="true"><use href="#i-check"/></svg></span>
-        <h3 class="isec-card__title">Quality</h3>
-        <p class="isec-card__text">The text, images, and page layout of your original files are carried over to the final PDF exactly as they are.</p>
+        <h3 class="isec-card__title">Calidad</h3>
+        <p class="isec-card__text">El texto, las imágenes y el diseño de página de tus archivos originales pasan al PDF final exactamente como están.</p>
       </div>
     </div>
   </div>
