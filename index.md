@@ -121,6 +121,9 @@ Unir PDF
     <div class="isec-block__head">
       <h2 class="isec-block__title">Herramienta gratuita para combinar archivos PDF</h2>
       <p class="isec-block__subtitle">La herramienta más sencilla para unir archivos PDF desde tu dispositivo, sin coste alguno. Funciona a la perfección sin Adobe y no requiere instalación.</p>
+      <div class="isec-media">
+  <img src="/assets/img/unir.webp" alt="Herramienta en línea para combinar archivos PDF en un solo documento" loading="lazy" decoding="async">
+</div>
     </div>
   </div>
 
