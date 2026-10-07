@@ -15,6 +15,7 @@ markdown: kramdown
 theme: null
 plugins:
   - jekyll-include-cache
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
