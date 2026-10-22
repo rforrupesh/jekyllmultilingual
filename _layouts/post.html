@@ -18,9 +18,9 @@ layout: default
   "headline": "{{ page.title | escape }}",
   "url": "{{ site.url }}{{ page.url }}",
   "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | escape }}",
-  {% if page.image %}
-  "image": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ base }}/assets/img/{{ page.image }}{% endif %}",
-  {% endif %}
+{% if page.thumbnail %}
+  "image": "{% if page.thumbnail contains 'http' %}{{ page.thumbnail }}{% else %}{{ site.url }}{{ page.thumbnail | relative_url }}{% endif %}",
+{% endif %}
   "author": {
     "@type": "Person",
     "name": "{{ page.author | default: site.author | escape }}"
