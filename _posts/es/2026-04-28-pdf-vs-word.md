@@ -7,7 +7,7 @@ lang: es
 ref: pdf-vs-word
 ---
 
-PDF y Word son dos de los tipos de archivo más importantes para gestionar texto y contenido multimedia. Ambos son conocidos hoy en día como formatos de documentos potentes y fiables con diversos conjuntos de funciones que millones de personas utilizan cada día. Pero han recorrido un largo camino desde los días en que Word se creó únicamente para la creación y edición, y PDF solo para la distribución y presentación final.
+PDF y Word son dos de los tipos de archivo más importantes para gestionar texto y contenido multimedia. Ambos son conocidos hoy en día como formatos de documentos potentes y fiables con diversos conjuntos de funciones que millones de personas utilizan cada día. Pero han recorrido un largo camino desde los días en que Word se creó únicamente para la creación y edición, y PDF-solo para la distribución y presentación final.
 
 Entonces, ¿qué formato elegirías ahora?
 
