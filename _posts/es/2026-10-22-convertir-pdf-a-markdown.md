@@ -1,120 +1,121 @@
 ---
 layout: post
-title: "Convertir PDF a Markdown: por qué importa y cómo hacerlo"
+title: "Convertir PDF a Markdown: guía sencilla"
 thumbnail: /assets/img/convertir-pdf-a-markdown.webp
-description: Descubre cómo convertir PDF a Markdown, por qué es útil y qué métodos puedes usar para extraer texto y conservar la estructura del documento.
+description: Aprende cómo convertir un PDF a Markdown para editar, organizar y reutilizar su contenido en blogs, documentos y proyectos de GitHub.
 lang: es
 ref: convertir-pdf-a-markdown
 ---
 
-Los archivos PDF son útiles para compartir documentos, pero no siempre son fáciles de editar. Si quieres reutilizar su contenido en un blog, una página web o un proyecto de GitHub, convertir PDF a Markdown puede ser una buena opción.
+Los archivos PDF son útiles para compartir documentos, pero editar su contenido puede ser complicado. Si quieres utilizar ese texto en un blog, una página web o un proyecto de GitHub, convertir PDF a Markdown puede ayudarte.
 
-Markdown es un formato de texto sencillo que permite crear títulos, listas, enlaces y otros elementos sin usar herramientas complicadas.
+Markdown es un formato de texto sencillo que permite crear títulos, listas, enlaces y otros elementos. En esta guía, aprenderás cómo preparar el contenido de un PDF y convertirlo en un archivo Markdown.
 
-En esta guía, aprenderás qué es Markdown, cómo preparar el contenido de un PDF y qué opciones puedes utilizar para convertirlo.
+## ¿Qué es Markdown?
 
-¿Qué es Markdown?
+Markdown es un lenguaje de marcado ligero que utiliza símbolos sencillos para organizar el texto. Sus archivos suelen tener la extensión `.md` y se pueden abrir con cualquier editor de texto.
 
-Markdown es un lenguaje de marcado ligero. Utiliza símbolos sencillos para dar formato al texto.
+Por ejemplo, puedes escribir `# Mi título` para crear un encabezado, utilizar `**texto**` para mostrar palabras en negrita o añadir un guion al principio de una línea para crear una lista.
 
-Por ejemplo:
+No necesitas conocimientos avanzados de programación para empezar a utilizarlo.
 
-# Título crea un encabezado.
+## ¿Por qué convertir un PDF a Markdown?
 
-**Texto** muestra el texto en negrita.
+Convertir un PDF a Markdown puede ser útil en diferentes situaciones:
 
-- Elemento crea una lista.
+- **Editar contenido:** modifica el texto sin tener que trabajar directamente con el diseño del PDF.
+- **Crear artículos:** reutiliza información en blogs y páginas web.
+- **Trabajar con GitHub:** prepara archivos README y documentación para tus proyectos.
+- **Organizar información:** estructura el contenido con títulos, listas y enlaces.
+- **Facilitar el mantenimiento:** guarda el texto en un formato ligero y fácil de actualizar.
 
-[Google](https://google.com) añade un enlace.
+Markdown no conserva el diseño original del PDF, pero facilita la edición y reutilización de su contenido.
 
-Los archivos Markdown suelen guardarse con la extensión .md. Son fáciles de leer, editar y utilizar en páginas web y repositorios de GitHub.
+## Cómo convertir un PDF a Markdown
 
-¿Por qué convertir un PDF a Markdown?
+El método depende de si el PDF contiene texto seleccionable o si está formado por páginas escaneadas.
 
-Convertir un PDF a Markdown facilita el uso del contenido en diferentes proyectos. Estas son algunas de sus ventajas.
+### 1. Extrae el texto del PDF
 
-Edición sencilla: puedes modificar el texto con un editor básico, sin tener que cambiar todo el documento.
+Abre el documento y comprueba si puedes seleccionar y copiar el texto.
 
-Contenido para blogs: puedes reutilizar información de un PDF para preparar artículos y páginas web.
+Si puedes hacerlo, copia el contenido y pégalo en un editor de texto. Si el PDF contiene páginas escaneadas, necesitarás una herramienta de reconocimiento óptico de caracteres (OCR) para extraer las palabras de las imágenes.
 
-Uso en GitHub: Markdown es compatible con archivos README y documentación de proyectos.
+Antes de continuar, revisa que el texto se haya extraído correctamente.
 
-Texto más organizado: puedes estructurar la información mediante títulos, listas, enlaces y otros elementos.
+### 2. Organiza el contenido
 
-Menos dependencia del formato original: puedes trabajar con el contenido sin conservar necesariamente el diseño de cada página del PDF.
+El texto extraído puede contener saltos de línea innecesarios, encabezados repetidos o párrafos desordenados.
 
-Cómo convertir un PDF a Markdown
+Corrige estos problemas y organiza la información. Separa los títulos de los párrafos y comprueba que las listas y tablas mantengan un orden lógico.
 
-El método depende del tipo de PDF y de las herramientas que tengas disponibles.
+Este paso es especialmente importante si el PDF tiene varias columnas o un diseño complejo.
 
-1. Extrae el texto del PDF
+### 3. Convierte el texto al formato Markdown
 
-Primero, abre el archivo PDF y comprueba si puedes seleccionar y copiar su texto.
+Una vez que tengas el texto limpio, utiliza la sintaxis de Markdown para organizarlo.
 
-Si el documento contiene texto seleccionable, puedes copiarlo y pegarlo en un editor de texto.
+Por ejemplo, para crear un documento con el título «Guía de usuario» y tres pasos, escribe un encabezado y coloca cada paso en una línea que comience con un guion.
 
-Si el PDF está formado por páginas escaneadas, necesitarás una herramienta de reconocimiento óptico de caracteres (OCR) para extraer el texto.
+El resultado será un texto estructurado que puedes guardar como `guia-de-usuario.md`.
 
-2. Organiza el contenido
+Recuerda que extraer el texto de un PDF no lo convierte automáticamente en Markdown. Es posible que tengas que añadir los encabezados, las listas y otros elementos manualmente.
 
-Antes de convertirlo, revisa el texto extraído. Elimina los saltos de línea innecesarios y comprueba que los títulos, párrafos y listas estén en el orden correcto.
+### 4. Utiliza Pandoc si necesitas una conversión más técnica
 
-Este paso es importante porque algunos PDF dividen las frases entre líneas o columnas.
+Pandoc es una herramienta que permite convertir documentos entre distintos formatos. Puede resultar útil si necesitas automatizar parte del proceso.
 
-3. Guarda el contenido como Markdown
+Sin embargo, Pandoc no suele convertir directamente un PDF común a Markdown. Primero tendrás que extraer el texto o convertir el documento a un formato compatible.
 
-Abre un editor de texto y organiza el contenido utilizando la sintaxis de Markdown.
+Por ejemplo, si ya has extraído el texto y lo has guardado en un archivo llamado `documento.txt`, puedes utilizar este comando:
 
-Por ejemplo, puedes convertir un título y una lista de esta manera:
+    pandoc documento.txt -o documento.md
 
-Texto original:
+Este comando genera un archivo Markdown a partir del texto. No recupera automáticamente toda la estructura original del PDF, por lo que tendrás que revisar el resultado.
 
-Guía de usuario
+### 5. Comprueba el archivo final
 
-Paso uno
+Abre el archivo `.md` en un editor compatible con Markdown o visualízalo en GitHub.
 
-Paso dos
+Comprueba que los títulos, las listas, los enlaces y las tablas se muestren correctamente. Si el documento original contiene imágenes, puede que tengas que guardar esas imágenes por separado y añadirlas al archivo Markdown.
 
-Paso tres
+Guarda los cambios y revisa el documento antes de publicarlo.
 
-Formato Markdown:
+## ¿Se puede convertir un PDF escaneado a Markdown?
 
-# Guía de usuario
+Sí, pero primero necesitas extraer el texto mediante OCR.
 
-- Paso uno
-- Paso dos
-- Paso tres
+Un PDF escaneado contiene páginas que funcionan como imágenes. Por eso, copiar el texto directamente puede no funcionar.
 
-Guarda el archivo con un nombre como guia-de-usuario.md.
+El OCR reconoce los caracteres de esas imágenes y los convierte en texto editable. Después, puedes corregir los errores y organizar el contenido utilizando Markdown.
 
-4. Revisa el resultado
+La precisión depende de la calidad del escaneo, el idioma y la claridad del documento.
 
-Abre el archivo .md en un editor compatible con Markdown y comprueba que el contenido se muestre correctamente.
+## ¿Qué elementos se conservan al convertir PDF a Markdown?
 
-Revisa especialmente las tablas, los enlaces, las imágenes y los caracteres especiales. Es posible que tengas que corregir estos elementos manualmente.
+El resultado depende de la estructura del documento y del método utilizado.
 
-¿Se puede convertir cualquier PDF a Markdown?
+- **Texto:** suele ser el elemento más fácil de recuperar cuando se puede seleccionar.
+- **Títulos y subtítulos:** pueden necesitar formato manual.
+- **Listas:** a menudo requieren pequeños ajustes.
+- **Tablas:** pueden perder su estructura y necesitar una reconstrucción.
+- **Imágenes:** normalmente deben extraerse o añadirse por separado.
+- **Fuentes y colores:** no se conservan como en el diseño original del PDF.
 
-Sí, se puede recuperar el contenido de muchos archivos PDF, pero el resultado depende de cómo se creó el documento.
+Por eso, conviene revisar el archivo convertido antes de utilizarlo en una página web o un proyecto.
 
-Un PDF con texto seleccionable suele ser más fácil de procesar. En cambio, un PDF escaneado necesita OCR para reconocer las palabras de cada página.
+## PDF y Markdown: ¿cuál es la diferencia?
 
-También debes tener en cuenta que Markdown no conserva automáticamente el diseño exacto del PDF. Los colores, las fuentes, las columnas y la posición de los elementos pueden cambiar.
+PDF y Markdown sirven para propósitos diferentes.
 
-Si el documento contiene muchas tablas o imágenes, revisa el resultado antes de utilizarlo.
+PDF es adecuado para compartir documentos cuyo diseño debe mantenerse estable en distintos dispositivos. Markdown es más práctico para editar texto, escribir documentación y publicar contenido en plataformas compatibles.
 
-PDF y Markdown: ¿cuál es la diferencia?
+Si necesitas presentar un informe con un diseño específico, PDF puede ser la mejor opción. Si quieres actualizar el contenido con frecuencia o gestionarlo en GitHub, Markdown puede facilitar el trabajo.
 
-PDF está pensado para mantener una presentación consistente del documento. Markdown está diseñado para escribir y organizar contenido de forma sencilla.
+## Conclusión
 
-Elige PDF cuando necesites compartir un documento con un diseño estable. Utiliza Markdown cuando quieras editar el texto, publicar contenido en una web o gestionar documentación en GitHub.
+Convertir PDF a Markdown es una forma práctica de reutilizar el contenido de tus documentos. El proceso consiste en extraer el texto, corregirlo, organizarlo y guardarlo en un archivo `.md`.
 
-Ambos formatos tienen usos diferentes y pueden complementarse.
+Los documentos con texto seleccionable suelen ser más fáciles de procesar. Los PDF escaneados necesitan OCR, y los archivos con tablas o imágenes pueden requerir algunos ajustes manuales.
 
-Conclusión
-
-Convertir PDF a Markdown es útil cuando necesitas editar, reutilizar o publicar el contenido de un documento. El proceso consiste en extraer el texto, organizarlo, aplicar el formato Markdown y revisar el resultado.
-
-Si el PDF contiene texto seleccionable, empezar suele ser sencillo. Para documentos escaneados, necesitarás OCR.
-
-Con unos pocos pasos, puedes transformar el contenido de un PDF en un archivo .md más fácil de mantener y reutilizar.
+Con el método adecuado, puedes convertir el contenido de un PDF en texto más fácil de editar, mantener y publicar.
