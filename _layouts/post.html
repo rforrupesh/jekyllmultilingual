@@ -17,8 +17,6 @@ layout: default
   "@type": "Article",
   "headline": "{{ page.title | escape }}",
   "url": "{{ site.url }}{{ page.url }}",
-  "datePublished": "{{ page.date | date_to_xmlschema }}",
-  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
   "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | escape }}",
   {% if page.image %}
   "image": "{% if page.image contains 'http' %}{{ page.image }}{% else %}{{ site.url }}{{ base }}/assets/img/{{ page.image }}{% endif %}",
