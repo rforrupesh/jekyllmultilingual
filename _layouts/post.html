@@ -10,28 +10,34 @@ layout: default
   {% assign lang_prefix = "/" | append: lang %}
 {% endunless %}
 
+
 <!-- JSON-LD structured data for Google -->
+{% assign post_image = page.image | default: page.thumbnail %}
+{% assign post_description = page.description | default: page.excerpt | strip_html | normalize_whitespace | truncate: 160 %}
+{% assign post_author = page.author | default: site.author %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "{{ page.title | escape }}",
-  "url": "{{ site.url }}{{ page.url }}",
-  "description": "{{ page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 | escape }}",
-{% if page.thumbnail %}
-  "image": "{% if page.thumbnail contains 'http' %}{{ page.thumbnail }}{% else %}{{ site.url }}{{ page.thumbnail | relative_url }}{% endif %}",
-{% endif %}
+  "headline": {{ page.title | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "description": {{ post_description | jsonify }},
+  {% if post_image %}
+  "image": {{ post_image | absolute_url | jsonify }},
+  {% endif %}
   "author": {
     "@type": "Person",
-    "name": "{{ page.author | default: site.author | escape }}"
+    "name": {{ post_author | jsonify }}
   },
   "publisher": {
     "@type": "Organization",
-    "name": "{{ site.title | escape }}",
-    "url": "{{ site.url }}"
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | jsonify }}
   }
 }
 </script>
+
 
 <div class="post-wrap">
   <div class="post-container">
