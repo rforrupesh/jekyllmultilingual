@@ -63,6 +63,8 @@ Otra cosa que me gusta es que puedo abrir mis archivos desde otro dispositivo si
 
 Para los estudiantes que manejan muchos archivos PDF, apuntes y documentos universitarios, Google Drive puede hacer que organizar los materiales de estudio sea mucho más sencillo.
 
+Si tengo varios documentos PDF relacionados con una misma materia, también puedo [unir varios archivos PDF](https://unificarpdf.com/) en un solo documento. Así resulta más fácil mantener mis apuntes organizados y consultarlos cuando los necesito.
+
 ## 6. ChatGPT — Comprender temas difíciles
 
 A veces entiendo un tema después de leerlo, pero algunas partes siguen siendo confusas. Aquí es donde ChatGPT puede ser muy útil para los estudiantes, porque puedo preguntar directamente sobre aquello que no entiendo en lugar de buscar explicaciones en diferentes sitios web.
@@ -84,6 +86,8 @@ Si no entiendo una pregunta o necesito ayuda con algún tema, puedo escribir en 
 Me parece especialmente útil durante la época de exámenes, porque los estudiantes suelen compartir novedades importantes, materiales de estudio y preguntas que están preparando. Además, puedo guardar archivos y mensajes interesantes en Telegram para consultarlos más adelante.
 
 Por eso, Telegram no es solamente una aplicación de mensajería para mí. También puede ser un espacio para comunicarme con mis compañeros, hablar sobre mis estudios y encontrar recursos adicionales cuando los necesito.
+
+Si tengo fotografías de apuntes o documentos impresos, también puedo [convertir imágenes JPG a PDF](https://unificarpdf.com/jpg-a-pdf/) para mantener todo mi material de estudio en un solo archivo.
 
 Estas son algunas de las mejores aplicaciones de estudio que me ayudaron a organizar mis actividades académicas, ahorrar tiempo y mejorar mi productividad. Sin embargo, también te diría que no debes depender completamente de estas herramientas para convertirte en un mejor estudiante.
 
