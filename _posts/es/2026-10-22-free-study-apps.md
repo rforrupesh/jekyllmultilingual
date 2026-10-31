@@ -11,7 +11,7 @@ Hubo una época en la que necesitaba ayuda para organizar mejor mis estudios. Po
 
 Así que, si tú también estás buscando herramientas de estudio que te ayuden a reducir el estrés y obtener mejores resultados en tus clases este semestre, aquí te comparto mis **7 aplicaciones online gratuitas favoritas** que me ayudaron a convertirme en un mejor estudiante.
 
-# 1. Notion — Apuntes, planificación y organización de tareas
+## 1. Notion — Apuntes, planificación y organización de tareas
 
 Notion es una de mis herramientas favoritas cuando necesito organizar mis estudios. La uso para guardar mis apuntes, tareas, planes de estudio y otros materiales académicos en un solo lugar.
 
@@ -19,7 +19,7 @@ Por ejemplo, si tengo un examen de Economía, puedo crear una página para esa m
 
 Además, puedo agregar mis apuntes de clase, las fechas de entrega de los trabajos y mis planes de repaso. Esto me permite saber qué temas ya estudié y cuáles todavía tengo pendientes.
 
-# 2. Quizlet — Tarjetas de estudio y preparación para exámenes
+## 2. Quizlet — Tarjetas de estudio y preparación para exámenes
 
 Empecé a usar Quizlet cuando tenía que memorizar muchas definiciones y datos importantes para mis exámenes. Leer los mismos apuntes una y otra vez me quitaba demasiado tiempo y, aun así, olvidaba parte de la información.
 
@@ -29,7 +29,7 @@ Después, comencé a ponerme a prueba en lugar de limitarme a leer mis apuntes. 
 
 Quizlet se convirtió en una herramienta importante para mis repasos porque hizo que estudiar fuera más dinámico. En lugar de mirar mis apuntes sin más, empecé a evaluar mis conocimientos y a identificar los temas que necesitaba reforzar.
 
-# 3. Pomofocus — Sesiones de estudio con mayor concentración
+## 3. Pomofocus — Sesiones de estudio con mayor concentración
 
 Uno de mis mayores problemas al estudiar era mantener la concentración durante mucho tiempo. Empezaba a estudiar, revisaba el celular después de un rato y terminaba perdiendo el hilo. Por eso, incluso los capítulos más sencillos me tomaban mucho más tiempo del necesario.
 
@@ -41,7 +41,7 @@ Esto cambió mi manera de organizar el tiempo de estudio. En lugar de pensar que
 
 Si también te cuesta evitar las distracciones o sueles aplazar tus horas de estudio, Pomofocus puede ser una herramienta sencilla para empezar a organizarte y mantener la concentración.
 
-# 4. Canva — Presentaciones y trabajos universitarios
+## 4. Canva — Presentaciones y trabajos universitarios
 
 Preparar presentaciones para la universidad puede tomar bastante tiempo cuando tienes que diseñar cada diapositiva desde cero. Normalmente, no quiero pasar horas escogiendo fuentes, imágenes, diseños y colores antes de comenzar a trabajar en el tema principal.
 
@@ -51,7 +51,7 @@ Lo que más me gustó fue que no necesitaba tener conocimientos de diseño gráf
 
 Además de las presentaciones, también he encontrado útil Canva para crear portadas de trabajos, carteles, diagramas y otros materiales académicos. Es una buena opción cuando quieres que tus trabajos se vean bien organizados sin dedicar demasiado tiempo al diseño.
 
-# 5. Google Drive — Guardar y organizar archivos de estudio
+## 5. Google Drive — Guardar y organizar archivos de estudio
 
 Antes de usar Google Drive, solía tener mis archivos de estudio guardados en diferentes lugares. Algunos apuntes estaban en mi celular, ciertos archivos PDF estaban en la carpeta de descargas y encontrar un trabajo antiguo cuando lo necesitaba podía ser bastante complicado.
 
@@ -63,7 +63,7 @@ Otra cosa que me gusta es que puedo abrir mis archivos desde otro dispositivo si
 
 Para los estudiantes que manejan muchos archivos PDF, apuntes y documentos universitarios, Google Drive puede hacer que organizar los materiales de estudio sea mucho más sencillo.
 
-# 6. ChatGPT — Comprender temas difíciles
+## 6. ChatGPT — Comprender temas difíciles
 
 A veces entiendo un tema después de leerlo, pero algunas partes siguen siendo confusas. Aquí es donde ChatGPT puede ser muy útil para los estudiantes, porque puedo preguntar directamente sobre aquello que no entiendo en lugar de buscar explicaciones en diferentes sitios web.
 
@@ -75,7 +75,7 @@ Otra ventaja es que puedo recibir ayuda con mis trabajos y escritos. Si ya redac
 
 Para los estudiantes, uno de sus mayores beneficios es tener una forma rápida de comprender temas difíciles, practicar lo aprendido y prepararse para los exámenes sin pasar horas buscando la explicación adecuada.
 
-# 7. Telegram — Recursos de estudio y grupos de estudiantes
+## 7. Telegram — Recursos de estudio y grupos de estudiantes
 
 También uso Telegram cuando necesito mantenerme en contacto con otros estudiantes y encontrar material de estudio. Puedo unirme a grupos de mi clase, de una materia específica o de preparación para exámenes, y conversar sobre diferentes temas con otros estudiantes.
 
